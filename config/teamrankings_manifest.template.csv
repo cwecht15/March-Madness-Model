@@ -1,0 +1,18 @@
+output_column,source_file,scale,notes
+Seas_PPG,raw/2025/teamrankings/points-per-game.html,raw,TeamRankings points per game
+Seas_Succ_3PT,,pct,Fill with the exact TeamRankings stat you want for this field
+Seas_3PT_Per,raw/2025/teamrankings/three-point-pct.html,pct,TeamRankings three-point percentage
+Seas_FT_Succ,raw/2025/teamrankings/free-throw-pct.html,pct,TeamRankings free-throw percentage
+Seas_3PT_Rate,raw/2025/teamrankings/three-point-rate.html,pct,TeamRankings three-point attempt rate
+Seas_Off_Rebound_Per,raw/2025/teamrankings/offensive-rebounding-pct.html,pct,TeamRankings offensive rebounding percentage
+Seas_Def_Rebound_Per,raw/2025/teamrankings/defensive-rebounding-pct.html,pct,TeamRankings defensive rebounding percentage
+Seas_Turnovers,raw/2025/teamrankings/turnovers-per-game.html,raw,TeamRankings turnovers per game
+Seas_Fouls,raw/2025/teamrankings/personal-fouls-per-game.html,raw,TeamRankings personal fouls per game
+Seas_Opp_PPG,raw/2025/teamrankings/opponent-points-per-game.html,raw,TeamRankings opponent points per game
+Seas_Opp_3PT_Succ,raw/2025/teamrankings/opponent-three-point-pct.html,pct,TeamRankings opponent three-point percentage
+Seas_Opp_3PT_Rate,raw/2025/teamrankings/opponent-three-point-rate.html,pct,TeamRankings opponent three-point attempt rate
+Seas_Opp_Off_Rebound,raw/2025/teamrankings/opponent-offensive-rebounding-pct.html,pct,TeamRankings opponent offensive rebounding percentage
+Seas_Opp_Def_Rebound,raw/2025/teamrankings/opponent-defensive-rebounding-pct.html,pct,TeamRankings opponent defensive rebounding percentage
+Seas_Opp_Turnover,raw/2025/teamrankings/opponent-turnovers-per-game.html,raw,TeamRankings opponent turnovers per game
+Seas_Opp_Fouls,raw/2025/teamrankings/opponent-personal-fouls-per-game.html,raw,TeamRankings opponent personal fouls per game
+Seas_Poss,raw/2025/teamrankings/possessions-per-game.html,raw,TeamRankings possessions per game

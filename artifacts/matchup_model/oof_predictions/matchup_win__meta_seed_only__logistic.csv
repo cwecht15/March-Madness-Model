@@ -1,0 +1,1757 @@
+year,round_index,round_name,team_left,team_right,left_win,probability,prediction
+2011,1,round_of_64,Akron,Notre Dame,0,0.06695213510202147,0
+2011,1,round_of_64,Arizona,Memphis,1,0.8061943299955232,1
+2011,1,round_of_64,BYU,Wofford,1,0.9314809384350691,1
+2011,1,round_of_64,Belmont,Wisconsin,0,0.3472744471891498,0
+2011,1,round_of_64,Boston University,Kansas,0,0.026529764666073638,0
+2011,1,round_of_64,Bucknell,Connecticut,0,0.0327229302923079,0
+2011,1,round_of_64,Butler,Old Dominion,1,0.5347822429471434,1
+2011,1,round_of_64,Cincinnati,Missouri,1,0.6405223845787521,1
+2011,1,round_of_64,Clemson,West Virginia,0,0.42646479641333723,0
+2011,1,round_of_64,Connecticut,Bucknell,1,0.9672770697132265,1
+2011,1,round_of_64,Duke,Hampton,1,0.9570124978613872,1
+2011,1,round_of_64,Florida,Santa Barbara,1,0.8810575192893589,1
+2011,1,round_of_64,Florida St,Texas A&M,1,0.6563959653460466,1
+2011,1,round_of_64,George Mason,Villanova,1,0.7707869856196303,1
+2011,1,round_of_64,Georgetown,VCU,0,0.5837798444223571,1
+2011,1,round_of_64,Georgia,Washington,0,0.41609194447378833,0
+2011,1,round_of_64,Gonzaga,St Johns,1,0.3642079136518774,0
+2011,1,round_of_64,Hampton,Duke,0,0.04298750214882891,0
+2011,1,round_of_64,Illinois,UNLV,1,0.5505791781684523,1
+2011,1,round_of_64,Indiana St,Syracuse,0,0.06908722046796041,0
+2011,1,round_of_64,Kansas,Boston University,1,0.9734702353403396,1
+2011,1,round_of_64,Kansas St,Utah St,1,0.12073282719949598,0
+2011,1,round_of_64,Kentucky,Princeton,1,0.8755078018236276,1
+2011,1,round_of_64,Long Island Brooklyn,North Carolina,0,0.08961446402248678,0
+2011,1,round_of_64,Louisville,Morehead St,0,0.8719510737634345,1
+2011,1,round_of_64,Marquette,Xavier,1,0.7121583641828867,1
+2011,1,round_of_64,Memphis,Arizona,0,0.19380567002031607,0
+2011,1,round_of_64,Michigan,Tennessee,1,0.814656467174502,1
+2011,1,round_of_64,Michigan St,UCLA,0,0.6791457032043521,1
+2011,1,round_of_64,Missouri,Cincinnati,0,0.3594776154361307,0
+2011,1,round_of_64,Morehead St,Louisville,1,0.12804892625198627,0
+2011,1,round_of_64,North Carolina,Long Island Brooklyn,1,0.9103855359947756,1
+2011,1,round_of_64,Northern Colorado,San Diego St,0,0.03778640717749191,0
+2011,1,round_of_64,Notre Dame,Akron,1,0.9330478649111964,1
+2011,1,round_of_64,Oakland,Texas,0,0.1416706333755319,0
+2011,1,round_of_64,Ohio St,Texas San Antonio,1,0.9980094997509522,1
+2011,1,round_of_64,Old Dominion,Butler,0,0.4652177570506574,0
+2011,1,round_of_64,Penn St,Temple,0,0.5609650178872791,1
+2011,1,round_of_64,Pittsburgh,UNC Asheville,1,0.9450236373050109,1
+2011,1,round_of_64,Princeton,Kentucky,0,0.12449219819142598,0
+2011,1,round_of_64,Purdue,St Peters,1,0.9210022355408654,1
+2011,1,round_of_64,Richmond,Vanderbilt,1,0.9609352135416549,1
+2011,1,round_of_64,San Diego St,Northern Colorado,1,0.9622135928302012,1
+2011,1,round_of_64,Santa Barbara,Florida,0,0.11894248073281462,0
+2011,1,round_of_64,St Johns,Gonzaga,0,0.6357920863630899,1
+2011,1,round_of_64,St Peters,Purdue,0,0.07899776447185643,0
+2011,1,round_of_64,Syracuse,Indiana St,1,0.930912779543285,1
+2011,1,round_of_64,Temple,Penn St,1,0.43903498211959185,0
+2011,1,round_of_64,Tennessee,Michigan,0,0.1853435328241632,0
+2011,1,round_of_64,Texas,Oakland,1,0.8583293666412628,1
+2011,1,round_of_64,Texas A&M,Florida St,0,0.34360403466024564,0
+2011,1,round_of_64,Texas San Antonio,Ohio St,0,0.001990500249541139,0
+2011,1,round_of_64,UCLA,Michigan St,1,0.3208542968017273,0
+2011,1,round_of_64,UNC Asheville,Pittsburgh,0,0.05497636270789067,0
+2011,1,round_of_64,UNLV,Illinois,0,0.44942082182936033,0
+2011,1,round_of_64,Utah St,Kansas St,0,0.8792671728112657,1
+2011,1,round_of_64,VCU,Georgetown,1,0.4162201555933486,0
+2011,1,round_of_64,Vanderbilt,Richmond,0,0.03906478646215057,0
+2011,1,round_of_64,Villanova,George Mason,0,0.229213014378808,0
+2011,1,round_of_64,Washington,Georgia,1,0.5839080555329899,1
+2011,1,round_of_64,West Virginia,Clemson,1,0.5735352036114583,1
+2011,1,round_of_64,Wisconsin,Belmont,1,0.6527255528421572,1
+2011,1,round_of_64,Wofford,BYU,0,0.06851906157609071,0
+2011,1,round_of_64,Xavier,Marquette,0,0.28784163583036315,0
+2011,2,round_of_32,Arizona,Texas,1,0.42424545913574896,0
+2011,2,round_of_32,BYU,Gonzaga,1,0.7954473433332987,1
+2011,2,round_of_32,Butler,Pittsburgh,1,0.12370430889199487,0
+2011,2,round_of_32,Cincinnati,Connecticut,0,0.21770335066713697,0
+2011,2,round_of_32,Connecticut,Cincinnati,1,0.7822966493034541,1
+2011,2,round_of_32,Duke,Michigan,1,0.8876018443133417,1
+2011,2,round_of_32,Florida,UCLA,1,0.8309170140269574,1
+2011,2,round_of_32,Florida St,Notre Dame,1,0.18427256787492668,0
+2011,2,round_of_32,George Mason,Ohio St,0,0.013668419285042263,0
+2011,2,round_of_32,Gonzaga,BYU,0,0.20455265666389677,0
+2011,2,round_of_32,Illinois,Kansas,0,0.13458294655838937,0
+2011,2,round_of_32,Kansas,Illinois,1,0.8654170534336773,1
+2011,2,round_of_32,Kansas St,Wisconsin,0,0.0754160343905329,0
+2011,2,round_of_32,Kentucky,West Virginia,1,0.7774910634416976,1
+2011,2,round_of_32,Marquette,Syracuse,1,0.23710502250600107,0
+2011,2,round_of_32,Michigan,Duke,0,0.11239815567676126,0
+2011,2,round_of_32,Morehead St,Richmond,0,0.05294077268510832,0
+2011,2,round_of_32,North Carolina,Washington,1,0.8698299696020586,1
+2011,2,round_of_32,Notre Dame,Florida St,0,0.8157274321186585,1
+2011,2,round_of_32,Ohio St,George Mason,1,0.9863315807136204,1
+2011,2,round_of_32,Pittsburgh,Butler,0,0.8762956910972514,1
+2011,2,round_of_32,Purdue,VCU,0,0.7766650640527755,1
+2011,2,round_of_32,Richmond,Morehead St,1,0.9470592273145957,1
+2011,2,round_of_32,San Diego St,Temple,1,0.8747352810135397,1
+2011,2,round_of_32,Syracuse,Marquette,0,0.7628949774908812,1
+2011,2,round_of_32,Temple,San Diego St,0,0.12526471897156477,0
+2011,2,round_of_32,Texas,Arizona,0,0.5757545408130982,1
+2011,2,round_of_32,UCLA,Florida,0,0.16908298595394358,0
+2011,2,round_of_32,VCU,Purdue,1,0.22333493594423487,0
+2011,2,round_of_32,Washington,North Carolina,0,0.13017003038254926,0
+2011,2,round_of_32,West Virginia,Kentucky,0,0.2225089365220732,0
+2011,2,round_of_32,Wisconsin,Kansas St,1,0.9245839655948647,1
+2011,3,sweet_sixteen,Arizona,Duke,1,0.25911305834438036,0
+2011,3,sweet_sixteen,BYU,Florida,0,0.6650990846531362,1
+2011,3,sweet_sixteen,Butler,Wisconsin,1,0.10658479132558786,0
+2011,3,sweet_sixteen,Connecticut,San Diego St,1,0.5898583941924231,1
+2011,3,sweet_sixteen,Duke,Arizona,0,0.7408869415996995,1
+2011,3,sweet_sixteen,Florida,BYU,1,0.334900915266873,0
+2011,3,sweet_sixteen,Florida St,VCU,0,0.4808249966612935,0
+2011,3,sweet_sixteen,Kansas,Richmond,1,0.7217914950572359,1
+2011,3,sweet_sixteen,Kentucky,Ohio St,1,0.035161180717372904,0
+2011,3,sweet_sixteen,Marquette,North Carolina,0,0.22878886882690488,0
+2011,3,sweet_sixteen,North Carolina,Marquette,1,0.7712111311536142,1
+2011,3,sweet_sixteen,Ohio St,Kentucky,0,0.9648388192716904,1
+2011,3,sweet_sixteen,Richmond,Kansas,0,0.27820850492797067,0
+2011,3,sweet_sixteen,San Diego St,Connecticut,0,0.41014160572069686,0
+2011,3,sweet_sixteen,VCU,Florida St,1,0.5191750032998625,1
+2011,3,sweet_sixteen,Wisconsin,Butler,0,0.8934152086539414,1
+2011,4,elite_eight,Arizona,Connecticut,0,0.2137370948609499,0
+2011,4,elite_eight,Butler,Florida,1,0.29280407019758153,0
+2011,4,elite_eight,Connecticut,Arizona,1,0.7862629050715914,1
+2011,4,elite_eight,Florida,Butler,0,0.7071959297397806,1
+2011,4,elite_eight,Kansas,VCU,0,0.8973913768223847,1
+2011,4,elite_eight,Kentucky,North Carolina,1,0.5682998345555514,1
+2011,4,elite_eight,North Carolina,Kentucky,0,0.4317001653397268,0
+2011,4,elite_eight,VCU,Kansas,1,0.10260862315886969,0
+2011,5,final_four,Butler,VCU,1,0.4027391473328883,0
+2011,5,final_four,Connecticut,Kentucky,1,0.6541178015959969,1
+2011,5,final_four,Kentucky,Connecticut,0,0.3458821982837927,0
+2011,5,final_four,VCU,Butler,0,0.5972608525848593,1
+2012,1,round_of_64,Alabama,Creighton,0,0.21499294260812302,0
+2012,1,round_of_64,BYU,Marquette,0,0.14002255267575514,0
+2012,1,round_of_64,Baylor,South Dakota St,1,0.8223360600834472,1
+2012,1,round_of_64,Belmont,Georgetown,0,0.6985848202844731,1
+2012,1,round_of_64,Cincinnati,Texas,1,0.7288594971085426,1
+2012,1,round_of_64,Colorado,UNLV,1,0.5801446067107053,1
+2012,1,round_of_64,Colorado St,Murray St,0,0.29340812566927976,0
+2012,1,round_of_64,Connecticut,Iowa St,0,0.4113367917184827,0
+2012,1,round_of_64,Creighton,Alabama,1,0.7850069995972864,1
+2012,1,round_of_64,Davidson,Louisville,0,0.09480593486225045,0
+2012,1,round_of_64,Detroit,Kansas,0,0.04909837653337684,0
+2012,1,round_of_64,Duke,Lehigh,0,0.7915432446069675,1
+2012,1,round_of_64,Florida,Virginia,1,0.8106785337555833,1
+2012,1,round_of_64,Florida St,St Bonaventure,1,0.5483967487523376,1
+2012,1,round_of_64,Georgetown,Belmont,1,0.30141603219147045,0
+2012,1,round_of_64,Gonzaga,West Virginia,1,0.5931252028628362,1
+2012,1,round_of_64,Harvard,Vanderbilt,0,0.5183781784123047,1
+2012,1,round_of_64,Indiana,New Mexico St,1,0.8870242849430661,1
+2012,1,round_of_64,Iowa St,Connecticut,1,0.5886631253625574,1
+2012,1,round_of_64,Kansas,Detroit,1,0.95090185348377,1
+2012,1,round_of_64,Kansas St,Southern Mississippi,1,0.6948693653625574,1
+2012,1,round_of_64,Kentucky,Western Kentucky,1,0.9906081836308084,1
+2012,1,round_of_64,Lehigh,Duke,1,0.2084575683165733,0
+2012,1,round_of_64,Long Beach St,New Mexico,0,0.5730172029482112,1
+2012,1,round_of_64,Long Island Brooklyn,Michigan St,0,0.08569387092810751,0
+2012,1,round_of_64,Louisville,Davidson,1,0.9051943372085983,1
+2012,1,round_of_64,Loyola Maryland,Ohio St,0,0.057573698231381504,0
+2012,1,round_of_64,Marquette,BYU,1,0.8599779348324599,1
+2012,1,round_of_64,Memphis,St Louis,0,0.31951361187153426,0
+2012,1,round_of_64,Michigan,Ohio,0,0.5962158393047468,1
+2012,1,round_of_64,Michigan St,Long Island Brooklyn,1,0.9143065838889095,1
+2012,1,round_of_64,Missouri,Norfolk St,0,0.9488874754134166,1
+2012,1,round_of_64,Montana,Wisconsin,0,0.0939168360752863,0
+2012,1,round_of_64,Murray St,Colorado St,1,0.7065921674696884,1
+2012,1,round_of_64,NC State,San Diego St,1,0.8363961261023746,1
+2012,1,round_of_64,New Mexico,Long Beach St,1,0.42698335786663666,0
+2012,1,round_of_64,New Mexico St,Indiana,0,0.11297603276371783,0
+2012,1,round_of_64,Norfolk St,Missouri,1,0.05111276353351784,0
+2012,1,round_of_64,North Carolina,Vermont,1,0.9261399434974394,1
+2012,1,round_of_64,Notre Dame,Xavier,0,0.6062929879397516,1
+2012,1,round_of_64,Ohio,Michigan,1,0.4037849239302348,0
+2012,1,round_of_64,Ohio St,Loyola Maryland,1,0.9424265690871302,1
+2012,1,round_of_64,Purdue,St Marys,1,0.7079108306345065,1
+2012,1,round_of_64,San Diego St,NC State,0,0.16360406737879674,0
+2012,1,round_of_64,South Dakota St,Baylor,0,0.17766453140560248,0
+2012,1,round_of_64,South Florida,Temple,1,0.660976642437073,1
+2012,1,round_of_64,Southern Mississippi,Kansas St,0,0.30513056203046945,0
+2012,1,round_of_64,St Bonaventure,Florida St,0,0.45160425389807013,0
+2012,1,round_of_64,St Louis,Memphis,1,0.6804863136727201,1
+2012,1,round_of_64,St Marys,Purdue,0,0.2920892801444359,0
+2012,1,round_of_64,Syracuse,UNC Asheville,1,0.9583260305531035,1
+2012,1,round_of_64,Temple,South Florida,0,0.33902387120109223,0
+2012,1,round_of_64,Texas,Cincinnati,0,0.2711407823203186,0
+2012,1,round_of_64,UNC Asheville,Syracuse,0,0.041674201280116376,0
+2012,1,round_of_64,UNLV,Colorado,0,0.4198557376939003,0
+2012,1,round_of_64,VCU,Wichita St,1,0.37746485873807306,0
+2012,1,round_of_64,Vanderbilt,Harvard,1,0.4816223938488645,0
+2012,1,round_of_64,Vermont,North Carolina,0,0.07386045358774448,0
+2012,1,round_of_64,Virginia,Florida,0,0.18932154847090835,0
+2012,1,round_of_64,West Virginia,Gonzaga,0,0.40687492642877426,0
+2012,1,round_of_64,Western Kentucky,Kentucky,0,0.00939187037607287,0
+2012,1,round_of_64,Wichita St,VCU,0,0.6225356798809255,1
+2012,1,round_of_64,Wisconsin,Montana,1,0.9060834337087833,1
+2012,1,round_of_64,Xavier,Notre Dame,1,0.3937071399450328,0
+2012,2,round_of_32,Baylor,Colorado,1,0.9287052773272223,1
+2012,2,round_of_32,Cincinnati,Florida St,1,0.697297354016662,1
+2012,2,round_of_32,Colorado,Baylor,0,0.07129468502642872,0
+2012,2,round_of_32,Creighton,North Carolina,0,0.3098241641097075,0
+2012,2,round_of_32,Florida,Norfolk St,1,0.9051973450900637,1
+2012,2,round_of_32,Florida St,Cincinnati,0,0.3027017472726537,0
+2012,2,round_of_32,Georgetown,NC State,0,0.5936985615824861,1
+2012,2,round_of_32,Gonzaga,Ohio St,0,0.08838261155499966,0
+2012,2,round_of_32,Indiana,VCU,1,0.6098752784381699,1
+2012,2,round_of_32,Iowa St,Kentucky,0,0.016114419131557443,0
+2012,2,round_of_32,Kansas,Purdue,1,0.8203830258003839,1
+2012,2,round_of_32,Kansas St,Syracuse,0,0.07024972973167912,0
+2012,2,round_of_32,Kentucky,Iowa St,1,0.9838855412090589,1
+2012,2,round_of_32,Lehigh,Xavier,0,0.5144030969286745,1
+2012,2,round_of_32,Louisville,New Mexico,1,0.8733638258258855,1
+2012,2,round_of_32,Marquette,Murray St,1,0.8569521085271512,1
+2012,2,round_of_32,Michigan St,St Louis,1,0.5314998834427604,1
+2012,2,round_of_32,Murray St,Marquette,0,0.1430473695294763,0
+2012,2,round_of_32,NC State,Georgetown,1,0.40630130126555747,0
+2012,2,round_of_32,New Mexico,Louisville,0,0.12663560613611316,0
+2012,2,round_of_32,Norfolk St,Florida,0,0.09480281121517489,0
+2012,2,round_of_32,North Carolina,Creighton,1,0.690175301004052,1
+2012,2,round_of_32,Ohio,South Florida,1,0.35704423570233695,0
+2012,2,round_of_32,Ohio St,Gonzaga,1,0.9116171161454337,1
+2012,2,round_of_32,Purdue,Kansas,0,0.17961680237333585,0
+2012,2,round_of_32,South Florida,Ohio,0,0.6429556825687661,1
+2012,2,round_of_32,St Louis,Michigan St,0,0.46849967741441717,0
+2012,2,round_of_32,Syracuse,Kansas St,1,0.9297501068887989,1
+2012,2,round_of_32,VCU,Indiana,0,0.39012472844343926,0
+2012,2,round_of_32,Vanderbilt,Wisconsin,0,0.20538481762520958,0
+2012,2,round_of_32,Wisconsin,Vanderbilt,1,0.7946143441681544,1
+2012,2,round_of_32,Xavier,Lehigh,1,0.4855972528737481,0
+2012,3,sweet_sixteen,Baylor,Xavier,1,0.9040331826820727,1
+2012,3,sweet_sixteen,Cincinnati,Ohio St,0,0.14100325775701977,0
+2012,3,sweet_sixteen,Florida,Marquette,1,0.4248170850308662,0
+2012,3,sweet_sixteen,Indiana,Kentucky,0,0.061067435486686215,0
+2012,3,sweet_sixteen,Kansas,NC State,1,0.8989644953534012,1
+2012,3,sweet_sixteen,Kentucky,Indiana,1,0.9389321140415937,1
+2012,3,sweet_sixteen,Louisville,Michigan St,1,0.4290467499891215,0
+2012,3,sweet_sixteen,Marquette,Florida,0,0.5751814675691114,1
+2012,3,sweet_sixteen,Michigan St,Louisville,0,0.5709513254690344,1
+2012,3,sweet_sixteen,NC State,Kansas,0,0.10103524744268115,0
+2012,3,sweet_sixteen,North Carolina,Ohio,1,0.836898439226526,1
+2012,3,sweet_sixteen,Ohio,North Carolina,0,0.16310139482414615,0
+2012,3,sweet_sixteen,Ohio St,Cincinnati,1,0.858995952405753,1
+2012,3,sweet_sixteen,Syracuse,Wisconsin,1,0.7672405599362395,1
+2012,3,sweet_sixteen,Wisconsin,Syracuse,0,0.23275803705657383,0
+2012,3,sweet_sixteen,Xavier,Baylor,0,0.09596649545027403,0
+2012,4,elite_eight,Baylor,Kentucky,0,0.10187750006815705,0
+2012,4,elite_eight,Florida,Louisville,0,0.4815624444875435,0
+2012,4,elite_eight,Kansas,North Carolina,1,0.5857078490086115,1
+2012,4,elite_eight,Kentucky,Baylor,1,0.898121493647005,1
+2012,4,elite_eight,Louisville,Florida,1,0.518435441529828,1
+2012,4,elite_eight,North Carolina,Kansas,0,0.4142893032947133,0
+2012,4,elite_eight,Ohio St,Syracuse,1,0.4496760301806361,0
+2012,4,elite_eight,Syracuse,Ohio St,0,0.550321065630608,1
+2012,5,final_four,Kansas,Ohio St,1,0.42273294900313313,0
+2012,5,final_four,Kentucky,Louisville,1,0.9137257634773042,1
+2012,5,final_four,Louisville,Kentucky,0,0.08627323825135137,0
+2012,5,final_four,Ohio St,Kansas,0,0.5772635663583715,1
+2012,6,championship,Kansas,Kentucky,0,0.1540254165916816,0
+2012,6,championship,Kentucky,Kansas,1,0.8459724278476208,1
+2013,1,round_of_64,Akron,VCU,0,0.30419544820383393,0
+2013,1,round_of_64,Albany,Duke,0,0.035534427403810055,0
+2013,1,round_of_64,Arizona,Belmont,1,0.67077223591761,1
+2013,1,round_of_64,Belmont,Arizona,0,0.3292277636031544,0
+2013,1,round_of_64,Bucknell,Butler,0,0.22941219892508033,0
+2013,1,round_of_64,Butler,Bucknell,1,0.7705878006912865,1
+2013,1,round_of_64,California,UNLV,1,0.856061845400861,1
+2013,1,round_of_64,Cincinnati,Creighton,0,0.3154078939773823,0
+2013,1,round_of_64,Colorado,Illinois,0,0.5476744238167888,1
+2013,1,round_of_64,Colorado St,Missouri,1,0.6070027767622765,1
+2013,1,round_of_64,Creighton,Cincinnati,1,0.6845921058331421,1
+2013,1,round_of_64,Davidson,Marquette,0,0.20802882620893307,0
+2013,1,round_of_64,Duke,Albany,1,0.9644655723446207,1
+2013,1,round_of_64,Florida,Northwestern St,1,0.9749649810053961,1
+2013,1,round_of_64,Florida Gulf Coast,Georgetown,1,0.1998919795394433,0
+2013,1,round_of_64,Georgetown,Florida Gulf Coast,0,0.800108019286564,1
+2013,1,round_of_64,Gonzaga,Southern,1,0.943976171107913,1
+2013,1,round_of_64,Harvard,New Mexico,1,0.25607012725952116,0
+2013,1,round_of_64,Illinois,Colorado,1,0.4523255759658299,0
+2013,1,round_of_64,Indiana,James Madison,1,0.9616596113601482,1
+2013,1,round_of_64,Iona,Ohio St,0,0.07645591511478271,0
+2013,1,round_of_64,Iowa St,Notre Dame,1,0.21446722866884793,0
+2013,1,round_of_64,James Madison,Indiana,0,0.038340388321549075,0
+2013,1,round_of_64,Kansas,Western Kentucky,1,0.9029530824601696,1
+2013,1,round_of_64,Kansas St,La Salle,0,0.21241149878433188,0
+2013,1,round_of_64,La Salle,Kansas St,1,0.7875885004201473,1
+2013,1,round_of_64,Louisville,North Carolina A&T,1,0.979545636053929,1
+2013,1,round_of_64,Marquette,Davidson,1,0.7919711727946676,1
+2013,1,round_of_64,Memphis,St Marys,1,0.30826753362083104,0
+2013,1,round_of_64,Miami,Pacific,1,0.8347645816854399,1
+2013,1,round_of_64,Michigan,South Dakota St,1,0.9840554557833515,1
+2013,1,round_of_64,Michigan St,Valparaiso,1,0.8665835950732351,1
+2013,1,round_of_64,Minnesota,UCLA,1,0.6079908357482541,1
+2013,1,round_of_64,Missouri,Colorado St,0,0.3929972233367413,0
+2013,1,round_of_64,Montana,Syracuse,0,0.044790494329188385,0
+2013,1,round_of_64,NC State,Temple,0,0.5804771946367948,1
+2013,1,round_of_64,New Mexico,Harvard,0,0.7439298715883754,1
+2013,1,round_of_64,New Mexico St,St Louis,0,0.2638495526450687,0
+2013,1,round_of_64,North Carolina,Villanova,1,0.9261799379588668,1
+2013,1,round_of_64,North Carolina A&T,Louisville,0,0.020454363773100125,0
+2013,1,round_of_64,Northwestern St,Florida,0,0.02503501884698644,0
+2013,1,round_of_64,Notre Dame,Iowa St,0,0.7855327711833182,1
+2013,1,round_of_64,Ohio St,Iona,1,0.9235440843669066,1
+2013,1,round_of_64,Oklahoma,San Diego St,0,0.5844601130613671,1
+2013,1,round_of_64,Oklahoma St,Oregon,0,0.10012920773658514,0
+2013,1,round_of_64,Ole Miss,Wisconsin,1,0.5033993893866829,1
+2013,1,round_of_64,Oregon,Oklahoma St,1,0.8998707919514163,1
+2013,1,round_of_64,Pacific,Miami,0,0.16523541730207525,0
+2013,1,round_of_64,Pittsburgh,Wichita St,0,0.6277997851879983,1
+2013,1,round_of_64,San Diego St,Oklahoma,1,0.4155398867255167,0
+2013,1,round_of_64,South Dakota St,Michigan,0,0.01594454414203698,0
+2013,1,round_of_64,Southern,Gonzaga,0,0.05602382843552875,0
+2013,1,round_of_64,St Louis,New Mexico St,1,0.7361504464313033,1
+2013,1,round_of_64,St Marys,Memphis,0,0.6917324659164221,1
+2013,1,round_of_64,Syracuse,Montana,1,0.9552095054673613,1
+2013,1,round_of_64,Temple,NC State,1,0.4195228054642872,0
+2013,1,round_of_64,UCLA,Minnesota,0,0.3920091637345314,0
+2013,1,round_of_64,UNLV,California,0,0.14393815417246855,0
+2013,1,round_of_64,VCU,Akron,1,0.6958045510632546,1
+2013,1,round_of_64,Valparaiso,Michigan St,0,0.13341640422753465,0
+2013,1,round_of_64,Villanova,North Carolina,0,0.07382006206951262,0
+2013,1,round_of_64,Western Kentucky,Kansas,0,0.09704691678332977,0
+2013,1,round_of_64,Wichita St,Pittsburgh,1,0.37220021490899263,0
+2013,1,round_of_64,Wisconsin,Ole Miss,0,0.4966006097476887,0
+2013,2,round_of_32,Arizona,Harvard,1,0.881469843633144,1
+2013,2,round_of_32,Butler,Marquette,0,0.32002732804253936,0
+2013,2,round_of_32,California,Syracuse,0,0.18651430119549925,0
+2013,2,round_of_32,Colorado St,Louisville,0,0.07309156865598099,0
+2013,2,round_of_32,Creighton,Duke,0,0.23184832399375932,0
+2013,2,round_of_32,Duke,Creighton,1,0.768151676882341,1
+2013,2,round_of_32,Florida,Minnesota,1,0.7937554650316501,1
+2013,2,round_of_32,Florida Gulf Coast,San Diego St,1,0.5154734677864974,1
+2013,2,round_of_32,Gonzaga,Wichita St,0,0.6384349586803282,1
+2013,2,round_of_32,Harvard,Arizona,0,0.11853015616751109,0
+2013,2,round_of_32,Illinois,Miami,0,0.4438713194600667,0
+2013,2,round_of_32,Indiana,Temple,1,0.9153494324049621,1
+2013,2,round_of_32,Iowa St,Ohio St,0,0.16233313015672343,0
+2013,2,round_of_32,Kansas,North Carolina,1,0.40915539861715683,0
+2013,2,round_of_32,La Salle,Ole Miss,1,0.7284250918506927,1
+2013,2,round_of_32,Louisville,Colorado St,1,0.9269084315897258,1
+2013,2,round_of_32,Marquette,Butler,1,0.6799726733092268,1
+2013,2,round_of_32,Memphis,Michigan St,0,0.27063154749848845,0
+2013,2,round_of_32,Miami,Illinois,1,0.5561286817542592,1
+2013,2,round_of_32,Michigan,VCU,1,0.8386712435872763,1
+2013,2,round_of_32,Michigan St,Memphis,1,0.7293684537276753,1
+2013,2,round_of_32,Minnesota,Florida,0,0.20624453509251042,0
+2013,2,round_of_32,North Carolina,Kansas,0,0.5908446022595905,1
+2013,2,round_of_32,Ohio St,Iowa St,1,0.837666870067268,1
+2013,2,round_of_32,Ole Miss,La Salle,0,0.2715749082272683,0
+2013,2,round_of_32,Oregon,St Louis,1,0.8636667214100834,1
+2013,2,round_of_32,San Diego St,Florida Gulf Coast,0,0.4845265315149833,0
+2013,2,round_of_32,St Louis,Oregon,0,0.1363332785745662,0
+2013,2,round_of_32,Syracuse,California,1,0.8134856987847204,1
+2013,2,round_of_32,Temple,Indiana,0,0.084650567791541,0
+2013,2,round_of_32,VCU,Michigan,0,0.16132875742809125,0
+2013,2,round_of_32,Wichita St,Gonzaga,1,0.3615650419050758,0
+2013,3,sweet_sixteen,Arizona,Ohio St,0,0.4387090959591458,0
+2013,3,sweet_sixteen,Duke,Michigan St,1,0.6485407430043072,1
+2013,3,sweet_sixteen,Florida,Florida Gulf Coast,1,0.9571189762136073,1
+2013,3,sweet_sixteen,Florida Gulf Coast,Florida,0,0.04288102378351421,0
+2013,3,sweet_sixteen,Indiana,Syracuse,0,0.5297933093718044,1
+2013,3,sweet_sixteen,Kansas,Michigan,0,0.15884347142354766,0
+2013,3,sweet_sixteen,La Salle,Wichita St,0,0.6979213166312949,1
+2013,3,sweet_sixteen,Louisville,Oregon,1,0.7088287231783785,1
+2013,3,sweet_sixteen,Marquette,Miami,1,0.50760275616244,1
+2013,3,sweet_sixteen,Miami,Marquette,0,0.4923972470408835,0
+2013,3,sweet_sixteen,Michigan,Kansas,1,0.8411565301161558,1
+2013,3,sweet_sixteen,Michigan St,Duke,0,0.3514592599169746,0
+2013,3,sweet_sixteen,Ohio St,Arizona,1,0.5612909063910472,1
+2013,3,sweet_sixteen,Oregon,Louisville,0,0.2911712773991329,0
+2013,3,sweet_sixteen,Syracuse,Indiana,1,0.47020669349888483,0
+2013,3,sweet_sixteen,Wichita St,La Salle,1,0.30207868406920235,0
+2013,4,elite_eight,Duke,Louisville,0,0.32962229101971713,0
+2013,4,elite_eight,Florida,Michigan,0,0.41279487601043285,0
+2013,4,elite_eight,Louisville,Duke,1,0.6703777127896654,1
+2013,4,elite_eight,Marquette,Syracuse,0,0.207066309729336,0
+2013,4,elite_eight,Michigan,Florida,1,0.5872051277374005,1
+2013,4,elite_eight,Ohio St,Wichita St,0,0.5579549670724339,1
+2013,4,elite_eight,Syracuse,Marquette,1,0.7929336928093118,1
+2013,4,elite_eight,Wichita St,Ohio St,1,0.44204503534620765,0
+2013,5,final_four,Louisville,Wichita St,1,0.8438084556729102,1
+2013,5,final_four,Michigan,Syracuse,1,0.6809738694529407,1
+2013,5,final_four,Syracuse,Michigan,0,0.319026134717742,0
+2013,5,final_four,Wichita St,Louisville,0,0.1561915460587039,0
+2013,6,championship,Louisville,Michigan,1,0.4933149795212259,0
+2013,6,championship,Michigan,Louisville,0,0.5066850260093533,1
+2014,1,round_of_64,Albany,Florida,0,0.02370748818968271,0
+2014,1,round_of_64,American,Wisconsin,0,0.07510779008955205,0
+2014,1,round_of_64,Arizona,Weber St,1,0.9429772919935542,1
+2014,1,round_of_64,Arizona St,Texas,0,0.39462440559630285,0
+2014,1,round_of_64,BYU,Oregon,0,0.32975949907262153,0
+2014,1,round_of_64,Baylor,Nebraska,1,0.6209016752294457,1
+2014,1,round_of_64,Cal Poly,Wichita St,0,0.14860931685729317,0
+2014,1,round_of_64,Cincinnati,Harvard,0,0.39768932752690256,0
+2014,1,round_of_64,Coastal Carolina,Virginia,0,0.11725736533271867,0
+2014,1,round_of_64,Colorado,Pittsburgh,0,0.13620427044156572,0
+2014,1,round_of_64,Connecticut,St Josephs,1,0.8887715478798566,1
+2014,1,round_of_64,Creighton,Louisiana Lafayette,1,0.8054315202059673,1
+2014,1,round_of_64,Dayton,Ohio St,1,0.2506406538307884,0
+2014,1,round_of_64,Delaware,Michigan St,0,0.1232115378944685,0
+2014,1,round_of_64,Duke,Mercer,0,0.8479613224552996,1
+2014,1,round_of_64,Eastern Kentucky,Kansas,0,0.34293959947220265,0
+2014,1,round_of_64,Florida,Albany,1,0.9762925189951193,1
+2014,1,round_of_64,George Washington,Memphis,0,0.2814943845442911,0
+2014,1,round_of_64,Gonzaga,Oklahoma St,1,0.7189731582518313,1
+2014,1,round_of_64,Harvard,Cincinnati,1,0.602310702617854,1
+2014,1,round_of_64,Iowa St,North Carolina Central,1,0.8676875850464913,1
+2014,1,round_of_64,Kansas,Eastern Kentucky,1,0.657060460077845,1
+2014,1,round_of_64,Kansas St,Kentucky,0,0.18384887506618666,0
+2014,1,round_of_64,Kentucky,Kansas St,1,0.8161511230461536,1
+2014,1,round_of_64,Louisiana Lafayette,Creighton,0,0.19456851397816438,0
+2014,1,round_of_64,Louisville,Manhattan,1,0.9720412908849233,1
+2014,1,round_of_64,Manhattan,Louisville,0,0.02795871378928399,0
+2014,1,round_of_64,Massachusetts,Tennessee,0,0.14125200476907124,0
+2014,1,round_of_64,Memphis,George Washington,1,0.7185056129112699,1
+2014,1,round_of_64,Mercer,Duke,1,0.15203870566717767,0
+2014,1,round_of_64,Michigan,Wofford,1,0.9099839435751368,1
+2014,1,round_of_64,Michigan St,Delaware,1,0.8767884806858129,1
+2014,1,round_of_64,NC State,St Louis,0,0.5980601988642741,1
+2014,1,round_of_64,Nebraska,Baylor,0,0.379098343531836,0
+2014,1,round_of_64,New Mexico,Stanford,0,0.3985510307443982,0
+2014,1,round_of_64,New Mexico St,San Diego St,0,0.059654982794681115,0
+2014,1,round_of_64,North Carolina,Providence,1,0.4225033890347661,0
+2014,1,round_of_64,North Carolina Central,Iowa St,0,0.1323124399965708,0
+2014,1,round_of_64,North Dakota St,Oklahoma,1,0.5997473219633239,1
+2014,1,round_of_64,Ohio St,Dayton,0,0.7493593611394749,1
+2014,1,round_of_64,Oklahoma,North Dakota St,0,0.40025270824661613,0
+2014,1,round_of_64,Oklahoma St,Gonzaga,0,0.28102683920630295,0
+2014,1,round_of_64,Oregon,BYU,1,0.6702405083453095,1
+2014,1,round_of_64,Pittsburgh,Colorado,1,0.8637957280783245,1
+2014,1,round_of_64,Providence,North Carolina,0,0.5774966304128977,1
+2014,1,round_of_64,San Diego St,New Mexico St,1,0.9403450268533797,1
+2014,1,round_of_64,St Josephs,Connecticut,0,0.11122845543802481,0
+2014,1,round_of_64,St Louis,NC State,1,0.40193983138766476,0
+2014,1,round_of_64,Stanford,New Mexico,1,0.6014489773008145,1
+2014,1,round_of_64,Stephen F Austin,VCU,1,0.3131743188699705,0
+2014,1,round_of_64,Syracuse,Western Michigan,1,0.8471961285316056,1
+2014,1,round_of_64,Tennessee,Massachusetts,1,0.8587480048991849,1
+2014,1,round_of_64,Texas,Arizona St,1,0.6053756024216529,1
+2014,1,round_of_64,Tulsa,UCLA,0,0.11626205047906815,0
+2014,1,round_of_64,UCLA,Tulsa,1,0.8837379671921939,1
+2014,1,round_of_64,VCU,Stephen F Austin,0,0.6868257081995118,1
+2014,1,round_of_64,Villanova,Wisconsin Milwaukee,1,0.858519486516316,1
+2014,1,round_of_64,Virginia,Coastal Carolina,1,0.8827426667982307,1
+2014,1,round_of_64,Weber St,Arizona,0,0.0570227246980666,0
+2014,1,round_of_64,Western Michigan,Syracuse,0,0.15280389970690386,0
+2014,1,round_of_64,Wichita St,Cal Poly,1,0.8513907224184359,1
+2014,1,round_of_64,Wisconsin,American,1,0.9248922282688662,1
+2014,1,round_of_64,Wisconsin Milwaukee,Villanova,0,0.14148054558375744,0
+2014,1,round_of_64,Wofford,Michigan,0,0.0900160780726231,0
+2014,2,round_of_32,Arizona,Gonzaga,1,0.6868938960031541,1
+2014,2,round_of_32,Baylor,Creighton,1,0.5076724325540456,1
+2014,2,round_of_32,Connecticut,Villanova,1,0.7582120410111225,1
+2014,2,round_of_32,Creighton,Baylor,0,0.49232751273323233,0
+2014,2,round_of_32,Dayton,Syracuse,1,0.33079023237799976,0
+2014,2,round_of_32,Florida,Pittsburgh,1,0.8188812340434188,1
+2014,2,round_of_32,Gonzaga,Arizona,0,0.31310607676531044,0
+2014,2,round_of_32,Harvard,Michigan St,0,0.5487508974058276,1
+2014,2,round_of_32,Iowa St,North Carolina,1,0.6861493768108328,1
+2014,2,round_of_32,Kansas,Stanford,0,0.4230771818148664,0
+2014,2,round_of_32,Kentucky,Wichita St,1,0.6548562252919192,1
+2014,2,round_of_32,Louisville,St Louis,1,0.9113977070159142,1
+2014,2,round_of_32,Memphis,Virginia,0,0.4438231240246337,0
+2014,2,round_of_32,Mercer,Tennessee,0,0.09629423341252874,0
+2014,2,round_of_32,Michigan,Texas,1,0.7779798997945154,1
+2014,2,round_of_32,Michigan St,Harvard,1,0.4512491046421106,0
+2014,2,round_of_32,North Carolina,Iowa St,0,0.3138505760488786,0
+2014,2,round_of_32,North Dakota St,San Diego St,0,0.11456039533717315,0
+2014,2,round_of_32,Oregon,Wisconsin,0,0.13798169924423637,0
+2014,2,round_of_32,Pittsburgh,Florida,0,0.18111875296842214,0
+2014,2,round_of_32,San Diego St,North Dakota St,1,0.8854396055017434,1
+2014,2,round_of_32,St Louis,Louisville,0,0.0886022715811693,0
+2014,2,round_of_32,Stanford,Kansas,1,0.5769228046082018,1
+2014,2,round_of_32,Stephen F Austin,UCLA,0,0.2178153386087178,0
+2014,2,round_of_32,Syracuse,Dayton,0,0.6692097623806808,1
+2014,2,round_of_32,Tennessee,Mercer,1,0.9037057697790901,1
+2014,2,round_of_32,Texas,Michigan,0,0.22202007036521518,0
+2014,2,round_of_32,UCLA,Stephen F Austin,1,0.7821846628003212,1
+2014,2,round_of_32,Villanova,Connecticut,0,0.24178792731746607,0
+2014,2,round_of_32,Virginia,Memphis,1,0.5561768447207762,1
+2014,2,round_of_32,Wichita St,Kentucky,0,0.34514374609023457,0
+2014,2,round_of_32,Wisconsin,Oregon,1,0.862018280207265,1
+2014,3,sweet_sixteen,Arizona,San Diego St,1,0.5422375545893495,1
+2014,3,sweet_sixteen,Baylor,Wisconsin,0,0.2556592242876453,0
+2014,3,sweet_sixteen,Connecticut,Iowa St,1,0.7271154990517376,1
+2014,3,sweet_sixteen,Dayton,Stanford,1,0.44234469954697847,0
+2014,3,sweet_sixteen,Florida,UCLA,1,0.8682188695279333,1
+2014,3,sweet_sixteen,Iowa St,Connecticut,0,0.272884440523267,0
+2014,3,sweet_sixteen,Kentucky,Louisville,1,0.23317335169990125,0
+2014,3,sweet_sixteen,Louisville,Kentucky,0,0.7668265995608081,1
+2014,3,sweet_sixteen,Michigan,Tennessee,1,0.45916702772576484,0
+2014,3,sweet_sixteen,Michigan St,Virginia,1,0.48888812686785393,0
+2014,3,sweet_sixteen,San Diego St,Arizona,0,0.45776234426939855,0
+2014,3,sweet_sixteen,Stanford,Dayton,0,0.5576552516020596,1
+2014,3,sweet_sixteen,Tennessee,Michigan,0,0.5408329371960402,1
+2014,3,sweet_sixteen,UCLA,Florida,0,0.1317810838511334,0
+2014,3,sweet_sixteen,Virginia,Michigan St,0,0.5111117713142682,1
+2014,3,sweet_sixteen,Wisconsin,Baylor,1,0.7443407116809533,1
+2014,4,elite_eight,Arizona,Wisconsin,0,0.5699992746966357,1
+2014,4,elite_eight,Connecticut,Michigan St,1,0.7409903533185831,1
+2014,4,elite_eight,Dayton,Florida,0,0.05805793998350092,0
+2014,4,elite_eight,Florida,Dayton,1,0.9419420458616545,1
+2014,4,elite_eight,Kentucky,Michigan,1,0.5572433824864774,1
+2014,4,elite_eight,Michigan,Kentucky,0,0.44275652300229995,0
+2014,4,elite_eight,Michigan St,Connecticut,0,0.259009562943895,0
+2014,4,elite_eight,Wisconsin,Arizona,1,0.4300005757338194,0
+2014,5,final_four,Connecticut,Florida,1,0.3363352220361313,0
+2014,5,final_four,Florida,Connecticut,0,0.6636646574978415,1
+2014,5,final_four,Kentucky,Wisconsin,1,0.46897966872951585,0
+2014,5,final_four,Wisconsin,Kentucky,0,0.5310202048236848,1
+2014,6,championship,Connecticut,Kentucky,1,0.6520790745556628,1
+2014,6,championship,Kentucky,Connecticut,0,0.34792077391519804,0
+2015,1,round_of_64,Albany,Oklahoma,0,0.1967608103861854,0
+2015,1,round_of_64,Arizona,Texas Southern,1,0.9774959999798132,1
+2015,1,round_of_64,Arkansas,Wofford,1,0.7356654285129312,1
+2015,1,round_of_64,Baylor,Georgia St,0,0.7318292056768592,1
+2015,1,round_of_64,Belmont,Virginia,0,0.028675280564574596,0
+2015,1,round_of_64,Buffalo,West Virginia,0,0.14215931104968732,0
+2015,1,round_of_64,Butler,Texas,1,0.6108512484396238,1
+2015,1,round_of_64,Cincinnati,Purdue,1,0.5147752111006925,1
+2015,1,round_of_64,Coastal Carolina,Wisconsin,0,0.010028475937141738,0
+2015,1,round_of_64,Davidson,Iowa,0,0.542292921144147,1
+2015,1,round_of_64,Dayton,Providence,1,0.5099773178831278,1
+2015,1,round_of_64,Duke,Robert Morris,1,0.9978537491513775,1
+2015,1,round_of_64,Eastern Washington,Georgetown,0,0.2515454157158404,0
+2015,1,round_of_64,Georgetown,Eastern Washington,1,0.748454589630025,1
+2015,1,round_of_64,Georgia,Michigan St,0,0.14951631389722764,0
+2015,1,round_of_64,Georgia St,Baylor,1,0.26817080142433747,0
+2015,1,round_of_64,Gonzaga,N Dakota St,1,0.9604574931795573,1
+2015,1,round_of_64,Hampton,Kentucky,0,4.767841992397626e-05,0
+2015,1,round_of_64,Harvard,N Carolina,0,0.23598980484575116,0
+2015,1,round_of_64,Indiana,Wichita St,0,0.054225317856672346,0
+2015,1,round_of_64,Iowa,Davidson,1,0.4577070801038774,0
+2015,1,round_of_64,Iowa St,UAB,0,0.8577488462804641,1
+2015,1,round_of_64,Kansas,New Mexico St,1,0.9176808280301428,1
+2015,1,round_of_64,Kentucky,Hampton,1,0.9999523215825438,1
+2015,1,round_of_64,LSU,NC State,0,0.3673731383371602,0
+2015,1,round_of_64,Lafayette,Villanova,0,0.02582254209701776,0
+2015,1,round_of_64,Louisville,UC Irvine,1,0.9031030960752922,1
+2015,1,round_of_64,Maryland,Valparaiso,1,0.6371239042864913,1
+2015,1,round_of_64,Michigan St,Georgia,1,0.850483686742148,1
+2015,1,round_of_64,Mississippi,Xavier,0,0.4341490781961073,0
+2015,1,round_of_64,N Carolina,Harvard,1,0.7640102002737607,1
+2015,1,round_of_64,N Dakota St,Gonzaga,0,0.03954250849046343,0
+2015,1,round_of_64,NC State,LSU,1,0.6326268610212068,1
+2015,1,round_of_64,New Mexico St,Kansas,0,0.08231917529164684,0
+2015,1,round_of_64,Northeastern,Notre Dame,0,0.025823163939082325,0
+2015,1,round_of_64,Northern Iowa,Wyoming,1,0.8659511170573904,1
+2015,1,round_of_64,Notre Dame,Northeastern,1,0.9741768369711611,1
+2015,1,round_of_64,Ohio St,VCU,1,0.6942206786180699,1
+2015,1,round_of_64,Oklahoma,Albany,1,0.8032391953324683,1
+2015,1,round_of_64,Oklahoma St,Oregon,0,0.12058341108127535,0
+2015,1,round_of_64,Oregon,Oklahoma St,1,0.8794165886259632,1
+2015,1,round_of_64,Providence,Dayton,0,0.49002268531982723,0
+2015,1,round_of_64,Purdue,Cincinnati,0,0.4852247882097154,0
+2015,1,round_of_64,Robert Morris,Duke,0,0.002146250959476495,0
+2015,1,round_of_64,SF Austin,Utah,0,0.11030323514240145,0
+2015,1,round_of_64,SMU,UCLA,0,0.24556973362823342,0
+2015,1,round_of_64,San Diego St,St Johns,1,0.4209360439675335,0
+2015,1,round_of_64,St Johns,San Diego St,0,0.5790639553595296,1
+2015,1,round_of_64,Texas,Butler,0,0.3891487546071128,0
+2015,1,round_of_64,Texas Southern,Arizona,0,0.022504000987471146,0
+2015,1,round_of_64,UAB,Iowa St,1,0.14225115813449069,0
+2015,1,round_of_64,UC Irvine,Louisville,0,0.0968969064094618,0
+2015,1,round_of_64,UCLA,SMU,1,0.754430268746297,1
+2015,1,round_of_64,Utah,SF Austin,1,0.8896967668797757,1
+2015,1,round_of_64,VCU,Ohio St,0,0.3057793224492808,0
+2015,1,round_of_64,Valparaiso,Maryland,0,0.36287610227826217,0
+2015,1,round_of_64,Villanova,Lafayette,1,0.9741774592050729,1
+2015,1,round_of_64,Virginia,Belmont,1,0.9713247206601872,1
+2015,1,round_of_64,West Virginia,Buffalo,1,0.8578406914631878,1
+2015,1,round_of_64,Wichita St,Indiana,1,0.9457746824011921,1
+2015,1,round_of_64,Wisconsin,Coastal Carolina,1,0.9899715245767384,1
+2015,1,round_of_64,Wofford,Arkansas,0,0.26433457549410516,0
+2015,1,round_of_64,Wyoming,Northern Iowa,0,0.1340488853345234,0
+2015,1,round_of_64,Xavier,Mississippi,1,0.565850924952545,1
+2015,2,round_of_32,Arizona,Ohio St,1,0.8045059313472473,1
+2015,2,round_of_32,Arkansas,N Carolina,0,0.3587046049831333,0
+2015,2,round_of_32,Butler,Notre Dame,0,0.07363983423178627,0
+2015,2,round_of_32,Cincinnati,Kentucky,0,3.893473044960423e-05,0
+2015,2,round_of_32,Dayton,Oklahoma,0,0.4939517079154498,0
+2015,2,round_of_32,Duke,San Diego St,1,0.9954542367417971,1
+2015,2,round_of_32,Georgetown,Utah,0,0.0902776510312993,0
+2015,2,round_of_32,Georgia St,Xavier,0,0.5743319316405965,1
+2015,2,round_of_32,Gonzaga,Iowa,1,0.8319813115214735,1
+2015,2,round_of_32,Iowa,Gonzaga,0,0.16801868439435957,0
+2015,2,round_of_32,Kansas,Wichita St,0,0.4115137591197078,0
+2015,2,round_of_32,Kentucky,Cincinnati,1,0.9999610652687162,1
+2015,2,round_of_32,Louisville,Northern Iowa,1,0.6653827429917599,1
+2015,2,round_of_32,Maryland,West Virginia,0,0.2941412963608984,0
+2015,2,round_of_32,Michigan St,Virginia,1,0.2052085429638715,0
+2015,2,round_of_32,N Carolina,Arkansas,1,0.6412953847125406,1
+2015,2,round_of_32,NC State,Villanova,1,0.037863442108142145,0
+2015,2,round_of_32,Northern Iowa,Louisville,0,0.3346172470348138,0
+2015,2,round_of_32,Notre Dame,Butler,1,0.9263601632438003,1
+2015,2,round_of_32,Ohio St,Arizona,0,0.19549406712972095,0
+2015,2,round_of_32,Oklahoma,Dayton,1,0.5060482909720435,1
+2015,2,round_of_32,Oregon,Wisconsin,0,0.05543170507771069,0
+2015,2,round_of_32,San Diego St,Duke,0,0.004545763161239323,0
+2015,2,round_of_32,UAB,UCLA,0,0.1690383219094642,0
+2015,2,round_of_32,UCLA,UAB,1,0.8309616787731091,1
+2015,2,round_of_32,Utah,Georgetown,1,0.9097223452898375,1
+2015,2,round_of_32,Villanova,NC State,0,0.9621365571112426,1
+2015,2,round_of_32,Virginia,Michigan St,0,0.7947914522709304,1
+2015,2,round_of_32,West Virginia,Maryland,1,0.7058586943387728,1
+2015,2,round_of_32,Wichita St,Kansas,1,0.5884862338048594,1
+2015,2,round_of_32,Wisconsin,Oregon,1,0.9445682938003438,1
+2015,2,round_of_32,Xavier,Georgia St,1,0.4256680711094294,0
+2015,3,sweet_sixteen,Arizona,Xavier,1,0.9697189639136075,1
+2015,3,sweet_sixteen,Duke,Utah,1,0.9668837961391911,1
+2015,3,sweet_sixteen,Gonzaga,UCLA,1,0.8558661969559564,1
+2015,3,sweet_sixteen,Kentucky,West Virginia,1,0.9996376731981087,1
+2015,3,sweet_sixteen,Louisville,NC State,1,0.7774137647081255,1
+2015,3,sweet_sixteen,Michigan St,Oklahoma,1,0.750267822208422,1
+2015,3,sweet_sixteen,N Carolina,Wisconsin,0,0.05740131242661864,0
+2015,3,sweet_sixteen,NC State,Louisville,0,0.22258622726919947,0
+2015,3,sweet_sixteen,Notre Dame,Wichita St,1,0.652972133767198,1
+2015,3,sweet_sixteen,Oklahoma,Michigan St,0,0.24973216812427385,0
+2015,3,sweet_sixteen,UCLA,Gonzaga,0,0.1441338000496208,0
+2015,3,sweet_sixteen,Utah,Duke,0,0.03311620187361084,0
+2015,3,sweet_sixteen,West Virginia,Kentucky,0,0.0003623267794126951,0
+2015,3,sweet_sixteen,Wichita St,Notre Dame,0,0.34702785454121254,0
+2015,3,sweet_sixteen,Wisconsin,N Carolina,1,0.9425986838631389,1
+2015,3,sweet_sixteen,Xavier,Arizona,0,0.030281034417661855,0
+2015,4,elite_eight,Arizona,Wisconsin,0,0.26458678212406017,0
+2015,4,elite_eight,Duke,Gonzaga,1,0.9582499614917857,1
+2015,4,elite_eight,Gonzaga,Duke,0,0.04175003439964892,0
+2015,4,elite_eight,Kentucky,Notre Dame,1,0.9982991875748942,1
+2015,4,elite_eight,Louisville,Michigan St,0,0.4563406622963283,0
+2015,4,elite_eight,Michigan St,Louisville,1,0.5436593193509601,1
+2015,4,elite_eight,Notre Dame,Kentucky,0,0.0017008122617909467,0
+2015,4,elite_eight,Wisconsin,Arizona,1,0.7354131978932416,1
+2015,5,final_four,Duke,Michigan St,1,0.9845638078872825,1
+2015,5,final_four,Kentucky,Wisconsin,0,0.9947260886078777,1
+2015,5,final_four,Michigan St,Duke,0,0.015436190726022059,0
+2015,5,final_four,Wisconsin,Kentucky,1,0.005273910708511706,0
+2015,6,championship,Duke,Wisconsin,1,0.8412459769887365,1
+2015,6,championship,Wisconsin,Duke,0,0.1587540027903331,0
+2016,1,round_of_64,Arizona,Wichita St,0,0.366680871365255,0
+2016,1,round_of_64,Arkansas Little Rock,Purdue,1,0.4241515086934043,0
+2016,1,round_of_64,Austin Peay,Kansas,0,0.03095494772259664,0
+2016,1,round_of_64,Baylor,Yale,0,0.650866421765335,1
+2016,1,round_of_64,Buffalo,Miami,0,0.04240922954646928,0
+2016,1,round_of_64,Butler,Texas Tech,1,0.5769175734959425,1
+2016,1,round_of_64,Cal St Bakersfield,Oklahoma,0,0.07131966599857895,0
+2016,1,round_of_64,California,Hawaii,0,0.367186853135863,0
+2016,1,round_of_64,Chattanooga,Indiana,0,0.06947699689066669,0
+2016,1,round_of_64,Cincinnati,St Josephs,0,0.6161679150522528,1
+2016,1,round_of_64,Colorado,Connecticut,0,0.21054256953295705,0
+2016,1,round_of_64,Connecticut,Colorado,1,0.7894574304687756,1
+2016,1,round_of_64,Dayton,Syracuse,0,0.05907526733621878,0
+2016,1,round_of_64,Duke,UNC Wilmington,1,0.7506420413568826,1
+2016,1,round_of_64,Florida Gulf Coast,North Carolina,0,0.059717968414879134,0
+2016,1,round_of_64,Fresno St,Utah,0,0.3369742233659648,0
+2016,1,round_of_64,Gonzaga,Seton Hall,1,0.5446385363574494,1
+2016,1,round_of_64,Hampton,Virginia,0,0.08200582348950783,0
+2016,1,round_of_64,Hawaii,California,1,0.6328131468539959,1
+2016,1,round_of_64,Holy Cross,Oregon,0,0.13465924393116732,0
+2016,1,round_of_64,Indiana,Chattanooga,1,0.9305230031073857,1
+2016,1,round_of_64,Iona,Iowa St,0,0.2608130061978266,0
+2016,1,round_of_64,Iowa,Temple,1,0.3691708699032622,0
+2016,1,round_of_64,Iowa St,Iona,1,0.7391869937937594,1
+2016,1,round_of_64,Kansas,Austin Peay,1,0.9690450522748777,1
+2016,1,round_of_64,Kentucky,Stony Brook,1,0.8871150077831862,1
+2016,1,round_of_64,Maryland,South Dakota St,1,0.8697039501977626,1
+2016,1,round_of_64,Miami,Buffalo,1,0.9575907704512093,1
+2016,1,round_of_64,Michigan,Notre Dame,0,0.29373995826872257,0
+2016,1,round_of_64,Michigan St,Middle Tennessee St,0,0.8950450608266399,1
+2016,1,round_of_64,Middle Tennessee St,Michigan St,1,0.10495493916672059,0
+2016,1,round_of_64,North Carolina,Florida Gulf Coast,1,0.9402820315803933,1
+2016,1,round_of_64,Northern Iowa,Texas,1,0.2787198848513223,0
+2016,1,round_of_64,Notre Dame,Michigan,1,0.7062600417278316,1
+2016,1,round_of_64,Oklahoma,Cal St Bakersfield,1,0.9286803339967399,1
+2016,1,round_of_64,Oregon,Holy Cross,1,0.8653407560590218,1
+2016,1,round_of_64,Oregon St,VCU,0,0.272494271110675,0
+2016,1,round_of_64,Pittsburgh,Wisconsin,0,0.7491788848118849,1
+2016,1,round_of_64,Providence,USC,1,0.8394901308620468,1
+2016,1,round_of_64,Purdue,Arkansas Little Rock,0,0.5758484912992373,1
+2016,1,round_of_64,Seton Hall,Gonzaga,0,0.4553614636384312,0
+2016,1,round_of_64,South Dakota St,Maryland,0,0.13029604979882353,0
+2016,1,round_of_64,St Josephs,Cincinnati,1,0.38383208495021254,0
+2016,1,round_of_64,Stephen F Austin,West Virginia,1,0.2095196404114281,0
+2016,1,round_of_64,Stony Brook,Kentucky,0,0.11288499221244312,0
+2016,1,round_of_64,Syracuse,Dayton,1,0.9409247326636092,1
+2016,1,round_of_64,Temple,Iowa,0,0.6308291300960175,1
+2016,1,round_of_64,Texas,Northern Iowa,0,0.7212801151453385,1
+2016,1,round_of_64,Texas A&M,Wisconsin Green Bay,1,0.81613836635271,1
+2016,1,round_of_64,Texas Tech,Butler,0,0.4230824265066018,0
+2016,1,round_of_64,UNC Asheville,Villanova,0,0.031996528152777926,0
+2016,1,round_of_64,UNC Wilmington,Duke,0,0.24935795863494828,0
+2016,1,round_of_64,USC,Providence,0,0.16050986913935775,0
+2016,1,round_of_64,Utah,Fresno St,1,0.6630257766212643,1
+2016,1,round_of_64,VCU,Oregon St,1,0.7275057288887118,1
+2016,1,round_of_64,Villanova,UNC Asheville,1,0.9680034718450329,1
+2016,1,round_of_64,Virginia,Hampton,1,0.917994176504154,1
+2016,1,round_of_64,Weber St,Xavier,0,0.10472561992051886,0
+2016,1,round_of_64,West Virginia,Stephen F Austin,0,0.790480359579105,1
+2016,1,round_of_64,Wichita St,Arizona,1,0.6333191286308877,1
+2016,1,round_of_64,Wisconsin,Pittsburgh,1,0.25082111518753397,0
+2016,1,round_of_64,Wisconsin Green Bay,Texas A&M,0,0.18386163363871283,0
+2016,1,round_of_64,Xavier,Weber St,1,0.8952743800728544,1
+2016,1,round_of_64,Yale,Baylor,1,0.3491335782278191,0
+2016,2,round_of_32,Arkansas Little Rock,Iowa St,0,0.5518918106543118,1
+2016,2,round_of_32,Butler,Virginia,0,0.14249540137756533,0
+2016,2,round_of_32,Connecticut,Kansas,0,0.0724066849105279,0
+2016,2,round_of_32,Duke,Yale,1,0.7353124850929242,1
+2016,2,round_of_32,Gonzaga,Utah,1,0.6563989420589454,1
+2016,2,round_of_32,Hawaii,Maryland,0,0.1583804658575717,0
+2016,2,round_of_32,Indiana,Kentucky,1,0.6770537274513572,1
+2016,2,round_of_32,Iowa,Villanova,0,0.05242520212799244,0
+2016,2,round_of_32,Iowa St,Arkansas Little Rock,1,0.44810818934607155,0
+2016,2,round_of_32,Kansas,Connecticut,1,0.927593315091311,1
+2016,2,round_of_32,Kentucky,Indiana,0,0.3229462725659148,0
+2016,2,round_of_32,Maryland,Hawaii,1,0.8416195341414873,1
+2016,2,round_of_32,Miami,Wichita St,1,0.8130207769952255,1
+2016,2,round_of_32,Middle Tennessee St,Syracuse,0,0.13673144851348484,0
+2016,2,round_of_32,North Carolina,Providence,1,0.8060777241574236,1
+2016,2,round_of_32,Northern Iowa,Texas A&M,0,0.1679535514396748,0
+2016,2,round_of_32,Notre Dame,Stephen F Austin,1,0.5037326892818427,1
+2016,2,round_of_32,Oklahoma,VCU,1,0.8507821497218138,1
+2016,2,round_of_32,Oregon,St Josephs,1,0.8535102229256728,1
+2016,2,round_of_32,Providence,North Carolina,0,0.19392227584685606,0
+2016,2,round_of_32,St Josephs,Oregon,0,0.14648977707913363,0
+2016,2,round_of_32,Stephen F Austin,Notre Dame,0,0.4962673107142403,0
+2016,2,round_of_32,Syracuse,Middle Tennessee St,1,0.8632685514845183,1
+2016,2,round_of_32,Texas A&M,Northern Iowa,1,0.832046448561745,1
+2016,2,round_of_32,Utah,Gonzaga,0,0.3436010579433459,0
+2016,2,round_of_32,VCU,Oklahoma,0,0.149217850280569,0
+2016,2,round_of_32,Villanova,Iowa,1,0.9475747978745888,1
+2016,2,round_of_32,Virginia,Butler,1,0.8575045986257801,1
+2016,2,round_of_32,Wichita St,Miami,0,0.186979223006319,0
+2016,2,round_of_32,Wisconsin,Xavier,1,0.1548398852566546,0
+2016,2,round_of_32,Xavier,Wisconsin,0,0.8451601147501449,1
+2016,2,round_of_32,Yale,Duke,0,0.2646875149073774,0
+2016,3,sweet_sixteen,Duke,Oregon,0,0.4201443548379605,0
+2016,3,sweet_sixteen,Gonzaga,Syracuse,0,0.400925601103186,0
+2016,3,sweet_sixteen,Indiana,North Carolina,0,0.5020911832597966,1
+2016,3,sweet_sixteen,Iowa St,Virginia,0,0.14631009319930585,0
+2016,3,sweet_sixteen,Kansas,Maryland,1,0.8701849956226251,1
+2016,3,sweet_sixteen,Maryland,Kansas,0,0.12981500438932222,0
+2016,3,sweet_sixteen,Miami,Villanova,0,0.36580969991550855,0
+2016,3,sweet_sixteen,North Carolina,Indiana,1,0.49790881676664345,0
+2016,3,sweet_sixteen,Notre Dame,Wisconsin,1,0.7571733158248373,1
+2016,3,sweet_sixteen,Oklahoma,Texas A&M,1,0.768994270007979,1
+2016,3,sweet_sixteen,Oregon,Duke,1,0.5798556451905009,1
+2016,3,sweet_sixteen,Syracuse,Gonzaga,1,0.5990743989115771,1
+2016,3,sweet_sixteen,Texas A&M,Oklahoma,0,0.23100573001517533,0
+2016,3,sweet_sixteen,Villanova,Miami,1,0.6341903001147301,1
+2016,3,sweet_sixteen,Virginia,Iowa St,1,0.853689906815286,1
+2016,3,sweet_sixteen,Wisconsin,Notre Dame,0,0.242826684192796,0
+2016,4,elite_eight,Kansas,Villanova,0,0.5215077448942449,1
+2016,4,elite_eight,North Carolina,Notre Dame,1,0.7917150969338379,1
+2016,4,elite_eight,Notre Dame,North Carolina,0,0.2082849030874064,0
+2016,4,elite_eight,Oklahoma,Oregon,1,0.6911203648414791,1
+2016,4,elite_eight,Oregon,Oklahoma,0,0.30887963519546935,0
+2016,4,elite_eight,Syracuse,Virginia,1,0.4189716417953818,0
+2016,4,elite_eight,Villanova,Kansas,1,0.47849225514894567,0
+2016,4,elite_eight,Virginia,Syracuse,0,0.5810283582252072,1
+2016,5,final_four,North Carolina,Syracuse,1,0.6576034130962346,1
+2016,5,final_four,Oklahoma,Villanova,0,0.3189297670283823,0
+2016,5,final_four,Syracuse,North Carolina,0,0.3423965869304936,0
+2016,5,final_four,Villanova,Oklahoma,1,0.6810702330171602,1
+2016,6,championship,North Carolina,Villanova,0,0.34868054281870686,0
+2016,6,championship,Villanova,North Carolina,1,0.6513194572361029,1
+2017,1,round_of_64,Arizona,North Dakota,1,0.915585113917291,1
+2017,1,round_of_64,Arkansas,Seton Hall,1,0.7551619697114653,1
+2017,1,round_of_64,Baylor,New Mexico St,1,0.8933429417750547,1
+2017,1,round_of_64,Bucknell,West Virginia,0,0.05024717797360339,0
+2017,1,round_of_64,Butler,Winthrop,1,0.8238511810072235,1
+2017,1,round_of_64,Cincinnati,Kansas St,1,0.6191914742250755,1
+2017,1,round_of_64,Creighton,Rhode Island,0,0.6740211798238979,1
+2017,1,round_of_64,Dayton,Wichita St,0,0.02798109273995187,0
+2017,1,round_of_64,Duke,Troy,1,0.9082802240829498,1
+2017,1,round_of_64,East Tennessee St,Florida,0,0.0456465482553074,0
+2017,1,round_of_64,Florida,East Tennessee St,1,0.95435343908657,1
+2017,1,round_of_64,Florida Gulf Coast,Florida St,0,0.17441638728580725,0
+2017,1,round_of_64,Florida St,Florida Gulf Coast,1,0.8255835597100317,1
+2017,1,round_of_64,Gonzaga,South Dakota St,1,0.9778619076168045,1
+2017,1,round_of_64,Iona,Oregon,0,0.04437480460721985,0
+2017,1,round_of_64,Iowa St,Nevada,1,0.8443572770940928,1
+2017,1,round_of_64,Jacksonville St,Louisville,0,0.05572249557573128,0
+2017,1,round_of_64,Kansas,UC Davis,1,0.955620263051761,1
+2017,1,round_of_64,Kansas St,Cincinnati,0,0.38080849382025567,0
+2017,1,round_of_64,Kent St,UCLA,0,0.09023631205070758,0
+2017,1,round_of_64,Kentucky,Northern Kentucky,1,0.9355783465367702,1
+2017,1,round_of_64,Louisville,Jacksonville St,1,0.9442774809767526,1
+2017,1,round_of_64,Marquette,South Carolina,0,0.16965215732964545,0
+2017,1,round_of_64,Maryland,Xavier,0,0.16453396203274037,0
+2017,1,round_of_64,Miami,Michigan St,0,0.685389670251955,1
+2017,1,round_of_64,Michigan,Oklahoma St,1,0.5983738931589648,1
+2017,1,round_of_64,Michigan St,Miami,1,0.31461033395959015,0
+2017,1,round_of_64,Middle Tennessee St,Minnesota,1,0.6215053231688153,1
+2017,1,round_of_64,Minnesota,Middle Tennessee St,0,0.37849462671515993,0
+2017,1,round_of_64,Mount St Marys,Villanova,0,0.05532599125407685,0
+2017,1,round_of_64,Nevada,Iowa St,0,0.15564269490790544,0
+2017,1,round_of_64,New Mexico St,Baylor,0,0.10665702315223638,0
+2017,1,round_of_64,North Carolina,Texas Southern,1,0.9547028698352378,1
+2017,1,round_of_64,North Dakota,Arizona,0,0.08441485164103618,0
+2017,1,round_of_64,Northern Kentucky,Kentucky,0,0.06442162660493124,0
+2017,1,round_of_64,Northwestern,Vanderbilt,1,0.5604962953978709,1
+2017,1,round_of_64,Notre Dame,Princeton,1,0.8194910668306831,1
+2017,1,round_of_64,Oklahoma St,Michigan,0,0.40162609290370843,0
+2017,1,round_of_64,Oregon,Iona,1,0.9556251797833991,1
+2017,1,round_of_64,Princeton,Notre Dame,0,0.18050890165449252,0
+2017,1,round_of_64,Purdue,Vermont,1,0.8156685310351267,1
+2017,1,round_of_64,Rhode Island,Creighton,1,0.325978790400153,0
+2017,1,round_of_64,SMU,USC,0,0.8013955325177256,1
+2017,1,round_of_64,Seton Hall,Arkansas,0,0.24483803389972122,0
+2017,1,round_of_64,South Carolina,Marquette,1,0.8303478345006873,1
+2017,1,round_of_64,South Dakota St,Gonzaga,0,0.022138081058103432,0
+2017,1,round_of_64,St Marys,VCU,1,0.8877282857031957,1
+2017,1,round_of_64,Texas Southern,North Carolina,0,0.045297107541098336,0
+2017,1,round_of_64,Troy,Duke,0,0.09171973879351565,0
+2017,1,round_of_64,UC Davis,Kansas,0,0.044379714761468174,0
+2017,1,round_of_64,UCLA,Kent St,1,0.9097636577308856,1
+2017,1,round_of_64,UNC Wilmington,Virginia,0,0.32911080148640914,0
+2017,1,round_of_64,USC,SMU,1,0.19860444591284726,0
+2017,1,round_of_64,VCU,St Marys,0,0.11227170851670477,0
+2017,1,round_of_64,Vanderbilt,Northwestern,0,0.43950370941347083,0
+2017,1,round_of_64,Vermont,Purdue,0,0.18433142527656748,0
+2017,1,round_of_64,Villanova,Mount St Marys,1,0.9446739814036009,1
+2017,1,round_of_64,Virginia,UNC Wilmington,1,0.6708891514738468,1
+2017,1,round_of_64,Virginia Tech,Wisconsin,0,0.09169294195385885,0
+2017,1,round_of_64,West Virginia,Bucknell,1,0.9497528081596563,1
+2017,1,round_of_64,Wichita St,Dayton,1,0.9720189056827119,1
+2017,1,round_of_64,Winthrop,Butler,0,0.17614877682501792,0
+2017,1,round_of_64,Wisconsin,Virginia Tech,1,0.9083070596728113,1
+2017,1,round_of_64,Xavier,Maryland,1,0.8354660193383655,1
+2017,2,round_of_32,Arizona,St Marys,1,0.38850263475207397,0
+2017,2,round_of_32,Arkansas,North Carolina,0,0.21099053252540104,0
+2017,2,round_of_32,Baylor,USC,1,0.6754144284330504,1
+2017,2,round_of_32,Butler,Middle Tennessee St,1,0.4928147349602474,0
+2017,2,round_of_32,Cincinnati,UCLA,0,0.681041146372622,1
+2017,2,round_of_32,Duke,South Carolina,0,0.4672924409685327,0
+2017,2,round_of_32,Florida,Virginia,1,0.8091021739023736,1
+2017,2,round_of_32,Florida St,Xavier,0,0.38529667539311524,0
+2017,2,round_of_32,Gonzaga,Northwestern,1,0.9544737521441863,1
+2017,2,round_of_32,Iowa St,Purdue,0,0.5290130202685502,1
+2017,2,round_of_32,Kansas,Michigan St,1,0.9477633987419554,1
+2017,2,round_of_32,Kentucky,Wichita St,1,0.40116202787646155,0
+2017,2,round_of_32,Louisville,Michigan,0,0.365940342837152,0
+2017,2,round_of_32,Michigan,Louisville,1,0.6340597231794846,1
+2017,2,round_of_32,Michigan St,Kansas,0,0.052236608288541174,0
+2017,2,round_of_32,Middle Tennessee St,Butler,0,0.5071852612058416,1
+2017,2,round_of_32,North Carolina,Arkansas,1,0.789009501933717,1
+2017,2,round_of_32,Northwestern,Gonzaga,0,0.04552625685047658,0
+2017,2,round_of_32,Notre Dame,West Virginia,0,0.2842098327636025,0
+2017,2,round_of_32,Oregon,Rhode Island,1,0.8948883949597987,1
+2017,2,round_of_32,Purdue,Iowa St,1,0.4709870892542405,0
+2017,2,round_of_32,Rhode Island,Oregon,0,0.1051116085308796,0
+2017,2,round_of_32,South Carolina,Duke,1,0.5327076298571238,1
+2017,2,round_of_32,St Marys,Arizona,0,0.6114974328408982,1
+2017,2,round_of_32,UCLA,Cincinnati,1,0.31895893227242833,0
+2017,2,round_of_32,USC,Baylor,0,0.32458557970255386,0
+2017,2,round_of_32,Villanova,Wisconsin,0,0.48361296003362036,0
+2017,2,round_of_32,Virginia,Florida,0,0.1908978939919777,0
+2017,2,round_of_32,West Virginia,Notre Dame,1,0.7157902566603824,1
+2017,2,round_of_32,Wichita St,Kentucky,0,0.5988379936383181,1
+2017,2,round_of_32,Wisconsin,Villanova,1,0.5163870916594424,1
+2017,2,round_of_32,Xavier,Florida St,1,0.6147033333961202,1
+2017,3,sweet_sixteen,Arizona,Xavier,0,0.5853238205761839,1
+2017,3,sweet_sixteen,Baylor,South Carolina,0,0.548991158673304,1
+2017,3,sweet_sixteen,Butler,North Carolina,0,0.11763768743845794,0
+2017,3,sweet_sixteen,Florida,Wisconsin,1,0.5138974411948288,1
+2017,3,sweet_sixteen,Gonzaga,West Virginia,1,0.7138250433622175,1
+2017,3,sweet_sixteen,Kansas,Purdue,1,0.6771944925946867,1
+2017,3,sweet_sixteen,Kentucky,UCLA,1,0.6531210125664951,1
+2017,3,sweet_sixteen,Michigan,Oregon,0,0.5877741441077944,1
+2017,3,sweet_sixteen,North Carolina,Butler,1,0.8823623828530105,1
+2017,3,sweet_sixteen,Oregon,Michigan,1,0.41222597880964834,0
+2017,3,sweet_sixteen,Purdue,Kansas,0,0.32280565544007384,0
+2017,3,sweet_sixteen,South Carolina,Baylor,1,0.45100896693495857,0
+2017,3,sweet_sixteen,UCLA,Kentucky,0,0.3468791584168781,0
+2017,3,sweet_sixteen,West Virginia,Gonzaga,0,0.28617509497300375,0
+2017,3,sweet_sixteen,Wisconsin,Florida,0,0.48610267243098865,0
+2017,3,sweet_sixteen,Xavier,Arizona,1,0.4146762364184299,0
+2017,4,elite_eight,Florida,South Carolina,0,0.7134772463769237,1
+2017,4,elite_eight,Gonzaga,Xavier,1,0.8732386629341781,1
+2017,4,elite_eight,Kansas,Oregon,0,0.5696942437480841,1
+2017,4,elite_eight,Kentucky,North Carolina,0,0.38135814326700285,0
+2017,4,elite_eight,North Carolina,Kentucky,1,0.6186420967638709,1
+2017,4,elite_eight,Oregon,Kansas,1,0.4303059897307823,0
+2017,4,elite_eight,South Carolina,Florida,1,0.2865229028728757,0
+2017,4,elite_eight,Xavier,Gonzaga,0,0.12676138494305036,0
+2017,5,final_four,Gonzaga,South Carolina,1,0.833495309605067,1
+2017,5,final_four,North Carolina,Oregon,1,0.5557160862902646,1
+2017,5,final_four,Oregon,North Carolina,0,0.44428420076676783,0
+2017,5,final_four,South Carolina,Gonzaga,0,0.16650481567475095,0
+2017,6,championship,Gonzaga,North Carolina,0,0.6666724148726403,1
+2017,6,championship,North Carolina,Gonzaga,1,0.33332791909883186,0
+2018,1,round_of_64,Alabama,Virginia Tech,1,0.5539037912980319,1
+2018,1,round_of_64,Arizona,Buffalo,0,0.5755451293495535,1
+2018,1,round_of_64,Arkansas,Butler,0,0.34495861752775886,0
+2018,1,round_of_64,Auburn,College of Charleston,1,0.5622648359070198,1
+2018,1,round_of_64,Bucknell,Michigan St,0,0.031003669840766468,0
+2018,1,round_of_64,Buffalo,Arizona,1,0.42445486789792003,0
+2018,1,round_of_64,Butler,Arkansas,1,0.6550413819825365,1
+2018,1,round_of_64,Cal St Fullerton,Purdue,0,0.0764502718359792,0
+2018,1,round_of_64,Cincinnati,Georgia St,1,0.8826041016167178,1
+2018,1,round_of_64,Clemson,New Mexico St,1,0.7541150240783948,1
+2018,1,round_of_64,College of Charleston,Auburn,0,0.4377351613198327,0
+2018,1,round_of_64,Creighton,Kansas St,0,0.2062056872938885,0
+2018,1,round_of_64,Davidson,Kentucky,0,0.16146910997674974,0
+2018,1,round_of_64,Duke,Iona,1,0.9476761508098975,1
+2018,1,round_of_64,Florida,St Bonaventure,1,0.4523119174931423,0
+2018,1,round_of_64,Florida St,Missouri,1,0.694586146321553,1
+2018,1,round_of_64,Georgia St,Cincinnati,0,0.11739589658722828,0
+2018,1,round_of_64,Gonzaga,UNC Greensboro,1,0.7101449591620618,1
+2018,1,round_of_64,Houston,San Diego St,1,0.6574237573268557,1
+2018,1,round_of_64,Iona,Duke,0,0.05232384833057431,0
+2018,1,round_of_64,Kansas,Pennsylvania,1,0.867467101252188,1
+2018,1,round_of_64,Kansas St,Creighton,1,0.7937943128478916,1
+2018,1,round_of_64,Kentucky,Davidson,1,0.8385308889084001,1
+2018,1,round_of_64,Lipscomb,North Carolina,0,0.1650648731950139,0
+2018,1,round_of_64,Loyola Chicago,Miami,1,0.8503916048885242,1
+2018,1,round_of_64,Marshall,Wichita St,1,0.6939645493314326,1
+2018,1,round_of_64,Miami,Loyola Chicago,0,0.1496083944498293,0
+2018,1,round_of_64,Michigan,Montana,1,0.9097362529127203,1
+2018,1,round_of_64,Michigan St,Bucknell,1,0.9689963297296057,1
+2018,1,round_of_64,Missouri,Florida St,0,0.30541385386219444,0
+2018,1,round_of_64,Montana,Michigan,0,0.090263745912961,0
+2018,1,round_of_64,Murray St,West Virginia,0,0.18101865736277173,0
+2018,1,round_of_64,NC State,Seton Hall,0,0.5018078577147351,1
+2018,1,round_of_64,Nevada,Texas,1,0.4184633171914162,0
+2018,1,round_of_64,New Mexico St,Clemson,0,0.24588497439482132,0
+2018,1,round_of_64,North Carolina,Lipscomb,1,0.8349351244160317,1
+2018,1,round_of_64,Ohio St,South Dakota St,1,0.8915750569611361,1
+2018,1,round_of_64,Oklahoma,Rhode Island,0,0.2933955468916839,0
+2018,1,round_of_64,Pennsylvania,Kansas,0,0.13253289640620936,0
+2018,1,round_of_64,Providence,Texas A&M,0,0.5657986395540606,1
+2018,1,round_of_64,Purdue,Cal St Fullerton,1,0.9235497269401379,1
+2018,1,round_of_64,Radford,Villanova,0,0.013233269622748995,0
+2018,1,round_of_64,Rhode Island,Oklahoma,1,0.7066044526590244,1
+2018,1,round_of_64,San Diego St,Houston,0,0.34257624150188326,0
+2018,1,round_of_64,Seton Hall,NC State,1,0.4981921425018062,0
+2018,1,round_of_64,South Dakota St,Ohio St,0,0.10842494224289677,0
+2018,1,round_of_64,St Bonaventure,Florida,0,0.5476880812185417,1
+2018,1,round_of_64,Stephen F Austin,Texas Tech,0,0.18182784355627113,0
+2018,1,round_of_64,Syracuse,TCU,1,0.8138199248620004,1
+2018,1,round_of_64,TCU,Syracuse,0,0.1861800743500244,0
+2018,1,round_of_64,Tennessee,Wright St,1,0.8982546602560756,1
+2018,1,round_of_64,Texas,Nevada,0,0.5815366822811925,1
+2018,1,round_of_64,Texas A&M,Providence,1,0.4342013599135228,0
+2018,1,round_of_64,Texas Southern,Xavier,0,0.1960453614642397,0
+2018,1,round_of_64,Texas Tech,Stephen F Austin,1,0.818172154316265,1
+2018,1,round_of_64,UMBC,Virginia,1,0.04091007462148572,0
+2018,1,round_of_64,UNC Greensboro,Gonzaga,0,0.28985503851868333,0
+2018,1,round_of_64,Villanova,Radford,1,0.9867667301112898,1
+2018,1,round_of_64,Virginia,UMBC,0,0.9590899245793683,1
+2018,1,round_of_64,Virginia Tech,Alabama,0,0.44609620891599555,0
+2018,1,round_of_64,West Virginia,Murray St,1,0.8189813414165384,1
+2018,1,round_of_64,Wichita St,Marshall,0,0.3060354482756393,0
+2018,1,round_of_64,Wright St,Tennessee,0,0.10174533843693782,0
+2018,1,round_of_64,Xavier,Texas Southern,1,0.8039546353256155,1
+2018,2,round_of_32,Alabama,Villanova,0,0.012987401137180268,0
+2018,2,round_of_32,Auburn,Clemson,0,0.17504660831958602,0
+2018,2,round_of_32,Buffalo,Kentucky,0,0.1559043671428498,0
+2018,2,round_of_32,Butler,Purdue,0,0.22401469191457607,0
+2018,2,round_of_32,Cincinnati,Nevada,0,0.8353383834376694,1
+2018,2,round_of_32,Clemson,Auburn,1,0.8249533942034176,1
+2018,2,round_of_32,Duke,Rhode Island,1,0.8794967479223688,1
+2018,2,round_of_32,Florida,Texas Tech,0,0.2845794928779012,0
+2018,2,round_of_32,Florida St,Xavier,1,0.2763708289852348,0
+2018,2,round_of_32,Gonzaga,Ohio St,1,0.19656770446696528,0
+2018,2,round_of_32,Houston,Michigan,0,0.10368132612913881,0
+2018,2,round_of_32,Kansas,Seton Hall,1,0.797101578043055,1
+2018,2,round_of_32,Kansas St,UMBC,1,0.7329467008425219,1
+2018,2,round_of_32,Kentucky,Buffalo,1,0.8440956325257168,1
+2018,2,round_of_32,Loyola Chicago,Tennessee,1,0.6524241844157891,1
+2018,2,round_of_32,Marshall,West Virginia,0,0.14346909358842933,0
+2018,2,round_of_32,Michigan,Houston,1,0.8963186752126351,1
+2018,2,round_of_32,Michigan St,Syracuse,0,0.8823702580492866,1
+2018,2,round_of_32,Nevada,Cincinnati,1,0.16466161813105867,0
+2018,2,round_of_32,North Carolina,Texas A&M,0,0.6415519798309651,1
+2018,2,round_of_32,Ohio St,Gonzaga,0,0.8034322982923175,1
+2018,2,round_of_32,Purdue,Butler,1,0.7759853087338887,1
+2018,2,round_of_32,Rhode Island,Duke,0,0.12050325328635168,0
+2018,2,round_of_32,Seton Hall,Kansas,0,0.2028984233108832,0
+2018,2,round_of_32,Syracuse,Michigan St,1,0.11762974212170503,0
+2018,2,round_of_32,Tennessee,Loyola Chicago,0,0.3475758159577935,0
+2018,2,round_of_32,Texas A&M,North Carolina,1,0.35844802279174853,0
+2018,2,round_of_32,Texas Tech,Florida,1,0.7154205100616523,1
+2018,2,round_of_32,UMBC,Kansas St,0,0.2670532975343857,0
+2018,2,round_of_32,Villanova,Alabama,1,0.98701259893734,1
+2018,2,round_of_32,West Virginia,Marshall,1,0.8565309061020799,1
+2018,2,round_of_32,Xavier,Florida St,0,0.7236291721773842,1
+2018,3,sweet_sixteen,Clemson,Kansas,0,0.34303841122430684,0
+2018,3,sweet_sixteen,Duke,Syracuse,1,0.8335771799914266,1
+2018,3,sweet_sixteen,Florida St,Gonzaga,1,0.4078012225723481,0
+2018,3,sweet_sixteen,Gonzaga,Florida St,0,0.5921987811739299,1
+2018,3,sweet_sixteen,Kansas,Clemson,1,0.6569615942564521,1
+2018,3,sweet_sixteen,Kansas St,Kentucky,1,0.3847436191670856,0
+2018,3,sweet_sixteen,Kentucky,Kansas St,0,0.6152563846174762,1
+2018,3,sweet_sixteen,Loyola Chicago,Nevada,1,0.893065565115226,1
+2018,3,sweet_sixteen,Michigan,Texas A&M,1,0.8354495119693629,1
+2018,3,sweet_sixteen,Nevada,Loyola Chicago,0,0.1069344360137515,0
+2018,3,sweet_sixteen,Purdue,Texas Tech,0,0.7464251134171692,1
+2018,3,sweet_sixteen,Syracuse,Duke,0,0.16642282131895805,0
+2018,3,sweet_sixteen,Texas A&M,Michigan,0,0.16455049080124357,0
+2018,3,sweet_sixteen,Texas Tech,Purdue,1,0.25357489224427004,0
+2018,3,sweet_sixteen,Villanova,West Virginia,1,0.9428411174209377,1
+2018,3,sweet_sixteen,West Virginia,Villanova,0,0.057158883889692695,0
+2018,4,elite_eight,Duke,Kansas,0,0.6446715438730792,1
+2018,4,elite_eight,Florida St,Michigan,0,0.10304236123603576,0
+2018,4,elite_eight,Kansas,Duke,1,0.3553284653510741,0
+2018,4,elite_eight,Kansas St,Loyola Chicago,0,0.21518695447169892,0
+2018,4,elite_eight,Loyola Chicago,Kansas St,1,0.7848130490825502,1
+2018,4,elite_eight,Michigan,Florida St,1,0.8969576409184727,1
+2018,4,elite_eight,Texas Tech,Villanova,0,0.04484288149277324,0
+2018,4,elite_eight,Villanova,Texas Tech,1,0.9551571201224057,1
+2018,5,final_four,Kansas,Villanova,0,0.09508364458804267,0
+2018,5,final_four,Loyola Chicago,Michigan,0,0.49872552016741845,0
+2018,5,final_four,Michigan,Loyola Chicago,1,0.5012744864495939,1
+2018,5,final_four,Villanova,Kansas,1,0.9049163598087058,1
+2018,6,championship,Michigan,Villanova,0,0.13528157737614893,0
+2018,6,championship,Villanova,Michigan,1,0.8647184289708405,1
+2019,1,round_of_64,Abilene Christian,Kentucky,0,0.02556458916848951,0
+2019,1,round_of_64,Arizona St,Buffalo,0,0.11380226151554541,0
+2019,1,round_of_64,Auburn,New Mexico St,1,0.9395298112100843,1
+2019,1,round_of_64,Baylor,Syracuse,1,0.5343950070277304,1
+2019,1,round_of_64,Belmont,Maryland,0,0.4390680251766756,0
+2019,1,round_of_64,Bradley,Michigan St,0,0.01752413523949401,0
+2019,1,round_of_64,Buffalo,Arizona St,1,0.8861977384844558,1
+2019,1,round_of_64,Central Florida,VCU,1,0.6672276202620371,1
+2019,1,round_of_64,Cincinnati,Iowa,0,0.5593763128385979,1
+2019,1,round_of_64,Colgate,Tennessee,0,0.07190560914416129,0
+2019,1,round_of_64,Duke,North Dakota St,1,0.9681597512970112,1
+2019,1,round_of_64,Fairleigh Dickinson,Gonzaga,0,0.02542214321718838,0
+2019,1,round_of_64,Florida,Nevada,1,0.6881599392650596,1
+2019,1,round_of_64,Florida St,Vermont,1,0.947702267339048,1
+2019,1,round_of_64,Gardner Webb,Virginia,0,0.026164499570601882,0
+2019,1,round_of_64,Georgia St,Houston,0,0.25013337078190784,0
+2019,1,round_of_64,Gonzaga,Fairleigh Dickinson,1,0.9745778567828126,1
+2019,1,round_of_64,Houston,Georgia St,1,0.7498666292180981,1
+2019,1,round_of_64,Iona,North Carolina,0,0.044075762630916934,0
+2019,1,round_of_64,Iowa,Cincinnati,1,0.4406236871614035,0
+2019,1,round_of_64,Iowa St,Ohio St,0,0.7174575059965429,1
+2019,1,round_of_64,Kansas,Northeastern,1,0.9527912064154507,1
+2019,1,round_of_64,Kansas St,UC Irvine,0,0.7837534924612519,1
+2019,1,round_of_64,Kentucky,Abilene Christian,1,0.9744354108315114,1
+2019,1,round_of_64,LSU,Yale,1,0.8803360615968107,1
+2019,1,round_of_64,Liberty,Mississippi St,1,0.27825827348858895,0
+2019,1,round_of_64,Louisville,Minnesota,0,0.1392480300415034,0
+2019,1,round_of_64,Marquette,Murray St,0,0.11250094524485067,0
+2019,1,round_of_64,Maryland,Belmont,1,0.5609319748233272,1
+2019,1,round_of_64,Michigan,Montana,1,0.9599171923608596,1
+2019,1,round_of_64,Michigan St,Bradley,1,0.9824758647605065,1
+2019,1,round_of_64,Minnesota,Louisville,1,0.8607519699584972,1
+2019,1,round_of_64,Mississippi St,Liberty,0,0.7217417265114148,1
+2019,1,round_of_64,Montana,Michigan,0,0.040082807639141994,0
+2019,1,round_of_64,Murray St,Marquette,1,0.8874990547551511,1
+2019,1,round_of_64,Nevada,Florida,0,0.31184006073494164,0
+2019,1,round_of_64,New Mexico St,Auburn,0,0.060470188789916765,0
+2019,1,round_of_64,North Carolina,Iona,1,0.9559242373690848,1
+2019,1,round_of_64,North Dakota St,Duke,0,0.03184024870299016,0
+2019,1,round_of_64,Northeastern,Kansas,0,0.04720879358455057,0
+2019,1,round_of_64,Northern Kentucky,Texas Tech,0,0.033206024569953835,0
+2019,1,round_of_64,Ohio St,Iowa St,1,0.28254249400345943,0
+2019,1,round_of_64,Oklahoma,Ole Miss,1,0.8672972208165598,1
+2019,1,round_of_64,Old Dominion,Purdue,0,0.06412606970620624,0
+2019,1,round_of_64,Ole Miss,Oklahoma,0,0.1327027791834401,0
+2019,1,round_of_64,Oregon,Wisconsin,1,0.24474625455095894,0
+2019,1,round_of_64,Purdue,Old Dominion,1,0.9358739302937956,1
+2019,1,round_of_64,Seton Hall,Wofford,0,0.06330524684329066,0
+2019,1,round_of_64,St Louis,Virginia Tech,0,0.05229863241774148,0
+2019,1,round_of_64,St Marys,Villanova,0,0.5542123482361073,1
+2019,1,round_of_64,Syracuse,Baylor,0,0.4656049929722693,0
+2019,1,round_of_64,Tennessee,Colgate,1,0.9280943908558412,1
+2019,1,round_of_64,Texas Tech,Northern Kentucky,1,0.9667939754300472,1
+2019,1,round_of_64,UC Irvine,Kansas St,1,0.2162465075387524,0
+2019,1,round_of_64,Utah St,Washington,0,0.08015670468764584,0
+2019,1,round_of_64,VCU,Central Florida,0,0.33277237973796275,0
+2019,1,round_of_64,Vermont,Florida St,0,0.05229773266095315,0
+2019,1,round_of_64,Villanova,St Marys,1,0.44578765176389556,0
+2019,1,round_of_64,Virginia,Gardner Webb,1,0.9738355004293991,1
+2019,1,round_of_64,Virginia Tech,St Louis,1,0.9477013675822598,1
+2019,1,round_of_64,Washington,Utah St,1,0.9198432953123541,1
+2019,1,round_of_64,Wisconsin,Oregon,0,0.7552537454490446,1
+2019,1,round_of_64,Wofford,Seton Hall,1,0.9366947531567096,1
+2019,1,round_of_64,Yale,LSU,0,0.11966393840319278,0
+2019,2,round_of_32,Auburn,Kansas,1,0.5257030931610276,1
+2019,2,round_of_32,Baylor,Gonzaga,0,0.03654953222620586,0
+2019,2,round_of_32,Buffalo,Texas Tech,0,0.26568178810787696,0
+2019,2,round_of_32,Central Florida,Duke,0,0.08372239769529224,0
+2019,2,round_of_32,Duke,Central Florida,1,0.9162776023047068,1
+2019,2,round_of_32,Florida,Michigan,0,0.15627894059996003,0
+2019,2,round_of_32,Florida St,Murray St,1,0.7729546405778357,1
+2019,2,round_of_32,Gonzaga,Baylor,1,0.9634504677737937,1
+2019,2,round_of_32,Houston,Ohio St,1,0.7542456404962897,1
+2019,2,round_of_32,Iowa,Tennessee,0,0.29643228151751255,0
+2019,2,round_of_32,Kansas,Auburn,0,0.47429690683896286,0
+2019,2,round_of_32,Kentucky,Wofford,1,0.7020180323652376,1
+2019,2,round_of_32,LSU,Maryland,1,0.8187183282037791,1
+2019,2,round_of_32,Liberty,Virginia Tech,0,0.07128727291414623,0
+2019,2,round_of_32,Maryland,LSU,0,0.18128167179621618,0
+2019,2,round_of_32,Michigan,Florida,1,0.8437210594000389,1
+2019,2,round_of_32,Michigan St,Minnesota,1,0.8542179118461509,1
+2019,2,round_of_32,Minnesota,Michigan St,0,0.1457820881538482,0
+2019,2,round_of_32,Murray St,Florida St,0,0.22704535942216447,0
+2019,2,round_of_32,North Carolina,Washington,1,0.7806657772065508,1
+2019,2,round_of_32,Ohio St,Houston,0,0.24575435950370966,0
+2019,2,round_of_32,Oklahoma,Virginia,0,0.14257982819762993,0
+2019,2,round_of_32,Oregon,UC Irvine,1,0.613983898485016,1
+2019,2,round_of_32,Purdue,Villanova,1,0.864686700432398,1
+2019,2,round_of_32,Tennessee,Iowa,1,0.7035677184824858,1
+2019,2,round_of_32,Texas Tech,Buffalo,1,0.7343182118921169,1
+2019,2,round_of_32,UC Irvine,Oregon,0,0.3860161015149838,0
+2019,2,round_of_32,Villanova,Purdue,0,0.13531329956759816,0
+2019,2,round_of_32,Virginia,Oklahoma,1,0.8574201718023684,1
+2019,2,round_of_32,Virginia Tech,Liberty,1,0.9287127270858538,1
+2019,2,round_of_32,Washington,North Carolina,0,0.21933422279344708,0
+2019,2,round_of_32,Wofford,Kentucky,0,0.29798196763475715,0
+2019,3,sweet_sixteen,Auburn,North Carolina,1,0.48763822092729403,0
+2019,3,sweet_sixteen,Duke,Virginia Tech,1,0.6862567891852788,1
+2019,3,sweet_sixteen,Florida St,Gonzaga,0,0.28311655001536484,0
+2019,3,sweet_sixteen,Gonzaga,Florida St,1,0.7168834499846231,1
+2019,3,sweet_sixteen,Houston,Kentucky,0,0.12408140880093159,0
+2019,3,sweet_sixteen,Kentucky,Houston,1,0.8759185911990611,1
+2019,3,sweet_sixteen,LSU,Michigan St,0,0.181011557009638,0
+2019,3,sweet_sixteen,Michigan,Texas Tech,0,0.49971634060377834,0
+2019,3,sweet_sixteen,Michigan St,LSU,1,0.8189884429903522,1
+2019,3,sweet_sixteen,North Carolina,Auburn,0,0.5123617790726924,1
+2019,3,sweet_sixteen,Oregon,Virginia,0,0.0634890207537195,0
+2019,3,sweet_sixteen,Purdue,Tennessee,1,0.512839035023593,1
+2019,3,sweet_sixteen,Tennessee,Purdue,0,0.48716096497639044,0
+2019,3,sweet_sixteen,Texas Tech,Michigan,1,0.5002836593962051,1
+2019,3,sweet_sixteen,Virginia,Oregon,1,0.9365109792462797,1
+2019,3,sweet_sixteen,Virginia Tech,Duke,0,0.31374321081470846,0
+2019,4,elite_eight,Auburn,Kentucky,1,0.30993840673369005,0
+2019,4,elite_eight,Duke,Michigan St,0,0.4177852373479362,0
+2019,4,elite_eight,Gonzaga,Texas Tech,0,0.6299539399277727,1
+2019,4,elite_eight,Kentucky,Auburn,0,0.6900615932662941,1
+2019,4,elite_eight,Michigan St,Duke,1,0.582214762652042,1
+2019,4,elite_eight,Purdue,Virginia,0,0.25587907203569993,0
+2019,4,elite_eight,Texas Tech,Gonzaga,1,0.37004606007220775,0
+2019,4,elite_eight,Virginia,Purdue,1,0.7441209279642841,1
+2019,5,final_four,Auburn,Virginia,0,0.32918687926681606,0
+2019,5,final_four,Michigan St,Texas Tech,0,0.6612426760200394,1
+2019,5,final_four,Texas Tech,Michigan St,1,0.33875732397993746,0
+2019,5,final_four,Virginia,Auburn,1,0.6708131207331638,1
+2019,6,championship,Texas Tech,Virginia,0,0.3711637757933148,0
+2019,6,championship,Virginia,Texas Tech,1,0.628836224206657,1
+2021,1,round_of_64,Abilene Christian,Texas,1,0.365860963598539,0
+2021,1,round_of_64,Alabama,Iona,1,0.9645958274899741,1
+2021,1,round_of_64,Arkansas,Colgate,1,0.9174612769996197,1
+2021,1,round_of_64,BYU,UCLA,0,0.15597507147518214,0
+2021,1,round_of_64,Baylor,Hartford,1,0.9981119390036611,1
+2021,1,round_of_64,Clemson,Rutgers,0,0.3643848427391113,0
+2021,1,round_of_64,Cleveland St,Houston,0,0.0635998952725519,0
+2021,1,round_of_64,Colgate,Arkansas,0,0.08253872536529491,0
+2021,1,round_of_64,Colorado,Georgetown,1,0.8705656362650408,1
+2021,1,round_of_64,Connecticut,Maryland,0,0.4750024619567361,0
+2021,1,round_of_64,Creighton,Santa Barbara,1,0.7184278219262521,1
+2021,1,round_of_64,Drake,USC,0,0.14436079744193223,0
+2021,1,round_of_64,Drexel,Illinois,0,0.02967420887056157,0
+2021,1,round_of_64,Eastern Washington,Kansas,0,0.06806616807727905,0
+2021,1,round_of_64,Florida,Virginia Tech,1,0.6798230389031247,1
+2021,1,round_of_64,Florida St,UNC Greensboro,1,0.9203319206146232,1
+2021,1,round_of_64,Georgetown,Colorado,0,0.12943436574031328,0
+2021,1,round_of_64,Georgia Tech,Loyola Chicago,0,0.2675407746498271,0
+2021,1,round_of_64,Gonzaga,Norfolk St,1,0.9915117027003866,1
+2021,1,round_of_64,Grand Canyon,Iowa,0,0.06466393281536499,0
+2021,1,round_of_64,Hartford,Baylor,0,0.001888061080506171,0
+2021,1,round_of_64,Houston,Cleveland St,1,0.9364001069873453,1
+2021,1,round_of_64,Illinois,Drexel,1,0.970325792415449,1
+2021,1,round_of_64,Iona,Alabama,0,0.03540417380592348,0
+2021,1,round_of_64,Iowa,Grand Canyon,1,0.9353360694797298,1
+2021,1,round_of_64,Kansas,Eastern Washington,1,0.9319338339037294,1
+2021,1,round_of_64,LSU,St Bonaventure,1,0.5620631218831132,1
+2021,1,round_of_64,Liberty,Oklahoma St,0,0.06733667680960492,0
+2021,1,round_of_64,Loyola Chicago,Georgia Tech,1,0.7324592248890753,1
+2021,1,round_of_64,Maryland,Connecticut,1,0.5249975391314327,1
+2021,1,round_of_64,Michigan,Texas Southern,1,0.9798553683154086,1
+2021,1,round_of_64,Missouri,Oklahoma,0,0.7003164819531189,1
+2021,1,round_of_64,Morehead St,West Virginia,0,0.449355696853164,0
+2021,1,round_of_64,Norfolk St,Gonzaga,0,0.008488297675508218,0
+2021,1,round_of_64,North Carolina,Wisconsin,0,0.35324736526587325,0
+2021,1,round_of_64,North Texas,Purdue,1,0.2543747875245516,0
+2021,1,round_of_64,Ohio,Virginia,1,0.17530337745417793,0
+2021,1,round_of_64,Ohio St,Oral Roberts,0,0.8489235766516811,1
+2021,1,round_of_64,Oklahoma,Missouri,1,0.2996835175530521,0
+2021,1,round_of_64,Oklahoma St,Liberty,1,0.9326633247298896,1
+2021,1,round_of_64,Oral Roberts,Ohio St,1,0.15107642821503653,0
+2021,1,round_of_64,Oregon St,Tennessee,1,0.8762052572010579,1
+2021,1,round_of_64,Purdue,North Texas,0,0.7456252171248408,1
+2021,1,round_of_64,Rutgers,Clemson,1,0.6356151582715316,1
+2021,1,round_of_64,San Diego St,Syracuse,0,0.2819063909262606,0
+2021,1,round_of_64,Santa Barbara,Creighton,0,0.28157218167383347,0
+2021,1,round_of_64,St Bonaventure,LSU,0,0.43793687753770355,0
+2021,1,round_of_64,Syracuse,San Diego St,1,0.7180936113167518,1
+2021,1,round_of_64,Tennessee,Oregon St,0,0.12379474472934517,0
+2021,1,round_of_64,Texas,Abilene Christian,0,0.6341390436469975,1
+2021,1,round_of_64,Texas Southern,Michigan,0,0.020144632566186305,0
+2021,1,round_of_64,Texas Tech,Utah St,1,0.6974173857413046,1
+2021,1,round_of_64,UCLA,BYU,1,0.8440249299834848,1
+2021,1,round_of_64,UNC Greensboro,Florida St,0,0.07966808118271744,0
+2021,1,round_of_64,USC,Drake,1,0.8556392039266963,1
+2021,1,round_of_64,Utah St,Texas Tech,0,0.30258261659689945,0
+2021,1,round_of_64,Villanova,Winthrop,1,0.9430160152060877,1
+2021,1,round_of_64,Virginia,Ohio,0,0.8246966260897596,1
+2021,1,round_of_64,Virginia Tech,Florida,0,0.3201769620466687,0
+2021,1,round_of_64,West Virginia,Morehead St,1,0.5506443108742003,1
+2021,1,round_of_64,Winthrop,Villanova,0,0.056983985750251376,0
+2021,1,round_of_64,Wisconsin,North Carolina,1,0.6467526341965549,1
+2021,2,round_of_32,Abilene Christian,UCLA,0,0.029047040652517425,0
+2021,2,round_of_32,Alabama,Maryland,1,0.8610081239371115,1
+2021,2,round_of_32,Arkansas,Texas Tech,1,0.8246569351719879,1
+2021,2,round_of_32,Baylor,Wisconsin,1,0.9779750316087087,1
+2021,2,round_of_32,Colorado,Florida St,0,0.6366830074897546,1
+2021,2,round_of_32,Creighton,Ohio,1,0.8147380994151296,1
+2021,2,round_of_32,Florida,Oral Roberts,0,0.8081397231742459,1
+2021,2,round_of_32,Florida St,Colorado,1,0.36331698342971636,0
+2021,2,round_of_32,Gonzaga,Oklahoma,1,0.973675858910555,1
+2021,2,round_of_32,Houston,Rutgers,1,0.662079666923918,1
+2021,2,round_of_32,Illinois,Loyola Chicago,0,0.6435700637053018,1
+2021,2,round_of_32,Iowa,Oregon,0,0.34366719862580053,0
+2021,2,round_of_32,Kansas,USC,0,0.10144151292799641,0
+2021,2,round_of_32,LSU,Michigan,0,0.23264163541872804,0
+2021,2,round_of_32,Loyola Chicago,Illinois,1,0.35642993191203043,0
+2021,2,round_of_32,Maryland,Alabama,0,0.1389918750153943,0
+2021,2,round_of_32,Michigan,LSU,1,0.767358361170488,1
+2021,2,round_of_32,North Texas,Villanova,0,0.16098345998541475,0
+2021,2,round_of_32,Ohio,Creighton,0,0.1852619013752581,0
+2021,2,round_of_32,Oklahoma,Gonzaga,0,0.02632414059973705,0
+2021,2,round_of_32,Oklahoma St,Oregon St,0,0.22752417676178396,0
+2021,2,round_of_32,Oral Roberts,Florida,1,0.19186027908370049,0
+2021,2,round_of_32,Oregon,Iowa,1,0.6563327955496717,1
+2021,2,round_of_32,Oregon St,Oklahoma St,1,0.7724758233389785,1
+2021,2,round_of_32,Rutgers,Houston,0,0.33792033111778036,0
+2021,2,round_of_32,Syracuse,West Virginia,1,0.877195212778747,1
+2021,2,round_of_32,Texas Tech,Arkansas,0,0.17534306012292997,0
+2021,2,round_of_32,UCLA,Abilene Christian,1,0.9709529594818992,1
+2021,2,round_of_32,USC,Kansas,1,0.8985584841060293,1
+2021,2,round_of_32,Villanova,North Texas,1,0.8390165407218595,1
+2021,2,round_of_32,West Virginia,Syracuse,0,0.12280478678068125,0
+2021,2,round_of_32,Wisconsin,Baylor,0,0.022024968102310426,0
+2021,3,sweet_sixteen,Alabama,UCLA,0,0.25655579131556083,0
+2021,3,sweet_sixteen,Arkansas,Oral Roberts,1,0.9258967281303584,1
+2021,3,sweet_sixteen,Baylor,Villanova,1,0.981707589949002,1
+2021,3,sweet_sixteen,Creighton,Gonzaga,0,0.06690174170798152,0
+2021,3,sweet_sixteen,Florida St,Michigan,0,0.181201745344319,0
+2021,3,sweet_sixteen,Gonzaga,Creighton,1,0.9330982548944494,1
+2021,3,sweet_sixteen,Houston,Syracuse,1,0.7080677287264516,1
+2021,3,sweet_sixteen,Loyola Chicago,Oregon St,0,0.3689726423525977,0
+2021,3,sweet_sixteen,Michigan,Florida St,1,0.818798245736487,1
+2021,3,sweet_sixteen,Oral Roberts,Arkansas,0,0.0741032718984205,0
+2021,3,sweet_sixteen,Oregon,USC,0,0.23393545021291157,0
+2021,3,sweet_sixteen,Oregon St,Loyola Chicago,1,0.6310273525754646,1
+2021,3,sweet_sixteen,Syracuse,Houston,0,0.2919322668679347,0
+2021,3,sweet_sixteen,UCLA,Alabama,1,0.7434442046192598,1
+2021,3,sweet_sixteen,USC,Oregon,1,0.766064541152854,1
+2021,3,sweet_sixteen,Villanova,Baylor,0,0.018292409073633734,0
+2021,4,elite_eight,Arkansas,Baylor,0,0.02292425019618959,0
+2021,4,elite_eight,Baylor,Arkansas,1,0.9770757479210748,1
+2021,4,elite_eight,Gonzaga,USC,1,0.5837610161811523,1
+2021,4,elite_eight,Houston,Oregon St,1,0.49751465129303185,0
+2021,4,elite_eight,Michigan,UCLA,0,0.4095168130639134,0
+2021,4,elite_eight,Oregon St,Houston,0,0.502485340238797,1
+2021,4,elite_eight,UCLA,Michigan,1,0.5904831776174304,1
+2021,4,elite_eight,USC,Gonzaga,0,0.4162389675423374,0
+2021,5,final_four,Baylor,Houston,1,0.9492080481948957,1
+2021,5,final_four,Gonzaga,UCLA,1,0.627853571221222,1
+2021,5,final_four,Houston,Baylor,0,0.050791946598414246,0
+2021,5,final_four,UCLA,Gonzaga,0,0.3721464155103489,0
+2021,6,championship,Baylor,Gonzaga,1,0.8366347215941468,1
+2021,6,championship,Gonzaga,Baylor,0,0.16336526037330734,0
+2022,1,round_of_64,Akron,UCLA,0,0.02636518940238566,0
+2022,1,round_of_64,Alabama,Notre Dame,0,0.34084574702525205,0
+2022,1,round_of_64,Arizona,Wright St,1,0.9757994563658833,1
+2022,1,round_of_64,Arkansas,Vermont,1,0.7225416677532083,1
+2022,1,round_of_64,Auburn,Jacksonville St,1,0.868474275333708,1
+2022,1,round_of_64,Baylor,Norfolk St,1,0.9506894855641026,1
+2022,1,round_of_64,Boise St,Memphis,0,0.5909941555810724,1
+2022,1,round_of_64,Cal St Fullerton,Duke,0,0.10907952973294545,0
+2022,1,round_of_64,Chattanooga,Illinois,0,0.40064599204671414,0
+2022,1,round_of_64,Colgate,Wisconsin,0,0.32297283416796235,0
+2022,1,round_of_64,Colorado St,Michigan,0,0.5536426783896481,1
+2022,1,round_of_64,Connecticut,New Mexico St,0,0.6554567275694664,1
+2022,1,round_of_64,Creighton,San Diego St,1,0.39113101777771725,0
+2022,1,round_of_64,Davidson,Michigan St,0,0.3521848668296135,0
+2022,1,round_of_64,Delaware,Villanova,0,0.04867259455507713,0
+2022,1,round_of_64,Duke,Cal St Fullerton,1,0.8909204689693,1
+2022,1,round_of_64,Georgia St,Gonzaga,0,0.04800703794836362,0
+2022,1,round_of_64,Gonzaga,Georgia St,1,0.9519929613419125,1
+2022,1,round_of_64,Houston,UAB,1,0.9341692153561403,1
+2022,1,round_of_64,Illinois,Chattanooga,1,0.5993540057913144,1
+2022,1,round_of_64,Indiana,St Marys,0,0.23818704634325005,0
+2022,1,round_of_64,Iowa,Richmond,0,0.8769676590689691,1
+2022,1,round_of_64,Iowa St,LSU,1,0.7266202054350107,1
+2022,1,round_of_64,Jacksonville St,Auburn,0,0.1315257231409121,0
+2022,1,round_of_64,Kansas,Texas Southern,1,0.9663254825483643,1
+2022,1,round_of_64,Kentucky,St Peters,0,0.9376771209088522,1
+2022,1,round_of_64,LSU,Iowa St,0,0.2733797936407422,0
+2022,1,round_of_64,Longwood,Tennessee,0,0.038177842794726156,0
+2022,1,round_of_64,Loyola Chicago,Ohio St,0,0.7856881077176885,1
+2022,1,round_of_64,Marquette,North Carolina,0,0.36341209471204383,0
+2022,1,round_of_64,Memphis,Boise St,1,0.4090058443458769,0
+2022,1,round_of_64,Miami,USC,1,0.6481858202106437,1
+2022,1,round_of_64,Michigan,Colorado St,1,0.44635732046054105,0
+2022,1,round_of_64,Michigan St,Davidson,1,0.647815132605142,1
+2022,1,round_of_64,Montana St,Texas Tech,0,0.09866589734058526,0
+2022,1,round_of_64,Murray St,San Francisco,1,0.6121402192465067,1
+2022,1,round_of_64,New Mexico St,Connecticut,1,0.34454327088852404,0
+2022,1,round_of_64,Norfolk St,Baylor,0,0.04931051370790136,0
+2022,1,round_of_64,North Carolina,Marquette,1,0.6365879052180413,1
+2022,1,round_of_64,Notre Dame,Alabama,1,0.6591542519294041,1
+2022,1,round_of_64,Ohio St,Loyola Chicago,1,0.21431189186514352,0
+2022,1,round_of_64,Providence,South Dakota St,1,0.6436492491948441,1
+2022,1,round_of_64,Purdue,Yale,1,0.8369893611643824,1
+2022,1,round_of_64,Richmond,Iowa,1,0.12303234019431139,0
+2022,1,round_of_64,San Diego St,Creighton,0,0.6088689821503116,1
+2022,1,round_of_64,San Francisco,Murray St,0,0.3878597801652727,0
+2022,1,round_of_64,Seton Hall,TCU,0,0.4205323414491868,0
+2022,1,round_of_64,South Dakota St,Providence,0,0.3563507487400958,0
+2022,1,round_of_64,St Marys,Indiana,1,0.7618129524177656,1
+2022,1,round_of_64,St Peters,Kentucky,1,0.06232287831075857,0
+2022,1,round_of_64,TCU,Seton Hall,1,0.5794676584771686,1
+2022,1,round_of_64,Tennessee,Longwood,1,0.9618221567947897,1
+2022,1,round_of_64,Texas,Virginia Tech,1,0.5529913951081898,1
+2022,1,round_of_64,Texas Southern,Kansas,0,0.03367451694630497,0
+2022,1,round_of_64,Texas Tech,Montana St,1,0.9013341016652846,1
+2022,1,round_of_64,UAB,Houston,0,0.06583078422395215,0
+2022,1,round_of_64,UCLA,Akron,1,0.9736348103664969,1
+2022,1,round_of_64,USC,Miami,0,0.35181417922438357,0
+2022,1,round_of_64,Vermont,Arkansas,0,0.2774583304418366,0
+2022,1,round_of_64,Villanova,Delaware,1,0.9513274048265864,1
+2022,1,round_of_64,Virginia Tech,Texas,0,0.44700860374167617,0
+2022,1,round_of_64,Wisconsin,Colgate,1,0.6770271633876928,1
+2022,1,round_of_64,Wright St,Arizona,0,0.024200543267395187,0
+2022,1,round_of_64,Yale,Purdue,0,0.16301063731041948,0
+2022,2,round_of_32,Arizona,TCU,1,0.9122249008943207,1
+2022,2,round_of_32,Arkansas,New Mexico St,1,0.6527747069666189,1
+2022,2,round_of_32,Auburn,Miami,0,0.5816537318451629,1
+2022,2,round_of_32,Baylor,North Carolina,0,0.8880030939391136,1
+2022,2,round_of_32,Creighton,Kansas,0,0.09652138931188348,0
+2022,2,round_of_32,Duke,Michigan St,1,0.8329184138244188,1
+2022,2,round_of_32,Gonzaga,Memphis,1,0.9552851456441439,1
+2022,2,round_of_32,Houston,Illinois,1,0.8964542703016407,1
+2022,2,round_of_32,Illinois,Houston,0,0.10354573086612126,0
+2022,2,round_of_32,Iowa St,Wisconsin,1,0.7969921499990011,1
+2022,2,round_of_32,Kansas,Creighton,1,0.9034786110507123,1
+2022,2,round_of_32,Memphis,Gonzaga,0,0.044714854533465416,0
+2022,2,round_of_32,Miami,Auburn,1,0.41834626877294634,0
+2022,2,round_of_32,Michigan,Tennessee,1,0.10982444554327463,0
+2022,2,round_of_32,Michigan St,Duke,0,0.1670815873208841,0
+2022,2,round_of_32,Murray St,St Peters,0,0.8646821741598096,1
+2022,2,round_of_32,New Mexico St,Arkansas,0,0.34722529287576426,0
+2022,2,round_of_32,North Carolina,Baylor,1,0.11199690666302904,0
+2022,2,round_of_32,Notre Dame,Texas Tech,0,0.21647584730274658,0
+2022,2,round_of_32,Ohio St,Villanova,0,0.04806530612488314,0
+2022,2,round_of_32,Providence,Richmond,1,0.6874379633906657,1
+2022,2,round_of_32,Purdue,Texas,1,0.46051796434348313,0
+2022,2,round_of_32,Richmond,Providence,0,0.312562036459918,0
+2022,2,round_of_32,St Marys,UCLA,0,0.16973543372965383,0
+2022,2,round_of_32,St Peters,Murray St,1,0.13531782519094865,0
+2022,2,round_of_32,TCU,Arizona,0,0.08777509943861043,0
+2022,2,round_of_32,Tennessee,Michigan,0,0.8901755545469016,1
+2022,2,round_of_32,Texas,Purdue,0,0.5394820382415703,1
+2022,2,round_of_32,Texas Tech,Notre Dame,1,0.7835241528537048,1
+2022,2,round_of_32,UCLA,St Marys,1,0.830264568043241,1
+2022,2,round_of_32,Villanova,Ohio St,1,0.9519346942516717,1
+2022,2,round_of_32,Wisconsin,Iowa St,0,0.20300785015023862,0
+2022,3,sweet_sixteen,Arizona,Houston,0,0.6039503973146699,1
+2022,3,sweet_sixteen,Arkansas,Gonzaga,1,0.06596422859729914,0
+2022,3,sweet_sixteen,Duke,Texas Tech,1,0.5598922580220147,1
+2022,3,sweet_sixteen,Gonzaga,Arkansas,0,0.9340357726381712,1
+2022,3,sweet_sixteen,Houston,Arizona,1,0.3960496070280415,0
+2022,3,sweet_sixteen,Iowa St,Miami,0,0.5816223778582279,1
+2022,3,sweet_sixteen,Kansas,Providence,1,0.91491845562398,1
+2022,3,sweet_sixteen,Miami,Iowa St,1,0.41837762440119414,0
+2022,3,sweet_sixteen,Michigan,Villanova,0,0.12125876188973439,0
+2022,3,sweet_sixteen,North Carolina,UCLA,1,0.11314753372714081,0
+2022,3,sweet_sixteen,Providence,Kansas,0,0.0850815459369306,0
+2022,3,sweet_sixteen,Purdue,St Peters,0,0.8137890059680052,1
+2022,3,sweet_sixteen,St Peters,Purdue,1,0.18621099399376126,0
+2022,3,sweet_sixteen,Texas Tech,Duke,0,0.4401077474551067,0
+2022,3,sweet_sixteen,UCLA,North Carolina,0,0.886852467607673,1
+2022,3,sweet_sixteen,Villanova,Michigan,1,0.878741238862022,1
+2022,4,elite_eight,Arkansas,Duke,0,0.2249815462300972,0
+2022,4,elite_eight,Duke,Arkansas,1,0.7750184584328246,1
+2022,4,elite_eight,Houston,Villanova,0,0.5943128656151544,1
+2022,4,elite_eight,Kansas,Miami,1,0.8870513410042767,1
+2022,4,elite_eight,Miami,Kansas,0,0.11294866050704211,0
+2022,4,elite_eight,North Carolina,St Peters,1,0.7515003844146368,1
+2022,4,elite_eight,St Peters,North Carolina,0,0.2484996169958518,0
+2022,4,elite_eight,Villanova,Houston,1,0.40568714037529147,0
+2022,5,final_four,Duke,North Carolina,0,0.7417873765869398,1
+2022,5,final_four,Kansas,Villanova,1,0.6202403902003137,1
+2022,5,final_four,North Carolina,Duke,1,0.2582126283102541,0
+2022,5,final_four,Villanova,Kansas,0,0.37975961843657474,0
+2022,6,championship,Kansas,North Carolina,1,0.9163883118779271,1
+2022,6,championship,North Carolina,Kansas,0,0.08361169055097636,0
+2023,1,round_of_64,Arizona,Princeton,0,0.9122735801760139,1
+2023,1,round_of_64,Arizona St.,TCU,0,0.6563678490977265,1
+2023,1,round_of_64,Arkansas,Illinois,1,0.684737111573269,1
+2023,1,round_of_64,Auburn,Iowa,1,0.8075043638346433,1
+2023,1,round_of_64,Baylor,UC Santa Barbara,1,0.8047006042715974,1
+2023,1,round_of_64,Boise St.,Northwestern,0,0.7129398123003631,1
+2023,1,round_of_64,Charleston,San Diego St.,0,0.12161076723129495,0
+2023,1,round_of_64,Colgate,Texas,0,0.05697524655192549,0
+2023,1,round_of_64,Connecticut,Iona,1,0.7479949996947547,1
+2023,1,round_of_64,Creighton,N.C. State,1,0.34325606098072414,0
+2023,1,round_of_64,Drake,Miami FL,0,0.6926444224106281,1
+2023,1,round_of_64,Duke,Oral Roberts,1,0.49742304774429785,0
+2023,1,round_of_64,Fairleigh Dickinson,Purdue,1,0.16715467765674505,0
+2023,1,round_of_64,Florida Atlantic,Memphis,1,0.6650960267867467,1
+2023,1,round_of_64,Furman,Virginia,1,0.31964853948336924,0
+2023,1,round_of_64,Gonzaga,Grand Canyon,1,0.9631460505090784,1
+2023,1,round_of_64,Grand Canyon,Gonzaga,0,0.03685394941855573,0
+2023,1,round_of_64,Houston,Northern Kentucky,1,0.9728097134927185,1
+2023,1,round_of_64,Howard,Kansas,0,0.06238731419096327,0
+2023,1,round_of_64,Illinois,Arkansas,0,0.3152628884583043,0
+2023,1,round_of_64,Indiana,Kent St.,1,0.4672566598375814,0
+2023,1,round_of_64,Iona,Connecticut,0,0.252005000003323,0
+2023,1,round_of_64,Iowa,Auburn,0,0.1924956361880914,0
+2023,1,round_of_64,Iowa St.,Pittsburgh,0,0.6674924230942259,1
+2023,1,round_of_64,Kansas,Howard,1,0.9376126856386574,1
+2023,1,round_of_64,Kansas St.,Montana St.,1,0.7909158983004552,1
+2023,1,round_of_64,Kennesaw St.,Xavier,0,0.4702395536224817,0
+2023,1,round_of_64,Kent St.,Indiana,0,0.5327433397637051,1
+2023,1,round_of_64,Kentucky,Providence,1,0.39999400785399647,0
+2023,1,round_of_64,Louisiana,Tennessee,0,0.2098539558414232,0
+2023,1,round_of_64,Marquette,Vermont,1,0.8578124100624067,1
+2023,1,round_of_64,Maryland,West Virginia,1,0.36006092722558447,0
+2023,1,round_of_64,Memphis,Florida Atlantic,0,0.3349039732458315,0
+2023,1,round_of_64,Miami FL,Drake,1,0.3073555773414153,0
+2023,1,round_of_64,Michigan St.,USC,1,0.3514307371701346,0
+2023,1,round_of_64,Missouri,Utah St.,1,0.5412298830321446,1
+2023,1,round_of_64,Montana St.,Kansas St.,0,0.20908410136240632,0
+2023,1,round_of_64,N.C. State,Creighton,0,0.6567439388552223,1
+2023,1,round_of_64,Northern Kentucky,Houston,0,0.02719028643023762,0
+2023,1,round_of_64,Northwestern,Boise St.,1,0.2870601876401358,0
+2023,1,round_of_64,Oral Roberts,Duke,0,0.502576951964528,1
+2023,1,round_of_64,Penn St.,Texas A&M,1,0.20121557529583595,0
+2023,1,round_of_64,Pittsburgh,Iowa St.,1,0.3325075767442568,0
+2023,1,round_of_64,Princeton,Arizona,1,0.08772641962585354,0
+2023,1,round_of_64,Providence,Kentucky,0,0.6000059919713489,1
+2023,1,round_of_64,Purdue,Fairleigh Dickinson,0,0.832845321937765,1
+2023,1,round_of_64,Saint Mary's,VCU,1,0.777449895335504,1
+2023,1,round_of_64,San Diego St.,Charleston,1,0.8783892326442869,1
+2023,1,round_of_64,TCU,Arizona St.,1,0.34363215073813425,0
+2023,1,round_of_64,Tennessee,Louisiana,1,0.7901460438929867,1
+2023,1,round_of_64,Texas,Colgate,1,0.9430247533150566,1
+2023,1,round_of_64,Texas A&M,Penn St.,0,0.7987844246574347,1
+2023,1,round_of_64,UC Santa Barbara,Baylor,0,0.19529939540800265,0
+2023,1,round_of_64,UCLA,UNC Asheville,1,0.9654163313929366,1
+2023,1,round_of_64,UNC Asheville,UCLA,0,0.03458366852440527,0
+2023,1,round_of_64,USC,Michigan St.,0,0.6485692627635986,1
+2023,1,round_of_64,Utah St.,Missouri,0,0.4587701168956655,0
+2023,1,round_of_64,VCU,Saint Mary's,0,0.2225501044629731,0
+2023,1,round_of_64,Vermont,Marquette,0,0.1421875896356298,0
+2023,1,round_of_64,Virginia,Furman,0,0.6803514601682987,1
+2023,1,round_of_64,West Virginia,Maryland,0,0.639939072808116,1
+2023,1,round_of_64,Xavier,Kennesaw St.,1,0.5297604458696444,1
+2023,2,round_of_32,Alabama,Maryland,1,0.9647559746411772,1
+2023,2,round_of_32,Arkansas,Kansas,1,0.10342689482138838,0
+2023,2,round_of_32,Auburn,Houston,0,0.07336710035010643,0
+2023,2,round_of_32,Baylor,Creighton,0,0.7662402057093591,1
+2023,2,round_of_32,Connecticut,Saint Mary's,1,0.2546768379463296,0
+2023,2,round_of_32,Creighton,Baylor,1,0.23375979467727104,0
+2023,2,round_of_32,Duke,Tennessee,0,0.467611052326817,0
+2023,2,round_of_32,Fairleigh Dickinson,Florida Atlantic,0,0.13495933293704832,0
+2023,2,round_of_32,Florida Atlantic,Fairleigh Dickinson,1,0.8650406669260964,1
+2023,2,round_of_32,Furman,San Diego St.,0,0.04941138813967904,0
+2023,2,round_of_32,Gonzaga,TCU,1,0.8862237422501625,1
+2023,2,round_of_32,Houston,Auburn,1,0.9266328997119295,1
+2023,2,round_of_32,Indiana,Miami FL,0,0.7167134376055291,1
+2023,2,round_of_32,Kansas,Arkansas,0,0.8965731052977278,1
+2023,2,round_of_32,Kansas St.,Kentucky,1,0.7562056271482601,1
+2023,2,round_of_32,Kentucky,Kansas St.,0,0.24379437324968622,0
+2023,2,round_of_32,Marquette,Michigan St.,0,0.6997352434007521,1
+2023,2,round_of_32,Maryland,Alabama,0,0.035244025402499934,0
+2023,2,round_of_32,Miami FL,Indiana,1,0.283286562921457,0
+2023,2,round_of_32,Michigan St.,Marquette,1,0.30026475696095534,0
+2023,2,round_of_32,Missouri,Princeton,0,0.8549676097450325,1
+2023,2,round_of_32,Northwestern,UCLA,0,0.043653007629823444,0
+2023,2,round_of_32,Penn St.,Texas,0,0.09925083648734712,0
+2023,2,round_of_32,Pittsburgh,Xavier,0,0.35313518832397417,0
+2023,2,round_of_32,Princeton,Missouri,1,0.14503239013963684,0
+2023,2,round_of_32,Saint Mary's,Connecticut,0,0.7453231625463468,1
+2023,2,round_of_32,San Diego St.,Furman,1,0.9505886118454832,1
+2023,2,round_of_32,TCU,Gonzaga,0,0.11377625796748606,0
+2023,2,round_of_32,Tennessee,Duke,1,0.5323889483193451,1
+2023,2,round_of_32,Texas,Penn St.,1,0.9007491635667759,1
+2023,2,round_of_32,UCLA,Northwestern,1,0.9563469924420467,1
+2023,2,round_of_32,Xavier,Pittsburgh,1,0.6468648117441672,1
+2023,3,sweet_sixteen,Alabama,San Diego St.,0,0.836301061770036,1
+2023,3,sweet_sixteen,Arkansas,Connecticut,0,0.25591782153539605,0
+2023,3,sweet_sixteen,Connecticut,Arkansas,1,0.7440821789788001,1
+2023,3,sweet_sixteen,Creighton,Princeton,1,0.5968354264633606,1
+2023,3,sweet_sixteen,Florida Atlantic,Tennessee,1,0.5356668837226728,1
+2023,3,sweet_sixteen,Gonzaga,UCLA,1,0.32750441350832754,0
+2023,3,sweet_sixteen,Houston,Miami FL,0,0.9847751836965615,1
+2023,3,sweet_sixteen,Kansas St.,Michigan St.,1,0.598872482436992,1
+2023,3,sweet_sixteen,Miami FL,Houston,1,0.015224816357736955,0
+2023,3,sweet_sixteen,Michigan St.,Kansas St.,0,0.4011275182854517,0
+2023,3,sweet_sixteen,Princeton,Creighton,0,0.40316457359097857,0
+2023,3,sweet_sixteen,San Diego St.,Alabama,1,0.16369893872576327,0
+2023,3,sweet_sixteen,Tennessee,Florida Atlantic,0,0.4643331168564211,0
+2023,3,sweet_sixteen,Texas,Xavier,1,0.9057085403880295,1
+2023,3,sweet_sixteen,UCLA,Gonzaga,0,0.672495587467495,1
+2023,3,sweet_sixteen,Xavier,Texas,0,0.09429145999034778,0
+2023,4,elite_eight,Connecticut,Gonzaga,1,0.21253042971867975,0
+2023,4,elite_eight,Creighton,San Diego St.,0,0.1054161733614106,0
+2023,4,elite_eight,Florida Atlantic,Kansas St.,1,0.5910500999625041,1
+2023,4,elite_eight,Gonzaga,Connecticut,0,0.7874695711757645,1
+2023,4,elite_eight,Kansas St.,Florida Atlantic,0,0.40894990087964983,0
+2023,4,elite_eight,Miami FL,Texas,1,0.04385348626285276,0
+2023,4,elite_eight,San Diego St.,Creighton,1,0.8945838270846633,1
+2023,4,elite_eight,Texas,Miami FL,0,0.9561465139429162,1
+2023,5,final_four,Connecticut,Miami FL,1,0.8896657324360533,1
+2023,5,final_four,Florida Atlantic,San Diego St.,0,0.34836400206340623,0
+2023,5,final_four,Miami FL,Connecticut,0,0.11033426817825225,0
+2023,5,final_four,San Diego St.,Florida Atlantic,1,0.6516359990341526,1
+2024,1,round_of_64,Akron,Creighton,0,0.08252973976677022,0
+2024,1,round_of_64,Alabama,Charleston,1,0.8662328625779805,1
+2024,1,round_of_64,Arizona,Long Beach St,1,0.8763524436075952,1
+2024,1,round_of_64,Auburn,Yale,0,0.9332792030023527,1
+2024,1,round_of_64,BYU,Duquesne,0,0.3971648926001778,0
+2024,1,round_of_64,Baylor,Colgate,1,0.8108258688060264,1
+2024,1,round_of_64,Charleston,Alabama,0,0.13376713706114282,0
+2024,1,round_of_64,Clemson,New Mexico,1,0.29281234343055135,0
+2024,1,round_of_64,Colgate,Baylor,0,0.18917413058760238,0
+2024,1,round_of_64,Colorado,Florida,1,0.8288339415948597,1
+2024,1,round_of_64,Colorado St,Texas,0,0.4494612920648716,0
+2024,1,round_of_64,Connecticut,Stetson,1,0.9987505941073573,1
+2024,1,round_of_64,Creighton,Akron,1,0.9174702599338989,1
+2024,1,round_of_64,Dayton,Nevada,1,0.40692368169414656,0
+2024,1,round_of_64,Drake,Washington St,0,0.4359134906793585,0
+2024,1,round_of_64,Duke,Vermont,1,0.9175191647769677,1
+2024,1,round_of_64,Duquesne,BYU,1,0.6028351070558169,1
+2024,1,round_of_64,Fla Atlantic,Northwestern,0,0.17847083569621167,0
+2024,1,round_of_64,Florida,Colorado,0,0.1711660583203035,0
+2024,1,round_of_64,Gonzaga,McNeese,1,0.7820929026087117,1
+2024,1,round_of_64,Grambling,Purdue,0,0.031162439733763755,0
+2024,1,round_of_64,Grd Canyon,St Marys,1,0.5192585459562036,1
+2024,1,round_of_64,Houston,Longwood,1,0.9882409732012597,1
+2024,1,round_of_64,Illinois,Morehead St,1,0.918961427850772,1
+2024,1,round_of_64,Iowa St,S Dakota St,1,0.9455447662695936,1
+2024,1,round_of_64,James Madison,Wisconsin,1,0.7105915556786001,1
+2024,1,round_of_64,Kansas,Samford,1,0.4837141423483293,0
+2024,1,round_of_64,Kentucky,Oakland,0,0.45322445710553505,0
+2024,1,round_of_64,Long Beach St,Arizona,0,0.12364755587314862,0
+2024,1,round_of_64,Longwood,Houston,0,0.011759026733306007,0
+2024,1,round_of_64,Marquette,Western KY,1,0.912519731921254,1
+2024,1,round_of_64,McNeese,Gonzaga,0,0.21790709700347233,0
+2024,1,round_of_64,Michigan St,Mississippi St,1,0.6475675325168428,1
+2024,1,round_of_64,Mississippi St,Michigan St,0,0.3524324675381145,0
+2024,1,round_of_64,Morehead St,Illinois,0,0.08103857185482755,0
+2024,1,round_of_64,N Carolina,Wagner,1,0.8192100556351745,1
+2024,1,round_of_64,NC State,Texas Tech,1,0.6395307055803893,1
+2024,1,round_of_64,Nebraska,Texas A&M,0,0.7607005112080564,1
+2024,1,round_of_64,Nevada,Dayton,0,0.5930763181615348,1
+2024,1,round_of_64,New Mexico,Clemson,0,0.707187656271926,1
+2024,1,round_of_64,Northwestern,Fla Atlantic,1,0.821529164339095,1
+2024,1,round_of_64,Oakland,Kentucky,1,0.5467755419148133,1
+2024,1,round_of_64,Oregon,S Carolina,1,0.42611259143966584,0
+2024,1,round_of_64,Purdue,Grambling,1,0.9688375600962347,1
+2024,1,round_of_64,S Carolina,Oregon,0,0.5738874082089787,1
+2024,1,round_of_64,S Dakota St,Iowa St,0,0.0544552334836667,0
+2024,1,round_of_64,Samford,Kansas,0,0.516285856873896,1
+2024,1,round_of_64,San Diego St,UAB,1,0.7263894475054855,1
+2024,1,round_of_64,St Marys,Grd Canyon,0,0.4807414534757403,0
+2024,1,round_of_64,St Peters,Tennessee,0,0.07378677752096328,0
+2024,1,round_of_64,Stetson,Connecticut,0,0.001249405885616366,0
+2024,1,round_of_64,TCU,Utah St,0,0.1867291021785329,0
+2024,1,round_of_64,Tennessee,St Peters,1,0.9262132221515401,1
+2024,1,round_of_64,Texas,Colorado St,1,0.5505387077871565,1
+2024,1,round_of_64,Texas A&M,Nebraska,1,0.23929948883577856,0
+2024,1,round_of_64,Texas Tech,NC State,0,0.36046929408838396,0
+2024,1,round_of_64,UAB,San Diego St,0,0.27361055204224394,0
+2024,1,round_of_64,Utah St,TCU,1,0.8132708978580361,1
+2024,1,round_of_64,Vermont,Duke,0,0.08248083498734127,0
+2024,1,round_of_64,Wagner,N Carolina,0,0.18078994353087513,0
+2024,1,round_of_64,Washington St,Drake,1,0.5640865091735984,1
+2024,1,round_of_64,Western KY,Marquette,0,0.08748026769621216,0
+2024,1,round_of_64,Wisconsin,James Madison,0,0.28940844385341996,0
+2024,1,round_of_64,Yale,Auburn,1,0.0667207968037162,0
+2024,2,round_of_32,Alabama,Grd Canyon,1,0.6721647970641242,1
+2024,2,round_of_32,Arizona,Dayton,1,0.7200236847989747,1
+2024,2,round_of_32,Baylor,Clemson,0,0.5777921085732193,1
+2024,2,round_of_32,Clemson,Baylor,1,0.42220789241173895,0
+2024,2,round_of_32,Colorado,Marquette,0,0.5209773808524115,1
+2024,2,round_of_32,Connecticut,Northwestern,1,0.9943286469390392,1
+2024,2,round_of_32,Creighton,Oregon,1,0.6397402198883771,1
+2024,2,round_of_32,Dayton,Arizona,0,0.27997631584586313,0
+2024,2,round_of_32,Duke,James Madison,1,0.6634323205660723,1
+2024,2,round_of_32,Duquesne,Illinois,0,0.131252874300653,0
+2024,2,round_of_32,Gonzaga,Kansas,1,0.5896174466100461,1
+2024,2,round_of_32,Grd Canyon,Alabama,0,0.32783520291811324,0
+2024,2,round_of_32,Houston,Texas A&M,1,0.9877741357719821,1
+2024,2,round_of_32,Illinois,Duquesne,1,0.8687471257560029,1
+2024,2,round_of_32,Iowa St,Washington St,1,0.8553348683899434,1
+2024,2,round_of_32,James Madison,Duke,0,0.336567679415929,0
+2024,2,round_of_32,Kansas,Gonzaga,0,0.41038255456988276,0
+2024,2,round_of_32,Marquette,Colorado,1,0.4790226194157026,0
+2024,2,round_of_32,Michigan St,N Carolina,0,0.4619962173020257,0
+2024,2,round_of_32,N Carolina,Michigan St,1,0.5380037831085448,1
+2024,2,round_of_32,NC State,Oakland,1,0.8927752150485943,1
+2024,2,round_of_32,Northwestern,Connecticut,0,0.0056713530702758395,0
+2024,2,round_of_32,Oakland,NC State,0,0.10722478489566835,0
+2024,2,round_of_32,Oregon,Creighton,0,0.36025978022613786,0
+2024,2,round_of_32,Purdue,Utah St,1,0.8266264124483198,1
+2024,2,round_of_32,San Diego St,Yale,1,0.7172372711096657,1
+2024,2,round_of_32,Tennessee,Texas,1,0.782318375375096,1
+2024,2,round_of_32,Texas,Tennessee,0,0.2176816251696421,0
+2024,2,round_of_32,Texas A&M,Houston,0,0.012225864247965871,0
+2024,2,round_of_32,Utah St,Purdue,0,0.173373587889899,0
+2024,2,round_of_32,Washington St,Iowa St,0,0.14466513200586276,0
+2024,2,round_of_32,Yale,San Diego St,0,0.28276272875686964,0
+2024,3,sweet_sixteen,Alabama,N Carolina,1,0.5688862540969377,1
+2024,3,sweet_sixteen,Arizona,Clemson,0,0.7181488900220837,1
+2024,3,sweet_sixteen,Clemson,Arizona,1,0.2818511112394556,0
+2024,3,sweet_sixteen,Connecticut,San Diego St,1,0.996834284327386,1
+2024,3,sweet_sixteen,Creighton,Tennessee,0,0.44601949844419736,0
+2024,3,sweet_sixteen,Duke,Houston,1,0.12401922271426012,0
+2024,3,sweet_sixteen,Gonzaga,Purdue,0,0.11611731421504014,0
+2024,3,sweet_sixteen,Houston,Duke,0,0.8759807781025031,1
+2024,3,sweet_sixteen,Illinois,Iowa St,1,0.43597623948156183,0
+2024,3,sweet_sixteen,Iowa St,Illinois,0,0.5640237625734275,1
+2024,3,sweet_sixteen,Marquette,NC State,0,0.5371641971790673,1
+2024,3,sweet_sixteen,N Carolina,Alabama,0,0.4311137477469305,0
+2024,3,sweet_sixteen,NC State,Marquette,1,0.4628358034901807,0
+2024,3,sweet_sixteen,Purdue,Gonzaga,1,0.8838826864839018,1
+2024,3,sweet_sixteen,San Diego St,Connecticut,0,0.0031657156941044414,0
+2024,3,sweet_sixteen,Tennessee,Creighton,1,0.5539805036206962,1
+2024,4,elite_eight,Alabama,Clemson,1,0.7118022464116123,1
+2024,4,elite_eight,Clemson,Alabama,0,0.28819775539762665,0
+2024,4,elite_eight,Connecticut,Illinois,1,0.9889193796099256,1
+2024,4,elite_eight,Duke,NC State,0,0.6235216155216409,1
+2024,4,elite_eight,Illinois,Connecticut,0,0.011080620505701138,0
+2024,4,elite_eight,NC State,Duke,1,0.3764783857175278,0
+2024,4,elite_eight,Purdue,Tennessee,1,0.7644307177878628,1
+2024,4,elite_eight,Tennessee,Purdue,0,0.23556928423981757,0
+2024,5,final_four,Alabama,Connecticut,0,0.006074895086813954,0
+2024,5,final_four,Connecticut,Alabama,1,0.9939251049866652,1
+2024,5,final_four,NC State,Purdue,0,0.17944768723552923,0
+2024,5,final_four,Purdue,NC State,1,0.820552313826486,1
+2024,6,championship,Connecticut,Purdue,1,0.9661050438649261,1
+2024,6,championship,Purdue,Connecticut,0,0.03389495667929965,0
+2025,1,round_of_64,Akron,Arizona,0,0.08404982952832396,0
+2025,1,round_of_64,Alabama,Robert Morris,1,0.9779198769236759,1
+2025,1,round_of_64,Alabama St,Auburn,0,0.0047718646962134304,0
+2025,1,round_of_64,Arizona,Akron,1,0.9159501704716798,1
+2025,1,round_of_64,Arkansas,Kansas,1,0.4579565053840424,0
+2025,1,round_of_64,Auburn,Alabama St,1,0.995228135303787,1
+2025,1,round_of_64,BYU,VCU,1,0.8801423860081373,1
+2025,1,round_of_64,Baylor,Mississippi St,1,0.607983794406241,1
+2025,1,round_of_64,Bryant,Michigan St,0,0.025858820180420468,0
+2025,1,round_of_64,Clemson,McNeese,0,0.8358578211192761,1
+2025,1,round_of_64,Colorado St,Memphis,1,0.6823858220167727,1
+2025,1,round_of_64,Connecticut,Oklahoma,1,0.5046954119472256,1
+2025,1,round_of_64,Creighton,Louisville,1,0.4795170544717113,0
+2025,1,round_of_64,Drake,Missouri,1,0.311888990236669,0
+2025,1,round_of_64,Duke,Mount St Marys,1,0.9993815481100287,1
+2025,1,round_of_64,Florida,Norfolk St,1,0.9994816483202688,1
+2025,1,round_of_64,Georgia,Gonzaga,0,0.1424751795132346,0
+2025,1,round_of_64,Gonzaga,Georgia,1,0.8575248204867646,1
+2025,1,round_of_64,Grd Canyon,Maryland,0,0.026764136936765864,0
+2025,1,round_of_64,High Point,Purdue,0,0.04824993113336053,0
+2025,1,round_of_64,Houston,SIUE,1,0.9957068381246269,1
+2025,1,round_of_64,Illinois,Xavier,1,0.8105680896206695,1
+2025,1,round_of_64,Iowa St,Lipscomb,1,0.9395083728638062,1
+2025,1,round_of_64,Kansas,Arkansas,0,0.5420434946159595,1
+2025,1,round_of_64,Kentucky,Troy,1,0.921273177030534,1
+2025,1,round_of_64,Liberty,Oregon,0,0.12416365289568654,0
+2025,1,round_of_64,Lipscomb,Iowa St,0,0.06049162713619739,0
+2025,1,round_of_64,Louisville,Creighton,0,0.520482945528287,1
+2025,1,round_of_64,Marquette,New Mexico,0,0.6925309802118761,1
+2025,1,round_of_64,Maryland,Grd Canyon,1,0.9732358630632355,1
+2025,1,round_of_64,McNeese,Clemson,1,0.1641421788807289,0
+2025,1,round_of_64,Memphis,Colorado St,0,0.31761417798323505,0
+2025,1,round_of_64,Michigan,UC San Diego,1,0.8506742685435138,1
+2025,1,round_of_64,Michigan St,Bryant,1,0.9741411798195816,1
+2025,1,round_of_64,Mississippi,N Carolina,1,0.6451300374761929,1
+2025,1,round_of_64,Mississippi St,Baylor,0,0.39201620559375744,0
+2025,1,round_of_64,Missouri,Drake,0,0.6881110097633356,1
+2025,1,round_of_64,Montana,Wisconsin,0,0.09026448576735721,0
+2025,1,round_of_64,Mount St Marys,Duke,0,0.0006184518899714017,0
+2025,1,round_of_64,N Carolina,Mississippi,0,0.354869962523812,0
+2025,1,round_of_64,New Mexico,Marquette,1,0.3074690197881255,0
+2025,1,round_of_64,Norfolk St,Florida,0,0.000518351679731232,0
+2025,1,round_of_64,Oklahoma,Connecticut,0,0.4953045880527728,0
+2025,1,round_of_64,Omaha,St Johns,0,0.03214850446693068,0
+2025,1,round_of_64,Oregon,Liberty,1,0.8758363471043175,1
+2025,1,round_of_64,Purdue,High Point,1,0.9517500688666416,1
+2025,1,round_of_64,Robert Morris,Alabama,0,0.022080123076325817,0
+2025,1,round_of_64,SIUE,Houston,0,0.004293161875373584,0
+2025,1,round_of_64,St Johns,Omaha,1,0.9678514955330717,1
+2025,1,round_of_64,St Marys,Vanderbilt,1,0.7026151241361098,1
+2025,1,round_of_64,Tennessee,Wofford,1,0.9748639783373326,1
+2025,1,round_of_64,Texas A&M,Yale,1,0.9618952712833441,1
+2025,1,round_of_64,Texas Tech,UNC Wilmington,1,0.9713275414332805,1
+2025,1,round_of_64,Troy,Kentucky,0,0.07872682296947073,0
+2025,1,round_of_64,UC San Diego,Michigan,0,0.14932573145649083,0
+2025,1,round_of_64,UCLA,Utah St,1,0.8311634724773996,1
+2025,1,round_of_64,UNC Wilmington,Texas Tech,0,0.028672458566721293,0
+2025,1,round_of_64,Utah St,UCLA,0,0.16883652752260137,0
+2025,1,round_of_64,VCU,BYU,0,0.11985761399186498,0
+2025,1,round_of_64,Vanderbilt,St Marys,0,0.29738487586389173,0
+2025,1,round_of_64,Wisconsin,Montana,1,0.909735514232648,1
+2025,1,round_of_64,Wofford,Tennessee,0,0.025136021662669414,0
+2025,1,round_of_64,Xavier,Illinois,0,0.18943191037933368,0
+2025,1,round_of_64,Yale,Texas A&M,0,0.03810472871665774,0
+2025,2,round_of_32,Alabama,St Marys,1,0.7236977684466831,1
+2025,2,round_of_32,Arizona,Oregon,1,0.3175181068912789,0
+2025,2,round_of_32,Arkansas,St Johns,1,0.36876162620141256,0
+2025,2,round_of_32,Auburn,Creighton,1,0.878417949675071,1
+2025,2,round_of_32,BYU,Wisconsin,1,0.7483200948518263,1
+2025,2,round_of_32,Baylor,Duke,0,0.010351549740554506,0
+2025,2,round_of_32,Colorado St,Maryland,0,0.17924855833125572,0
+2025,2,round_of_32,Connecticut,Florida,0,0.00304925188983947,0
+2025,2,round_of_32,Creighton,Auburn,0,0.12158205032492586,0
+2025,2,round_of_32,Drake,Texas Tech,0,0.10669842549950913,0
+2025,2,round_of_32,Duke,Baylor,1,0.9896484502594453,1
+2025,2,round_of_32,Florida,Connecticut,1,0.9969507481101604,1
+2025,2,round_of_32,Gonzaga,Houston,0,0.15735243549223646,0
+2025,2,round_of_32,Houston,Gonzaga,1,0.8426475645077581,1
+2025,2,round_of_32,Illinois,Kentucky,0,0.6008312741068655,1
+2025,2,round_of_32,Iowa St,Mississippi,0,0.4246570040939694,0
+2025,2,round_of_32,Kentucky,Illinois,1,0.399168725893118,0
+2025,2,round_of_32,Maryland,Colorado St,1,0.8207514416687443,1
+2025,2,round_of_32,McNeese,Purdue,0,0.10762146520756025,0
+2025,2,round_of_32,Michigan,Texas A&M,1,0.6214584265112917,1
+2025,2,round_of_32,Michigan St,New Mexico,1,0.804661138097892,1
+2025,2,round_of_32,Mississippi,Iowa St,1,0.5753429959060139,1
+2025,2,round_of_32,New Mexico,Michigan St,0,0.1953388619021049,0
+2025,2,round_of_32,Oregon,Arizona,0,0.6824818931087032,1
+2025,2,round_of_32,Purdue,McNeese,1,0.8923785347924398,1
+2025,2,round_of_32,St Johns,Arkansas,0,0.6312383737985828,1
+2025,2,round_of_32,St Marys,Alabama,0,0.27630223155330597,0
+2025,2,round_of_32,Tennessee,UCLA,1,0.5642010130439115,1
+2025,2,round_of_32,Texas A&M,Michigan,0,0.3785415734886888,0
+2025,2,round_of_32,Texas Tech,Drake,1,0.8933015745004899,1
+2025,2,round_of_32,UCLA,Tennessee,0,0.43579898695607505,0
+2025,2,round_of_32,Wisconsin,BYU,0,0.25167990514816085,0
+2025,3,sweet_sixteen,Alabama,BYU,1,0.5461581188153436,1
+2025,3,sweet_sixteen,Arizona,Duke,0,0.008690622413371258,0
+2025,3,sweet_sixteen,Arkansas,Texas Tech,0,0.3154945718409767,0
+2025,3,sweet_sixteen,Auburn,Michigan,1,0.8724248757003895,1
+2025,3,sweet_sixteen,BYU,Alabama,0,0.45384188118463054,0
+2025,3,sweet_sixteen,Duke,Arizona,1,0.9913093775866276,1
+2025,3,sweet_sixteen,Florida,Maryland,1,0.9852554617801481,1
+2025,3,sweet_sixteen,Houston,Purdue,1,0.9144241380963959,1
+2025,3,sweet_sixteen,Kentucky,Tennessee,0,0.2324851850516608,0
+2025,3,sweet_sixteen,Maryland,Florida,0,0.01474453821985013,0
+2025,3,sweet_sixteen,Michigan,Auburn,0,0.1275751242995979,0
+2025,3,sweet_sixteen,Michigan St,Mississippi,1,0.5647719401322563,1
+2025,3,sweet_sixteen,Mississippi,Michigan St,0,0.435228059867718,0
+2025,3,sweet_sixteen,Purdue,Houston,0,0.08557586190359424,0
+2025,3,sweet_sixteen,Tennessee,Kentucky,1,0.7675148149483143,1
+2025,3,sweet_sixteen,Texas Tech,Arkansas,1,0.6845054281590105,1
+2025,4,elite_eight,Alabama,Duke,0,0.025792254545255234,0
+2025,4,elite_eight,Auburn,Michigan St,1,0.8718735918133587,1
+2025,4,elite_eight,Duke,Alabama,1,0.97420774545474,1
+2025,4,elite_eight,Florida,Texas Tech,1,0.9847072805532195,1
+2025,4,elite_eight,Houston,Tennessee,1,0.8651144590698946,1
+2025,4,elite_eight,Michigan St,Auburn,0,0.1281264081866205,0
+2025,4,elite_eight,Tennessee,Houston,0,0.13488554093008356,0
+2025,4,elite_eight,Texas Tech,Florida,0,0.015292719446777776,0
+2025,5,final_four,Auburn,Florida,0,0.09045141608192987,0
+2025,5,final_four,Duke,Houston,0,0.8795010304945665,1
+2025,5,final_four,Florida,Auburn,1,0.9095485839180507,1
+2025,5,final_four,Houston,Duke,1,0.12049896950540835,0
+2025,6,championship,Florida,Houston,1,0.8986964917713873,1
+2025,6,championship,Houston,Florida,0,0.10130350822858777,0

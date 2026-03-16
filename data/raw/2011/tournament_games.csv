@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+East,1,Ohio State,75,16,UTSA,46
+East,8,George Mason,61,9,Villanova,57
+East,5,West Virginia,84,12,Clemson,76
+East,4,Kentucky,59,13,Princeton,57
+East,6,Xavier,55,11,Marquette,66
+East,3,Syracuse,77,14,Indiana St,60
+East,7,Washington,68,10,Georgia,65
+East,2,North Carolina,102,15,Long Island,87
+East,1,Ohio State,98,8,George Mason,66
+East,5,West Virginia,63,4,Kentucky,71
+East,11,Marquette,66,3,Syracuse,62
+East,7,Washington,83,2,North Carolina,86
+East,1,Ohio State,60,4,Kentucky,62
+East,11,Marquette,63,2,North Carolina,81
+East,4,Kentucky,76,2,North Carolina,69
+East,1,Kansas,61,11,VCU,71
+East,1,Kansas,77,12,Richmond,57
+East,11,VCU,72,10,Florida St,71
+East,1,Kansas,73,9,Illinois,59
+East,12,Richmond,65,13,Morehead St,48
+East,11,VCU,94,3,Purdue,76
+East,10,Florida St,71,2,Notre Dame,57
+East,1,Kansas,72,16,Boston U,53
+East,8,UNLV,62,9,Illinois,73
+East,5,Vanderbilt,66,12,Richmond,69
+East,4,Louisville,61,13,Morehead St,62
+East,6,Georgetown,56,11,VCU,74
+East,3,Purdue,65,14,Saint Peter's,43
+East,7,Texas A&M,50,10,Florida St,57
+East,2,Notre Dame,69,15,Akron,56
+Final Four,4,Kentucky,55,3,UConn,56
+Final Four,11,VCU,62,8,Butler,70
+West,1,Duke,87,16,Hampton,45
+West,8,Michigan,75,9,Tennessee,45
+West,5,Arizona,77,12,Memphis,75
+West,4,Texas,85,13,Oakland,81
+West,6,Cincinnati,78,11,Missouri,63
+West,3,UConn,81,14,Bucknell,52
+West,7,Temple,66,10,Penn State,64
+West,2,San Diego St,68,15,N Colorado,50
+West,1,Duke,73,8,Michigan,71
+West,5,Arizona,70,4,Texas,69
+West,6,Cincinnati,58,3,UConn,69
+West,7,Temple,64,2,San Diego St,71
+West,1,Duke,77,5,Arizona,93
+West,3,UConn,74,2,San Diego St,67
+West,5,Arizona,63,3,UConn,65
+West,8,Butler,74,2,Florida,71
+West,8,Butler,61,4,Wisconsin,54
+West,3,BYU,74,2,Florida,83
+West,1,Pitt,70,8,Butler,71
+West,5,Kansas St,65,4,Wisconsin,70
+West,11,Gonzaga,67,3,BYU,89
+West,7,UCLA,65,2,Florida,73
+West,1,Pitt,74,16,UNC Asheville,51
+West,8,Butler,60,9,Old Dominion,58
+West,5,Kansas St,73,12,Utah State,68
+West,4,Wisconsin,72,13,Belmont,58
+West,6,St John's,71,11,Gonzaga,86
+West,3,BYU,74,14,Wofford,66
+West,7,UCLA,78,10,Michigan St,76
+West,2,Florida,79,15,Santa Barbara,51
+First Four,16,UTSA,70,16,Alabama St,61
+First Four,12,UAB,52,12,Clemson,70
+First Four,11,USC,46,11,VCU,59
+First Four,16,UNC Asheville,81,16,Little Rock,77
+Championship,3,CONN,53,8,BUT,41

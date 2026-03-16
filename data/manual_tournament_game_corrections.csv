@@ -1,0 +1,3 @@
+year,round_name,seed_a,team_a,score_a,seed_b,team_b,score_b,notes
+2019,Final Four,1,Virginia,63,5,Auburn,62,Manual fix for ESPN parse gap in semifinal
+2019,Championship,1,Virginia,85,3,Texas Tech,77,Manual fix for ESPN parse gap in title game

@@ -1,0 +1,69 @@
+source,raw_team,normalized_team,canonical_team,match_method
+field,Duke,duke,Duke,season_exact
+field,UConn,uconn,Connecticut,global_alias
+field,Michigan St,michigan st,Michigan St,global_alias
+field,Kansas,kansas,Kansas,season_exact
+field,St John's,st john s,St Johns,global_alias
+field,Louisville,louisville,Louisville,season_exact
+field,UCLA,ucla,UCLA,season_exact
+field,Ohio State,ohio state,Ohio St,global_alias
+field,TCU,tcu,TCU,season_exact
+field,UCF,ucf,UCF,global_alias
+field,South Florida,south florida,South Florida,season_exact
+field,Northern Iowa,northern iowa,Northern Iowa,season_exact
+field,CA Baptist,ca baptist,Cal Baptist,global_alias
+field,N Dakota St,north dakota st,N Dakota St,global_alias
+field,Furman,furman,Furman,season_exact
+field,Siena,siena,Siena,season_exact
+field,Michigan,michigan,Michigan,season_exact
+field,Iowa State,iowa state,Iowa St,global_alias
+field,Virginia,virginia,Virginia,season_exact
+field,Alabama,alabama,Alabama,season_exact
+field,Texas Tech,texas tech,Texas Tech,season_exact
+field,Tennessee,tennessee,Tennessee,season_exact
+field,Kentucky,kentucky,Kentucky,season_exact
+field,Georgia,georgia,Georgia,season_exact
+field,Saint Louis,st louis,St Louis,season_exact
+field,Santa Clara,santa clara,Santa Clara,season_exact
+field,Miami OH,miami oh,Miami OH,season_exact
+field,SMU,smu,SMU,season_exact
+field,Akron,akron,Akron,season_exact
+field,Hofstra,hofstra,Hofstra,season_exact
+field,Wright St,wright st,Wright St,season_exact
+field,Tennessee St,tennessee st,Tennessee St,global_alias
+field,Howard,howard,Howard,season_exact
+field,UMBC,umbc,UMBC,season_exact
+field,Florida,florida,Florida,season_exact
+field,Houston,houston,Houston,season_exact
+field,Illinois,illinois,Illinois,season_exact
+field,Nebraska,nebraska,Nebraska,season_exact
+field,Vanderbilt,vanderbilt,Vanderbilt,season_exact
+field,North Carolina,north carolina,N Carolina,global_alias
+field,Saint Mary's,st marys,St Marys,global_alias
+field,Clemson,clemson,Clemson,season_exact
+field,Iowa,iowa,Iowa,season_exact
+field,Texas A&M,texas a and m,Texas A&M,season_exact
+field,VCU,vcu,VCU,season_exact
+field,McNeese,mcneese,McNeese,season_exact
+field,Troy,troy,Troy,season_exact
+field,Penn,penn,Pennsylvania,global_alias
+field,Idaho,idaho,Idaho,season_exact
+field,Lehigh,lehigh,Lehigh,season_exact
+field,Prairie View,prairie view,Prairie View,season_exact
+field,Arizona,arizona,Arizona,season_exact
+field,Purdue,purdue,Purdue,season_exact
+field,Gonzaga,gonzaga,Gonzaga,season_exact
+field,Arkansas,arkansas,Arkansas,season_exact
+field,Wisconsin,wisconsin,Wisconsin,season_exact
+field,BYU,byu,BYU,season_exact
+field,Miami,miami,Miami FL,global_alias
+field,Villanova,villanova,Villanova,season_exact
+field,Utah State,utah state,Utah St,global_alias
+field,Missouri,missouri,Missouri,season_exact
+field,NC State,nc state,NC State,season_exact
+field,Texas,texas,Texas,season_exact
+field,High Point,high point,High Point,season_exact
+field,Hawai'i,hawai i,Hawaii,global_alias
+field,Kennesaw St,kennesaw st,Kennesaw St.,season_exact
+field,Queens,queens,Queens,season_exact
+field,Long Island,long island,Long Island Brooklyn,global_alias

@@ -1,0 +1,37 @@
+{
+  "season_data": "data/processed/march_madness_2025.csv",
+  "team_ranking_weights": {
+    "adjem_pct": 0.26,
+    "adjo_pct": 0.13,
+    "adjd_pct": 0.11,
+    "meta_points_pct": 0.18,
+    "meta_finish_pct": 0.12,
+    "meta_round_of_32": 0.08,
+    "meta_sweet_sixteen": 0.06,
+    "meta_elite_eight": 0.03,
+    "meta_semifinal": 0.02,
+    "meta_championship": 0.01
+  },
+  "primary_screening_columns": [
+    "AdjEM",
+    "AdjO",
+    "AdjD"
+  ],
+  "secondary_screening_columns": [
+    "Seas_PPG",
+    "Seas_Off_Rebound_Per",
+    "Seas_Turnovers",
+    "Seas_3PT_Per"
+  ],
+  "simulation_run": true,
+  "n_sims": 2000,
+  "use_calibration": true,
+  "probability_temperature": 1.0,
+  "favorite": {
+    "team": "Florida",
+    "win_championship": 0.894,
+    "make_final_four": 0.987
+  },
+  "upset_threshold": 0.35,
+  "strong_upset_threshold": 0.45
+}

@@ -1,0 +1,65 @@
+source,raw_team,normalized_team,canonical_team,match_method
+field,UConn,uconn,Connecticut,global_alias
+field,Iowa State,iowa state,Iowa St,global_alias
+field,Illinois,illinois,Illinois,season_exact
+field,Auburn,auburn,Auburn,season_exact
+field,San Diego St,san diego st,San Diego St,global_alias
+field,BYU,byu,BYU,season_exact
+field,Washington St,washington st,Washington St,global_alias
+field,FAU,fau,Fla Atlantic,global_alias
+field,Northwestern,northwestern,Northwestern,season_exact
+field,Drake,drake,Drake,season_exact
+field,Duquesne,duquesne,Duquesne,season_exact
+field,UAB,uab,UAB,season_exact
+field,Yale,yale,Yale,season_exact
+field,Morehead St,morehead st,Morehead St,season_exact
+field,S Dakota St,south dakota st,S Dakota St,global_alias
+field,Stetson,stetson,Stetson,season_exact
+field,Purdue,purdue,Purdue,season_exact
+field,Tennessee,tennessee,Tennessee,season_exact
+field,Creighton,creighton,Creighton,season_exact
+field,Kansas,kansas,Kansas,season_exact
+field,Gonzaga,gonzaga,Gonzaga,season_exact
+field,South Carolina,south carolina,S Carolina,global_alias
+field,Texas,texas,Texas,season_exact
+field,Utah State,utah state,Utah St,global_alias
+field,TCU,tcu,TCU,season_exact
+field,Colorado St,colorado st,Colorado St,season_exact
+field,Oregon,oregon,Oregon,season_exact
+field,McNeese,mcneese,McNeese,season_exact
+field,Samford,samford,Samford,season_exact
+field,Akron,akron,Akron,season_exact
+field,Saint Peter's,st peters,St Peters,global_alias
+field,Grambling,grambling,Grambling,season_exact
+field,Houston,houston,Houston,season_exact
+field,Marquette,marquette,Marquette,season_exact
+field,Kentucky,kentucky,Kentucky,season_exact
+field,Duke,duke,Duke,season_exact
+field,Wisconsin,wisconsin,Wisconsin,season_exact
+field,Texas Tech,texas tech,Texas Tech,season_exact
+field,Florida,florida,Florida,season_exact
+field,Nebraska,nebraska,Nebraska,season_exact
+field,Texas A&M,texas a and m,Texas A&M,season_exact
+field,Colorado,colorado,Colorado,season_exact
+field,NC State,nc state,NC State,season_exact
+field,James Madison,james madison,James Madison,season_exact
+field,Vermont,vermont,Vermont,season_exact
+field,Oakland,oakland,Oakland,season_exact
+field,Western KY,western ky,Western KY,season_exact
+field,Longwood,longwood,Longwood,season_exact
+field,North Carolina,north carolina,N Carolina,global_alias
+field,Arizona,arizona,Arizona,season_exact
+field,Baylor,baylor,Baylor,season_exact
+field,Alabama,alabama,Alabama,season_exact
+field,Saint Mary's,st marys,St Marys,global_alias
+field,Clemson,clemson,Clemson,season_exact
+field,Dayton,dayton,Dayton,season_exact
+field,Mississippi St,mississippi st,Mississippi St,global_alias
+field,Michigan St,michigan st,Michigan St,global_alias
+field,Nevada,nevada,Nevada,season_exact
+field,New Mexico,new mexico,New Mexico,season_exact
+field,Grand Canyon,grand canyon,Grd Canyon,global_alias
+field,Charleston,charleston,Charleston,season_exact
+field,Colgate,colgate,Colgate,season_exact
+field,Long Beach St,long beach st,Long Beach St,season_exact
+field,Wagner,wagner,Wagner,season_exact

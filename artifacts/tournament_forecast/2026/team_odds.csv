@@ -1,0 +1,69 @@
+team,seed,region,play_in_group,expected_wins,win_first_four,make_round_of_64,make_round_of_32,make_sweet_sixteen,make_elite_eight,make_final_four,make_championship,win_championship,win_round_of_64,win_round_of_32,win_sweet_sixteen,win_elite_eight,win_final_four,field_source
+Michigan,1,Midwest,,5.1805,0.0,1.0,1.0,0.9955,0.9513,0.9169,0.8037,0.5131,1.0,0.9955,0.9513,0.9169,0.8037,data/raw/2026/tournament_field.csv
+Duke,1,East,,4.9972,0.0,1.0,1.0,0.9938,0.9456,0.9237,0.7486,0.3855,1.0,0.9938,0.9456,0.9237,0.7486,data/raw/2026/tournament_field.csv
+Houston,2,South,,3.5452,0.0,1.0,0.9999,0.97,0.787,0.5743,0.1678,0.0462,0.9999,0.97,0.787,0.5743,0.1678,data/raw/2026/tournament_field.csv
+Arizona,1,West,,3.2478,0.0,1.0,0.9998,0.9163,0.6913,0.5015,0.1097,0.0292,0.9998,0.9163,0.6913,0.5015,0.1097,data/raw/2026/tournament_field.csv
+Florida,1,South,,3.1046,0.0,1.0,0.9999,0.9678,0.7689,0.3003,0.0574,0.0103,0.9999,0.9678,0.7689,0.3003,0.0574,data/raw/2026/tournament_field.csv
+Purdue,2,West,,3.0557,0.0,1.0,0.9989,0.9324,0.7579,0.314,0.0446,0.0079,0.9989,0.9324,0.7579,0.314,0.0446,data/raw/2026/tournament_field.csv
+Arkansas,4,West,,2.2085,0.0,1.0,0.9985,0.7942,0.2594,0.1362,0.0172,0.003,0.9985,0.7942,0.2594,0.1362,0.0172,data/raw/2026/tournament_field.csv
+Texas Tech,5,Midwest,,1.7829,0.0,1.0,0.9782,0.7277,0.0413,0.0274,0.0069,0.0014,0.9782,0.7277,0.0413,0.0274,0.0069,data/raw/2026/tournament_field.csv
+Iowa St,2,Midwest,,2.571,0.0,1.0,0.9985,0.8545,0.6592,0.0439,0.0136,0.0013,0.9985,0.8545,0.6592,0.0439,0.0136,data/raw/2026/tournament_field.csv
+Illinois,3,South,,2.1939,0.0,1.0,0.9967,0.8969,0.2037,0.0865,0.0092,0.0009,0.9967,0.8969,0.2037,0.0865,0.0092,data/raw/2026/tournament_field.csv
+St Johns,5,East,,1.6564,0.0,1.0,0.9936,0.5977,0.0329,0.0255,0.0061,0.0006,0.9936,0.5977,0.0329,0.0255,0.0061,data/raw/2026/tournament_field.csv
+Connecticut,2,East,,2.3081,0.0,1.0,0.9996,0.7399,0.5351,0.028,0.0053,0.0002,0.9996,0.7399,0.5351,0.028,0.0053,data/raw/2026/tournament_field.csv
+Vanderbilt,5,South,,1.6378,0.0,1.0,0.9555,0.5277,0.13,0.0225,0.0019,0.0002,0.9555,0.5277,0.13,0.0225,0.0019,data/raw/2026/tournament_field.csv
+Kansas,4,East,,1.4167,0.0,1.0,0.9798,0.4019,0.0206,0.0119,0.0023,0.0002,0.9798,0.4019,0.0206,0.0119,0.0023,data/raw/2026/tournament_field.csv
+Gonzaga,3,West,,1.9956,0.0,1.0,0.9983,0.7693,0.1951,0.0312,0.0017,0.0,0.9983,0.7693,0.1951,0.0312,0.0017,data/raw/2026/tournament_field.csv
+Nebraska,4,South,,1.5792,0.0,1.0,0.9966,0.4689,0.0973,0.0153,0.0011,0.0,0.9966,0.4689,0.0973,0.0153,0.0011,data/raw/2026/tournament_field.csv
+Wisconsin,5,West,,1.2332,0.0,1.0,0.9928,0.2058,0.0269,0.0074,0.0003,0.0,0.9928,0.2058,0.0269,0.0074,0.0003,data/raw/2026/tournament_field.csv
+Virginia,3,Midwest,,1.851,0.0,1.0,0.9956,0.6475,0.2,0.0067,0.0012,0.0,0.9956,0.6475,0.2,0.0067,0.0012,data/raw/2026/tournament_field.csv
+Louisville,6,East,,1.7634,0.0,1.0,0.9152,0.6047,0.237,0.0063,0.0002,0.0,0.9152,0.6047,0.237,0.0063,0.0002,data/raw/2026/tournament_field.csv
+Villanova,8,West,,0.7863,0.0,1.0,0.6902,0.0697,0.0199,0.0062,0.0003,0.0,0.6902,0.0697,0.0199,0.0062,0.0003,data/raw/2026/tournament_field.csv
+Alabama,4,Midwest,,1.2705,0.0,1.0,0.9898,0.2705,0.0071,0.0027,0.0004,0.0,0.9898,0.2705,0.0071,0.0027,0.0004,data/raw/2026/tournament_field.csv
+Tennessee,6,Midwest,,1.2509,0.0,1.0,0.8363,0.3291,0.0835,0.0017,0.0003,0.0,0.8363,0.3291,0.0835,0.0017,0.0003,data/raw/2026/tournament_field.csv
+BYU,6,West,,0.9207,0.0,1.0,0.7044,0.1888,0.0259,0.0016,0.0,0.0,0.7044,0.1888,0.0259,0.0016,0.0,data/raw/2026/tournament_field.csv
+UCF,10,East,,0.7003,0.0,1.0,0.4998,0.1307,0.0681,0.0016,0.0001,0.0,0.4998,0.1307,0.0681,0.0016,0.0001,data/raw/2026/tournament_field.csv
+Michigan St,3,East,,1.4404,0.0,1.0,0.9648,0.3792,0.0949,0.0015,0.0,0.0,0.9648,0.3792,0.0949,0.0015,0.0,data/raw/2026/tournament_field.csv
+Miami FL,7,West,,0.8598,0.0,1.0,0.7783,0.0623,0.0178,0.0014,0.0,0.0,0.7783,0.0623,0.0178,0.0014,0.0,data/raw/2026/tournament_field.csv
+UCLA,7,East,,0.6953,0.0,1.0,0.5002,0.1294,0.0644,0.0013,0.0,0.0,0.5002,0.1294,0.0644,0.0013,0.0,data/raw/2026/tournament_field.csv
+St Marys,7,South,,0.6696,0.0,1.0,0.6427,0.0225,0.0037,0.0007,0.0,0.0,0.6427,0.0225,0.0037,0.0007,0.0,data/raw/2026/tournament_field.csv
+Santa Clara,10,Midwest,,0.8637,0.0,1.0,0.6926,0.1212,0.0494,0.0005,0.0,0.0,0.6926,0.1212,0.0494,0.0005,0.0,data/raw/2026/tournament_field.csv
+N Carolina,6,South,,0.9331,0.0,1.0,0.8299,0.0982,0.0046,0.0004,0.0,0.0,0.8299,0.0982,0.0046,0.0004,0.0,data/raw/2026/tournament_field.csv
+Utah St,9,West,,0.3267,0.0,1.0,0.3098,0.014,0.0025,0.0004,0.0,0.0,0.3098,0.014,0.0025,0.0004,0.0,data/raw/2026/tournament_field.csv
+Ohio St,8,East,,0.5612,0.0,1.0,0.5562,0.004,0.0008,0.0002,0.0,0.0,0.5562,0.004,0.0008,0.0002,0.0,data/raw/2026/tournament_field.csv
+NC State,11,West,West-11,1.0187,0.7266,0.7266,0.2502,0.0391,0.0027,0.0001,0.0,0.0,0.2502,0.0391,0.0027,0.0001,0.0,data/raw/2026/tournament_field.csv
+Georgia,8,Midwest,,0.8188,0.0,1.0,0.814,0.0043,0.0003,0.0001,0.0001,0.0,0.814,0.0043,0.0003,0.0001,0.0001,data/raw/2026/tournament_field.csv
+Kentucky,7,Midwest,,0.3376,0.0,1.0,0.3074,0.0242,0.0059,0.0001,0.0,0.0,0.3074,0.0242,0.0059,0.0001,0.0,data/raw/2026/tournament_field.csv
+SMU,11,Midwest,Midwest-11,1.0922,0.9054,0.9054,0.1614,0.0234,0.002,0.0,0.0,0.0,0.1614,0.0234,0.002,0.0,0.0,data/raw/2026/tournament_field.csv
+Lehigh,16,South,South-16,0.7871,0.787,0.787,0.0001,0.0,0.0,0.0,0.0,0.0,0.0001,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Iowa,9,South,,0.7692,0.0,1.0,0.7369,0.0288,0.0035,0.0,0.0,0.0,0.7369,0.0288,0.0035,0.0,0.0,data/raw/2026/tournament_field.csv
+UMBC,16,Midwest,Midwest-16,0.7259,0.7259,0.7259,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+TCU,9,East,,0.4461,0.0,1.0,0.4438,0.0022,0.0001,0.0,0.0,0.0,0.4438,0.0022,0.0001,0.0,0.0,data/raw/2026/tournament_field.csv
+Texas A&M,10,South,,0.3657,0.0,1.0,0.3573,0.0075,0.0009,0.0,0.0,0.0,0.3573,0.0075,0.0009,0.0,0.0,data/raw/2026/tournament_field.csv
+Texas,11,West,West-11,0.3216,0.2734,0.2734,0.0454,0.0028,0.0,0.0,0.0,0.0,0.0454,0.0028,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Howard,16,Midwest,Midwest-16,0.2741,0.2741,0.2741,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Clemson,8,South,,0.2667,0.0,1.0,0.2631,0.0034,0.0002,0.0,0.0,0.0,0.2631,0.0034,0.0002,0.0,0.0,data/raw/2026/tournament_field.csv
+Missouri,10,West,,0.2276,0.0,1.0,0.2217,0.0053,0.0006,0.0,0.0,0.0,0.2217,0.0053,0.0006,0.0,0.0,data/raw/2026/tournament_field.csv
+Prairie View,16,South,South-16,0.213,0.213,0.213,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+St Louis,9,Midwest,,0.1862,0.0,1.0,0.186,0.0002,0.0,0.0,0.0,0.0,0.186,0.0002,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+VCU,11,South,,0.175,0.0,1.0,0.1701,0.0048,0.0001,0.0,0.0,0.0,0.1701,0.0048,0.0001,0.0,0.0,data/raw/2026/tournament_field.csv
+South Florida,11,East,,0.1006,0.0,1.0,0.0848,0.0153,0.0005,0.0,0.0,0.0,0.0848,0.0153,0.0005,0.0,0.0,data/raw/2026/tournament_field.csv
+Miami OH,11,Midwest,Midwest-11,0.0969,0.0946,0.0946,0.0023,0.0,0.0,0.0,0.0,0.0,0.0023,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+McNeese,12,South,,0.048,0.0,1.0,0.0445,0.0034,0.0001,0.0,0.0,0.0,0.0445,0.0034,0.0001,0.0,0.0,data/raw/2026/tournament_field.csv
+N Dakota St,14,East,,0.036,0.0,1.0,0.0352,0.0008,0.0,0.0,0.0,0.0,0.0352,0.0008,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Akron,12,Midwest,,0.0236,0.0,1.0,0.0218,0.0018,0.0,0.0,0.0,0.0,0.0218,0.0018,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Cal Baptist,13,East,,0.0206,0.0,1.0,0.0202,0.0004,0.0,0.0,0.0,0.0,0.0202,0.0004,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Hofstra,13,Midwest,,0.0102,0.0,1.0,0.0102,0.0,0.0,0.0,0.0,0.0,0.0102,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+High Point,12,West,,0.0072,0.0,1.0,0.0072,0.0,0.0,0.0,0.0,0.0,0.0072,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Northern Iowa,12,East,,0.0064,0.0,1.0,0.0064,0.0,0.0,0.0,0.0,0.0,0.0064,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Wright St,14,Midwest,,0.0044,0.0,1.0,0.0044,0.0,0.0,0.0,0.0,0.0,0.0044,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Troy,13,South,,0.0034,0.0,1.0,0.0034,0.0,0.0,0.0,0.0,0.0,0.0034,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Pennsylvania,14,South,,0.0034,0.0,1.0,0.0033,0.0001,0.0,0.0,0.0,0.0,0.0033,0.0001,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Kennesaw St.,14,West,,0.0017,0.0,1.0,0.0017,0.0,0.0,0.0,0.0,0.0,0.0017,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Tennessee St,15,Midwest,,0.0016,0.0,1.0,0.0015,0.0001,0.0,0.0,0.0,0.0,0.0015,0.0001,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Hawaii,13,West,,0.0015,0.0,1.0,0.0015,0.0,0.0,0.0,0.0,0.0,0.0015,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Queens,15,West,,0.0011,0.0,1.0,0.0011,0.0,0.0,0.0,0.0,0.0,0.0011,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Furman,15,East,,0.0004,0.0,1.0,0.0004,0.0,0.0,0.0,0.0,0.0,0.0004,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Long Island Brooklyn,16,West,,0.0002,0.0,1.0,0.0002,0.0,0.0,0.0,0.0,0.0,0.0002,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Idaho,15,South,,0.0001,0.0,1.0,0.0001,0.0,0.0,0.0,0.0,0.0,0.0001,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv
+Siena,16,East,,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,data/raw/2026/tournament_field.csv

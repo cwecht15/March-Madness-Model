@@ -1,0 +1,64 @@
+round_index,round_name,game_number,team_left,team_right,left_win_probability,picked_winner
+1,round_of_64,1,Purdue,Fairleigh Dickinson,0.9996403814129055,Purdue
+1,round_of_64,2,Memphis,Florida Atlantic,0.19048586397201053,Florida Atlantic
+1,round_of_64,3,Duke,Oral Roberts,0.6611237531137487,Duke
+1,round_of_64,4,Tennessee,Louisiana,0.8250445930076452,Tennessee
+1,round_of_64,5,Kentucky,Providence,0.45866723711687435,Providence
+1,round_of_64,6,Kansas St.,Montana St.,0.9311238517895624,Kansas St.
+1,round_of_64,7,Michigan St.,USC,0.6063490916863422,Michigan St.
+1,round_of_64,8,Marquette,Vermont,0.9072833238662497,Marquette
+2,round_of_32,1,Purdue,Florida Atlantic,0.2742161577000974,Florida Atlantic
+2,round_of_32,2,Duke,Tennessee,0.48354265626258763,Tennessee
+2,round_of_32,3,Providence,Kansas St.,0.30782189481643163,Kansas St.
+2,round_of_32,4,Michigan St.,Marquette,0.5907752065214824,Michigan St.
+3,sweet_sixteen,1,Florida Atlantic,Tennessee,0.5838470070139339,Florida Atlantic
+3,sweet_sixteen,2,Kansas St.,Michigan St.,0.5678429702322941,Kansas St.
+4,elite_eight,1,Florida Atlantic,Kansas St.,0.580821676822068,Florida Atlantic
+1,round_of_64,1,Houston,Northern Kentucky,0.9861923843993848,Houston
+1,round_of_64,2,Iowa,Auburn,0.19052682413600616,Auburn
+1,round_of_64,3,Miami FL,Drake,0.6115280821749207,Miami FL
+1,round_of_64,4,Indiana,Kent St.,0.4296836552711352,Kent St.
+1,round_of_64,5,Iowa St.,Pittsburgh,0.3663193909646149,Pittsburgh
+1,round_of_64,6,Xavier,Kennesaw St.,0.7808109686705259,Xavier
+1,round_of_64,7,Texas A&M,Penn St.,0.3899558248620176,Penn St.
+1,round_of_64,8,Texas,Colgate,0.9911948906813253,Texas
+2,round_of_32,1,Houston,Auburn,0.7914225022036937,Houston
+2,round_of_32,2,Miami FL,Kent St.,0.583999119420745,Miami FL
+2,round_of_32,3,Pittsburgh,Xavier,0.4258142723205666,Xavier
+2,round_of_32,4,Penn St.,Texas,0.21261475925275986,Texas
+3,sweet_sixteen,1,Houston,Miami FL,0.8970564172644777,Houston
+3,sweet_sixteen,2,Xavier,Texas,0.13300799847210282,Texas
+4,elite_eight,1,Houston,Texas,0.5447319393315583,Houston
+1,round_of_64,1,Alabama,Texas A&M Corpus Chris?,0.9981796296248995,Alabama
+1,round_of_64,2,Maryland,West Virginia,0.44869430235542684,West Virginia
+1,round_of_64,3,San Diego St.,Charleston,0.6921758006727204,San Diego St.
+1,round_of_64,4,Virginia,Furman,0.5087476364299429,Virginia
+1,round_of_64,5,Creighton,N.C. State,0.4786311379405055,N.C. State
+1,round_of_64,6,Baylor,UC Santa Barbara,0.8844150782854334,Baylor
+1,round_of_64,7,Missouri,Utah St.,0.39918433838479966,Utah St.
+1,round_of_64,8,Arizona,Princeton,0.9040816609100015,Arizona
+2,round_of_32,1,Alabama,West Virginia,0.9245537001558154,Alabama
+2,round_of_32,2,San Diego St.,Virginia,0.9250894967679083,San Diego St.
+2,round_of_32,3,N.C. State,Baylor,0.4808245610535604,Baylor
+2,round_of_32,4,Utah St.,Arizona,0.5760013666082213,Utah St.
+3,sweet_sixteen,1,Alabama,San Diego St.,0.8821053846009975,Alabama
+3,sweet_sixteen,2,Baylor,Utah St.,0.4564813471769354,Utah St.
+4,elite_eight,1,Alabama,Utah St.,0.891334115661081,Alabama
+1,round_of_64,1,Kansas,Howard,0.9923920539292493,Kansas
+1,round_of_64,2,Arkansas,Illinois,0.7425901442795344,Arkansas
+1,round_of_64,3,Saint Mary's,VCU,0.9680520221034061,Saint Mary's
+1,round_of_64,4,Connecticut,Iona,0.9521341537059226,Connecticut
+1,round_of_64,5,TCU,Arizona St.,0.481334613160544,Arizona St.
+1,round_of_64,6,Gonzaga,Grand Canyon,0.9683871121794388,Gonzaga
+1,round_of_64,7,Northwestern,Boise St.,0.29995713593149,Boise St.
+1,round_of_64,8,UCLA,UNC Asheville,0.9751772955721056,UCLA
+2,round_of_32,1,Kansas,Arkansas,0.8784038073343226,Kansas
+2,round_of_32,2,Saint Mary's,Connecticut,0.6381713765368261,Saint Mary's
+2,round_of_32,3,Arizona St.,Gonzaga,0.19998969303602432,Gonzaga
+2,round_of_32,4,Boise St.,UCLA,0.14093160616440326,UCLA
+3,sweet_sixteen,1,Kansas,Saint Mary's,0.3246876732195232,Saint Mary's
+3,sweet_sixteen,2,Gonzaga,UCLA,0.30273798634394156,UCLA
+4,elite_eight,1,Saint Mary's,UCLA,0.646773796664968,Saint Mary's
+5,final_four,1,Alabama,Florida Atlantic,0.8175723086710054,Alabama
+5,final_four,1,Houston,Saint Mary's,0.2615958794083975,Saint Mary's
+6,championship,1,Alabama,Saint Mary's,0.4256521950323224,Saint Mary's

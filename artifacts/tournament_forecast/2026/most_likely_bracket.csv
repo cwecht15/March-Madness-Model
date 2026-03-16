@@ -1,0 +1,68 @@
+round_index,round_name,game_number,team_left,team_right,left_win_probability,picked_winner
+1,round_of_64,1,Duke,Siena,0.9999742791273327,Duke
+1,round_of_64,2,Ohio St,TCU,0.5559902272204843,Ohio St
+1,round_of_64,3,St Johns,Northern Iowa,0.9941655433601281,St Johns
+1,round_of_64,4,Kansas,Cal Baptist,0.9793217822606527,Kansas
+1,round_of_64,5,Louisville,South Florida,0.9126392805510287,Louisville
+1,round_of_64,6,Michigan St,N Dakota St,0.9639763833041114,Michigan St
+1,round_of_64,7,UCLA,UCF,0.4906293225730392,UCF
+1,round_of_64,8,Connecticut,Furman,0.9992584548252338,Connecticut
+2,round_of_32,1,Duke,Ohio St,0.9943539934639325,Duke
+2,round_of_32,2,St Johns,Kansas,0.5887890992619913,St Johns
+2,round_of_32,3,Louisville,Michigan St,0.6499995279443531,Louisville
+2,round_of_32,4,UCF,Connecticut,0.26242552926270374,Connecticut
+3,sweet_sixteen,1,Duke,St Johns,0.9458488023980225,Duke
+3,sweet_sixteen,2,Louisville,Connecticut,0.32061307047280385,Connecticut
+4,elite_eight,1,Duke,Connecticut,0.9653454581892184,Duke
+0,first_four,1,Miami OH,SMU,0.09342528668849254,SMU
+0,first_four,2,Howard,UMBC,0.2702227428062868,UMBC
+1,round_of_64,1,Michigan,UMBC,0.9999743831338945,Michigan
+1,round_of_64,2,Georgia,St Louis,0.8179416629318931,Georgia
+1,round_of_64,3,Texas Tech,Akron,0.9805158589458653,Texas Tech
+1,round_of_64,4,Alabama,Hofstra,0.9884723338736082,Alabama
+1,round_of_64,5,Tennessee,SMU,0.8184201133149707,Tennessee
+1,round_of_64,6,Virginia,Wright St,0.995508071188639,Virginia
+1,round_of_64,7,Kentucky,Santa Clara,0.30273812628005126,Santa Clara
+1,round_of_64,8,Iowa St,Tennessee St,0.9981265658335652,Iowa St
+2,round_of_32,1,Michigan,Georgia,0.993136414311269,Michigan
+2,round_of_32,2,Texas Tech,Alabama,0.741294022901791,Texas Tech
+2,round_of_32,3,Tennessee,Virginia,0.39608447830056337,Virginia
+2,round_of_32,4,Santa Clara,Iowa St,0.1728205330552122,Iowa St
+3,sweet_sixteen,1,Michigan,Texas Tech,0.9449601672746556,Michigan
+3,sweet_sixteen,2,Virginia,Iowa St,0.25395903855511337,Iowa St
+4,elite_eight,1,Michigan,Iowa St,0.952499714528741,Michigan
+0,first_four,1,Lehigh,Prairie View,0.7815162596304697,Lehigh
+1,round_of_64,1,Florida,Lehigh,0.9999161651990477,Florida
+1,round_of_64,2,Clemson,Iowa,0.2596332143012391,Iowa
+1,round_of_64,3,Vanderbilt,McNeese,0.9560707581284758,Vanderbilt
+1,round_of_64,4,Nebraska,Troy,0.9965151116391421,Nebraska
+1,round_of_64,5,N Carolina,VCU,0.8281396562761779,N Carolina
+1,round_of_64,6,Illinois,Pennsylvania,0.9968492322535508,Illinois
+1,round_of_64,7,St Marys,Texas A&M,0.6388838984052648,St Marys
+1,round_of_64,8,Houston,Idaho,0.9998305370517241,Houston
+2,round_of_32,1,Florida,Iowa,0.9626703331093207,Florida
+2,round_of_32,2,Vanderbilt,Nebraska,0.5552794366787358,Vanderbilt
+2,round_of_32,3,N Carolina,Illinois,0.11174835327715417,Illinois
+2,round_of_32,4,St Marys,Houston,0.03356728759632245,Houston
+3,sweet_sixteen,1,Florida,Vanderbilt,0.7732421989075368,Florida
+3,sweet_sixteen,2,Illinois,Houston,0.20165301093579607,Houston
+4,elite_eight,1,Florida,Houston,0.3260449645734874,Houston
+0,first_four,1,NC State,Texas,0.7323087687491073,NC State
+1,round_of_64,1,Arizona,Long Island Brooklyn,0.999620148175971,Arizona
+1,round_of_64,2,Villanova,Utah St,0.6896557900380297,Villanova
+1,round_of_64,3,Wisconsin,High Point,0.9926651814650581,Wisconsin
+1,round_of_64,4,Arkansas,Hawaii,0.9983074473015511,Arkansas
+1,round_of_64,5,BYU,NC State,0.6688147613121747,BYU
+1,round_of_64,6,Gonzaga,Kennesaw St.,0.9987437766604366,Gonzaga
+1,round_of_64,7,Miami FL,Missouri,0.7834688595871964,Miami FL
+1,round_of_64,8,Purdue,Queens,0.9992503386311574,Purdue
+2,round_of_32,1,Arizona,Villanova,0.8972602473050562,Arizona
+2,round_of_32,2,Wisconsin,Arkansas,0.20708760143229532,Arkansas
+2,round_of_32,3,BYU,Gonzaga,0.2680488731368046,Gonzaga
+2,round_of_32,4,Miami FL,Purdue,0.07661328282345042,Purdue
+3,sweet_sixteen,1,Arizona,Arkansas,0.7248370383539389,Arizona
+3,sweet_sixteen,2,Gonzaga,Purdue,0.21501056064746213,Purdue
+4,elite_eight,1,Arizona,Purdue,0.6820229799117071,Arizona
+5,final_four,1,Duke,Houston,0.757709602902404,Duke
+5,final_four,1,Arizona,Michigan,0.1644161156470147,Michigan
+6,championship,1,Duke,Michigan,0.4363367319165727,Michigan

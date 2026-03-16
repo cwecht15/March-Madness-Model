@@ -1,0 +1,12 @@
+round_index,round_name,game_number,team_left,left_seed,team_right,right_seed,left_win_probability,right_win_probability,picked_winner,favorite_team,favorite_seed,favorite_win_probability,underdog_team,underdog_seed,underdog_win_probability,seed_gap,upset_level,upset_flag
+2,round_of_32,2,Texas Tech,5,Alabama,4,0.741294022901791,0.258705977098209,Texas Tech,Alabama,4,0.258705977098209,Texas Tech,5,0.741294022901791,1,strong,True
+1,round_of_64,2,Clemson,8,Iowa,9,0.2596332143012391,0.7403667856987609,Iowa,Clemson,8,0.2596332143012391,Iowa,9,0.7403667856987609,1,strong,True
+1,round_of_64,7,Kentucky,7,Santa Clara,10,0.30273812628005126,0.6972618737199487,Santa Clara,Kentucky,7,0.30273812628005126,Santa Clara,10,0.6972618737199487,3,strong,True
+4,elite_eight,1,Florida,1,Houston,2,0.3260449645734874,0.6739550354265126,Houston,Florida,1,0.3260449645734874,Houston,2,0.6739550354265126,1,strong,True
+2,round_of_32,3,Louisville,6,Michigan St,3,0.6499995279443531,0.3500004720556469,Louisville,Michigan St,3,0.3500004720556469,Louisville,6,0.6499995279443531,3,strong,True
+2,round_of_32,2,St Johns,5,Kansas,4,0.5887890992619913,0.4112109007380087,St Johns,Kansas,4,0.4112109007380087,St Johns,5,0.5887890992619913,1,strong,True
+2,round_of_32,2,Vanderbilt,5,Nebraska,4,0.5552794366787358,0.4447205633212642,Vanderbilt,Nebraska,4,0.4447205633212642,Vanderbilt,5,0.5552794366787358,1,strong,True
+1,round_of_64,7,UCLA,7,UCF,10,0.4906293225730392,0.5093706774269608,UCF,UCLA,7,0.4906293225730392,UCF,10,0.5093706774269608,3,strong,True
+1,round_of_64,2,Ohio St,8,TCU,9,0.5559902272204843,0.4440097727795157,Ohio St,Ohio St,8,0.5559902272204843,TCU,9,0.4440097727795157,1,live,True
+2,round_of_32,3,Tennessee,6,Virginia,3,0.39608447830056337,0.6039155216994366,Virginia,Virginia,3,0.6039155216994366,Tennessee,6,0.39608447830056337,3,live,True
+1,round_of_64,7,St Marys,7,Texas A&M,10,0.6388838984052648,0.3611161015947352,St Marys,St Marys,7,0.6388838984052648,Texas A&M,10,0.3611161015947352,3,live,True

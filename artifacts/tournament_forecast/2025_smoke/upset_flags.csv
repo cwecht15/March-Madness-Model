@@ -1,0 +1,16 @@
+round_index,round_name,game_number,team_left,left_seed,team_right,right_seed,left_win_probability,right_win_probability,picked_winner,favorite_team,favorite_seed,favorite_win_probability,underdog_team,underdog_seed,underdog_win_probability,seed_gap,upset_level,upset_flag
+1,round_of_64,3,Memphis,5,Colorado St,12,0.16913740007988626,0.8308625999201138,Colorado St,Memphis,5,0.16913740007988626,Colorado St,12,0.8308625999201138,7,strong,True
+2,round_of_32,2,Michigan,5,Texas A&M,4,0.8044078356774456,0.19559216432255444,Michigan,Texas A&M,4,0.19559216432255444,Michigan,5,0.8044078356774456,1,strong,True
+2,round_of_32,3,BYU,6,Wisconsin,3,0.7595758936606513,0.24042410633934874,BYU,Wisconsin,3,0.24042410633934874,BYU,6,0.7595758936606513,3,strong,True
+2,round_of_32,3,Mississippi,6,Iowa St,3,0.7532240449532,0.24677595504680006,Mississippi,Iowa St,3,0.24677595504680006,Mississippi,6,0.7532240449532,3,strong,True
+1,round_of_64,2,Mississippi St,8,Baylor,9,0.3347144058306856,0.6652855941693143,Baylor,Mississippi St,8,0.3347144058306856,Baylor,9,0.6652855941693143,1,strong,True
+2,round_of_32,4,Arkansas,10,St Johns,2,0.6482441290652311,0.3517558709347689,Arkansas,St Johns,2,0.3517558709347689,Arkansas,10,0.6482441290652311,8,strong,True
+2,round_of_32,2,Oregon,5,Arizona,4,0.6053387303030043,0.39466126969699566,Oregon,Arizona,4,0.39466126969699566,Oregon,5,0.6053387303030043,1,strong,True
+4,elite_eight,1,Duke,1,Alabama,2,0.3957871234669198,0.6042128765330802,Alabama,Duke,1,0.3957871234669198,Alabama,2,0.6042128765330802,1,strong,True
+1,round_of_64,5,Missouri,6,Drake,11,0.41373330116233925,0.5862666988376608,Drake,Missouri,6,0.41373330116233925,Drake,11,0.5862666988376608,5,strong,True
+1,round_of_64,7,Kansas,7,Arkansas,10,0.42816916943412625,0.5718308305658737,Arkansas,Kansas,7,0.42816916943412625,Arkansas,10,0.5718308305658737,3,strong,True
+1,round_of_64,2,Louisville,8,Creighton,9,0.4576373394707644,0.5423626605292355,Creighton,Louisville,8,0.4576373394707644,Creighton,9,0.5423626605292355,1,strong,True
+2,round_of_32,3,Illinois,6,Kentucky,3,0.49286990332689007,0.5071300966731099,Kentucky,Kentucky,3,0.5071300966731099,Illinois,6,0.49286990332689007,3,strong,True
+5,final_four,1,Alabama,2,Houston,1,0.39361765366946166,0.6063823463305383,Houston,Houston,1,0.6063823463305383,Alabama,2,0.39361765366946166,1,live,True
+1,round_of_64,7,Marquette,7,New Mexico,10,0.6169745191915177,0.3830254808084823,Marquette,Marquette,7,0.6169745191915177,New Mexico,10,0.3830254808084823,3,live,True
+1,round_of_64,2,Connecticut,8,Oklahoma,9,0.6186936577648333,0.3813063422351667,Connecticut,Connecticut,8,0.6186936577648333,Oklahoma,9,0.3813063422351667,1,live,True

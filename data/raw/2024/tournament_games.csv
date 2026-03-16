@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+East,1,UConn,91,16,Stetson,52
+East,8,FAU,65,9,Northwestern,77
+East,5,San Diego St,69,12,UAB,65
+East,4,Auburn,76,13,Yale,78
+East,6,BYU,67,11,Duquesne,71
+East,3,Illinois,85,14,Morehead St,69
+East,7,Washington St,66,10,Drake,61
+East,2,Iowa State,82,15,S Dakota St,65
+East,1,UConn,75,9,Northwestern,58
+East,5,San Diego St,85,13,Yale,57
+East,11,Duquesne,63,3,Illinois,89
+East,7,Washington St,56,2,Iowa State,67
+East,1,UConn,82,5,San Diego St,52
+East,3,Illinois,72,2,Iowa State,69
+East,1,UConn,77,3,Illinois,52
+South,4,Duke,64,11,NC State,76
+South,1,Houston,51,4,Duke,54
+South,11,NC State,67,2,Marquette,58
+South,1,Houston,100,9,Texas A&M,95
+South,12,James Madison,55,4,Duke,93
+South,11,NC State,79,14,Oakland,73
+South,10,Colorado,77,2,Marquette,81
+South,1,Houston,86,16,Longwood,46
+South,8,Nebraska,83,9,Texas A&M,98
+South,5,Wisconsin,61,12,James Madison,72
+South,4,Duke,64,13,Vermont,47
+South,6,Texas Tech,67,11,NC State,80
+South,3,Kentucky,76,14,Oakland,80
+South,7,Florida,100,10,Colorado,102
+South,2,Marquette,87,15,Western KY,69
+Final Four,1,UConn,86,4,Alabama,72
+Final Four,11,NC State,50,1,Purdue,63
+West,1,North Carolina,90,16,Wagner,62
+West,8,Mississippi St,51,9,Michigan St,69
+West,5,Saint Mary's,66,12,Grand Canyon,75
+West,4,Alabama,109,13,Charleston,96
+West,6,Clemson,77,11,New Mexico,56
+West,3,Baylor,92,14,Colgate,67
+West,7,Dayton,63,10,Nevada,60
+West,2,Arizona,85,15,Long Beach St,65
+West,1,North Carolina,85,9,Michigan St,69
+West,12,Grand Canyon,61,4,Alabama,72
+West,6,Clemson,72,3,Baylor,64
+West,7,Dayton,68,2,Arizona,78
+West,1,North Carolina,87,4,Alabama,89
+West,6,Clemson,77,2,Arizona,72
+West,4,Alabama,89,6,Clemson,82
+Midwest,1,Purdue,72,2,Tennessee,66
+Midwest,1,Purdue,80,5,Gonzaga,68
+Midwest,3,Creighton,75,2,Tennessee,82
+Midwest,1,Purdue,106,8,Utah State,67
+Midwest,5,Gonzaga,89,4,Kansas,68
+Midwest,11,Oregon,73,3,Creighton,86
+Midwest,7,Texas,58,2,Tennessee,62
+Midwest,1,Purdue,78,16,Grambling,50
+Midwest,8,Utah State,88,9,TCU,72
+Midwest,5,Gonzaga,86,12,McNeese,65
+Midwest,4,Kansas,93,13,Samford,89
+Midwest,6,South Carolina,73,11,Oregon,87
+Midwest,3,Creighton,77,14,Akron,60
+Midwest,7,Texas,56,10,Colorado St,44
+Midwest,2,Tennessee,83,15,Saint Peter's,49
+First Four,10,Boise St,53,10,Colorado,60
+First Four,16,Montana St,81,16,Grambling,88
+First Four,10,Virginia,42,10,Colorado St,67
+First Four,16,Howard,68,16,Wagner,71
+Championship,1,CONN,75,1,PUR,60

@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+South,1,Alabama,96,16,Texas A&M-CC,75
+South,8,Maryland,67,9,West Virginia,65
+South,5,San Diego St,63,12,Charleston,57
+South,4,Virginia,67,13,Furman,68
+South,6,Creighton,72,11,NC State,63
+South,3,Baylor,74,14,Santa Barbara,56
+South,7,Missouri,76,10,Utah State,65
+South,2,Arizona,55,15,Princeton,59
+South,1,Alabama,73,8,Maryland,51
+South,5,San Diego St,75,13,Furman,52
+South,6,Creighton,85,3,Baylor,76
+South,7,Missouri,63,15,Princeton,78
+South,1,Alabama,64,5,San Diego St,71
+South,6,Creighton,86,15,Princeton,75
+South,5,San Diego St,57,6,Creighton,56
+Midwest,5,Miami,88,2,Texas,81
+Midwest,1,Houston,75,5,Miami,89
+Midwest,3,Xavier,71,2,Texas,83
+Midwest,1,Houston,81,9,Auburn,64
+Midwest,5,Miami,85,4,Indiana,69
+Midwest,11,Pitt,73,3,Xavier,84
+Midwest,10,Penn State,66,2,Texas,71
+Midwest,1,Houston,63,16,N Kentucky,52
+Midwest,8,Iowa,75,9,Auburn,83
+Midwest,5,Miami,63,12,Drake,56
+Midwest,4,Indiana,71,13,Kent State,60
+Midwest,6,Iowa State,41,11,Pitt,59
+Midwest,3,Xavier,72,14,Kennesaw St,67
+Midwest,7,Texas A&M,59,10,Penn State,76
+Midwest,2,Texas,81,15,Colgate,61
+Final Four,5,San Diego St,72,9,FAU,71
+Final Four,5,Miami,59,4,UConn,72
+East,1,Purdue,58,16,FDU,63
+East,8,Memphis,65,9,FAU,66
+East,5,Duke,74,12,Oral Roberts,51
+East,4,Tennessee,58,13,Louisiana,55
+East,6,Kentucky,61,11,Providence,53
+East,3,Kansas St,77,14,Montana St,65
+East,7,Michigan St,72,10,USC,62
+East,2,Marquette,78,15,Vermont,61
+East,16,FDU,70,9,FAU,78
+East,5,Duke,52,4,Tennessee,65
+East,6,Kentucky,69,3,Kansas St,75
+East,7,Michigan St,69,2,Marquette,60
+East,9,FAU,62,4,Tennessee,55
+East,3,Kansas St,98,7,Michigan St,93
+East,9,FAU,79,3,Kansas St,76
+West,4,UConn,82,3,Gonzaga,54
+West,8,Arkansas,65,4,UConn,88
+West,3,Gonzaga,79,2,UCLA,76
+West,1,Kansas,71,8,Arkansas,72
+West,5,Saint Mary's,55,4,UConn,70
+West,6,TCU,81,3,Gonzaga,84
+West,7,Northwestern,63,2,UCLA,68
+West,1,Kansas,96,16,Howard,68
+West,8,Arkansas,73,9,Illinois,63
+West,5,Saint Mary's,63,12,VCU,51
+West,4,UConn,87,13,Iona,63
+West,6,TCU,72,11,Arizona St,70
+West,3,Gonzaga,82,14,Grand Canyon,70
+West,7,Northwestern,75,10,Boise St,67
+West,2,UCLA,86,15,UNC Asheville,53
+First Four,16,Texas A&M-CC,75,16,SE Missouri,71
+First Four,11,Mississippi St,59,11,Pitt,60
+First Four,11,Arizona St,98,11,Nevada,73
+First Four,16,Texas Southern,61,16,FDU,84
+Championship,5,SDSU,59,4,CONN,76

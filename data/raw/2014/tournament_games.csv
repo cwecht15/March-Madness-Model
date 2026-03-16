@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+South,1,Florida,67,16,UAlbany,55
+South,8,Colorado,48,9,Pitt,77
+South,5,VCU,75,12,SF Austin,77
+South,4,UCLA,76,13,Tulsa,59
+South,6,Ohio State,59,11,Dayton,60
+South,3,Syracuse,77,14,W Michigan,53
+South,7,New Mexico,53,10,Stanford,58
+South,2,Kansas,80,15,E Kentucky,69
+South,1,Florida,61,9,Pitt,45
+South,12,SF Austin,60,4,UCLA,77
+South,11,Dayton,55,3,Syracuse,53
+South,10,Stanford,60,2,Kansas,57
+South,1,Florida,79,4,UCLA,68
+South,11,Dayton,82,10,Stanford,72
+South,1,Florida,62,11,Dayton,52
+West,1,Arizona,63,2,Wisconsin,64
+West,1,Arizona,70,4,San Diego St,64
+West,6,Baylor,52,2,Wisconsin,69
+West,1,Arizona,84,8,Gonzaga,61
+West,12,N Dakota St,44,4,San Diego St,63
+West,6,Baylor,85,3,Creighton,55
+West,7,Oregon,77,2,Wisconsin,85
+West,1,Arizona,68,16,Weber St,59
+West,8,Gonzaga,85,9,Oklahoma St,77
+West,5,Oklahoma,75,12,N Dakota St,80
+West,4,San Diego St,73,13,New Mexico St,69
+West,6,Baylor,74,11,Nebraska,60
+West,3,Creighton,76,14,Louisiana,66
+West,7,Oregon,87,10,BYU,68
+West,2,Wisconsin,75,15,American,35
+Final Four,1,Florida,53,7,UConn,63
+Final Four,2,Wisconsin,73,8,Kentucky,74
+East,1,Virginia,70,16,Coastal,59
+East,8,Memphis,71,9,G Washington,66
+East,5,Cincinnati,57,12,Harvard,61
+East,4,Michigan St,93,13,Delaware,78
+East,6,North Carolina,79,11,Providence,77
+East,3,Iowa State,93,14,NC Central,75
+East,7,UConn,89,10,Saint Joseph's,81
+East,2,Villanova,73,15,Milwaukee,53
+East,1,Virginia,78,8,Memphis,60
+East,12,Harvard,73,4,Michigan St,80
+East,6,North Carolina,83,3,Iowa State,85
+East,7,UConn,77,2,Villanova,65
+East,1,Virginia,59,4,Michigan St,61
+East,3,Iowa State,76,7,UConn,81
+East,4,Michigan St,54,7,UConn,60
+Midwest,8,Kentucky,75,2,Michigan,72
+Midwest,8,Kentucky,74,4,Louisville,69
+Midwest,11,Tennessee,71,2,Michigan,73
+Midwest,1,Wichita St,76,8,Kentucky,78
+Midwest,5,Saint Louis,51,4,Louisville,66
+Midwest,11,Tennessee,83,14,Mercer,63
+Midwest,7,Texas,65,2,Michigan,79
+Midwest,1,Wichita St,64,16,Cal Poly,37
+Midwest,8,Kentucky,56,9,Kansas St,49
+Midwest,5,Saint Louis,83,12,NC State,80
+Midwest,4,Louisville,71,13,Manhattan,64
+Midwest,6,UMass,67,11,Tennessee,86
+Midwest,3,Duke,71,14,Mercer,78
+Midwest,7,Texas,87,10,Arizona St,85
+Midwest,2,Michigan,57,15,Wofford,40
+First Four,16,UAlbany,71,16,Mount St Marys,64
+First Four,16,Cal Poly,81,16,Texas Southern,69
+First Four,12,NC State,74,12,Xavier,59
+First Four,11,Iowa,65,11,Tennessee,78
+Championship,7,CONN,60,8,UK,54

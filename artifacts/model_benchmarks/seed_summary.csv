@@ -1,0 +1,9 @@
+task,primary_metric,all_features_model,all_features_mae,no_seed_model,no_seed_mae,seed_only_model,seed_only_mae,seed_delta,all_features_expected_finish_mae,no_seed_expected_finish_mae,seed_only_expected_finish_mae,all_features_brier,no_seed_brier,seed_only_brier
+points,mae,poisson,2.9093983765681917,poisson,2.9054956891321178,xgboost,3.199103308345423,0.003902687436073915,,,,,,
+finish,expected_finish_mae,xgboost,,xgboost,,hist_gb,,0.0021953380468379136,0.6655303722201855,0.6633350341733476,0.7380977371311047,,,
+round_of_64,brier,logistic,,logistic,,hist_gb,,0.000641232400087538,,,,0.1623339706414687,0.16169273824138117,0.1766410240668855
+round_of_32,brier,xgboost,,xgboost,,hist_gb,,-0.0019672067040847757,,,,0.11867593186244553,0.1206431385665303,0.12848712395382023
+sweet_sixteen,brier,hist_gb,,hist_gb,,hist_gb,,-0.00016169160908979796,,,,0.08083899692429121,0.08100068853338101,0.08466962785543036
+elite_eight,brier,xgboost,,xgboost,,xgboost,,0.00010849318636395322,,,,0.05106155693397863,0.05095306374761468,0.05108165933726963
+semifinal,brier,xgboost,,xgboost,,xgboost,,-5.8630933462471e-05,,,,0.024731392152153104,0.024790023085615575,0.025750754042886494
+championship,brier,hist_gb,,hist_gb,,hist_gb,,0.00044986773080596745,,,,0.012611936923871752,0.012162069193065785,0.01354229059210013

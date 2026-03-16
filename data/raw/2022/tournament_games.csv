@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+West,1,Gonzaga,93,16,Georgia St,72
+West,8,Boise St,53,9,Memphis,64
+West,5,UConn,63,12,New Mexico St,70
+West,4,Arkansas,75,13,Vermont,71
+West,6,Alabama,64,11,Notre Dame,78
+West,3,Texas Tech,97,14,Montana St,62
+West,7,Michigan St,74,10,Davidson,73
+West,2,Duke,78,15,Fullerton,61
+West,1,Gonzaga,82,9,Memphis,78
+West,12,New Mexico St,48,4,Arkansas,53
+West,11,Notre Dame,53,3,Texas Tech,59
+West,7,Michigan St,76,2,Duke,85
+West,1,Gonzaga,68,4,Arkansas,74
+West,3,Texas Tech,73,2,Duke,78
+West,4,Arkansas,69,2,Duke,78
+South,5,Houston,44,2,Villanova,50
+South,1,Arizona,60,5,Houston,72
+South,11,Michigan,55,2,Villanova,63
+South,1,Arizona,85,9,TCU,80
+South,5,Houston,68,4,Illinois,53
+South,11,Michigan,76,3,Tennessee,68
+South,7,Ohio State,61,2,Villanova,71
+South,1,Arizona,87,16,Wright St,70
+South,8,Seton Hall,42,9,TCU,69
+South,5,Houston,82,12,UAB,68
+South,4,Illinois,54,13,Chattanooga,53
+South,6,Colorado St,63,11,Michigan,75
+South,3,Tennessee,88,14,Longwood,56
+South,7,Ohio State,54,10,Loyola Chicago,41
+South,2,Villanova,80,15,Delaware,60
+Final Four,2,Duke,77,8,North Carolina,81
+Final Four,2,Villanova,65,1,Kansas,81
+East,1,Baylor,85,16,Norfolk St,49
+East,8,North Carolina,95,9,Marquette,63
+East,5,Saint Mary's,82,12,Indiana,53
+East,4,UCLA,57,13,Akron,53
+East,6,Texas,81,11,Virginia Tech,73
+East,3,Purdue,78,14,Yale,56
+East,7,Murray St,92,10,San Francisco,87
+East,2,Kentucky,79,15,Saint Peter's,85
+East,1,Baylor,86,8,North Carolina,93
+East,5,Saint Mary's,56,4,UCLA,72
+East,6,Texas,71,3,Purdue,81
+East,7,Murray St,60,15,Saint Peter's,70
+East,8,North Carolina,73,4,UCLA,66
+East,3,Purdue,64,15,Saint Peter's,67
+East,8,North Carolina,69,15,Saint Peter's,49
+Midwest,1,Kansas,76,10,Miami,50
+Midwest,1,Kansas,66,4,Providence,61
+Midwest,11,Iowa State,56,10,Miami,70
+Midwest,1,Kansas,79,9,Creighton,72
+Midwest,12,Richmond,51,4,Providence,79
+Midwest,11,Iowa State,54,3,Wisconsin,49
+Midwest,10,Miami,79,2,Auburn,61
+Midwest,1,Kansas,83,16,Texas Southern,56
+Midwest,8,San Diego St,69,9,Creighton,72
+Midwest,5,Iowa,63,12,Richmond,67
+Midwest,4,Providence,66,13,S Dakota St,57
+Midwest,6,LSU,54,11,Iowa State,59
+Midwest,3,Wisconsin,67,14,Colgate,60
+Midwest,7,USC,66,10,Miami,68
+Midwest,2,Auburn,80,15,Jax State,61
+First Four,16,Texas Southern,76,16,Texas A&M-CC,67
+First Four,12,Wyoming,58,12,Indiana,66
+First Four,16,Wright St,93,16,Bryant,82
+First Four,11,Rutgers,87,11,Notre Dame,89
+Championship,8,UNC,69,1,KU,72

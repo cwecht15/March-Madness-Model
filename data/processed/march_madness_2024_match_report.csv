@@ -1,0 +1,797 @@
+source,raw_team,normalized_team,canonical_team,match_method
+results,CONN,conn,Connecticut,global_alias
+results,Houston,houston,Houston,historical_exact
+results,North Carolina,north carolina,N Carolina,global_alias
+results,PUR,pur,Purdue,global_alias
+results,Purdue,purdue,Purdue,historical_exact
+results,UConn,uconn,Connecticut,global_alias
+results,Arizona,arizona,Arizona,historical_exact
+results,Iowa State,iowa state,Iowa St,global_alias
+results,Marquette,marquette,Marquette,historical_exact
+results,Tennessee,tennessee,Tennessee,historical_exact
+results,Baylor,baylor,Baylor,historical_exact
+results,Creighton,creighton,Creighton,historical_exact
+results,Illinois,illinois,Illinois,historical_exact
+results,Kentucky,kentucky,Kentucky,historical_exact
+results,Alabama,alabama,Alabama,historical_exact
+results,Auburn,auburn,Auburn,historical_exact
+results,Duke,duke,Duke,historical_exact
+results,Kansas,kansas,Kansas,historical_exact
+results,Gonzaga,gonzaga,Gonzaga,historical_exact
+results,Saint Mary's,st mary s,St Marys,global_alias
+results,San Diego St,san diego st,San Diego St,global_alias
+results,Wisconsin,wisconsin,Wisconsin,historical_exact
+results,BYU,byu,BYU,historical_exact
+results,Clemson,clemson,Clemson,historical_exact
+results,South Carolina,south carolina,S Carolina,global_alias
+results,Texas Tech,texas tech,Texas Tech,historical_exact
+results,Dayton,dayton,Dayton,historical_exact
+results,Florida,florida,Florida,historical_exact
+results,Texas,texas,Texas,historical_exact
+results,Washington St,washington st,Washington St,global_alias
+results,FAU,fau,Fla Atlantic,global_alias
+results,Mississippi St,mississippi st,Mississippi St,global_alias
+results,Nebraska,nebraska,Nebraska,historical_exact
+results,Utah State,utah state,Utah St,global_alias
+results,Michigan St,michigan st,Michigan St,global_alias
+results,Northwestern,northwestern,Northwestern,historical_exact
+results,TCU,tcu,TCU,historical_exact
+results,Texas A&M,texas a and m,Texas A&M,historical_exact
+results,Boise St,boise st,Boise St,global_alias
+results,Colorado,colorado,Colorado,historical_exact
+results,Colorado St,colorado st,Colorado St,historical_exact
+results,Drake,drake,Drake,historical_exact
+results,Nevada,nevada,Nevada,historical_exact
+results,Virginia,virginia,Virginia,historical_exact
+results,Duquesne,duquesne,Duquesne,historical_exact
+results,NC State,nc state,NC State,historical_exact
+results,New Mexico,new mexico,New Mexico,historical_exact
+results,Oregon,oregon,Oregon,historical_exact
+results,Grand Canyon,grand canyon,Grd Canyon,global_alias
+results,James Madison,james madison,James Madison,historical_exact
+results,McNeese,mcneese,McNeese,cleaned
+results,UAB,uab,UAB,historical_exact
+results,Charleston,charleston,Charleston,historical_exact
+results,Samford,samford,Samford,historical_exact
+results,Vermont,vermont,Vermont,historical_exact
+results,Yale,yale,Yale,historical_exact
+results,Akron,akron,Akron,historical_exact
+results,Colgate,colgate,Colgate,historical_exact
+results,Morehead St,morehead st,Morehead St,historical_exact
+results,Oakland,oakland,Oakland,historical_exact
+results,Long Beach St,long beach st,Long Beach St,historical_exact
+results,S Dakota St,s dakota st,S Dakota St,historical_exact
+results,Saint Peter's,st peter s,St Peters,global_alias
+results,Western KY,western ky,Western KY,cleaned
+results,Grambling,grambling,Grambling,cleaned
+results,Howard,howard,Howard,historical_exact
+results,Longwood,longwood,Longwood,historical_exact
+results,Montana St,montana st,Montana St,global_alias
+results,Stetson,stetson,Stetson,historical_exact
+results,Wagner,wagner,Wagner,historical_exact
+kenpom,Connecticut,connecticut,Connecticut,historical_exact
+kenpom,Houston,houston,Houston,historical_exact
+kenpom,Purdue,purdue,Purdue,historical_exact
+kenpom,Auburn,auburn,Auburn,historical_exact
+kenpom,Tennessee,tennessee,Tennessee,historical_exact
+kenpom,Arizona,arizona,Arizona,historical_exact
+kenpom,Duke,duke,Duke,historical_exact
+kenpom,Iowa St.,iowa st,Iowa St,global_alias
+kenpom,North Carolina,north carolina,N Carolina,global_alias
+kenpom,Illinois,illinois,Illinois,historical_exact
+kenpom,Creighton,creighton,Creighton,historical_exact
+kenpom,Gonzaga,gonzaga,Gonzaga,historical_exact
+kenpom,Marquette,marquette,Marquette,historical_exact
+kenpom,Alabama,alabama,Alabama,historical_exact
+kenpom,Baylor,baylor,Baylor,historical_exact
+kenpom,Michigan St.,michigan st,Michigan St,global_alias
+kenpom,Wisconsin,wisconsin,Wisconsin,historical_exact
+kenpom,BYU,byu,BYU,historical_exact
+kenpom,Clemson,clemson,Clemson,historical_exact
+kenpom,Saint Mary's,st mary s,St Marys,global_alias
+kenpom,St. John's,st john s,St Johns,global_alias
+kenpom,San Diego St.,san diego st,San Diego St,global_alias
+kenpom,Kentucky,kentucky,Kentucky,historical_exact
+kenpom,Colorado,colorado,Colorado,historical_exact
+kenpom,Texas,texas,Texas,historical_exact
+kenpom,Florida,florida,Florida,historical_exact
+kenpom,Kansas,kansas,Kansas,historical_exact
+kenpom,Wake Forest,wake forest,Wake Forest,cleaned
+kenpom,New Mexico,new mexico,New Mexico,historical_exact
+kenpom,Nebraska,nebraska,Nebraska,historical_exact
+kenpom,Texas Tech,texas tech,Texas Tech,historical_exact
+kenpom,Dayton,dayton,Dayton,historical_exact
+kenpom,Pittsburgh,pittsburgh,Pittsburgh,historical_exact
+kenpom,Mississippi St.,mississippi st,Mississippi St,global_alias
+kenpom,Texas A&M,texas a and m,Texas A&M,historical_exact
+kenpom,Colorado St.,colorado st,Colorado St,historical_exact
+kenpom,Villanova,villanova,Villanova,historical_exact
+kenpom,Indiana St.,indiana st,Indiana St,historical_exact
+kenpom,Cincinnati,cincinnati,Cincinnati,historical_exact
+kenpom,Nevada,nevada,Nevada,historical_exact
+kenpom,nan,nan,nan,cleaned
+kenpom,Team,team,Team,cleaned
+kenpom,Northwestern,northwestern,Northwestern,historical_exact
+kenpom,Washington St.,washington st,Washington St,global_alias
+kenpom,TCU,tcu,TCU,historical_exact
+kenpom,Boise St.,boise st,Boise St,global_alias
+kenpom,N.C. State,n c state,NC State,global_alias
+kenpom,Oklahoma,oklahoma,Oklahoma,historical_exact
+kenpom,Florida Atlantic,florida atlantic,Fla Atlantic,global_alias
+kenpom,Utah,utah,Utah,historical_exact
+kenpom,Ohio St.,ohio st,Ohio St,historical_exact
+kenpom,Seton Hall,seton hall,Seton Hall,historical_exact
+kenpom,Utah St.,utah st,Utah St,global_alias
+kenpom,Grand Canyon,grand canyon,Grd Canyon,global_alias
+kenpom,Drake,drake,Drake,historical_exact
+kenpom,South Carolina,south carolina,S Carolina,global_alias
+kenpom,Oregon,oregon,Oregon,historical_exact
+kenpom,Xavier,xavier,Xavier,historical_exact
+kenpom,Iowa,iowa,Iowa,historical_exact
+kenpom,Virginia Tech,virginia tech,Virginia Tech,historical_exact
+kenpom,Providence,providence,Providence,historical_exact
+kenpom,Washington,washington,Washington,historical_exact
+kenpom,Butler,butler,Butler,historical_exact
+kenpom,Maryland,maryland,Maryland,historical_exact
+kenpom,James Madison,james madison,James Madison,historical_exact
+kenpom,Bradley,bradley,Bradley,historical_exact
+kenpom,San Francisco,san francisco,San Francisco,historical_exact
+kenpom,UCF,ucf,UCF,cleaned
+kenpom,McNeese St.,mcneese st,McNeese,global_alias
+kenpom,Virginia,virginia,Virginia,historical_exact
+kenpom,Princeton,princeton,Princeton,historical_exact
+kenpom,Kansas St.,kansas st,Kansas St.,cleaned
+kenpom,Boston College,boston college,Boston College,cleaned
+kenpom,SMU,smu,SMU,historical_exact
+kenpom,UNLV,unlv,UNLV,historical_exact
+kenpom,North Texas,north texas,North Texas,historical_exact
+kenpom,VCU,vcu,VCU,historical_exact
+kenpom,Memphis,memphis,Memphis,historical_exact
+kenpom,Penn St.,penn st,Penn St.,cleaned
+kenpom,Minnesota,minnesota,Minnesota,historical_exact
+kenpom,Florida St.,florida st,Florida St,historical_exact
+kenpom,Syracuse,syracuse,Syracuse,historical_exact
+kenpom,Samford,samford,Samford,historical_exact
+kenpom,UC Irvine,uc irvine,UC Irvine,historical_exact
+kenpom,Appalachian St.,appalachian st,Appalachian St.,cleaned
+kenpom,Georgia,georgia,Georgia,historical_exact
+kenpom,USC,usc,USC,historical_exact
+kenpom,Mississippi,mississippi,Mississippi,cleaned
+kenpom,South Florida,south florida,South Florida,historical_exact
+kenpom,Duquesne,duquesne,Duquesne,historical_exact
+kenpom,Richmond,richmond,Richmond,historical_exact
+kenpom,Yale,yale,Yale,historical_exact
+kenpom,Indiana,indiana,Indiana,historical_exact
+kenpom,Massachusetts,massachusetts,Massachusetts,historical_exact
+kenpom,Loyola Chicago,loyola chicago,Loyola Chicago,historical_exact
+kenpom,Louisiana Tech,louisiana tech,Louisiana Tech,cleaned
+kenpom,LSU,lsu,LSU,historical_exact
+kenpom,Miami FL,miami fl,Miami FL,historical_exact
+kenpom,George Mason,george mason,George Mason,historical_exact
+kenpom,UCLA,ucla,UCLA,historical_exact
+kenpom,Saint Joseph's,st joseph s,Saint Joseph's,cleaned
+kenpom,Rutgers,rutgers,Rutgers,historical_exact
+kenpom,Charleston,charleston,Charleston,historical_exact
+kenpom,St. Bonaventure,st bonaventure,St Bonaventure,historical_exact
+kenpom,Cornell,cornell,Cornell,cleaned
+kenpom,Vermont,vermont,Vermont,historical_exact
+kenpom,Stanford,stanford,Stanford,historical_exact
+kenpom,UAB,uab,UAB,historical_exact
+kenpom,Seattle,seattle,Seattle,cleaned
+kenpom,Arkansas,arkansas,Arkansas,historical_exact
+kenpom,Santa Clara,santa clara,Santa Clara,cleaned
+kenpom,Western Carolina,western carolina,Western Carolina,cleaned
+kenpom,Northern Iowa,northern iowa,Northern Iowa,historical_exact
+kenpom,UT Arlington,ut arlington,UT Arlington,cleaned
+kenpom,Hofstra,hofstra,Hofstra,cleaned
+kenpom,High Point,high point,High Point,cleaned
+kenpom,Belmont,belmont,Belmont,historical_exact
+kenpom,Morehead St.,morehead st,Morehead St,historical_exact
+kenpom,Oklahoma St.,oklahoma st,Oklahoma St,historical_exact
+kenpom,Notre Dame,notre dame,Notre Dame,historical_exact
+kenpom,UNC Wilmington,unc wilmington,UNC Wilmington,historical_exact
+kenpom,Charlotte,charlotte,Charlotte,cleaned
+kenpom,California,california,California,historical_exact
+kenpom,Akron,akron,Akron,historical_exact
+kenpom,Georgia Tech,georgia tech,Georgia Tech,historical_exact
+kenpom,Southern Illinois,southern illinois,Southern Illinois,cleaned
+kenpom,Davidson,davidson,Davidson,historical_exact
+kenpom,Drexel,drexel,Drexel,historical_exact
+kenpom,Arizona St.,arizona st,Arizona St.,cleaned
+kenpom,Michigan,michigan,Michigan,historical_exact
+kenpom,Tarleton St.,tarleton st,Tarleton St.,cleaned
+kenpom,UC San Diego,uc san diego,UC San Diego,cleaned
+kenpom,Oakland,oakland,Oakland,historical_exact
+kenpom,Troy,troy,Troy,historical_exact
+kenpom,Arkansas St.,arkansas st,Arkansas St.,cleaned
+kenpom,Youngstown St.,youngstown st,Youngstown St.,cleaned
+kenpom,Western Kentucky,western kentucky,Western KY,global_alias
+kenpom,Tulane,tulane,Tulane,cleaned
+kenpom,Liberty,liberty,Liberty,historical_exact
+kenpom,South Dakota St.,south dakota st,S Dakota St,global_alias
+kenpom,Toledo,toledo,Toledo,cleaned
+kenpom,Chattanooga,chattanooga,Chattanooga,historical_exact
+kenpom,Furman,furman,Furman,historical_exact
+kenpom,Sam Houston St.,sam houston st,Sam Houston St.,cleaned
+kenpom,Ohio,ohio,Ohio,historical_exact
+kenpom,West Virginia,west virginia,West Virginia,historical_exact
+kenpom,Missouri,missouri,Missouri,historical_exact
+kenpom,Towson,towson,Towson,cleaned
+kenpom,UNC Greensboro,unc greensboro,UNC Greensboro,historical_exact
+kenpom,St. Thomas,st thomas,St. Thomas,cleaned
+kenpom,Missouri St.,missouri st,Missouri St.,cleaned
+kenpom,Colgate,colgate,Colgate,historical_exact
+kenpom,Louisiana,louisiana,Louisiana,historical_exact
+kenpom,Eastern Washington,eastern washington,Eastern Washington,historical_exact
+kenpom,UMass Lowell,umass lowell,UMass Lowell,cleaned
+kenpom,Wichita St.,wichita st,Wichita St,historical_exact
+kenpom,Oregon St.,oregon st,Oregon St,historical_exact
+kenpom,Weber St.,weber st,Weber St,historical_exact
+kenpom,Purdue Fort Wayne,purdue fort wayne,Purdue Fort Wayne,cleaned
+kenpom,Wright St.,wright st,Wright St,historical_exact
+kenpom,Wyoming,wyoming,Wyoming,historical_exact
+kenpom,Murray St.,murray st,Murray St,historical_exact
+kenpom,Longwood,longwood,Longwood,historical_exact
+kenpom,Utah Valley,utah valley,Utah Valley,cleaned
+kenpom,Montana,montana,Montana,historical_exact
+kenpom,UNC Asheville,unc asheville,UNC Asheville,historical_exact
+kenpom,Long Beach St.,long beach st,Long Beach St,historical_exact
+kenpom,Lipscomb,lipscomb,Lipscomb,historical_exact
+kenpom,Hawaii,hawaii,Hawaii,historical_exact
+kenpom,Stony Brook,stony brook,Stony Brook,historical_exact
+kenpom,Delaware,delaware,Delaware,historical_exact
+kenpom,Stephen F. Austin,stephen f austin,Stephen F Austin,historical_exact
+kenpom,Kent St.,kent st,Kent St.,cleaned
+kenpom,Quinnipiac,quinnipiac,Quinnipiac,cleaned
+kenpom,Bryant,bryant,Bryant,historical_exact
+kenpom,East Tennessee St.,east tennessee st,East Tennessee St,historical_exact
+kenpom,Fairfield,fairfield,Fairfield,cleaned
+kenpom,Winthrop,winthrop,Winthrop,historical_exact
+kenpom,UC Davis,uc davis,UC Davis,historical_exact
+kenpom,UTEP,utep,UTEP,cleaned
+kenpom,Illinois St.,illinois st,Illinois St.,cleaned
+kenpom,Texas St.,texas st,Texas St.,cleaned
+kenpom,Temple,temple,Temple,historical_exact
+kenpom,Texas A&M Corpus Chris,texas a and m corpus chris,Texas A&M Corpus Chris,historical_exact
+kenpom,Vanderbilt,vanderbilt,Vanderbilt,historical_exact
+kenpom,Tulsa,tulsa,Tulsa,historical_exact
+kenpom,Louisville,louisville,Louisville,historical_exact
+kenpom,Northern Kentucky,northern kentucky,Northern Kentucky,historical_exact
+kenpom,Loyola Marymount,loyola marymount,Loyola Marymount,cleaned
+kenpom,Fordham,fordham,Fordham,cleaned
+kenpom,East Carolina,east carolina,East Carolina,cleaned
+kenpom,Cal Baptist,cal baptist,Cal Baptist,cleaned
+kenpom,Brown,brown,Brown,cleaned
+kenpom,Georgetown,georgetown,Georgetown,historical_exact
+kenpom,Wofford,wofford,Wofford,historical_exact
+kenpom,Little Rock,little rock,Little Rock,cleaned
+kenpom,La Salle,la salle,La Salle,historical_exact
+kenpom,Illinois Chicago,illinois chicago,Illinois Chicago,cleaned
+kenpom,Cleveland St.,cleveland st,Cleveland St,historical_exact
+kenpom,Monmouth,monmouth,Monmouth,cleaned
+kenpom,Saint Louis,st louis,St Louis,historical_exact
+kenpom,Jacksonville St.,jacksonville st,Jacksonville St,historical_exact
+kenpom,Saint Peter's,st peter s,St Peters,global_alias
+kenpom,Northern Colorado,northern colorado,Northern Colorado,historical_exact
+kenpom,George Washington,george washington,George Washington,historical_exact
+kenpom,Gardner Webb,gardner webb,Gardner Webb,historical_exact
+kenpom,UC Santa Barbara,uc santa barbara,UC Santa Barbara,historical_exact
+kenpom,Rhode Island,rhode island,Rhode Island,historical_exact
+kenpom,Abilene Christian,abilene christian,Abilene Christian,historical_exact
+kenpom,Evansville,evansville,Evansville,cleaned
+kenpom,Mercer,mercer,Mercer,historical_exact
+kenpom,Lamar,lamar,Lamar,cleaned
+kenpom,Eastern Kentucky,eastern kentucky,Eastern Kentucky,historical_exact
+kenpom,Merrimack,merrimack,Merrimack,cleaned
+kenpom,Penn,penn,Penn,cleaned
+kenpom,UMKC,umkc,UMKC,cleaned
+kenpom,Marist,marist,Marist,cleaned
+kenpom,Tennessee Martin,tennessee martin,Tennessee Martin,cleaned
+kenpom,UC Riverside,uc riverside,UC Riverside,cleaned
+kenpom,Georgia St.,georgia st,Georgia St,historical_exact
+kenpom,Norfolk St.,norfolk st,Norfolk St,historical_exact
+kenpom,Stetson,stetson,Stetson,historical_exact
+kenpom,South Alabama,south alabama,South Alabama,cleaned
+kenpom,Milwaukee,milwaukee,Milwaukee,cleaned
+kenpom,Montana St.,montana st,Montana St,global_alias
+kenpom,Pepperdine,pepperdine,Pepperdine,cleaned
+kenpom,Rider,rider,Rider,cleaned
+kenpom,Iona,iona,Iona,historical_exact
+kenpom,Radford,radford,Radford,historical_exact
+kenpom,Harvard,harvard,Harvard,historical_exact
+kenpom,Rice,rice,Rice,cleaned
+kenpom,Green Bay,green bay,Green Bay,cleaned
+kenpom,Maine,maine,Maine,cleaned
+kenpom,Columbia,columbia,Columbia,cleaned
+kenpom,Cal St. Northridge,cal st northridge,Cal St. Northridge,cleaned
+kenpom,Nicholls St.,nicholls st,Nicholls St.,cleaned
+kenpom,Cal St. Fullerton,cal st fullerton,Cal St Fullerton,historical_exact
+kenpom,North Dakota,north dakota,North Dakota,historical_exact
+kenpom,Fresno St.,fresno st,Fresno St,historical_exact
+kenpom,Marshall,marshall,Marshall,historical_exact
+kenpom,Bowling Green,bowling green,Bowling Green,cleaned
+kenpom,North Florida,north florida,North Florida,cleaned
+kenpom,Florida Gulf Coast,florida gulf coast,Florida Gulf Coast,historical_exact
+kenpom,Southern Utah,southern utah,Southern Utah,cleaned
+kenpom,Southern Miss,southern miss,Southern Miss,cleaned
+kenpom,Albany,albany,Albany,historical_exact
+kenpom,Austin Peay,austin peay,Austin Peay,historical_exact
+kenpom,New Hampshire,new hampshire,New Hampshire,cleaned
+kenpom,Cal St. Bakersfield,cal st bakersfield,Cal St Bakersfield,historical_exact
+kenpom,San Jose St.,san jose st,San Jose St.,cleaned
+kenpom,Mount St. Mary's,mount st mary s,Mount St Marys,global_alias
+kenpom,Northeastern,northeastern,Northeastern,historical_exact
+kenpom,Portland St.,portland st,Portland St.,cleaned
+kenpom,North Alabama,north alabama,North Alabama,cleaned
+kenpom,North Carolina Central,north carolina central,North Carolina Central,historical_exact
+kenpom,UTSA,utsa,UTSA,cleaned
+kenpom,The Citadel,citadel,The Citadel,cleaned
+kenpom,San Diego,san diego,San Diego,cleaned
+kenpom,Miami OH,miami oh,Miami OH,cleaned
+kenpom,Idaho St.,idaho st,Idaho St.,cleaned
+kenpom,Grambling St.,grambling st,Grambling,global_alias
+kenpom,Nebraska Omaha,nebraska omaha,Omaha,global_alias
+kenpom,Southern,southern,Southern,historical_exact
+kenpom,Central Connecticut,central connecticut,Central Connecticut,cleaned
+kenpom,Lehigh,lehigh,Lehigh,historical_exact
+kenpom,Air Force,air force,Air Force,cleaned
+kenpom,Kennesaw St.,kennesaw st,Kennesaw St.,historical_exact
+kenpom,Ball St.,ball st,Ball St.,cleaned
+kenpom,Texas Southern,texas southern,Texas Southern,historical_exact
+kenpom,Denver,denver,Denver,cleaned
+kenpom,Queens,queens,Queens,cleaned
+kenpom,Western Illinois,western illinois,Western Illinois,cleaned
+kenpom,Presbyterian,presbyterian,Presbyterian,cleaned
+kenpom,Niagara,niagara,Niagara,cleaned
+kenpom,Jacksonville,jacksonville,Jacksonville,cleaned
+kenpom,UMBC,umbc,UMBC,historical_exact
+kenpom,Howard,howard,Howard,historical_exact
+kenpom,Bucknell,bucknell,Bucknell,historical_exact
+kenpom,Central Michigan,central michigan,Central Michigan,cleaned
+kenpom,Canisius,canisius,Canisius,cleaned
+kenpom,North Dakota St.,north dakota st,North Dakota St,historical_exact
+kenpom,Georgia Southern,georgia southern,Georgia Southern,cleaned
+kenpom,Utah Tech,utah tech,Utah Tech,cleaned
+kenpom,Middle Tennessee,middle tennessee,Middle Tennessee,cleaned
+kenpom,Oral Roberts,oral roberts,Oral Roberts,historical_exact
+kenpom,Binghamton,binghamton,Binghamton,cleaned
+kenpom,FIU,fiu,FIU,cleaned
+kenpom,SIU Edwardsville,siu edwardsville,SIU Edwardsville,cleaned
+kenpom,Old Dominion,old dominion,Old Dominion,historical_exact
+kenpom,USC Upstate,usc upstate,USC Upstate,cleaned
+kenpom,Delaware St.,delaware st,Delaware St.,cleaned
+kenpom,New Mexico St.,new mexico st,New Mexico St,historical_exact
+kenpom,Tennessee St.,tennessee st,Tennessee St.,cleaned
+kenpom,Wagner,wagner,Wagner,historical_exact
+kenpom,Sacred Heart,sacred heart,Sacred Heart,cleaned
+kenpom,Alcorn St.,alcorn st,Alcorn St.,cleaned
+kenpom,Chicago St.,chicago st,Chicago St.,cleaned
+kenpom,American,american,American,historical_exact
+kenpom,Boston University,boston university,Boston University,historical_exact
+kenpom,Louisiana Monroe,louisiana monroe,Louisiana Monroe,cleaned
+kenpom,Portland,portland,Portland,cleaned
+kenpom,Valparaiso,valparaiso,Valparaiso,historical_exact
+kenpom,South Carolina St.,south carolina st,South Carolina St.,cleaned
+kenpom,Le Moyne,le moyne,Le Moyne,cleaned
+kenpom,Bethune Cookman,bethune cookman,Bethune Cookman,cleaned
+kenpom,DePaul,depaul,DePaul,cleaned
+kenpom,Western Michigan,western michigan,Western Michigan,historical_exact
+kenpom,Southeastern Louisiana,southeastern louisiana,Southeastern Louisiana,cleaned
+kenpom,Robert Morris,robert morris,Robert Morris,historical_exact
+kenpom,Northern Illinois,northern illinois,Northern Illinois,cleaned
+kenpom,Jackson St.,jackson st,Jackson St.,cleaned
+kenpom,Alabama St.,alabama st,Alabama St,global_alias
+kenpom,Campbell,campbell,Campbell,cleaned
+kenpom,Northern Arizona,northern arizona,Northern Arizona,cleaned
+kenpom,Coastal Carolina,coastal carolina,Coastal Carolina,historical_exact
+kenpom,Sacramento St.,sacramento st,Sacramento St.,cleaned
+kenpom,Charleston Southern,charleston southern,Charleston Southern,cleaned
+kenpom,Bellarmine,bellarmine,Bellarmine,cleaned
+kenpom,Elon,elon,Elon,cleaned
+kenpom,Lafayette,lafayette,Lafayette,historical_exact
+kenpom,William & Mary,william and mary,William & Mary,cleaned
+kenpom,Eastern Illinois,eastern illinois,Eastern Illinois,cleaned
+kenpom,Idaho,idaho,Idaho,cleaned
+kenpom,South Dakota,south dakota,South Dakota,cleaned
+kenpom,Navy,navy,Navy,cleaned
+kenpom,Alabama A&M,alabama a and m,Alabama A&M,cleaned
+kenpom,Northwestern St.,northwestern st,Northwestern St,historical_exact
+kenpom,Eastern Michigan,eastern michigan,Eastern Michigan,cleaned
+kenpom,Fairleigh Dickinson,fairleigh dickinson,Fairleigh Dickinson,historical_exact
+kenpom,Southern Indiana,southern indiana,Southern Indiana,cleaned
+kenpom,UT Rio Grande Valley,ut rio grande valley,UT Rio Grande Valley,cleaned
+kenpom,Prairie View A&M,prairie view a and m,Prairie View A&M,cleaned
+kenpom,Arkansas Pine Bluff,arkansas pine bluff,Arkansas Pine Bluff,cleaned
+kenpom,Tennessee Tech,tennessee tech,Tennessee Tech,cleaned
+kenpom,Texas A&M Commerce,texas a and m commerce,Texas A&M Commerce,cleaned
+kenpom,Morgan St.,morgan st,Morgan St.,cleaned
+kenpom,NJIT,njit,NJIT,cleaned
+kenpom,Dartmouth,dartmouth,Dartmouth,cleaned
+kenpom,Manhattan,manhattan,Manhattan,historical_exact
+kenpom,Florida A&M,florida a and m,Florida A&M,cleaned
+kenpom,Cal Poly,cal poly,Cal Poly,historical_exact
+kenpom,Central Arkansas,central arkansas,Central Arkansas,cleaned
+kenpom,Hampton,hampton,Hampton,historical_exact
+kenpom,New Orleans,new orleans,New Orleans,cleaned
+kenpom,LIU,liu,LIU,cleaned
+kenpom,Army,army,Army,cleaned
+kenpom,Incarnate Word,incarnate word,Incarnate Word,cleaned
+kenpom,North Carolina A&T,north carolina a and t,North Carolina A&T,historical_exact
+kenpom,Maryland Eastern Shore,maryland eastern shore,Maryland Eastern Shore,cleaned
+kenpom,Buffalo,buffalo,Buffalo,historical_exact
+kenpom,Holy Cross,holy cross,Holy Cross,historical_exact
+kenpom,Loyola MD,loyola md,Loyola MD,cleaned
+kenpom,Detroit Mercy,detroit mercy,Detroit Mercy,cleaned
+kenpom,Southeast Missouri St.,southeast missouri st,Southeast Missouri St.,historical_exact
+kenpom,VMI,vmi,VMI,cleaned
+kenpom,Saint Francis,st francis,St Francis PA,global_alias
+kenpom,Houston Christian,houston christian,Houston Christian,cleaned
+kenpom,Lindenwood,lindenwood,Lindenwood,cleaned
+kenpom,Siena,siena,Siena,cleaned
+kenpom,Pacific,pacific,Pacific,historical_exact
+kenpom,Stonehill,stonehill,Stonehill,cleaned
+kenpom,IUPUI,iupui,IUPUI,cleaned
+kenpom,Coppin St.,coppin st,Coppin St.,cleaned
+kenpom,Mississippi Valley St.,mississippi valley st,Mississippi Valley St.,cleaned
+teamrankings,Alabama,alabama,Alabama,historical_exact
+teamrankings,Kentucky,kentucky,Kentucky,historical_exact
+teamrankings,Arizona,arizona,Arizona,historical_exact
+teamrankings,Wright St,wright st,Wright St,historical_exact
+teamrankings,Florida,florida,Florida,historical_exact
+teamrankings,Indiana St,indiana st,Indiana St,historical_exact
+teamrankings,Samford,samford,Samford,historical_exact
+teamrankings,Gonzaga,gonzaga,Gonzaga,historical_exact
+teamrankings,Illinois,illinois,Illinois,historical_exact
+teamrankings,Iowa,iowa,Iowa,historical_exact
+teamrankings,Auburn,auburn,Auburn,historical_exact
+teamrankings,Purdue,purdue,Purdue,historical_exact
+teamrankings,High Point,high point,High Point,cleaned
+teamrankings,Florida Atlantic,florida atlantic,Fla Atlantic,global_alias
+teamrankings,North Carolina,north carolina,N Carolina,global_alias
+teamrankings,J Madison,j madison,James Madison,global_alias
+teamrankings,Kennesaw St,kennesaw st,Kennesaw St.,historical_exact
+teamrankings,Tulane,tulane,Tulane,cleaned
+teamrankings,BYU,byu,BYU,historical_exact
+teamrankings,UConn,uconn,Connecticut,global_alias
+teamrankings,New Mexico,new mexico,New Mexico,historical_exact
+teamrankings,Washington,washington,Washington,historical_exact
+teamrankings,Memphis,memphis,Memphis,historical_exact
+teamrankings,Charleston,charleston,Charleston,historical_exact
+teamrankings,Creighton,creighton,Creighton,historical_exact
+teamrankings,Lipscomb,lipscomb,Lipscomb,historical_exact
+teamrankings,Cornell,cornell,Cornell,cleaned
+teamrankings,Toledo,toledo,Toledo,cleaned
+teamrankings,Baylor,baylor,Baylor,historical_exact
+teamrankings,Drake,drake,Drake,historical_exact
+teamrankings,UT Martin,ut martin,UT Martin,cleaned
+teamrankings,Denver,denver,Denver,cleaned
+teamrankings,E Washington,e washington,E Washington,cleaned
+teamrankings,Colorado,colorado,Colorado,historical_exact
+teamrankings,TCU,tcu,TCU,historical_exact
+teamrankings,N Colorado,n colorado,N Colorado,cleaned
+teamrankings,Milwaukee,milwaukee,Milwaukee,cleaned
+teamrankings,Utah St,utah st,Utah St,global_alias
+teamrankings,St John's,st john s,St Johns,global_alias
+teamrankings,Arkansas St,arkansas st,Arkansas St,cleaned
+teamrankings,Furman,furman,Furman,historical_exact
+teamrankings,Utah,utah,Utah,historical_exact
+teamrankings,Tennessee,tennessee,Tennessee,historical_exact
+teamrankings,W Kentucky,w kentucky,Western KY,global_alias
+teamrankings,Duke,duke,Duke,historical_exact
+teamrankings,UMBC,umbc,UMBC,historical_exact
+teamrankings,Youngstown St,youngstown st,Youngstown St,cleaned
+teamrankings,Purdue FW,purdue fw,Purdue FW,cleaned
+teamrankings,Wake Forest,wake forest,Wake Forest,cleaned
+teamrankings,Marquette,marquette,Marquette,historical_exact
+teamrankings,Albany,albany,Albany,historical_exact
+teamrankings,McNeese,mcneese,McNeese,cleaned
+teamrankings,Grand Canyon,grand canyon,Grd Canyon,global_alias
+teamrankings,Arkansas,arkansas,Arkansas,historical_exact
+teamrankings,Nebraska,nebraska,Nebraska,historical_exact
+teamrankings,UMass,umass,UMass,cleaned
+teamrankings,Belmont,belmont,Belmont,historical_exact
+teamrankings,Clemson,clemson,Clemson,historical_exact
+teamrankings,Queens,queens,Queens,cleaned
+teamrankings,Little Rock,little rock,Little Rock,cleaned
+teamrankings,UTSA,utsa,UTSA,cleaned
+teamrankings,App State,app state,App State,cleaned
+teamrankings,UAB,uab,UAB,historical_exact
+teamrankings,Troy,troy,Troy,historical_exact
+teamrankings,UMass Lowell,umass lowell,UMass Lowell,cleaned
+teamrankings,Chattanooga,chattanooga,Chattanooga,historical_exact
+teamrankings,SMU,smu,SMU,historical_exact
+teamrankings,UC Irvine,uc irvine,UC Irvine,historical_exact
+teamrankings,Florida St,florida st,Florida St,historical_exact
+teamrankings,Butler,butler,Butler,historical_exact
+teamrankings,E Kentucky,e kentucky,E Kentucky,cleaned
+teamrankings,G Washington,g washington,G Washington,cleaned
+teamrankings,Oakland,oakland,Oakland,historical_exact
+teamrankings,UT Arlington,ut arlington,UT Arlington,cleaned
+teamrankings,LSU,lsu,LSU,historical_exact
+teamrankings,Ohio,ohio,Ohio,historical_exact
+teamrankings,Stanford,stanford,Stanford,historical_exact
+teamrankings,Princeton,princeton,Princeton,historical_exact
+teamrankings,Lamar,lamar,Lamar,cleaned
+teamrankings,San Francisco,san francisco,San Francisco,historical_exact
+teamrankings,Long Beach St,long beach st,Long Beach St,historical_exact
+teamrankings,Quinnipiac,quinnipiac,Quinnipiac,cleaned
+teamrankings,Santa Clara,santa clara,Santa Clara,cleaned
+teamrankings,Texas A&M,texas a and m,Texas A&M,historical_exact
+teamrankings,NC Asheville,nc asheville,NC Asheville,cleaned
+teamrankings,Xavier,xavier,Xavier,historical_exact
+teamrankings,Bryant,bryant,Bryant,historical_exact
+teamrankings,Miami,miami,Miami FL,global_alias
+teamrankings,NC Wilmington,nc wilmington,UNC Wilmington,global_alias
+teamrankings,AR-Pine Bluff,ar pine bluff,AR-Pine Bluff,cleaned
+teamrankings,S Florida,s florida,S Florida,cleaned
+teamrankings,NC State,nc state,NC State,historical_exact
+teamrankings,Pittsburgh,pittsburgh,Pittsburgh,historical_exact
+teamrankings,N Florida,n florida,N Florida,cleaned
+teamrankings,Oregon,oregon,Oregon,historical_exact
+teamrankings,Ohio St,ohio st,Ohio St,historical_exact
+teamrankings,Saint Joseph's,st joseph s,Saint Joseph's,cleaned
+teamrankings,Nevada,nevada,Nevada,historical_exact
+teamrankings,Syracuse,syracuse,Syracuse,historical_exact
+teamrankings,Texas,texas,Texas,historical_exact
+teamrankings,Oklahoma,oklahoma,Oklahoma,historical_exact
+teamrankings,Kansas,kansas,Kansas,historical_exact
+teamrankings,Iowa St,iowa st,Iowa St,global_alias
+teamrankings,Texas Tech,texas tech,Texas Tech,historical_exact
+teamrankings,Montana,montana,Montana,historical_exact
+teamrankings,S Dakota St,s dakota st,S Dakota St,historical_exact
+teamrankings,W Carolina,w carolina,W Carolina,cleaned
+teamrankings,Penn St,penn st,Penn St,cleaned
+teamrankings,Fairfield,fairfield,Fairfield,cleaned
+teamrankings,Minnesota,minnesota,Minnesota,historical_exact
+teamrankings,Winthrop,winthrop,Winthrop,historical_exact
+teamrankings,Mississippi,mississippi,Mississippi,cleaned
+teamrankings,Virginia Tech,virginia tech,Virginia Tech,historical_exact
+teamrankings,N Alabama,n alabama,N Alabama,cleaned
+teamrankings,Louisiana,louisiana,Louisiana,historical_exact
+teamrankings,Cincinnati,cincinnati,Cincinnati,historical_exact
+teamrankings,Cleveland St,cleveland st,Cleveland St,historical_exact
+teamrankings,UCSD,ucsd,UC San Diego,global_alias
+teamrankings,Georgia,georgia,Georgia,historical_exact
+teamrankings,Wisconsin,wisconsin,Wisconsin,historical_exact
+teamrankings,Howard,howard,Howard,historical_exact
+teamrankings,Georgia St,georgia st,Georgia St,historical_exact
+teamrankings,South Dakota,south dakota,South Dakota,cleaned
+teamrankings,Tulsa,tulsa,Tulsa,historical_exact
+teamrankings,Bradley,bradley,Bradley,historical_exact
+teamrankings,Dayton,dayton,Dayton,historical_exact
+teamrankings,USC,usc,USC,historical_exact
+teamrankings,Saint Louis,st louis,St Louis,historical_exact
+teamrankings,Mississippi St,mississippi st,Mississippi St,global_alias
+teamrankings,Boston College,boston college,Boston College,cleaned
+teamrankings,Colorado St,colorado st,Colorado St,historical_exact
+teamrankings,California,california,California,historical_exact
+teamrankings,N Kentucky,n kentucky,N Kentucky,cleaned
+teamrankings,Montana St,montana st,Montana St,global_alias
+teamrankings,North Dakota,north dakota,North Dakota,historical_exact
+teamrankings,Kent St,kent st,Kent St,cleaned
+teamrankings,Seton Hall,seton hall,Seton Hall,historical_exact
+teamrankings,Stetson,stetson,Stetson,historical_exact
+teamrankings,CS Northridge,cs northridge,CS Northridge,cleaned
+teamrankings,San Diego St,san diego st,San Diego St,global_alias
+teamrankings,Columbia,columbia,Columbia,cleaned
+teamrankings,Boise St,boise st,Boise St,global_alias
+teamrankings,Washington St,washington st,Washington St,global_alias
+teamrankings,Houston,houston,Houston,historical_exact
+teamrankings,Austin Peay,austin peay,Austin Peay,historical_exact
+teamrankings,St Bonaventure,st bonaventure,St Bonaventure,historical_exact
+teamrankings,S Alabama,s alabama,S Alabama,cleaned
+teamrankings,Hofstra,hofstra,Hofstra,cleaned
+teamrankings,Georgia So,georgia so,Georgia So,cleaned
+teamrankings,Northwestern,northwestern,Northwestern,historical_exact
+teamrankings,NC Greensboro,nc greensboro,NC Greensboro,cleaned
+teamrankings,F Dickinson,f dickinson,F Dickinson,cleaned
+teamrankings,S Utah,s utah,S Utah,cleaned
+teamrankings,Nicholls,nicholls,Nicholls,cleaned
+teamrankings,Yale,yale,Yale,historical_exact
+teamrankings,Weber St,weber st,Weber St,historical_exact
+teamrankings,UCSB,ucsb,UCSB,cleaned
+teamrankings,Wofford,wofford,Wofford,historical_exact
+teamrankings,Seattle,seattle,Seattle,cleaned
+teamrankings,Saint Mary's,st mary s,St Marys,global_alias
+teamrankings,Stony Brook,stony brook,Stony Brook,historical_exact
+teamrankings,Michigan,michigan,Michigan,historical_exact
+teamrankings,Longwood,longwood,Longwood,historical_exact
+teamrankings,Michigan St,michigan st,Michigan St,global_alias
+teamrankings,Marshall,marshall,Marshall,historical_exact
+teamrankings,Sacred Heart,sacred heart,Sacred Heart,cleaned
+teamrankings,New Hampshire,new hampshire,New Hampshire,cleaned
+teamrankings,N Iowa,n iowa,N Iowa,cleaned
+teamrankings,Mt St Mary's,mt st mary s,Mount St Marys,global_alias
+teamrankings,Bowling Green,bowling green,Bowling Green,cleaned
+teamrankings,SF Austin,sf austin,SF Austin,cleaned
+teamrankings,Tarleton St,tarleton st,Tarleton St,cleaned
+teamrankings,San Diego,san diego,San Diego,cleaned
+teamrankings,Monmouth,monmouth,Monmouth,cleaned
+teamrankings,Providence,providence,Providence,historical_exact
+teamrankings,Pepperdine,pepperdine,Pepperdine,cleaned
+teamrankings,Omaha,omaha,Omaha,cleaned
+teamrankings,Delaware,delaware,Delaware,historical_exact
+teamrankings,Morehead St,morehead st,Morehead St,historical_exact
+teamrankings,Indiana,indiana,Indiana,historical_exact
+teamrankings,Kansas St,kansas st,Kansas St,cleaned
+teamrankings,Robert Morris,robert morris,Robert Morris,historical_exact
+teamrankings,S Illinois,s illinois,S Illinois,cleaned
+teamrankings,Missouri,missouri,Missouri,historical_exact
+teamrankings,Oral Roberts,oral roberts,Oral Roberts,historical_exact
+teamrankings,Wichita St,wichita st,Wichita St,historical_exact
+teamrankings,Louisiana Tech,louisiana tech,Louisiana Tech,cleaned
+teamrankings,Penn,penn,Penn,cleaned
+teamrankings,South Carolina,south carolina,S Carolina,global_alias
+teamrankings,Presbyterian,presbyterian,Presbyterian,cleaned
+teamrankings,Louisville,louisville,Louisville,historical_exact
+teamrankings,Akron,akron,Akron,historical_exact
+teamrankings,Ball St,ball st,Ball St,cleaned
+teamrankings,UNLV,unlv,UNLV,historical_exact
+teamrankings,Alcorn St,alcorn st,Alcorn St,cleaned
+teamrankings,N Dakota St,n dakota st,N Dakota St,cleaned
+teamrankings,Drexel,drexel,Drexel,historical_exact
+teamrankings,Gardner-Webb,gardner webb,Gardner Webb,historical_exact
+teamrankings,NC Central,nc central,NC Central,cleaned
+teamrankings,Richmond,richmond,Richmond,historical_exact
+teamrankings,Hawai'i,hawai i,Hawai'i,cleaned
+teamrankings,Coastal Car,coastal car,Coastal Car,cleaned
+teamrankings,Loyola Chi,loyola chi,Loyola Chi,cleaned
+teamrankings,Rhode Island,rhode island,Rhode Island,historical_exact
+teamrankings,UCF,ucf,UCF,cleaned
+teamrankings,Texas A&M-CC,texas a and m cc,Texas A&M-CC,cleaned
+teamrankings,Lehigh,lehigh,Lehigh,historical_exact
+teamrankings,La Salle,la salle,La Salle,historical_exact
+teamrankings,Wyoming,wyoming,Wyoming,historical_exact
+teamrankings,Liberty,liberty,Liberty,historical_exact
+teamrankings,N Illinois,n illinois,N Illinois,cleaned
+teamrankings,Florida Intl,florida intl,Florida Intl,cleaned
+teamrankings,Iona,iona,Iona,historical_exact
+teamrankings,Sam Houston,sam houston,Sam Houston,cleaned
+teamrankings,Missouri St,missouri st,Missouri St,cleaned
+teamrankings,Jackson St,jackson st,Jackson St,cleaned
+teamrankings,Loyola Mymt,loyola mymt,Loyola Mymt,cleaned
+teamrankings,Niagara,niagara,Niagara,cleaned
+teamrankings,Rice,rice,Rice,cleaned
+teamrankings,Georgia Tech,georgia tech,Georgia Tech,historical_exact
+teamrankings,Oklahoma St,oklahoma st,Oklahoma St,historical_exact
+teamrankings,VCU,vcu,VCU,historical_exact
+teamrankings,Old Dominion,old dominion,Old Dominion,historical_exact
+teamrankings,Georgetown,georgetown,Georgetown,historical_exact
+teamrankings,Rider,rider,Rider,cleaned
+teamrankings,Incarnate Word,incarnate word,Incarnate Word,cleaned
+teamrankings,Radford,radford,Radford,historical_exact
+teamrankings,New Orleans,new orleans,New Orleans,cleaned
+teamrankings,Bethune,bethune,Bethune,cleaned
+teamrankings,Brown,brown,Brown,cleaned
+teamrankings,Abl Christian,abl christian,Abl Christian,cleaned
+teamrankings,Norfolk St,norfolk st,Norfolk St,historical_exact
+teamrankings,George Mason,george mason,George Mason,historical_exact
+teamrankings,Kansas City,kansas city,Kansas City,cleaned
+teamrankings,Portland St,portland st,Portland St,cleaned
+teamrankings,UC Davis,uc davis,UC Davis,historical_exact
+teamrankings,Temple,temple,Temple,historical_exact
+teamrankings,Fordham,fordham,Fordham,cleaned
+teamrankings,Utah Tech,utah tech,Utah Tech,cleaned
+teamrankings,St Thomas,st thomas,St Thomas,cleaned
+teamrankings,E Tennessee St,e tennessee st,E Tennessee St,cleaned
+teamrankings,Mercer,mercer,Mercer,historical_exact
+teamrankings,C Connecticut,c connecticut,C Connecticut,cleaned
+teamrankings,Elon,elon,Elon,cleaned
+teamrankings,Tennessee St,tennessee st,Tennessee St,cleaned
+teamrankings,Villanova,villanova,Villanova,historical_exact
+teamrankings,C Arkansas,c arkansas,C Arkansas,cleaned
+teamrankings,Colgate,colgate,Colgate,historical_exact
+teamrankings,Harvard,harvard,Harvard,historical_exact
+teamrankings,Le Moyne,le moyne,Le Moyne,cleaned
+teamrankings,Vermont,vermont,Vermont,historical_exact
+teamrankings,Duquesne,duquesne,Duquesne,historical_exact
+teamrankings,Southern Miss,southern miss,Southern Miss,cleaned
+teamrankings,Morgan St,morgan st,Morgan St,cleaned
+teamrankings,West Virginia,west virginia,West Virginia,historical_exact
+teamrankings,Portland,portland,Portland,cleaned
+teamrankings,Binghamton,binghamton,Binghamton,cleaned
+teamrankings,Jacksonville,jacksonville,Jacksonville,cleaned
+teamrankings,Evansville,evansville,Evansville,cleaned
+teamrankings,W Michigan,w michigan,W Michigan,cleaned
+teamrankings,SIU Edward,siu edward,SIUE,global_alias
+teamrankings,Northeastern,northeastern,Northeastern,historical_exact
+teamrankings,Idaho St,idaho st,Idaho St,cleaned
+teamrankings,Illinois Chicago,illinois chicago,Illinois Chicago,cleaned
+teamrankings,UC Riverside,uc riverside,UC Riverside,cleaned
+teamrankings,Hou Christian,hou christian,Hou Christian,cleaned
+teamrankings,S Carolina St,s carolina st,S Carolina St,cleaned
+teamrankings,FGCU,fgcu,FGCU,cleaned
+teamrankings,Canisius,canisius,Canisius,cleaned
+teamrankings,Murray St,murray st,Murray St,historical_exact
+teamrankings,Arizona St,arizona st,Arizona St,cleaned
+teamrankings,Maryland,maryland,Maryland,historical_exact
+teamrankings,Texas So,texas so,Texas So,cleaned
+teamrankings,Alabama A&M,alabama a and m,Alabama A&M,cleaned
+teamrankings,Campbell,campbell,Campbell,cleaned
+teamrankings,UTEP,utep,UTEP,cleaned
+teamrankings,Prairie View,prairie view,Prairie View,cleaned
+teamrankings,N Arizona,n arizona,N Arizona,cleaned
+teamrankings,E Carolina,e carolina,E Carolina,cleaned
+teamrankings,Davidson,davidson,Davidson,historical_exact
+teamrankings,Miami OH,miami oh,Miami OH,cleaned
+teamrankings,Green Bay,green bay,Green Bay,cleaned
+teamrankings,The Citadel,citadel,The Citadel,cleaned
+teamrankings,NW State,nw state,NW State,cleaned
+teamrankings,N Texas,n texas,N Texas,cleaned
+teamrankings,SC Upstate,sc upstate,SC Upstate,cleaned
+teamrankings,William & Mary,william and mary,William & Mary,cleaned
+teamrankings,Oregon St,oregon st,Oregon St,historical_exact
+teamrankings,Delaware St,delaware st,Delaware St,cleaned
+teamrankings,UT Rio Grande,ut rio grande,UT Rio Grande,cleaned
+teamrankings,San Jose St,san jose st,San Jose St,cleaned
+teamrankings,Charlotte,charlotte,Charlotte,cleaned
+teamrankings,Hampton,hampton,Hampton,historical_exact
+teamrankings,Vanderbilt,vanderbilt,Vanderbilt,historical_exact
+teamrankings,Southern,southern,Southern,historical_exact
+teamrankings,Merrimack,merrimack,Merrimack,cleaned
+teamrankings,Utah Valley,utah valley,Utah Valley,cleaned
+teamrankings,American,american,American,historical_exact
+teamrankings,Texas St,texas st,Texas St,cleaned
+teamrankings,Bellarmine,bellarmine,Bellarmine,cleaned
+teamrankings,Fresno St,fresno st,Fresno St,historical_exact
+teamrankings,Buffalo,buffalo,Buffalo,historical_exact
+teamrankings,E Texas A&M,e texas a and m,E Texas A&M,cleaned
+teamrankings,UL Monroe,ul monroe,UL Monroe,cleaned
+teamrankings,Jacksonville St,jacksonville st,Jacksonville St,historical_exact
+teamrankings,CS Bakersfield,cs bakersfield,CS Bakersfield,cleaned
+teamrankings,Cal Baptist,cal baptist,Cal Baptist,cleaned
+teamrankings,S Indiana,s indiana,S Indiana,cleaned
+teamrankings,VMI,vmi,VMI,cleaned
+teamrankings,Towson,towson,Towson,cleaned
+teamrankings,SE Louisiana,se louisiana,SE Louisiana,cleaned
+teamrankings,Valparaiso,valparaiso,Valparaiso,historical_exact
+teamrankings,LIU,liu,LIU,cleaned
+teamrankings,CS Fullerton,cs fullerton,CS Fullerton,cleaned
+teamrankings,Maine,maine,Maine,cleaned
+teamrankings,Illinois St,illinois st,Illinois St,cleaned
+teamrankings,Idaho,idaho,Idaho,cleaned
+teamrankings,Air Force,air force,Air Force,cleaned
+teamrankings,Alabama St,alabama st,Alabama St,global_alias
+teamrankings,W Illinois,w illinois,W Illinois,cleaned
+teamrankings,Detroit Mercy,detroit mercy,Detroit Mercy,cleaned
+teamrankings,E Michigan,e michigan,E Michigan,cleaned
+teamrankings,New Mexico St,new mexico st,New Mexico St,historical_exact
+teamrankings,Holy Cross,holy cross,Holy Cross,historical_exact
+teamrankings,NJIT,njit,NJIT,cleaned
+teamrankings,Manhattan,manhattan,Manhattan,historical_exact
+teamrankings,Boston U,boston u,Boston U,cleaned
+teamrankings,C Michigan,c michigan,C Michigan,cleaned
+teamrankings,UCLA,ucla,UCLA,historical_exact
+teamrankings,Navy,navy,Navy,cleaned
+teamrankings,NC A&T,nc a and t,NC A&T,cleaned
+teamrankings,Rutgers,rutgers,Rutgers,historical_exact
+teamrankings,Grambling,grambling,Grambling,cleaned
+teamrankings,E Illinois,e illinois,E Illinois,cleaned
+teamrankings,Bucknell,bucknell,Bucknell,historical_exact
+teamrankings,Chicago St,chicago st,Chicago St,cleaned
+teamrankings,Florida A&M,florida a and m,Florida A&M,cleaned
+teamrankings,Tenn Tech,tenn tech,Tenn Tech,cleaned
+teamrankings,DePaul,depaul,DePaul,cleaned
+teamrankings,Marist,marist,Marist,cleaned
+teamrankings,Saint Peter's,st peter s,St Peters,global_alias
+teamrankings,IU Indy,iu indy,IU Indy,cleaned
+teamrankings,SE Missouri St,se missouri st,SE Missouri St,cleaned
+teamrankings,Middle Tenn,middle tenn,Middle Tenn,cleaned
+teamrankings,Sacramento St,sacramento st,Sacramento St,cleaned
+teamrankings,Pacific,pacific,Pacific,historical_exact
+teamrankings,Charleston So,charleston so,Charleston So,cleaned
+teamrankings,Notre Dame,notre dame,Notre Dame,historical_exact
+teamrankings,Lindenwood,lindenwood,Lindenwood,cleaned
+teamrankings,St Francis PA,st francis pa,St Francis PA,cleaned
+teamrankings,Stonehill,stonehill,Stonehill,cleaned
+teamrankings,Loyola MD,loyola md,Loyola MD,cleaned
+teamrankings,Cal Poly,cal poly,Cal Poly,historical_exact
+teamrankings,Virginia,virginia,Virginia,historical_exact
+teamrankings,Lafayette,lafayette,Lafayette,historical_exact
+teamrankings,Maryland ES,maryland es,Maryland ES,cleaned
+teamrankings,Wagner,wagner,Wagner,historical_exact
+teamrankings,Dartmouth,dartmouth,Dartmouth,cleaned
+teamrankings,Siena,siena,Siena,cleaned
+teamrankings,Army,army,Army,cleaned
+teamrankings,Coppin St,coppin st,Coppin St,cleaned
+teamrankings,Miss Valley St,miss valley st,Miss Valley St,cleaned

@@ -1,0 +1,66 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+East,1,Duke,85,16,N Dakota St,62
+East,8,VCU,58,9,UCF,73
+East,5,Mississippi St,76,12,Liberty,80
+East,4,Virginia Tech,66,13,Saint Louis,52
+East,6,Maryland,79,11,Belmont,77
+East,3,LSU,79,14,Yale,74
+East,7,Louisville,76,10,Minnesota,86
+East,2,Michigan St,76,15,Bradley,65
+East,1,Duke,77,9,UCF,76
+East,12,Liberty,58,4,Virginia Tech,67
+East,6,Maryland,67,3,LSU,69
+East,10,Minnesota,50,2,Michigan St,70
+East,1,Duke,75,4,Virginia Tech,73
+East,3,LSU,63,2,Michigan St,80
+East,1,Duke,67,2,Michigan St,68
+South,1,Virginia,80,3,Purdue,75
+South,1,Virginia,53,12,Oregon,49
+South,3,Purdue,99,2,Tennessee,94
+South,1,Virginia,63,9,Oklahoma,51
+South,12,Oregon,73,13,UC Irvine,54
+South,6,Villanova,61,3,Purdue,87
+South,10,Iowa,77,2,Tennessee,83
+South,1,Virginia,71,16,Gardner-Webb,56
+South,8,Ole Miss,72,9,Oklahoma,95
+South,5,Wisconsin,54,12,Oregon,72
+South,4,Kansas St,64,13,UC Irvine,70
+South,6,Villanova,61,11,Saint Mary's,57
+South,3,Purdue,61,14,Old Dominion,48
+South,7,Cincinnati,72,10,Iowa,79
+South,2,Tennessee,77,15,Colgate,70
+Final Four,2,Michigan St,51,3,Texas Tech,61
+West,1,Gonzaga,87,16,FDU,49
+West,8,Syracuse,69,9,Baylor,78
+West,5,Marquette,64,12,Murray St,83
+West,4,Florida St,76,13,Vermont,69
+West,6,Buffalo,91,11,Arizona St,74
+West,3,Texas Tech,72,14,N Kentucky,57
+West,7,Nevada,61,10,Florida,70
+West,2,Michigan,74,15,Montana,55
+West,1,Gonzaga,83,9,Baylor,71
+West,12,Murray St,62,4,Florida St,90
+West,6,Buffalo,58,3,Texas Tech,78
+West,10,Florida,49,2,Michigan,64
+West,1,Gonzaga,72,4,Florida St,58
+West,3,Texas Tech,63,2,Michigan,44
+West,1,Gonzaga,69,3,Texas Tech,75
+Midwest,5,Auburn,77,2,Kentucky,71
+Midwest,1,North Carolina,80,5,Auburn,97
+Midwest,3,Houston,58,2,Kentucky,62
+Midwest,1,North Carolina,81,9,Washington,59
+Midwest,5,Auburn,89,4,Kansas,75
+Midwest,11,Ohio State,59,3,Houston,74
+Midwest,7,Wofford,56,2,Kentucky,62
+Midwest,1,North Carolina,88,16,Iona,73
+Midwest,8,Utah State,61,9,Washington,78
+Midwest,5,Auburn,78,12,New Mexico St,77
+Midwest,4,Kansas,87,13,Northeastern,53
+Midwest,6,Iowa State,59,11,Ohio State,62
+Midwest,3,Houston,84,14,Georgia St,55
+Midwest,7,Wofford,84,10,Seton Hall,68
+Midwest,2,Kentucky,79,15,Abilene Chrstn,44
+First Four,11,Belmont,81,11,Temple,70
+First Four,16,N Dakota St,78,16,NC Central,74
+First Four,11,Arizona St,74,11,St John's,65
+First Four,16,Prairie View,76,16,FDU,82

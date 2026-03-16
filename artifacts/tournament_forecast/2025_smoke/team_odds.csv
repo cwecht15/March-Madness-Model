@@ -1,0 +1,65 @@
+team,seed,region,expected_wins,make_round_of_64,make_round_of_32,make_sweet_sixteen,make_elite_eight,make_final_four,make_championship,win_championship,win_round_of_64,win_round_of_32,win_sweet_sixteen,win_elite_eight,win_final_four,field_source
+Florida,1,West,5.8335,1.0,1.0,1.0,0.997,0.987,0.9555,0.894,1.0,1.0,0.997,0.987,0.9555,data/raw/2025/tournament_games.csv
+Houston,1,Midwest,3.962,1.0,1.0,0.947,0.894,0.6415,0.4315,0.048,1.0,0.947,0.894,0.6415,0.4315,data/raw/2025/tournament_games.csv
+Alabama,2,East,3.7375,1.0,0.9995,0.9605,0.895,0.5925,0.271,0.019,0.9995,0.9605,0.895,0.5925,0.271,data/raw/2025/tournament_games.csv
+Auburn,1,South,3.324,1.0,1.0,0.902,0.763,0.609,0.033,0.017,1.0,0.902,0.763,0.609,0.033,data/raw/2025/tournament_games.csv
+Tennessee,2,Midwest,3.259,1.0,0.998,0.9275,0.844,0.323,0.154,0.0125,0.998,0.9275,0.844,0.323,0.154,data/raw/2025/tournament_games.csv
+Duke,1,East,3.229,1.0,0.9985,0.927,0.8015,0.3615,0.133,0.0075,0.9985,0.927,0.8015,0.3615,0.133,data/raw/2025/tournament_games.csv
+Michigan St,2,South,2.8395,1.0,0.998,0.8915,0.701,0.2415,0.0065,0.001,0.998,0.8915,0.701,0.2415,0.0065,data/raw/2025/tournament_games.csv
+Texas Tech,3,West,2.692,1.0,0.995,0.9335,0.7485,0.01,0.004,0.001,0.995,0.9335,0.7485,0.01,0.004,data/raw/2025/tournament_games.csv
+Michigan,5,South,2.02,1.0,0.959,0.7875,0.1845,0.088,0.001,0.0,0.959,0.7875,0.1845,0.088,0.001,data/raw/2025/tournament_games.csv
+Mississippi,6,South,1.521,1.0,0.7335,0.5625,0.187,0.038,0.0,0.0,0.7335,0.5625,0.187,0.038,0.0,data/raw/2025/tournament_games.csv
+BYU,6,East,1.7065,1.0,0.9045,0.701,0.0805,0.0185,0.002,0.0,0.9045,0.701,0.0805,0.0185,0.002,data/raw/2025/tournament_games.csv
+Purdue,4,Midwest,1.894,1.0,0.986,0.817,0.073,0.016,0.002,0.0,0.986,0.817,0.073,0.016,0.002,data/raw/2025/tournament_games.csv
+Oregon,5,East,1.629,1.0,0.9425,0.567,0.1035,0.014,0.002,0.0,0.9425,0.567,0.1035,0.014,0.002,data/raw/2025/tournament_games.csv
+Arizona,4,East,1.425,1.0,0.93,0.419,0.068,0.007,0.001,0.0,0.93,0.419,0.068,0.007,0.001,data/raw/2025/tournament_games.csv
+Creighton,9,South,0.608,1.0,0.524,0.0575,0.0195,0.007,0.0,0.0,0.524,0.0575,0.0195,0.007,0.0,data/raw/2025/tournament_games.csv
+Kentucky,3,Midwest,1.592,1.0,0.9775,0.544,0.063,0.0065,0.001,0.0,0.9775,0.544,0.063,0.0065,0.001,data/raw/2025/tournament_games.csv
+Illinois,6,Midwest,1.3265,1.0,0.834,0.431,0.0545,0.0055,0.0015,0.0,0.834,0.431,0.0545,0.0055,0.0015,data/raw/2025/tournament_games.csv
+Gonzaga,8,Midwest,0.9405,1.0,0.8555,0.0515,0.028,0.005,0.0005,0.0,0.8555,0.0515,0.028,0.005,0.0005,data/raw/2025/tournament_games.csv
+Iowa St,3,South,1.2855,1.0,0.941,0.2875,0.0525,0.0045,0.0,0.0,0.941,0.2875,0.0525,0.0045,0.0,data/raw/2025/tournament_games.csv
+Texas A&M,4,South,1.1985,1.0,0.9745,0.204,0.0165,0.0035,0.0,0.0,0.9745,0.204,0.0165,0.0035,0.0,data/raw/2025/tournament_games.csv
+Baylor,9,East,0.7545,1.0,0.671,0.056,0.0235,0.0035,0.0005,0.0,0.671,0.056,0.0235,0.0035,0.0005,data/raw/2025/tournament_games.csv
+Louisville,8,South,0.536,1.0,0.476,0.0405,0.016,0.0035,0.0,0.0,0.476,0.0405,0.016,0.0035,0.0,data/raw/2025/tournament_games.csv
+Marquette,7,South,0.734,1.0,0.626,0.078,0.027,0.003,0.0,0.0,0.626,0.078,0.027,0.003,0.0,data/raw/2025/tournament_games.csv
+UCLA,7,Midwest,0.992,1.0,0.881,0.071,0.0375,0.0025,0.0,0.0,0.881,0.071,0.0375,0.0025,0.0,data/raw/2025/tournament_games.csv
+N Carolina,11,South,0.443,1.0,0.2665,0.1485,0.026,0.002,0.0,0.0,0.2665,0.1485,0.026,0.002,0.0,data/raw/2025/tournament_games.csv
+Maryland,4,West,1.7485,1.0,0.982,0.7635,0.002,0.001,0.0,0.0,0.982,0.7635,0.002,0.001,0.0,data/raw/2025/tournament_games.csv
+Wisconsin,3,East,1.1895,1.0,0.9135,0.2645,0.0105,0.001,0.0,0.0,0.9135,0.2645,0.0105,0.001,0.0,data/raw/2025/tournament_games.csv
+Arkansas,10,West,1.0445,1.0,0.57,0.364,0.1095,0.001,0.0,0.0,0.57,0.364,0.1095,0.001,0.0,data/raw/2025/tournament_games.csv
+St Marys,7,East,0.748,1.0,0.698,0.036,0.013,0.001,0.0,0.0,0.698,0.036,0.013,0.001,0.0,data/raw/2025/tournament_games.csv
+Mississippi St,8,East,0.35,1.0,0.329,0.017,0.003,0.001,0.0,0.0,0.329,0.017,0.003,0.001,0.0,data/raw/2025/tournament_games.csv
+St Johns,2,West,1.4255,1.0,0.982,0.3725,0.0705,0.0005,0.0,0.0,0.982,0.3725,0.0705,0.0005,0.0,data/raw/2025/tournament_games.csv
+Colorado St,12,West,1.043,1.0,0.82,0.2215,0.001,0.0005,0.0,0.0,0.82,0.2215,0.001,0.0005,0.0,data/raw/2025/tournament_games.csv
+Clemson,5,Midwest,0.975,1.0,0.805,0.1655,0.0045,0.0,0.0,0.0,0.805,0.1655,0.0045,0.0,0.0,data/raw/2025/tournament_games.csv
+Kansas,7,West,0.748,1.0,0.43,0.263,0.055,0.0,0.0,0.0,0.43,0.263,0.055,0.0,0.0,data/raw/2025/tournament_games.csv
+Drake,11,West,0.656,1.0,0.6,0.043,0.013,0.0,0.0,0.0,0.6,0.043,0.013,0.0,0.0,data/raw/2025/tournament_games.csv
+Connecticut,8,West,0.6145,1.0,0.6145,0.0,0.0,0.0,0.0,0.0,0.6145,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Missouri,6,West,0.4265,1.0,0.4,0.023,0.0035,0.0,0.0,0.0,0.4,0.023,0.0035,0.0,0.0,data/raw/2025/tournament_games.csv
+New Mexico,10,South,0.411,1.0,0.374,0.0305,0.0065,0.0,0.0,0.0,0.374,0.0305,0.0065,0.0,0.0,data/raw/2025/tournament_games.csv
+Oklahoma,9,West,0.3855,1.0,0.3855,0.0,0.0,0.0,0.0,0.0,0.3855,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Vanderbilt,10,East,0.306,1.0,0.302,0.0035,0.0005,0.0,0.0,0.0,0.302,0.0035,0.0005,0.0,0.0,data/raw/2025/tournament_games.csv
+McNeese,12,Midwest,0.2115,1.0,0.195,0.016,0.0005,0.0,0.0,0.0,0.195,0.016,0.0005,0.0,0.0,data/raw/2025/tournament_games.csv
+Memphis,5,West,0.1935,1.0,0.18,0.0135,0.0,0.0,0.0,0.0,0.18,0.0135,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Xavier,11,Midwest,0.1915,1.0,0.166,0.025,0.0005,0.0,0.0,0.0,0.166,0.025,0.0005,0.0,0.0,data/raw/2025/tournament_games.csv
+Georgia,9,Midwest,0.146,1.0,0.1445,0.0015,0.0,0.0,0.0,0.0,0.1445,0.0015,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+VCU,11,East,0.128,1.0,0.0955,0.032,0.0005,0.0,0.0,0.0,0.0955,0.032,0.0005,0.0,0.0,data/raw/2025/tournament_games.csv
+Utah St,10,Midwest,0.121,1.0,0.119,0.0015,0.0005,0.0,0.0,0.0,0.119,0.0015,0.0005,0.0,0.0,data/raw/2025/tournament_games.csv
+Montana,14,East,0.089,1.0,0.0865,0.0025,0.0,0.0,0.0,0.0,0.0865,0.0025,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Akron,13,East,0.0765,1.0,0.07,0.0065,0.0,0.0,0.0,0.0,0.07,0.0065,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Liberty,12,East,0.0655,1.0,0.0575,0.0075,0.0005,0.0,0.0,0.0,0.0575,0.0075,0.0005,0.0,0.0,data/raw/2025/tournament_games.csv
+Lipscomb,14,South,0.0605,1.0,0.059,0.0015,0.0,0.0,0.0,0.0,0.059,0.0015,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+UC San Diego,12,South,0.05,1.0,0.041,0.0085,0.0005,0.0,0.0,0.0,0.041,0.0085,0.0005,0.0,0.0,data/raw/2025/tournament_games.csv
+Yale,13,South,0.0255,1.0,0.0255,0.0,0.0,0.0,0.0,0.0,0.0255,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Troy,14,Midwest,0.0225,1.0,0.0225,0.0,0.0,0.0,0.0,0.0,0.0225,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Grd Canyon,13,West,0.0195,1.0,0.018,0.0015,0.0,0.0,0.0,0.0,0.018,0.0015,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Omaha,15,West,0.0185,1.0,0.018,0.0005,0.0,0.0,0.0,0.0,0.018,0.0005,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+High Point,13,Midwest,0.0155,1.0,0.014,0.0015,0.0,0.0,0.0,0.0,0.014,0.0015,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+UNC Wilmington,14,West,0.0055,1.0,0.005,0.0005,0.0,0.0,0.0,0.0,0.005,0.0005,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Wofford,15,Midwest,0.002,1.0,0.002,0.0,0.0,0.0,0.0,0.0,0.002,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Bryant,15,South,0.002,1.0,0.002,0.0,0.0,0.0,0.0,0.0,0.002,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Mount St Marys,16,East,0.0015,1.0,0.0015,0.0,0.0,0.0,0.0,0.0,0.0015,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Robert Morris,15,East,0.0005,1.0,0.0005,0.0,0.0,0.0,0.0,0.0,0.0005,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+SIUE,16,Midwest,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Alabama St,16,South,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv
+Norfolk St,16,West,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,data/raw/2025/tournament_games.csv

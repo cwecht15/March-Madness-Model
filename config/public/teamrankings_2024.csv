@@ -1,0 +1,18 @@
+output_column,source_file,scale,notes
+Seas_PPG,data/raw/2024/teamrankings/points-per-game.csv,raw,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/points-per-game?date=2024-04-09
+Seas_Succ_3PT,data/raw/2024/teamrankings/percent-of-points-from-3-pointers.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/percent-of-points-from-3-pointers?date=2024-04-09
+Seas_3PT_Per,data/raw/2024/teamrankings/three-point-pct.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/three-point-pct?date=2024-04-09
+Seas_FT_Succ,data/raw/2024/teamrankings/free-throw-pct.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/free-throw-pct?date=2024-04-09
+Seas_3PT_Rate,data/raw/2024/teamrankings/three-point-rate.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/three-point-rate?date=2024-04-09
+Seas_Off_Rebound_Per,data/raw/2024/teamrankings/offensive-rebounding-pct.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/offensive-rebounding-pct?date=2024-04-09
+Seas_Def_Rebound_Per,data/raw/2024/teamrankings/defensive-rebounding-pct.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/defensive-rebounding-pct?date=2024-04-09
+Seas_Turnovers,data/raw/2024/teamrankings/turnovers-per-game.csv,raw,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/turnovers-per-game?date=2024-04-09
+Seas_Fouls,data/raw/2024/teamrankings/personal-fouls-per-game.csv,raw,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/personal-fouls-per-game?date=2024-04-09
+Seas_Opp_PPG,data/raw/2024/teamrankings/opponent-points-per-game.csv,raw,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/opponent-points-per-game?date=2024-04-09
+Seas_Opp_3PT_Succ,data/raw/2024/teamrankings/opponent-three-point-pct.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/opponent-three-point-pct?date=2024-04-09
+Seas_Opp_3PT_Rate,data/raw/2024/teamrankings/opponent-three-point-rate.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/opponent-three-point-rate?date=2024-04-09
+Seas_Opp_Off_Rebound,data/raw/2024/teamrankings/opponent-offensive-rebounding-pct.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/opponent-offensive-rebounding-pct?date=2024-04-09
+Seas_Opp_Def_Rebound,data/raw/2024/teamrankings/opponent-defensive-rebounding-pct.csv,pct,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/opponent-defensive-rebounding-pct?date=2024-04-09
+Seas_Opp_Turnover,data/raw/2024/teamrankings/opponent-turnovers-per-game.csv,raw,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/opponent-turnovers-per-game?date=2024-04-09
+Seas_Opp_Fouls,data/raw/2024/teamrankings/opponent-personal-fouls-per-game.csv,raw,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/opponent-personal-fouls-per-game?date=2024-04-09
+Seas_Poss,data/raw/2024/teamrankings/possessions-per-game.csv,raw,Scraped from https://www.teamrankings.com/ncaa-basketball/stat/possessions-per-game?date=2024-04-09

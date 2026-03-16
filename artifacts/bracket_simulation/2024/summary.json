@@ -1,0 +1,20 @@
+{
+  "season_data": "data/processed/march_madness_2024.csv",
+  "field_source": "data/raw/2024/tournament_games.csv",
+  "n_sims": 10000,
+  "semifinal_pairs": [
+    [
+      "East",
+      "West"
+    ],
+    [
+      "South",
+      "Midwest"
+    ]
+  ],
+  "favorite": {
+    "team": "Connecticut",
+    "win_championship": 0.9269,
+    "win_final_four": 0.9808
+  }
+}

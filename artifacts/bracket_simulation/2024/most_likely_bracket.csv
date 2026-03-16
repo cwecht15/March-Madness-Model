@@ -1,0 +1,64 @@
+round_index,round_name,game_number,team_left,team_right,left_win_probability,picked_winner
+1,round_of_64,1,Connecticut,Stetson,0.9999055392039431,Connecticut
+1,round_of_64,2,Fla Atlantic,Northwestern,0.18566769064391972,Northwestern
+1,round_of_64,3,San Diego St,UAB,0.6995424946646427,San Diego St
+1,round_of_64,4,Auburn,Yale,0.8420073602006727,Auburn
+1,round_of_64,5,BYU,Duquesne,0.341267672022835,Duquesne
+1,round_of_64,6,Illinois,Morehead St,0.9718335031795818,Illinois
+1,round_of_64,7,Washington St,Drake,0.6419918510012914,Washington St
+1,round_of_64,8,Iowa St,S Dakota St,0.995128155613902,Iowa St
+2,round_of_32,1,Connecticut,Northwestern,0.9971427615154073,Connecticut
+2,round_of_32,2,San Diego St,Auburn,0.31410804302108797,Auburn
+2,round_of_32,3,Duquesne,Illinois,0.15249867339701995,Illinois
+2,round_of_32,4,Washington St,Iowa St,0.2121615833047569,Iowa St
+3,sweet_sixteen,1,Connecticut,Auburn,0.9955897617897503,Connecticut
+3,sweet_sixteen,2,Illinois,Iowa St,0.5791497736665829,Illinois
+4,elite_eight,1,Connecticut,Illinois,0.9926025455641175,Connecticut
+1,round_of_64,1,Purdue,Grambling,0.998587156388844,Purdue
+1,round_of_64,2,Utah St,TCU,0.7527957439557875,Utah St
+1,round_of_64,3,Gonzaga,McNeese,0.8804539402882077,Gonzaga
+1,round_of_64,4,Kansas,Samford,0.5872938541826919,Kansas
+1,round_of_64,5,S Carolina,Oregon,0.4031467930676071,Oregon
+1,round_of_64,6,Creighton,Akron,0.9835460655939722,Creighton
+1,round_of_64,7,Texas,Colorado St,0.5234623178786607,Texas
+1,round_of_64,8,Tennessee,St Peters,0.9981327311741585,Tennessee
+2,round_of_32,1,Purdue,Utah St,0.9076222910891066,Purdue
+2,round_of_32,2,Gonzaga,Kansas,0.5001450008961902,Gonzaga
+2,round_of_32,3,Oregon,Creighton,0.41895240390510613,Creighton
+2,round_of_32,4,Texas,Tennessee,0.12965834479851474,Tennessee
+3,sweet_sixteen,1,Purdue,Gonzaga,0.9557485811148615,Purdue
+3,sweet_sixteen,2,Creighton,Tennessee,0.3505093689319506,Tennessee
+4,elite_eight,1,Purdue,Tennessee,0.7689641920424414,Purdue
+1,round_of_64,1,Houston,Longwood,0.999650656318999,Houston
+1,round_of_64,2,Nebraska,Texas A&M,0.4612782551526762,Texas A&M
+1,round_of_64,3,Wisconsin,James Madison,0.33623488678472596,James Madison
+1,round_of_64,4,Duke,Vermont,0.9588600767233002,Duke
+1,round_of_64,5,Texas Tech,NC State,0.26028456171354103,NC State
+1,round_of_64,6,Kentucky,Oakland,0.4493483241887231,Oakland
+1,round_of_64,7,Florida,Colorado,0.1793463419736936,Colorado
+1,round_of_64,8,Marquette,Western KY,0.9941716638592185,Marquette
+2,round_of_32,1,Houston,Texas A&M,0.9754607622269277,Houston
+2,round_of_32,2,James Madison,Duke,0.2516777631861528,Duke
+2,round_of_32,3,NC State,Oakland,0.9240508677853169,NC State
+2,round_of_32,4,Colorado,Marquette,0.5462113016738045,Colorado
+3,sweet_sixteen,1,Houston,Duke,0.9198101890586415,Houston
+3,sweet_sixteen,2,NC State,Colorado,0.4246990284465271,Colorado
+4,elite_eight,1,Houston,Colorado,0.9175086569835167,Houston
+1,round_of_64,1,N Carolina,Wagner,0.9991597819876904,N Carolina
+1,round_of_64,2,Mississippi St,Michigan St,0.3634993049742343,Michigan St
+1,round_of_64,3,St Marys,Grd Canyon,0.32030217876288364,Grd Canyon
+1,round_of_64,4,Alabama,Charleston,0.950804524970056,Alabama
+1,round_of_64,5,Clemson,New Mexico,0.4601934077759953,New Mexico
+1,round_of_64,6,Baylor,Colgate,0.9618035705799172,Baylor
+1,round_of_64,7,Dayton,Nevada,0.4853444774707555,Nevada
+1,round_of_64,8,Arizona,Long Beach St,0.9832898741608903,Arizona
+2,round_of_32,1,N Carolina,Michigan St,0.5693124156944042,N Carolina
+2,round_of_32,2,Grd Canyon,Alabama,0.12154109554276227,Alabama
+2,round_of_32,3,New Mexico,Baylor,0.6550529939151539,New Mexico
+2,round_of_32,4,Nevada,Arizona,0.2411694024599901,Arizona
+3,sweet_sixteen,1,N Carolina,Alabama,0.22572068422799296,Alabama
+3,sweet_sixteen,2,New Mexico,Arizona,0.44952062375167706,Arizona
+4,elite_eight,1,Alabama,Arizona,0.756750381924784,Alabama
+5,final_four,1,Connecticut,Alabama,0.9890812339301016,Connecticut
+5,final_four,1,Houston,Purdue,0.7254485505674594,Houston
+6,championship,1,Connecticut,Houston,0.9232115837687819,Connecticut

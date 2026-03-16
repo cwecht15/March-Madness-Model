@@ -1,0 +1,64 @@
+round_index,round_name,game_number,team_left,team_right,left_win_probability,picked_winner
+1,round_of_64,1,Duke,Mount St Marys,0.9989485325940455,Duke
+1,round_of_64,2,Mississippi St,Baylor,0.3347144058306856,Baylor
+1,round_of_64,3,Oregon,Liberty,0.9365682604451283,Oregon
+1,round_of_64,4,Arizona,Akron,0.9300795984866513,Arizona
+1,round_of_64,5,BYU,VCU,0.8995988331733723,BYU
+1,round_of_64,6,Wisconsin,Montana,0.9183819797735766,Wisconsin
+1,round_of_64,7,St Marys,Vanderbilt,0.6918288435676228,St Marys
+1,round_of_64,8,Alabama,Robert Morris,0.9977672753794619,Alabama
+2,round_of_32,1,Duke,Baylor,0.91241162188179,Duke
+2,round_of_32,2,Oregon,Arizona,0.6053387303030043,Oregon
+2,round_of_32,3,BYU,Wisconsin,0.7595758936606513,BYU
+2,round_of_32,4,St Marys,Alabama,0.05111317050612431,Alabama
+3,sweet_sixteen,1,Duke,Oregon,0.8438983939086347,Duke
+3,sweet_sixteen,2,BYU,Alabama,0.09405420441861638,Alabama
+4,elite_eight,1,Duke,Alabama,0.3957871234669198,Alabama
+1,round_of_64,1,Houston,SIUE,0.9998740454961247,Houston
+1,round_of_64,2,Gonzaga,Georgia,0.8496839600110667,Gonzaga
+1,round_of_64,3,Clemson,McNeese,0.8080627765674676,Clemson
+1,round_of_64,4,Purdue,High Point,0.9835606685466474,Purdue
+1,round_of_64,5,Illinois,Xavier,0.8391366112762512,Illinois
+1,round_of_64,6,Kentucky,Troy,0.9746069401098534,Kentucky
+1,round_of_64,7,UCLA,Utah St,0.8769167795029308,UCLA
+1,round_of_64,8,Tennessee,Wofford,0.9990677309504934,Tennessee
+2,round_of_32,1,Houston,Gonzaga,0.931426342972985,Houston
+2,round_of_32,2,Clemson,Purdue,0.20198994900201372,Purdue
+2,round_of_32,3,Illinois,Kentucky,0.49286990332689007,Kentucky
+2,round_of_32,4,UCLA,Tennessee,0.085899875599803,Tennessee
+3,sweet_sixteen,1,Houston,Purdue,0.9342276655972772,Houston
+3,sweet_sixteen,2,Kentucky,Tennessee,0.09483318255143,Tennessee
+4,elite_eight,1,Houston,Tennessee,0.6744199131722788,Houston
+1,round_of_64,1,Auburn,Alabama St,0.999931447230492,Auburn
+1,round_of_64,2,Louisville,Creighton,0.4576373394707644,Creighton
+1,round_of_64,3,Michigan,UC San Diego,0.9608444942029637,Michigan
+1,round_of_64,4,Texas A&M,Yale,0.97459179027645,Texas A&M
+1,round_of_64,5,Mississippi,N Carolina,0.7265761977885052,Mississippi
+1,round_of_64,6,Iowa St,Lipscomb,0.9420073999012705,Iowa St
+1,round_of_64,7,Marquette,New Mexico,0.6169745191915177,Marquette
+1,round_of_64,8,Michigan St,Bryant,0.9981688909233117,Michigan St
+2,round_of_32,1,Auburn,Creighton,0.9021929975687926,Auburn
+2,round_of_32,2,Michigan,Texas A&M,0.8044078356774456,Michigan
+2,round_of_32,3,Mississippi,Iowa St,0.7532240449532,Mississippi
+2,round_of_32,4,Marquette,Michigan St,0.11988376628134723,Michigan St
+3,sweet_sixteen,1,Auburn,Michigan,0.8260371603878724,Auburn
+3,sweet_sixteen,2,Mississippi,Michigan St,0.2920210310659218,Michigan St
+4,elite_eight,1,Auburn,Michigan St,0.7579058689865983,Auburn
+1,round_of_64,1,Florida,Norfolk St,0.9999738971319648,Florida
+1,round_of_64,2,Connecticut,Oklahoma,0.6186936577648333,Connecticut
+1,round_of_64,3,Memphis,Colorado St,0.16913740007988626,Colorado St
+1,round_of_64,4,Maryland,Grd Canyon,0.9818845881898522,Maryland
+1,round_of_64,5,Missouri,Drake,0.41373330116233925,Drake
+1,round_of_64,6,Texas Tech,UNC Wilmington,0.9931778042648992,Texas Tech
+1,round_of_64,7,Kansas,Arkansas,0.42816916943412625,Arkansas
+1,round_of_64,8,St Johns,Omaha,0.9805986187067528,St Johns
+2,round_of_32,1,Florida,Connecticut,0.9980341124516096,Florida
+2,round_of_32,2,Colorado St,Maryland,0.2637633724712446,Maryland
+2,round_of_32,3,Drake,Texas Tech,0.06960998793660697,Texas Tech
+2,round_of_32,4,Arkansas,St Johns,0.6482441290652311,Arkansas
+3,sweet_sixteen,1,Florida,Maryland,0.9943653795767481,Florida
+3,sweet_sixteen,2,Texas Tech,Arkansas,0.7682283946427938,Texas Tech
+4,elite_eight,1,Florida,Texas Tech,0.9869005376989641,Florida
+5,final_four,1,Auburn,Florida,0.05034961172925487,Florida
+5,final_four,1,Alabama,Houston,0.39361765366946166,Houston
+6,championship,1,Florida,Houston,0.9166773394731871,Florida

@@ -1,0 +1,65 @@
+source,raw_team,normalized_team,canonical_team,match_method
+field,Purdue,purdue,Purdue,season_exact
+field,Marquette,marquette,Marquette,season_exact
+field,Kansas St,kansas st,Kansas St.,season_exact
+field,Tennessee,tennessee,Tennessee,season_exact
+field,Duke,duke,Duke,season_exact
+field,Kentucky,kentucky,Kentucky,season_exact
+field,Michigan St,michigan st,Michigan St.,global_alias
+field,Memphis,memphis,Memphis,season_exact
+field,FAU,fau,Florida Atlantic,global_alias
+field,USC,usc,USC,season_exact
+field,Providence,providence,Providence,season_exact
+field,Oral Roberts,oral roberts,Oral Roberts,season_exact
+field,Louisiana,louisiana,Louisiana,season_exact
+field,Montana St,montana st,Montana St.,global_alias
+field,Vermont,vermont,Vermont,season_exact
+field,FDU,fdu,Fairleigh Dickinson,global_alias
+field,Houston,houston,Houston,season_exact
+field,Texas,texas,Texas,season_exact
+field,Xavier,xavier,Xavier,season_exact
+field,Indiana,indiana,Indiana,season_exact
+field,Miami,miami,Miami FL,global_alias
+field,Iowa State,iowa state,Iowa St.,global_alias
+field,Texas A&M,texas a and m,Texas A&M,season_exact
+field,Iowa,iowa,Iowa,season_exact
+field,Auburn,auburn,Auburn,season_exact
+field,Penn State,penn state,Penn St.,global_alias
+field,Pitt,pitt,Pittsburgh,global_alias
+field,Drake,drake,Drake,season_exact
+field,Kent State,kent state,Kent St.,season_fuzzy
+field,Kennesaw St,kennesaw st,Kennesaw St.,season_exact
+field,Colgate,colgate,Colgate,season_exact
+field,N Kentucky,n kentucky,Northern Kentucky,global_alias
+field,Alabama,alabama,Alabama,season_exact
+field,Arizona,arizona,Arizona,season_exact
+field,Baylor,baylor,Baylor,season_exact
+field,Virginia,virginia,Virginia,season_exact
+field,San Diego St,san diego st,San Diego St.,global_alias
+field,Creighton,creighton,Creighton,season_exact
+field,Missouri,missouri,Missouri,season_exact
+field,Maryland,maryland,Maryland,season_exact
+field,West Virginia,west virginia,West Virginia,season_exact
+field,Utah State,utah state,Utah St.,global_alias
+field,NC State,nc state,N.C. State,season_fuzzy
+field,Charleston,charleston,Charleston,season_exact
+field,Furman,furman,Furman,season_exact
+field,Santa Barbara,santa barbara,UC Santa Barbara,global_alias
+field,Princeton,princeton,Princeton,season_exact
+field,Texas A&M-CC,texas a and m cc,Texas A&M Corpus Chris?,global_alias
+field,Kansas,kansas,Kansas,season_exact
+field,UCLA,ucla,UCLA,season_exact
+field,Gonzaga,gonzaga,Gonzaga,season_exact
+field,UConn,uconn,Connecticut,global_alias
+field,Saint Mary's,st marys,Saint Mary's,global_alias
+field,TCU,tcu,TCU,season_exact
+field,Northwestern,northwestern,Northwestern,season_exact
+field,Arkansas,arkansas,Arkansas,season_exact
+field,Illinois,illinois,Illinois,season_exact
+field,Boise St,boise st,Boise St.,global_alias
+field,Arizona St,arizona st,Arizona St.,season_exact
+field,VCU,vcu,VCU,season_exact
+field,Iona,iona,Iona,season_exact
+field,Grand Canyon,grand canyon,Grand Canyon,global_alias
+field,UNC Asheville,unc asheville,UNC Asheville,season_exact
+field,Howard,howard,Howard,season_exact

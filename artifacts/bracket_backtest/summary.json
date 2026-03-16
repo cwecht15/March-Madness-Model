@@ -1,0 +1,51 @@
+{
+  "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "included_years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "skipped_years": [],
+  "n_sims": 3000,
+  "use_calibration": true,
+  "best_temperature": 1.0,
+  "updated_model_payload": true,
+  "best_grid_row": {
+    "temperature": 1.0,
+    "n_years": 14.0,
+    "mean_actual_champion_prob": 0.7203095238095237,
+    "median_actual_champion_prob": 0.7741666666666667,
+    "mean_top_pick_prob": 0.7311190476190476,
+    "mean_top4_mass": 0.9295000000000001,
+    "mean_top8_mass": 0.9821428571428571,
+    "top_pick_hit_rate": 0.9285714285714286,
+    "mean_multiclass_brier": 0.16744890476190477,
+    "mean_champion_log_loss": 0.4093535019419878
+  }
+}

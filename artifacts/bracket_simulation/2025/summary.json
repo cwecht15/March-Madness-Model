@@ -1,0 +1,20 @@
+{
+  "season_data": "data/processed/march_madness_2025.csv",
+  "field_source": "data/raw/2025/tournament_games.csv",
+  "n_sims": 10000,
+  "semifinal_pairs": [
+    [
+      "South",
+      "West"
+    ],
+    [
+      "East",
+      "Midwest"
+    ]
+  ],
+  "favorite": {
+    "team": "Florida",
+    "win_championship": 0.7814,
+    "win_final_four": 0.8932
+  }
+}

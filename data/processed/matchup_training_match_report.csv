@@ -1,0 +1,918 @@
+source,raw_team,normalized_team,canonical_team,match_method,year
+games,Ohio State,ohio state,Ohio St,global_alias,2011
+games,UTSA,utsa,Texas San Antonio,global_alias,2011
+games,George Mason,george mason,George Mason,season_exact,2011
+games,Villanova,villanova,Villanova,season_exact,2011
+games,West Virginia,west virginia,West Virginia,season_exact,2011
+games,Clemson,clemson,Clemson,season_exact,2011
+games,Kentucky,kentucky,Kentucky,season_exact,2011
+games,Princeton,princeton,Princeton,season_exact,2011
+games,Xavier,xavier,Xavier,season_exact,2011
+games,Marquette,marquette,Marquette,season_exact,2011
+games,Syracuse,syracuse,Syracuse,season_exact,2011
+games,Indiana St,indiana st,Indiana St,season_exact,2011
+games,Washington,washington,Washington,season_exact,2011
+games,Georgia,georgia,Georgia,season_exact,2011
+games,North Carolina,north carolina,North Carolina,global_alias,2011
+games,Long Island,long island,Long Island Brooklyn,global_alias,2011
+games,Kansas,kansas,Kansas,season_exact,2011
+games,VCU,vcu,VCU,season_exact,2011
+games,Richmond,richmond,Richmond,season_exact,2011
+games,Florida St,florida st,Florida St,season_exact,2011
+games,Illinois,illinois,Illinois,season_exact,2011
+games,Morehead St,morehead st,Morehead St,season_exact,2011
+games,Purdue,purdue,Purdue,season_exact,2011
+games,Notre Dame,notre dame,Notre Dame,season_exact,2011
+games,Boston U,boston u,Boston University,global_alias,2011
+games,UNLV,unlv,UNLV,season_exact,2011
+games,Vanderbilt,vanderbilt,Vanderbilt,season_exact,2011
+games,Louisville,louisville,Louisville,season_exact,2011
+games,Georgetown,georgetown,Georgetown,season_exact,2011
+games,Saint Peter's,st peters,St Peters,global_alias,2011
+games,Texas A&M,texas a and m,Texas A&M,season_exact,2011
+games,Akron,akron,Akron,season_exact,2011
+games,UConn,uconn,Connecticut,global_alias,2011
+games,Butler,butler,Butler,season_exact,2011
+games,Duke,duke,Duke,season_exact,2011
+games,Hampton,hampton,Hampton,season_exact,2011
+games,Michigan,michigan,Michigan,season_exact,2011
+games,Tennessee,tennessee,Tennessee,season_exact,2011
+games,Arizona,arizona,Arizona,season_exact,2011
+games,Memphis,memphis,Memphis,season_exact,2011
+games,Texas,texas,Texas,season_exact,2011
+games,Oakland,oakland,Oakland,season_exact,2011
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2011
+games,Missouri,missouri,Missouri,season_exact,2011
+games,Bucknell,bucknell,Bucknell,season_exact,2011
+games,Temple,temple,Temple,season_exact,2011
+games,Penn State,penn state,Penn St,global_alias,2011
+games,San Diego St,san diego st,San Diego St,global_alias,2011
+games,N Colorado,n colorado,Northern Colorado,global_alias,2011
+games,Florida,florida,Florida,season_exact,2011
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2011
+games,BYU,byu,BYU,season_exact,2011
+games,Pitt,pitt,Pittsburgh,global_alias,2011
+games,Kansas St,kansas st,Kansas St,season_exact,2011
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2011
+games,UCLA,ucla,UCLA,season_exact,2011
+games,UNC Asheville,unc asheville,UNC Asheville,season_exact,2011
+games,Old Dominion,old dominion,Old Dominion,season_exact,2011
+games,Utah State,utah state,Utah St,global_alias,2011
+games,Belmont,belmont,Belmont,season_exact,2011
+games,St John's,st john s,St Johns,global_alias,2011
+games,Wofford,wofford,Wofford,season_exact,2011
+games,Michigan St,michigan st,Michigan St,global_alias,2011
+games,Santa Barbara,santa barbara,Santa Barbara,global_alias,2011
+games,CONN,conn,Connecticut,global_alias,2011
+games,BUT,but,BUT,season_cleaned,2011
+games,Kentucky,kentucky,Kentucky,season_exact,2012
+games,Western KY,western ky,Western Kentucky,season_fuzzy,2012
+games,Iowa State,iowa state,Iowa St,global_alias,2012
+games,UConn,uconn,Connecticut,global_alias,2012
+games,Wichita St,wichita st,Wichita St,season_exact,2012
+games,VCU,vcu,VCU,season_exact,2012
+games,Indiana,indiana,Indiana,season_exact,2012
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2012
+games,UNLV,unlv,UNLV,season_exact,2012
+games,Colorado,colorado,Colorado,season_exact,2012
+games,Baylor,baylor,Baylor,season_exact,2012
+games,S Dakota St,south dakota st,South Dakota St,global_alias,2012
+games,Notre Dame,notre dame,Notre Dame,season_exact,2012
+games,Xavier,xavier,Xavier,season_exact,2012
+games,Duke,duke,Duke,season_exact,2012
+games,Lehigh,lehigh,Lehigh,season_exact,2012
+games,Syracuse,syracuse,Syracuse,season_exact,2012
+games,Ohio State,ohio state,Ohio St,global_alias,2012
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2012
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2012
+games,Kansas St,kansas st,Kansas St,season_exact,2012
+games,Vanderbilt,vanderbilt,Vanderbilt,season_exact,2012
+games,Florida St,florida st,Florida St,season_exact,2012
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2012
+games,UNC Asheville,unc asheville,UNC Asheville,season_exact,2012
+games,Southern Miss,southern miss,Southern Mississippi,global_alias,2012
+games,Harvard,harvard,Harvard,season_exact,2012
+games,Montana,montana,Montana,season_exact,2012
+games,Texas,texas,Texas,season_exact,2012
+games,St Bonaventure,st bonaventure,St Bonaventure,season_exact,2012
+games,West Virginia,west virginia,West Virginia,season_exact,2012
+games,Loyola MD,loyola md,Loyola Maryland,global_alias,2012
+games,Louisville,louisville,Louisville,season_exact,2012
+games,Kansas,kansas,Kansas,season_exact,2012
+games,Michigan St,michigan st,Michigan St,global_alias,2012
+games,Long Island,long island,Long Island Brooklyn,global_alias,2012
+games,Memphis,memphis,Memphis,season_exact,2012
+games,Saint Louis,st louis,St Louis,season_exact,2012
+games,New Mexico,new mexico,New Mexico,season_exact,2012
+games,Long Beach St,long beach st,Long Beach St,season_exact,2012
+games,Davidson,davidson,Davidson,season_exact,2012
+games,Murray St,murray st,Murray St,season_exact,2012
+games,Colorado St,colorado st,Colorado St,season_exact,2012
+games,Marquette,marquette,Marquette,season_exact,2012
+games,BYU,byu,BYU,season_exact,2012
+games,Florida,florida,Florida,season_exact,2012
+games,Virginia,virginia,Virginia,season_exact,2012
+games,Missouri,missouri,Missouri,season_exact,2012
+games,Norfolk St,norfolk st,Norfolk St,season_exact,2012
+games,North Carolina,north carolina,North Carolina,global_alias,2012
+games,Ohio,ohio,Ohio,season_exact,2012
+games,NC State,nc state,NC State,season_exact,2012
+games,Creighton,creighton,Creighton,season_exact,2012
+games,South Florida,south florida,South Florida,season_exact,2012
+games,Georgetown,georgetown,Georgetown,season_exact,2012
+games,Purdue,purdue,Purdue,season_exact,2012
+games,Vermont,vermont,Vermont,season_exact,2012
+games,Alabama,alabama,Alabama,season_exact,2012
+games,Temple,temple,Temple,season_exact,2012
+games,Michigan,michigan,Michigan,season_exact,2012
+games,San Diego St,san diego st,San Diego St,global_alias,2012
+games,Belmont,belmont,Belmont,season_exact,2012
+games,Saint Mary's,st marys,St Marys,global_alias,2012
+games,Detroit Mercy,detroit mercy,Detroit,global_alias,2012
+games,UK,uk,Kentucky,abbreviation_alias,2012
+games,KU,ku,Kansas,abbreviation_alias,2012
+games,Louisville,louisville,Louisville,season_exact,2013
+games,NC A&T,nc a and t,North Carolina A&T,global_alias,2013
+games,Colorado St,colorado st,Colorado St,season_exact,2013
+games,Missouri,missouri,Missouri,season_exact,2013
+games,Oklahoma St,oklahoma st,Oklahoma St,season_exact,2013
+games,Oregon,oregon,Oregon,season_exact,2013
+games,Saint Louis,st louis,St Louis,season_exact,2013
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2013
+games,Memphis,memphis,Memphis,season_exact,2013
+games,Saint Mary's,st marys,St Marys,global_alias,2013
+games,Michigan St,michigan st,Michigan St,global_alias,2013
+games,Valparaiso,valparaiso,Valparaiso,season_exact,2013
+games,Creighton,creighton,Creighton,season_exact,2013
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2013
+games,Duke,duke,Duke,season_exact,2013
+games,UAlbany,ualbany,Albany,global_alias,2013
+games,Michigan,michigan,Michigan,season_exact,2013
+games,Florida,florida,Florida,season_exact,2013
+games,Kansas,kansas,Kansas,season_exact,2013
+games,FGCU,fgcu,Florida Gulf Coast,global_alias,2013
+games,North Carolina,north carolina,North Carolina,global_alias,2013
+games,VCU,vcu,VCU,season_exact,2013
+games,Minnesota,minnesota,Minnesota,season_exact,2013
+games,San Diego St,san diego st,San Diego St,global_alias,2013
+games,Western KY,western ky,Western Kentucky,season_fuzzy,2013
+games,Villanova,villanova,Villanova,season_exact,2013
+games,Akron,akron,Akron,season_exact,2013
+games,S Dakota St,south dakota st,South Dakota St,global_alias,2013
+games,UCLA,ucla,UCLA,season_exact,2013
+games,N'Western St,northwestern st,Northwestern St,season_exact,2013
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2013
+games,Georgetown,georgetown,Georgetown,season_exact,2013
+games,Wichita St,wichita st,Wichita St,season_exact,2013
+games,Syracuse,syracuse,Syracuse,season_exact,2013
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2013
+games,Southern,southern,Southern,season_exact,2013
+games,Pitt,pitt,Pittsburgh,global_alias,2013
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2013
+games,Ole Miss,mississippi,Ole Miss,global_alias,2013
+games,Kansas St,kansas st,Kansas St,season_exact,2013
+games,La Salle,la salle,La Salle,season_exact,2013
+games,Arizona,arizona,Arizona,season_exact,2013
+games,Belmont,belmont,Belmont,season_exact,2013
+games,New Mexico,new mexico,New Mexico,season_exact,2013
+games,Harvard,harvard,Harvard,season_exact,2013
+games,Notre Dame,notre dame,Notre Dame,season_exact,2013
+games,Iowa State,iowa state,Iowa St,global_alias,2013
+games,Ohio State,ohio state,Ohio St,global_alias,2013
+games,Iona,iona,Iona,season_exact,2013
+games,Marquette,marquette,Marquette,season_exact,2013
+games,Indiana,indiana,Indiana,season_exact,2013
+games,Miami,miami,Miami,global_alias,2013
+games,Temple,temple,Temple,season_exact,2013
+games,California,california,California,season_exact,2013
+games,Butler,butler,Butler,season_exact,2013
+games,Illinois,illinois,Illinois,season_exact,2013
+games,James Madison,james madison,James Madison,season_exact,2013
+games,NC State,nc state,NC State,season_exact,2013
+games,UNLV,unlv,UNLV,season_exact,2013
+games,Montana,montana,Montana,season_exact,2013
+games,Bucknell,bucknell,Bucknell,season_exact,2013
+games,Davidson,davidson,Davidson,season_exact,2013
+games,Colorado,colorado,Colorado,season_exact,2013
+games,Pacific,pacific,Pacific,season_exact,2013
+games,LOU,lou,Louisville,abbreviation_alias,2013
+games,MICH,mich,Michigan,abbreviation_alias,2013
+games,Florida,florida,Florida,season_exact,2014
+games,UAlbany,ualbany,Albany,global_alias,2014
+games,Colorado,colorado,Colorado,season_exact,2014
+games,Pitt,pitt,Pittsburgh,global_alias,2014
+games,VCU,vcu,VCU,season_exact,2014
+games,SF Austin,stephen f austin,Stephen F Austin,global_alias,2014
+games,UCLA,ucla,UCLA,season_exact,2014
+games,Tulsa,tulsa,Tulsa,season_exact,2014
+games,Ohio State,ohio state,Ohio St,global_alias,2014
+games,Dayton,dayton,Dayton,season_exact,2014
+games,Syracuse,syracuse,Syracuse,season_exact,2014
+games,W Michigan,western michigan,Western Michigan,season_exact,2014
+games,New Mexico,new mexico,New Mexico,season_exact,2014
+games,Stanford,stanford,Stanford,season_exact,2014
+games,Kansas,kansas,Kansas,season_exact,2014
+games,E Kentucky,eastern kentucky,Eastern Kentucky,season_exact,2014
+games,Arizona,arizona,Arizona,season_exact,2014
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2014
+games,San Diego St,san diego st,San Diego St,global_alias,2014
+games,Baylor,baylor,Baylor,season_exact,2014
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2014
+games,N Dakota St,north dakota st,North Dakota St,global_alias,2014
+games,Creighton,creighton,Creighton,season_exact,2014
+games,Oregon,oregon,Oregon,season_exact,2014
+games,Weber St,weber st,Weber St,season_exact,2014
+games,Oklahoma St,oklahoma st,Oklahoma St,season_exact,2014
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2014
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2014
+games,Nebraska,nebraska,Nebraska,season_exact,2014
+games,Louisiana,louisiana,Louisiana Lafayette,global_alias,2014
+games,BYU,byu,BYU,season_exact,2014
+games,American,american,American,season_exact,2014
+games,UConn,uconn,Connecticut,global_alias,2014
+games,Kentucky,kentucky,Kentucky,season_exact,2014
+games,Virginia,virginia,Virginia,season_exact,2014
+games,Coastal,coastal,Coastal Carolina,global_alias,2014
+games,Memphis,memphis,Memphis,season_exact,2014
+games,G Washington,george washington,George Washington,season_fuzzy,2014
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2014
+games,Harvard,harvard,Harvard,season_exact,2014
+games,Michigan St,michigan st,Michigan St,global_alias,2014
+games,Delaware,delaware,Delaware,season_exact,2014
+games,North Carolina,north carolina,North Carolina,global_alias,2014
+games,Providence,providence,Providence,season_exact,2014
+games,Iowa State,iowa state,Iowa St,global_alias,2014
+games,NC Central,nc central,North Carolina Central,global_alias,2014
+games,Saint Joseph's,st joseph s,St Josephs,global_alias,2014
+games,Villanova,villanova,Villanova,season_exact,2014
+games,Milwaukee,milwaukee,Wisconsin Milwaukee,global_alias,2014
+games,Michigan,michigan,Michigan,season_exact,2014
+games,Louisville,louisville,Louisville,season_exact,2014
+games,Tennessee,tennessee,Tennessee,season_exact,2014
+games,Wichita St,wichita st,Wichita St,season_exact,2014
+games,Saint Louis,st louis,St Louis,season_exact,2014
+games,Mercer,mercer,Mercer,season_exact,2014
+games,Texas,texas,Texas,season_exact,2014
+games,Cal Poly,cal poly,Cal Poly,season_exact,2014
+games,Kansas St,kansas st,Kansas St,season_exact,2014
+games,NC State,nc state,NC State,season_exact,2014
+games,Manhattan,manhattan,Manhattan,season_exact,2014
+games,UMass,umass,Massachusetts,global_alias,2014
+games,Duke,duke,Duke,season_exact,2014
+games,Arizona St,arizona st,Arizona St,season_exact,2014
+games,Wofford,wofford,Wofford,season_exact,2014
+games,CONN,conn,Connecticut,global_alias,2014
+games,UK,uk,Kentucky,abbreviation_alias,2014
+games,Kentucky,kentucky,Kentucky,season_exact,2015
+games,Hampton,hampton,Hampton,season_exact,2015
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2015
+games,Purdue,purdue,Purdue,season_exact,2015
+games,West Virginia,west virginia,West Virginia,season_exact,2015
+games,Buffalo,buffalo,Buffalo,season_exact,2015
+games,Maryland,maryland,Maryland,season_exact,2015
+games,Valparaiso,valparaiso,Valparaiso,season_exact,2015
+games,Butler,butler,Butler,season_exact,2015
+games,Texas,texas,Texas,season_exact,2015
+games,Notre Dame,notre dame,Notre Dame,season_exact,2015
+games,Northeastern,northeastern,Northeastern,season_exact,2015
+games,Wichita St,wichita st,Wichita St,season_exact,2015
+games,Indiana,indiana,Indiana,season_exact,2015
+games,Kansas,kansas,Kansas,season_exact,2015
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2015
+games,Louisville,louisville,Louisville,season_exact,2015
+games,Michigan St,michigan st,Michigan St,global_alias,2015
+games,NC State,nc state,NC State,season_exact,2015
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2015
+games,Villanova,villanova,Villanova,season_exact,2015
+games,Northern Iowa,northern iowa,Northern Iowa,season_exact,2015
+games,Dayton,dayton,Dayton,season_exact,2015
+games,Virginia,virginia,Virginia,season_exact,2015
+games,Lafayette,lafayette,Lafayette,season_exact,2015
+games,LSU,lsu,LSU,season_exact,2015
+games,Wyoming,wyoming,Wyoming,season_exact,2015
+games,UC Irvine,uc irvine,UC Irvine,season_exact,2015
+games,Providence,providence,Providence,season_exact,2015
+games,UAlbany,ualbany,Albany,global_alias,2015
+games,Georgia,georgia,Georgia,season_exact,2015
+games,Belmont,belmont,Belmont,season_exact,2015
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2015
+games,Duke,duke,Duke,season_exact,2015
+games,Coastal,coastal,Coastal Carolina,global_alias,2015
+games,Oregon,oregon,Oregon,season_exact,2015
+games,Oklahoma St,oklahoma st,Oklahoma St,season_exact,2015
+games,Arkansas,arkansas,Arkansas,season_exact,2015
+games,Wofford,wofford,Wofford,season_exact,2015
+games,North Carolina,north carolina,N Carolina,global_alias,2015
+games,Harvard,harvard,Harvard,season_exact,2015
+games,Xavier,xavier,Xavier,season_exact,2015
+games,Ole Miss,mississippi,Mississippi,global_alias,2015
+games,Baylor,baylor,Baylor,season_exact,2015
+games,Georgia St,georgia st,Georgia St,season_exact,2015
+games,VCU,vcu,VCU,season_exact,2015
+games,Ohio State,ohio state,Ohio St,global_alias,2015
+games,Arizona,arizona,Arizona,season_exact,2015
+games,Texas Southern,texas southern,Texas Southern,season_exact,2015
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2015
+games,Utah,utah,Utah,season_exact,2015
+games,UCLA,ucla,UCLA,season_exact,2015
+games,San Diego St,san diego st,San Diego St,global_alias,2015
+games,Georgetown,georgetown,Georgetown,season_exact,2015
+games,UAB,uab,UAB,season_exact,2015
+games,Iowa,iowa,Iowa,season_exact,2015
+games,Robert Morris,robert morris,Robert Morris,season_exact,2015
+games,St John's,st john s,St Johns,global_alias,2015
+games,SF Austin,stephen f austin,SF Austin,global_alias,2015
+games,E Washington,east washington,Eastern Washington,season_fuzzy,2015
+games,SMU,smu,SMU,season_exact,2015
+games,Iowa State,iowa state,Iowa St,global_alias,2015
+games,Davidson,davidson,Davidson,season_exact,2015
+games,N Dakota St,north dakota st,N Dakota St,global_alias,2015
+games,Kansas,kansas,Kansas,season_exact,2016
+games,Austin Peay,austin peay,Austin Peay,season_exact,2016
+games,Colorado,colorado,Colorado,season_exact,2016
+games,UConn,uconn,Connecticut,global_alias,2016
+games,Maryland,maryland,Maryland,season_exact,2016
+games,S Dakota St,south dakota st,South Dakota St,global_alias,2016
+games,California,california,California,season_exact,2016
+games,Hawai'i,hawai i,Hawaii,global_alias,2016
+games,Arizona,arizona,Arizona,season_exact,2016
+games,Wichita St,wichita st,Wichita St,season_exact,2016
+games,Miami,miami,Miami,global_alias,2016
+games,Buffalo,buffalo,Buffalo,season_exact,2016
+games,Iowa,iowa,Iowa,season_exact,2016
+games,Temple,temple,Temple,season_exact,2016
+games,Villanova,villanova,Villanova,season_exact,2016
+games,UNC Asheville,unc asheville,UNC Asheville,season_exact,2016
+games,North Carolina,north carolina,North Carolina,global_alias,2016
+games,Notre Dame,notre dame,Notre Dame,season_exact,2016
+games,Indiana,indiana,Indiana,season_exact,2016
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2016
+games,Providence,providence,Providence,season_exact,2016
+games,Kentucky,kentucky,Kentucky,season_exact,2016
+games,SF Austin,stephen f austin,Stephen F Austin,global_alias,2016
+games,Xavier,xavier,Xavier,season_exact,2016
+games,FGCU,fgcu,Florida Gulf Coast,global_alias,2016
+games,USC,usc,USC,season_exact,2016
+games,Chattanooga,chattanooga,Chattanooga,season_exact,2016
+games,Stony Brook,stony brook,Stony Brook,season_exact,2016
+games,Michigan,michigan,Michigan,season_exact,2016
+games,West Virginia,west virginia,West Virginia,season_exact,2016
+games,Pitt,pitt,Pittsburgh,global_alias,2016
+games,Weber St,weber st,Weber St,season_exact,2016
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2016
+games,Syracuse,syracuse,Syracuse,season_exact,2016
+games,Oregon,oregon,Oregon,season_exact,2016
+games,Holy Cross,holy cross,Holy Cross,season_exact,2016
+games,Saint Joseph's,st joseph s,St Josephs,global_alias,2016
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2016
+games,Baylor,baylor,Baylor,season_exact,2016
+games,Yale,yale,Yale,season_exact,2016
+games,Duke,duke,Duke,season_exact,2016
+games,UNC Wilmington,unc wilmington,UNC Wilmington,season_exact,2016
+games,Texas,texas,Texas,season_exact,2016
+games,Northern Iowa,northern iowa,Northern Iowa,season_exact,2016
+games,Texas A&M,texas a and m,Texas A&M,season_exact,2016
+games,Green Bay,green bay,Wisconsin Green Bay,global_alias,2016
+games,Oregon St,oregon st,Oregon St,season_exact,2016
+games,VCU,vcu,VCU,season_exact,2016
+games,Bakersfield,bakersfield,Cal St Bakersfield,global_alias,2016
+games,Virginia,virginia,Virginia,season_exact,2016
+games,Iowa State,iowa state,Iowa St,global_alias,2016
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2016
+games,Butler,butler,Butler,season_exact,2016
+games,Little Rock,little rock,Arkansas Little Rock,global_alias,2016
+games,Utah,utah,Utah,season_exact,2016
+games,MTSU,mtsu,Middle Tennessee St,global_alias,2016
+games,Hampton,hampton,Hampton,season_exact,2016
+games,Texas Tech,texas tech,Texas Tech,season_exact,2016
+games,Purdue,purdue,Purdue,season_exact,2016
+games,Iona,iona,Iona,season_exact,2016
+games,Seton Hall,seton hall,Seton Hall,season_exact,2016
+games,Fresno St,fresno st,Fresno St,season_exact,2016
+games,Dayton,dayton,Dayton,season_exact,2016
+games,Michigan St,michigan st,Michigan St,global_alias,2016
+games,VILL,vill,Villanova,abbreviation_alias,2016
+games,UNC,unc,North Carolina,global_alias,2016
+games,Villanova,villanova,Villanova,season_exact,2017
+games,Mount St Marys,mount st marys,Mount St Marys,season_exact,2017
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2017
+games,Virginia Tech,virginia tech,Virginia Tech,season_exact,2017
+games,Virginia,virginia,Virginia,season_exact,2017
+games,UNC Wilmington,unc wilmington,UNC Wilmington,season_exact,2017
+games,Florida,florida,Florida,season_exact,2017
+games,ETSU,etsu,East Tennessee St,season_exact,2017
+games,SMU,smu,SMU,season_exact,2017
+games,USC,usc,USC,season_exact,2017
+games,Baylor,baylor,Baylor,season_exact,2017
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2017
+games,South Carolina,south carolina,South Carolina,global_alias,2017
+games,Marquette,marquette,Marquette,season_exact,2017
+games,Duke,duke,Duke,season_exact,2017
+games,Troy,troy,Troy,season_exact,2017
+games,Kansas,kansas,Kansas,season_exact,2017
+games,Oregon,oregon,Oregon,season_exact,2017
+games,Purdue,purdue,Purdue,season_exact,2017
+games,Michigan,michigan,Michigan,season_exact,2017
+games,Michigan St,michigan st,Michigan St,global_alias,2017
+games,Iowa State,iowa state,Iowa St,global_alias,2017
+games,Rhode Island,rhode island,Rhode Island,season_exact,2017
+games,Louisville,louisville,Louisville,season_exact,2017
+games,UC Davis,uc davis,UC Davis,season_exact,2017
+games,Miami,miami,Miami,global_alias,2017
+games,Nevada,nevada,Nevada,season_exact,2017
+games,Vermont,vermont,Vermont,season_exact,2017
+games,Creighton,creighton,Creighton,season_exact,2017
+games,Iona,iona,Iona,season_exact,2017
+games,Oklahoma St,oklahoma st,Oklahoma St,season_exact,2017
+games,Jax State,jacksonville st,Jacksonville St,season_exact,2017
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2017
+games,North Carolina,north carolina,North Carolina,global_alias,2017
+games,S Dakota St,south dakota st,South Dakota St,global_alias,2017
+games,Northwestern,northwestern,Northwestern,season_exact,2017
+games,Vanderbilt,vanderbilt,Vanderbilt,season_exact,2017
+games,Notre Dame,notre dame,Notre Dame,season_exact,2017
+games,Princeton,princeton,Princeton,season_exact,2017
+games,West Virginia,west virginia,West Virginia,season_exact,2017
+games,Bucknell,bucknell,Bucknell,season_exact,2017
+games,Maryland,maryland,Maryland,season_exact,2017
+games,Xavier,xavier,Xavier,season_exact,2017
+games,Florida St,florida st,Florida St,season_exact,2017
+games,FGCU,fgcu,Florida Gulf Coast,global_alias,2017
+games,Saint Mary's,st marys,St Marys,global_alias,2017
+games,VCU,vcu,VCU,season_exact,2017
+games,Arizona,arizona,Arizona,season_exact,2017
+games,North Dakota,north dakota,North Dakota,season_exact,2017
+games,Kentucky,kentucky,Kentucky,season_exact,2017
+games,Butler,butler,Butler,season_exact,2017
+games,UCLA,ucla,UCLA,season_exact,2017
+games,Arkansas,arkansas,Arkansas,season_exact,2017
+games,MTSU,mtsu,Middle Tennessee St,global_alias,2017
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2017
+games,Wichita St,wichita st,Wichita St,season_exact,2017
+games,Texas Southern,texas southern,Texas Southern,season_exact,2017
+games,Seton Hall,seton hall,Seton Hall,season_exact,2017
+games,Minnesota,minnesota,Minnesota,season_exact,2017
+games,Winthrop,winthrop,Winthrop,season_exact,2017
+games,Kansas St,kansas st,Kansas St,season_exact,2017
+games,Kent State,kent state,Kent St,season_fuzzy,2017
+games,Dayton,dayton,Dayton,season_exact,2017
+games,N Kentucky,n kentucky,Northern Kentucky,global_alias,2017
+games,GONZ,gonz,Gonzaga,abbreviation_alias,2017
+games,UNC,unc,North Carolina,global_alias,2017
+games,Virginia,virginia,Virginia,season_exact,2018
+games,UMBC,umbc,UMBC,season_exact,2018
+games,Creighton,creighton,Creighton,season_exact,2018
+games,Kansas St,kansas st,Kansas St,season_exact,2018
+games,Kentucky,kentucky,Kentucky,season_exact,2018
+games,Davidson,davidson,Davidson,season_exact,2018
+games,Arizona,arizona,Arizona,season_exact,2018
+games,Buffalo,buffalo,Buffalo,season_exact,2018
+games,Miami,miami,Miami,global_alias,2018
+games,Loyola Chicago,loyola chicago,Loyola Chicago,season_exact,2018
+games,Tennessee,tennessee,Tennessee,season_exact,2018
+games,Wright St,wright st,Wright St,season_exact,2018
+games,Nevada,nevada,Nevada,season_exact,2018
+games,Texas,texas,Texas,season_exact,2018
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2018
+games,Georgia St,georgia st,Georgia St,season_exact,2018
+games,Villanova,villanova,Villanova,season_exact,2018
+games,Texas Tech,texas tech,Texas Tech,season_exact,2018
+games,West Virginia,west virginia,West Virginia,season_exact,2018
+games,Purdue,purdue,Purdue,season_exact,2018
+games,Alabama,alabama,Alabama,season_exact,2018
+games,Marshall,marshall,Marshall,season_exact,2018
+games,Florida,florida,Florida,season_exact,2018
+games,Butler,butler,Butler,season_exact,2018
+games,Radford,radford,Radford,season_exact,2018
+games,Virginia Tech,virginia tech,Virginia Tech,season_exact,2018
+games,Murray St,murray st,Murray St,season_exact,2018
+games,Wichita St,wichita st,Wichita St,season_exact,2018
+games,St Bonaventure,st bonaventure,St Bonaventure,season_exact,2018
+games,SF Austin,stephen f austin,Stephen F Austin,global_alias,2018
+games,Arkansas,arkansas,Arkansas,season_exact,2018
+games,Fullerton,fullerton,Cal St Fullerton,global_alias,2018
+games,Michigan,michigan,Michigan,season_exact,2018
+games,Kansas,kansas,Kansas,season_exact,2018
+games,Xavier,xavier,Xavier,season_exact,2018
+games,Texas Southern,texas southern,Texas Southern,season_exact,2018
+games,Missouri,missouri,Missouri,season_exact,2018
+games,Florida St,florida st,Florida St,season_exact,2018
+games,Ohio State,ohio state,Ohio St,global_alias,2018
+games,S Dakota St,south dakota st,South Dakota St,global_alias,2018
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2018
+games,UNC Greensboro,unc greensboro,UNC Greensboro,season_exact,2018
+games,Houston,houston,Houston,season_exact,2018
+games,San Diego St,san diego st,San Diego St,global_alias,2018
+games,Montana,montana,Montana,season_exact,2018
+games,Texas A&M,texas a and m,Texas A&M,season_exact,2018
+games,Providence,providence,Providence,season_exact,2018
+games,North Carolina,north carolina,North Carolina,global_alias,2018
+games,Lipscomb,lipscomb,Lipscomb,season_exact,2018
+games,Duke,duke,Duke,season_exact,2018
+games,Clemson,clemson,Clemson,season_exact,2018
+games,Syracuse,syracuse,Syracuse,season_exact,2018
+games,Seton Hall,seton hall,Seton Hall,season_exact,2018
+games,Auburn,auburn,Auburn,season_exact,2018
+games,Michigan St,michigan st,Michigan St,global_alias,2018
+games,Rhode Island,rhode island,Rhode Island,season_exact,2018
+games,Penn,penn,Pennsylvania,global_alias,2018
+games,NC State,nc state,NC State,season_exact,2018
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2018
+games,Charleston,charleston,College of Charleston,global_alias,2018
+games,TCU,tcu,TCU,season_exact,2018
+games,Bucknell,bucknell,Bucknell,season_exact,2018
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2018
+games,Iona,iona,Iona,season_exact,2018
+games,MICH,mich,Michigan,abbreviation_alias,2018
+games,VILL,vill,Villanova,abbreviation_alias,2018
+games,Duke,duke,Duke,season_exact,2019
+games,N Dakota St,north dakota st,North Dakota St,global_alias,2019
+games,VCU,vcu,VCU,season_exact,2019
+games,UCF,ucf,Central Florida,abbreviation_alias,2019
+games,Mississippi St,mississippi st,Mississippi St,global_alias,2019
+games,Liberty,liberty,Liberty,season_exact,2019
+games,Virginia Tech,virginia tech,Virginia Tech,season_exact,2019
+games,Saint Louis,st louis,St Louis,season_exact,2019
+games,Maryland,maryland,Maryland,season_exact,2019
+games,Belmont,belmont,Belmont,season_exact,2019
+games,LSU,lsu,LSU,season_exact,2019
+games,Yale,yale,Yale,season_exact,2019
+games,Louisville,louisville,Louisville,season_exact,2019
+games,Minnesota,minnesota,Minnesota,season_exact,2019
+games,Michigan St,michigan st,Michigan St,global_alias,2019
+games,Bradley,bradley,Bradley,season_exact,2019
+games,Virginia,virginia,Virginia,season_exact,2019
+games,Purdue,purdue,Purdue,season_exact,2019
+games,Oregon,oregon,Oregon,season_exact,2019
+games,Tennessee,tennessee,Tennessee,season_exact,2019
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2019
+games,UC Irvine,uc irvine,UC Irvine,season_exact,2019
+games,Villanova,villanova,Villanova,season_exact,2019
+games,Iowa,iowa,Iowa,season_exact,2019
+games,Gardner-Webb,gardner webb,Gardner Webb,season_exact,2019
+games,Ole Miss,mississippi,Ole Miss,global_alias,2019
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2019
+games,Kansas St,kansas st,Kansas St,season_exact,2019
+games,Saint Mary's,st marys,St Marys,global_alias,2019
+games,Old Dominion,old dominion,Old Dominion,season_exact,2019
+games,Cincinnati,cincinnati,Cincinnati,season_exact,2019
+games,Colgate,colgate,Colgate,season_exact,2019
+games,Texas Tech,texas tech,Texas Tech,season_exact,2019
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2019
+games,FDU,fdu,Fairleigh Dickinson,global_alias,2019
+games,Syracuse,syracuse,Syracuse,season_exact,2019
+games,Baylor,baylor,Baylor,season_exact,2019
+games,Marquette,marquette,Marquette,season_exact,2019
+games,Murray St,murray st,Murray St,season_exact,2019
+games,Florida St,florida st,Florida St,season_exact,2019
+games,Vermont,vermont,Vermont,season_exact,2019
+games,Buffalo,buffalo,Buffalo,season_exact,2019
+games,Arizona St,arizona st,Arizona St,season_exact,2019
+games,N Kentucky,n kentucky,Northern Kentucky,global_alias,2019
+games,Nevada,nevada,Nevada,season_exact,2019
+games,Florida,florida,Florida,season_exact,2019
+games,Michigan,michigan,Michigan,season_exact,2019
+games,Montana,montana,Montana,season_exact,2019
+games,Auburn,auburn,Auburn,season_exact,2019
+games,Kentucky,kentucky,Kentucky,season_exact,2019
+games,North Carolina,north carolina,North Carolina,global_alias,2019
+games,Houston,houston,Houston,season_exact,2019
+games,Washington,washington,Washington,season_exact,2019
+games,Kansas,kansas,Kansas,season_exact,2019
+games,Ohio State,ohio state,Ohio St,global_alias,2019
+games,Wofford,wofford,Wofford,season_exact,2019
+games,Iona,iona,Iona,season_exact,2019
+games,Utah State,utah state,Utah St,global_alias,2019
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2019
+games,Northeastern,northeastern,Northeastern,season_exact,2019
+games,Iowa State,iowa state,Iowa St,global_alias,2019
+games,Georgia St,georgia st,Georgia St,season_exact,2019
+games,Seton Hall,seton hall,Seton Hall,season_exact,2019
+games,Abilene Chrstn,abilene chrstn,Abilene Christian,global_alias,2019
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2021
+games,Norfolk St,norfolk st,Norfolk St,season_exact,2021
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2021
+games,Missouri,missouri,Missouri,season_exact,2021
+games,Creighton,creighton,Creighton,season_exact,2021
+games,Santa Barbara,santa barbara,Santa Barbara,global_alias,2021
+games,Virginia,virginia,Virginia,season_exact,2021
+games,Ohio,ohio,Ohio,season_exact,2021
+games,USC,usc,USC,season_exact,2021
+games,Drake,drake,Drake,season_exact,2021
+games,Kansas,kansas,Kansas,season_exact,2021
+games,E Washington,east washington,Eastern Washington,season_fuzzy,2021
+games,Iowa,iowa,Iowa,season_exact,2021
+games,Grand Canyon,grand canyon,Grand Canyon,global_alias,2021
+games,Oregon,oregon,Oregon,season_exact,2021
+games,Baylor,baylor,Baylor,season_exact,2021
+games,Arkansas,arkansas,Arkansas,season_exact,2021
+games,Villanova,villanova,Villanova,season_exact,2021
+games,Oral Roberts,oral roberts,Oral Roberts,season_exact,2021
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2021
+games,North Texas,north texas,North Texas,season_exact,2021
+games,Texas Tech,texas tech,Texas Tech,season_exact,2021
+games,Florida,florida,Florida,season_exact,2021
+games,Hartford,hartford,Hartford,season_exact,2021
+games,North Carolina,north carolina,North Carolina,global_alias,2021
+games,Winthrop,winthrop,Winthrop,season_exact,2021
+games,Purdue,purdue,Purdue,season_exact,2021
+games,Utah State,utah state,Utah St,global_alias,2021
+games,Colgate,colgate,Colgate,season_exact,2021
+games,Virginia Tech,virginia tech,Virginia Tech,season_exact,2021
+games,Ohio State,ohio state,Ohio St,global_alias,2021
+games,UCLA,ucla,UCLA,season_exact,2021
+games,Houston,houston,Houston,season_exact,2021
+games,Michigan,michigan,Michigan,season_exact,2021
+games,Texas Southern,texas southern,Texas Southern,season_exact,2021
+games,LSU,lsu,LSU,season_exact,2021
+games,St Bonaventure,st bonaventure,St Bonaventure,season_exact,2021
+games,Colorado,colorado,Colorado,season_exact,2021
+games,Georgetown,georgetown,Georgetown,season_exact,2021
+games,Florida St,florida st,Florida St,season_exact,2021
+games,UNC Greensboro,unc greensboro,UNC Greensboro,season_exact,2021
+games,BYU,byu,BYU,season_exact,2021
+games,Texas,texas,Texas,season_exact,2021
+games,Abilene Chrstn,abilene chrstn,Abilene Christian,global_alias,2021
+games,UConn,uconn,Connecticut,global_alias,2021
+games,Maryland,maryland,Maryland,season_exact,2021
+games,Alabama,alabama,Alabama,season_exact,2021
+games,Iona,iona,Iona,season_exact,2021
+games,Oregon St,oregon st,Oregon St,season_exact,2021
+games,Loyola Chicago,loyola chicago,Loyola Chicago,season_exact,2021
+games,Syracuse,syracuse,Syracuse,season_exact,2021
+games,Illinois,illinois,Illinois,season_exact,2021
+games,Oklahoma St,oklahoma st,Oklahoma St,season_exact,2021
+games,West Virginia,west virginia,West Virginia,season_exact,2021
+games,Rutgers,rutgers,Rutgers,season_exact,2021
+games,Drexel,drexel,Drexel,season_exact,2021
+games,Georgia Tech,georgia tech,Georgia Tech,season_exact,2021
+games,Tennessee,tennessee,Tennessee,season_exact,2021
+games,Liberty,liberty,Liberty,season_exact,2021
+games,San Diego St,san diego st,San Diego St,global_alias,2021
+games,Morehead St,morehead st,Morehead St,season_exact,2021
+games,Clemson,clemson,Clemson,season_exact,2021
+games,Cleveland St,cleveland st,Cleveland St,season_exact,2021
+games,GONZ,gonz,Gonzaga,abbreviation_alias,2021
+games,BAY,bay,Baylor,abbreviation_alias,2021
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2022
+games,Georgia St,georgia st,Georgia St,season_exact,2022
+games,Boise St,boise st,Boise St,global_alias,2022
+games,Memphis,memphis,Memphis,season_exact,2022
+games,UConn,uconn,Connecticut,global_alias,2022
+games,New Mexico St,new mexico st,New Mexico St,season_exact,2022
+games,Arkansas,arkansas,Arkansas,season_exact,2022
+games,Vermont,vermont,Vermont,season_exact,2022
+games,Alabama,alabama,Alabama,season_exact,2022
+games,Notre Dame,notre dame,Notre Dame,season_exact,2022
+games,Texas Tech,texas tech,Texas Tech,season_exact,2022
+games,Montana St,montana st,Montana St,global_alias,2022
+games,Michigan St,michigan st,Michigan St,global_alias,2022
+games,Davidson,davidson,Davidson,season_exact,2022
+games,Duke,duke,Duke,season_exact,2022
+games,Fullerton,fullerton,Cal St Fullerton,global_alias,2022
+games,Houston,houston,Houston,season_exact,2022
+games,Villanova,villanova,Villanova,season_exact,2022
+games,Arizona,arizona,Arizona,season_exact,2022
+games,Michigan,michigan,Michigan,season_exact,2022
+games,TCU,tcu,TCU,season_exact,2022
+games,Illinois,illinois,Illinois,season_exact,2022
+games,Tennessee,tennessee,Tennessee,season_exact,2022
+games,Ohio State,ohio state,Ohio St,global_alias,2022
+games,Wright St,wright st,Wright St,season_exact,2022
+games,Seton Hall,seton hall,Seton Hall,season_exact,2022
+games,UAB,uab,UAB,season_exact,2022
+games,Chattanooga,chattanooga,Chattanooga,season_exact,2022
+games,Colorado St,colorado st,Colorado St,season_exact,2022
+games,Longwood,longwood,Longwood,season_exact,2022
+games,Loyola Chicago,loyola chicago,Loyola Chicago,season_exact,2022
+games,Delaware,delaware,Delaware,season_exact,2022
+games,North Carolina,north carolina,North Carolina,global_alias,2022
+games,Kansas,kansas,Kansas,season_exact,2022
+games,Baylor,baylor,Baylor,season_exact,2022
+games,Norfolk St,norfolk st,Norfolk St,season_exact,2022
+games,Marquette,marquette,Marquette,season_exact,2022
+games,Saint Mary's,st marys,St Marys,global_alias,2022
+games,Indiana,indiana,Indiana,season_exact,2022
+games,UCLA,ucla,UCLA,season_exact,2022
+games,Akron,akron,Akron,season_exact,2022
+games,Texas,texas,Texas,season_exact,2022
+games,Virginia Tech,virginia tech,Virginia Tech,season_exact,2022
+games,Purdue,purdue,Purdue,season_exact,2022
+games,Yale,yale,Yale,season_exact,2022
+games,Murray St,murray st,Murray St,season_exact,2022
+games,San Francisco,san francisco,San Francisco,season_exact,2022
+games,Kentucky,kentucky,Kentucky,season_exact,2022
+games,Saint Peter's,st peters,St Peters,global_alias,2022
+games,Miami,miami,Miami,global_alias,2022
+games,Providence,providence,Providence,season_exact,2022
+games,Iowa State,iowa state,Iowa St,global_alias,2022
+games,Creighton,creighton,Creighton,season_exact,2022
+games,Richmond,richmond,Richmond,season_exact,2022
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2022
+games,Auburn,auburn,Auburn,season_exact,2022
+games,Texas Southern,texas southern,Texas Southern,season_exact,2022
+games,San Diego St,san diego st,San Diego St,global_alias,2022
+games,Iowa,iowa,Iowa,season_exact,2022
+games,S Dakota St,south dakota st,South Dakota St,global_alias,2022
+games,LSU,lsu,LSU,season_exact,2022
+games,Colgate,colgate,Colgate,season_exact,2022
+games,USC,usc,USC,season_exact,2022
+games,Jax State,jacksonville st,Jacksonville St,season_exact,2022
+games,UNC,unc,North Carolina,global_alias,2022
+games,KU,ku,Kansas,abbreviation_alias,2022
+games,Alabama,alabama,Alabama,season_exact,2023
+games,Texas A&M-CC,texas a and m cc,Texas A&M Corpus Chris,global_alias,2023
+games,Maryland,maryland,Maryland,season_exact,2023
+games,West Virginia,west virginia,West Virginia,season_exact,2023
+games,San Diego St,san diego st,San Diego St.,global_alias,2023
+games,Charleston,charleston,Charleston,global_alias,2023
+games,Virginia,virginia,Virginia,season_exact,2023
+games,Furman,furman,Furman,season_exact,2023
+games,Creighton,creighton,Creighton,season_exact,2023
+games,NC State,nc state,N.C. State,season_fuzzy,2023
+games,Baylor,baylor,Baylor,season_exact,2023
+games,Santa Barbara,santa barbara,UC Santa Barbara,global_alias,2023
+games,Missouri,missouri,Missouri,season_exact,2023
+games,Utah State,utah state,Utah St.,global_alias,2023
+games,Arizona,arizona,Arizona,season_exact,2023
+games,Princeton,princeton,Princeton,season_exact,2023
+games,Miami,miami,Miami FL,global_alias,2023
+games,Texas,texas,Texas,season_exact,2023
+games,Houston,houston,Houston,season_exact,2023
+games,Xavier,xavier,Xavier,season_exact,2023
+games,Auburn,auburn,Auburn,season_exact,2023
+games,Indiana,indiana,Indiana,season_exact,2023
+games,Pitt,pitt,Pittsburgh,global_alias,2023
+games,Penn State,penn state,Penn St.,global_alias,2023
+games,N Kentucky,n kentucky,Northern Kentucky,global_alias,2023
+games,Iowa,iowa,Iowa,season_exact,2023
+games,Drake,drake,Drake,season_exact,2023
+games,Kent State,kent state,Kent St.,season_fuzzy,2023
+games,Iowa State,iowa state,Iowa St.,global_alias,2023
+games,Kennesaw St,kennesaw st,Kennesaw St.,season_exact,2023
+games,Texas A&M,texas a and m,Texas A&M,season_exact,2023
+games,Colgate,colgate,Colgate,season_exact,2023
+games,FAU,fau,Florida Atlantic,global_alias,2023
+games,UConn,uconn,Connecticut,global_alias,2023
+games,Purdue,purdue,Purdue,season_exact,2023
+games,FDU,fdu,Fairleigh Dickinson,global_alias,2023
+games,Memphis,memphis,Memphis,season_exact,2023
+games,Duke,duke,Duke,season_exact,2023
+games,Oral Roberts,oral roberts,Oral Roberts,season_exact,2023
+games,Tennessee,tennessee,Tennessee,season_exact,2023
+games,Louisiana,louisiana,Louisiana,global_alias,2023
+games,Kentucky,kentucky,Kentucky,season_exact,2023
+games,Providence,providence,Providence,season_exact,2023
+games,Kansas St,kansas st,Kansas St.,season_exact,2023
+games,Montana St,montana st,Montana St.,global_alias,2023
+games,Michigan St,michigan st,Michigan St.,global_alias,2023
+games,USC,usc,USC,season_exact,2023
+games,Marquette,marquette,Marquette,season_exact,2023
+games,Vermont,vermont,Vermont,season_exact,2023
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2023
+games,Arkansas,arkansas,Arkansas,season_exact,2023
+games,UCLA,ucla,UCLA,season_exact,2023
+games,Kansas,kansas,Kansas,season_exact,2023
+games,Saint Mary's,st marys,Saint Mary's,global_alias,2023
+games,TCU,tcu,TCU,season_exact,2023
+games,Northwestern,northwestern,Northwestern,season_exact,2023
+games,Howard,howard,Howard,season_exact,2023
+games,Illinois,illinois,Illinois,season_exact,2023
+games,VCU,vcu,VCU,season_exact,2023
+games,Iona,iona,Iona,season_exact,2023
+games,Arizona St,arizona st,Arizona St.,season_exact,2023
+games,Grand Canyon,grand canyon,Grand Canyon,global_alias,2023
+games,Boise St,boise st,Boise St.,global_alias,2023
+games,UNC Asheville,unc asheville,UNC Asheville,season_exact,2023
+games,SDSU,sdsu,San Diego St,abbreviation_alias,2023
+games,CONN,conn,Connecticut,global_alias,2023
+games,UConn,uconn,Connecticut,global_alias,2024
+games,Stetson,stetson,Stetson,season_exact,2024
+games,FAU,fau,Fla Atlantic,global_alias,2024
+games,Northwestern,northwestern,Northwestern,season_exact,2024
+games,San Diego St,san diego st,San Diego St,global_alias,2024
+games,UAB,uab,UAB,season_exact,2024
+games,Auburn,auburn,Auburn,season_exact,2024
+games,Yale,yale,Yale,season_exact,2024
+games,BYU,byu,BYU,season_exact,2024
+games,Duquesne,duquesne,Duquesne,season_exact,2024
+games,Illinois,illinois,Illinois,season_exact,2024
+games,Morehead St,morehead st,Morehead St,season_exact,2024
+games,Washington St,washington st,Washington St,global_alias,2024
+games,Drake,drake,Drake,season_exact,2024
+games,Iowa State,iowa state,Iowa St,global_alias,2024
+games,S Dakota St,south dakota st,S Dakota St,global_alias,2024
+games,Duke,duke,Duke,season_exact,2024
+games,NC State,nc state,NC State,season_exact,2024
+games,Houston,houston,Houston,season_exact,2024
+games,Marquette,marquette,Marquette,season_exact,2024
+games,Texas A&M,texas a and m,Texas A&M,season_exact,2024
+games,James Madison,james madison,James Madison,season_exact,2024
+games,Oakland,oakland,Oakland,season_exact,2024
+games,Colorado,colorado,Colorado,season_exact,2024
+games,Longwood,longwood,Longwood,season_exact,2024
+games,Nebraska,nebraska,Nebraska,season_exact,2024
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2024
+games,Vermont,vermont,Vermont,season_exact,2024
+games,Texas Tech,texas tech,Texas Tech,season_exact,2024
+games,Kentucky,kentucky,Kentucky,season_exact,2024
+games,Florida,florida,Florida,season_exact,2024
+games,Western KY,western ky,Western KY,season_exact,2024
+games,Alabama,alabama,Alabama,season_exact,2024
+games,Purdue,purdue,Purdue,season_exact,2024
+games,North Carolina,north carolina,N Carolina,global_alias,2024
+games,Wagner,wagner,Wagner,season_exact,2024
+games,Mississippi St,mississippi st,Mississippi St,global_alias,2024
+games,Michigan St,michigan st,Michigan St,global_alias,2024
+games,Saint Mary's,st marys,St Marys,global_alias,2024
+games,Grand Canyon,grand canyon,Grd Canyon,global_alias,2024
+games,Charleston,charleston,Charleston,global_alias,2024
+games,Clemson,clemson,Clemson,season_exact,2024
+games,New Mexico,new mexico,New Mexico,season_exact,2024
+games,Baylor,baylor,Baylor,season_exact,2024
+games,Colgate,colgate,Colgate,season_exact,2024
+games,Dayton,dayton,Dayton,season_exact,2024
+games,Nevada,nevada,Nevada,season_exact,2024
+games,Arizona,arizona,Arizona,season_exact,2024
+games,Long Beach St,long beach st,Long Beach St,season_exact,2024
+games,Tennessee,tennessee,Tennessee,season_exact,2024
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2024
+games,Creighton,creighton,Creighton,season_exact,2024
+games,Utah State,utah state,Utah St,global_alias,2024
+games,Kansas,kansas,Kansas,season_exact,2024
+games,Oregon,oregon,Oregon,season_exact,2024
+games,Texas,texas,Texas,season_exact,2024
+games,Grambling,grambling,Grambling,season_exact,2024
+games,TCU,tcu,TCU,season_exact,2024
+games,McNeese,mcneese,McNeese,season_exact,2024
+games,Samford,samford,Samford,season_exact,2024
+games,South Carolina,south carolina,S Carolina,global_alias,2024
+games,Akron,akron,Akron,season_exact,2024
+games,Colorado St,colorado st,Colorado St,season_exact,2024
+games,Saint Peter's,st peters,St Peters,global_alias,2024
+games,CONN,conn,Connecticut,global_alias,2024
+games,PUR,pur,Purdue,global_alias,2024
+games,Auburn,auburn,Auburn,season_exact,2025
+games,Alabama St,alabama st,Alabama St,global_alias,2025
+games,Louisville,louisville,Louisville,season_exact,2025
+games,Creighton,creighton,Creighton,season_exact,2025
+games,Michigan,michigan,Michigan,season_exact,2025
+games,UC San Diego,uc san diego,UC San Diego,season_exact,2025
+games,Texas A&M,texas a and m,Texas A&M,season_exact,2025
+games,Yale,yale,Yale,season_exact,2025
+games,Ole Miss,mississippi,Mississippi,global_alias,2025
+games,North Carolina,north carolina,N Carolina,global_alias,2025
+games,Iowa State,iowa state,Iowa St,global_alias,2025
+games,Lipscomb,lipscomb,Lipscomb,season_exact,2025
+games,Marquette,marquette,Marquette,season_exact,2025
+games,New Mexico,new mexico,New Mexico,season_exact,2025
+games,Michigan St,michigan st,Michigan St,global_alias,2025
+games,Bryant,bryant,Bryant,season_exact,2025
+games,Duke,duke,Duke,season_exact,2025
+games,Alabama,alabama,Alabama,season_exact,2025
+games,Arizona,arizona,Arizona,season_exact,2025
+games,BYU,byu,BYU,season_exact,2025
+games,Baylor,baylor,Baylor,season_exact,2025
+games,Oregon,oregon,Oregon,season_exact,2025
+games,Wisconsin,wisconsin,Wisconsin,season_exact,2025
+games,Saint Mary's,st marys,St Marys,global_alias,2025
+games,Mount St Marys,mount st marys,Mount St Marys,season_exact,2025
+games,Mississippi St,mississippi st,Mississippi St,global_alias,2025
+games,Liberty,liberty,Liberty,season_exact,2025
+games,Akron,akron,Akron,season_exact,2025
+games,VCU,vcu,VCU,season_exact,2025
+games,Montana,montana,Montana,season_exact,2025
+games,Vanderbilt,vanderbilt,Vanderbilt,season_exact,2025
+games,Robert Morris,robert morris,Robert Morris,season_exact,2025
+games,Florida,florida,Florida,season_exact,2025
+games,Houston,houston,Houston,season_exact,2025
+games,Norfolk St,norfolk st,Norfolk St,season_exact,2025
+games,UConn,uconn,Connecticut,global_alias,2025
+games,Oklahoma,oklahoma,Oklahoma,season_exact,2025
+games,Memphis,memphis,Memphis,season_exact,2025
+games,Colorado St,colorado st,Colorado St,season_exact,2025
+games,Maryland,maryland,Maryland,season_exact,2025
+games,Grand Canyon,grand canyon,Grd Canyon,global_alias,2025
+games,Missouri,missouri,Missouri,season_exact,2025
+games,Drake,drake,Drake,season_exact,2025
+games,Texas Tech,texas tech,Texas Tech,season_exact,2025
+games,UNC Wilmington,unc wilmington,UNC Wilmington,season_exact,2025
+games,Kansas,kansas,Kansas,season_exact,2025
+games,Arkansas,arkansas,Arkansas,season_exact,2025
+games,St John's,st john s,St Johns,global_alias,2025
+games,Omaha,omaha,Omaha,season_exact,2025
+games,Tennessee,tennessee,Tennessee,season_exact,2025
+games,Purdue,purdue,Purdue,season_exact,2025
+games,Kentucky,kentucky,Kentucky,season_exact,2025
+games,Gonzaga,gonzaga,Gonzaga,season_exact,2025
+games,McNeese,mcneese,McNeese,season_exact,2025
+games,Illinois,illinois,Illinois,season_exact,2025
+games,UCLA,ucla,UCLA,season_exact,2025
+games,SIUE,siue,SIUE,season_exact,2025
+games,Georgia,georgia,Georgia,season_exact,2025
+games,Clemson,clemson,Clemson,season_exact,2025
+games,High Point,high point,High Point,season_exact,2025
+games,Xavier,xavier,Xavier,season_exact,2025
+games,Troy,troy,Troy,season_exact,2025
+games,Utah State,utah state,Utah St,global_alias,2025
+games,Wofford,wofford,Wofford,season_exact,2025

@@ -1,0 +1,20 @@
+{
+  "season_data": "data/processed/march_madness_2023.csv",
+  "field_source": "data/raw/2023/tournament_games.csv",
+  "n_sims": 10000,
+  "semifinal_pairs": [
+    [
+      "South",
+      "East"
+    ],
+    [
+      "Midwest",
+      "West"
+    ]
+  ],
+  "favorite": {
+    "team": "Alabama",
+    "win_championship": 0.3974,
+    "win_final_four": 0.6697
+  }
+}

@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+South,1,Kansas,105,16,Austin Peay,79
+South,8,Colorado,67,9,UConn,74
+South,5,Maryland,79,12,S Dakota St,74
+South,4,California,66,13,Hawai'i,77
+South,6,Arizona,55,11,Wichita St,65
+South,3,Miami,79,14,Buffalo,72
+South,7,Iowa,72,10,Temple,70
+South,2,Villanova,86,15,UNC Asheville,56
+South,1,Kansas,73,9,UConn,61
+South,5,Maryland,73,13,Hawai'i,60
+South,11,Wichita St,57,3,Miami,65
+South,7,Iowa,68,2,Villanova,87
+South,1,Kansas,79,5,Maryland,63
+South,3,Miami,69,2,Villanova,92
+South,1,Kansas,59,2,Villanova,64
+East,1,North Carolina,88,6,Notre Dame,74
+East,1,North Carolina,101,5,Indiana,86
+East,6,Notre Dame,61,7,Wisconsin,56
+East,1,North Carolina,85,9,Providence,66
+East,5,Indiana,73,4,Kentucky,67
+East,6,Notre Dame,76,14,SF Austin,75
+East,7,Wisconsin,66,2,Xavier,63
+East,1,North Carolina,83,16,FGCU,67
+East,8,USC,69,9,Providence,70
+East,5,Indiana,99,12,Chattanooga,74
+East,4,Kentucky,85,13,Stony Brook,57
+East,6,Notre Dame,70,11,Michigan,63
+East,3,West Virginia,56,14,SF Austin,70
+East,7,Wisconsin,47,10,Pitt,43
+East,2,Xavier,71,15,Weber St,53
+Final Four,2,Villanova,95,2,Oklahoma,51
+Final Four,1,North Carolina,83,10,Syracuse,66
+West,1,Oregon,91,16,Holy Cross,52
+West,8,Saint Joseph's,78,9,Cincinnati,76
+West,5,Baylor,75,12,Yale,79
+West,4,Duke,93,13,UNC Wilmington,85
+West,6,Texas,72,11,Northern Iowa,75
+West,3,Texas A&M,92,14,Green Bay,65
+West,7,Oregon St,67,10,VCU,75
+West,2,Oklahoma,82,15,Bakersfield,68
+West,1,Oregon,69,8,Saint Joseph's,64
+West,12,Yale,64,4,Duke,71
+West,11,Northern Iowa,88,3,Texas A&M,92
+West,10,VCU,81,2,Oklahoma,85
+West,1,Oregon,82,4,Duke,68
+West,3,Texas A&M,63,2,Oklahoma,77
+West,1,Oregon,68,2,Oklahoma,80
+Midwest,1,Virginia,62,10,Syracuse,68
+Midwest,1,Virginia,84,4,Iowa State,71
+Midwest,11,Gonzaga,60,10,Syracuse,63
+Midwest,1,Virginia,77,9,Butler,69
+Midwest,12,Little Rock,61,4,Iowa State,78
+Midwest,11,Gonzaga,82,3,Utah,59
+Midwest,10,Syracuse,75,15,MTSU,50
+Midwest,1,Virginia,81,16,Hampton,45
+Midwest,8,Texas Tech,61,9,Butler,71
+Midwest,5,Purdue,83,12,Little Rock,85
+Midwest,4,Iowa State,94,13,Iona,81
+Midwest,6,Seton Hall,52,11,Gonzaga,68
+Midwest,3,Utah,80,14,Fresno St,69
+Midwest,7,Dayton,51,10,Syracuse,70
+Midwest,2,Michigan St,81,15,MTSU,90
+First Four,11,Vanderbilt,50,11,Wichita St,70
+First Four,16,Holy Cross,59,16,Southern,55
+First Four,16,FGCU,96,16,FDU,65
+First Four,11,Michigan,67,11,Tulsa,62
+Championship,2,VILL,77,1,UNC,74

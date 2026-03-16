@@ -1,0 +1,2 @@
+task,primary_metric,all_features_model,all_features_brier,meta_all_features_model,meta_all_features_brier,meta_no_seed_model,meta_no_seed_brier,meta_seed_only_model,meta_seed_only_brier,no_seed_model,no_seed_brier,seed_only_model,seed_only_brier,seed_delta,meta_seed_delta
+matchup_win,brier,logistic,0.1490943150106221,logistic,0.14796236884164163,logistic,0.16055107282033307,logistic,0.15320957209888808,xgboost,0.163605580448456,xgboost,0.1941781651521009,-0.014511265437833903,-0.01258870397869144

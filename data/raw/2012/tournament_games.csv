@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+South,1,Kentucky,81,16,Western KY,66
+South,8,Iowa State,77,9,UConn,64
+South,5,Wichita St,59,12,VCU,62
+South,4,Indiana,79,13,New Mexico St,66
+South,6,UNLV,64,11,Colorado,68
+South,3,Baylor,68,14,S Dakota St,60
+South,7,Notre Dame,63,10,Xavier,67
+South,2,Duke,70,15,Lehigh,75
+South,1,Kentucky,87,8,Iowa State,71
+South,12,VCU,61,4,Indiana,63
+South,11,Colorado,63,3,Baylor,80
+South,10,Xavier,70,15,Lehigh,58
+South,1,Kentucky,102,4,Indiana,90
+South,3,Baylor,75,10,Xavier,70
+South,1,Kentucky,82,3,Baylor,70
+East,1,Syracuse,70,2,Ohio State,77
+East,1,Syracuse,64,4,Wisconsin,63
+East,6,Cincinnati,66,2,Ohio State,81
+East,1,Syracuse,75,8,Kansas St,59
+East,5,Vanderbilt,57,4,Wisconsin,60
+East,6,Cincinnati,62,3,Florida St,56
+East,7,Gonzaga,66,2,Ohio State,73
+East,1,Syracuse,72,16,UNC Asheville,65
+East,8,Kansas St,70,9,Southern Miss,64
+East,5,Vanderbilt,79,12,Harvard,70
+East,4,Wisconsin,73,13,Montana,49
+East,6,Cincinnati,65,11,Texas,59
+East,3,Florida St,66,14,St Bonaventure,63
+East,7,Gonzaga,77,10,West Virginia,54
+East,2,Ohio State,78,15,Loyola MD,59
+Final Four,1,Kentucky,69,4,Louisville,61
+Final Four,2,Ohio State,62,2,Kansas,64
+West,1,Michigan St,89,16,Long Island,67
+West,8,Memphis,54,9,Saint Louis,61
+West,5,New Mexico,75,12,Long Beach St,68
+West,4,Louisville,69,13,Davidson,62
+West,6,Murray St,58,11,Colorado St,41
+West,3,Marquette,88,14,BYU,68
+West,7,Florida,71,10,Virginia,45
+West,2,Missouri,84,15,Norfolk St,86
+West,1,Michigan St,65,9,Saint Louis,61
+West,5,New Mexico,56,4,Louisville,59
+West,6,Murray St,53,3,Marquette,62
+West,7,Florida,84,15,Norfolk St,50
+West,1,Michigan St,44,4,Louisville,57
+West,3,Marquette,58,7,Florida,68
+West,4,Louisville,72,7,Florida,68
+Midwest,1,North Carolina,67,2,Kansas,80
+Midwest,1,North Carolina,73,13,Ohio,65
+Midwest,11,NC State,57,2,Kansas,60
+Midwest,1,North Carolina,87,8,Creighton,73
+Midwest,12,South Florida,56,13,Ohio,62
+Midwest,11,NC State,66,3,Georgetown,63
+Midwest,10,Purdue,60,2,Kansas,63
+Midwest,1,North Carolina,77,16,Vermont,58
+Midwest,8,Creighton,58,9,Alabama,57
+Midwest,5,Temple,44,12,South Florida,58
+Midwest,4,Michigan,60,13,Ohio,65
+Midwest,6,San Diego St,65,11,NC State,79
+Midwest,3,Georgetown,74,14,Belmont,59
+Midwest,7,Saint Mary's,69,10,Purdue,72
+Midwest,2,Kansas,65,15,Detroit Mercy,50
+First Four,16,Miss Valley St,58,16,Western KY,59
+First Four,14,BYU,78,14,Iona,72
+First Four,16,Lamar,59,16,Vermont,71
+First Four,12,California,54,12,South Florida,65
+Championship,1,UK,67,2,KU,59

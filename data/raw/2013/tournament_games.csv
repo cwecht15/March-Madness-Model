@@ -1,0 +1,68 @@
+round_name,seed_a,team_a,score_a,seed_b,team_b,score_b
+Midwest,1,Louisville,79,16,NC A&T,48
+Midwest,8,Colorado St,84,9,Missouri,72
+Midwest,5,Oklahoma St,55,12,Oregon,68
+Midwest,4,Saint Louis,64,13,New Mexico St,44
+Midwest,6,Memphis,54,11,Saint Mary's,52
+Midwest,3,Michigan St,65,14,Valparaiso,54
+Midwest,7,Creighton,67,10,Cincinnati,63
+Midwest,2,Duke,73,15,UAlbany,61
+Midwest,1,Louisville,82,8,Colorado St,56
+Midwest,12,Oregon,74,4,Saint Louis,57
+Midwest,6,Memphis,48,3,Michigan St,70
+Midwest,7,Creighton,50,2,Duke,66
+Midwest,1,Louisville,77,12,Oregon,69
+Midwest,3,Michigan St,61,2,Duke,71
+Midwest,1,Louisville,85,2,Duke,63
+South,4,Michigan,79,3,Florida,59
+South,1,Kansas,85,4,Michigan,87
+South,3,Florida,62,15,FGCU,50
+South,1,Kansas,70,8,North Carolina,58
+South,5,VCU,53,4,Michigan,78
+South,11,Minnesota,64,3,Florida,78
+South,7,San Diego St,71,15,FGCU,81
+South,1,Kansas,64,16,Western KY,57
+South,8,North Carolina,78,9,Villanova,71
+South,5,VCU,88,12,Akron,42
+South,4,Michigan,71,13,S Dakota St,56
+South,6,UCLA,63,11,Minnesota,83
+South,3,Florida,79,14,N'Western St,47
+South,7,San Diego St,70,10,Oklahoma,55
+South,2,Georgetown,68,15,FGCU,78
+Final Four,1,Louisville,72,9,Wichita St,68
+Final Four,4,Michigan,61,4,Syracuse,56
+West,1,Gonzaga,64,16,Southern,58
+West,8,Pitt,55,9,Wichita St,73
+West,5,Wisconsin,46,12,Ole Miss,57
+West,4,Kansas St,61,13,La Salle,63
+West,6,Arizona,81,11,Belmont,64
+West,3,New Mexico,62,14,Harvard,68
+West,7,Notre Dame,58,10,Iowa State,76
+West,2,Ohio State,95,15,Iona,70
+West,1,Gonzaga,70,9,Wichita St,76
+West,12,Ole Miss,74,13,La Salle,76
+West,6,Arizona,74,14,Harvard,51
+West,10,Iowa State,75,2,Ohio State,78
+West,9,Wichita St,72,13,La Salle,58
+West,6,Arizona,70,2,Ohio State,73
+West,9,Wichita St,70,2,Ohio State,66
+East,4,Syracuse,55,3,Marquette,39
+East,1,Indiana,50,4,Syracuse,61
+East,3,Marquette,71,2,Miami,61
+East,1,Indiana,58,9,Temple,52
+East,12,California,60,4,Syracuse,66
+East,6,Butler,72,3,Marquette,74
+East,7,Illinois,59,2,Miami,63
+East,1,Indiana,83,16,James Madison,62
+East,8,NC State,72,9,Temple,76
+East,5,UNLV,61,12,California,64
+East,4,Syracuse,81,13,Montana,34
+East,6,Butler,68,11,Bucknell,56
+East,3,Marquette,59,14,Davidson,58
+East,7,Illinois,57,10,Colorado,49
+East,2,Miami,78,15,Pacific,49
+First Four,16,NC A&T,73,16,Liberty,72
+First Four,11,MTSU,54,11,Saint Mary's,67
+First Four,16,Long Island,55,16,James Madison,68
+First Four,13,Boise St,71,13,La Salle,80
+Championship,1,LOU,82,4,MICH,76

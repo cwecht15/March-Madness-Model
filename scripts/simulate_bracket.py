@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from __future__ import annotations
 
+import __main__
 import argparse
 import json
 import sys
@@ -110,6 +111,22 @@ class IsotonicCalibrator:
             return np.clip(np.asarray(probability, dtype=float), 1e-6, 1 - 1e-6)
         calibrated = self.model.predict(np.clip(np.asarray(probability, dtype=float), 1e-6, 1 - 1e-6))
         return np.clip(calibrated, 1e-6, 1 - 1e-6)
+
+
+def register_joblib_compatibility() -> None:
+    # Saved model payloads created from script entry points may reference custom
+    # classes under `__main__`. Expose those names before any joblib loads.
+    if not hasattr(__main__, "EncodedXGBClassifier"):
+        __main__.EncodedXGBClassifier = EncodedXGBClassifier
+    if not hasattr(__main__, "IdentityCalibrator"):
+        __main__.IdentityCalibrator = IdentityCalibrator
+    if not hasattr(__main__, "PlattCalibrator"):
+        __main__.PlattCalibrator = PlattCalibrator
+    if not hasattr(__main__, "IsotonicCalibrator"):
+        __main__.IsotonicCalibrator = IsotonicCalibrator
+
+
+register_joblib_compatibility()
 
 
 def parse_args() -> argparse.Namespace:

@@ -792,6 +792,51 @@ def build_delta_table(current_odds: pd.DataFrame, baseline_odds: pd.DataFrame) -
     return merged
 
 
+def build_team_odds_view(current_odds: pd.DataFrame, baseline_odds: pd.DataFrame) -> pd.DataFrame:
+    odds_view = build_delta_table(current_odds, baseline_odds).copy()
+    ordered_columns = [
+        "team",
+        "seed",
+        "region",
+        "play_in_group",
+        "expected_wins",
+        "win_first_four",
+        "make_round_of_64",
+        "make_round_of_32",
+        "make_sweet_sixteen",
+        "make_elite_eight",
+        "make_final_four",
+        "make_championship",
+        "win_championship",
+        "final_four_delta",
+        "title_game_delta",
+        "championship_delta",
+    ]
+    odds_view = odds_view[ordered_columns].sort_values(
+        ["win_championship", "make_final_four", "expected_wins"],
+        ascending=False,
+    )
+
+    for column in [
+        "win_first_four",
+        "make_round_of_64",
+        "make_round_of_32",
+        "make_sweet_sixteen",
+        "make_elite_eight",
+        "make_final_four",
+        "make_championship",
+        "win_championship",
+    ]:
+        odds_view[column] = odds_view[column].map(format_probability)
+
+    for column in ["final_four_delta", "title_game_delta", "championship_delta"]:
+        odds_view[column] = odds_view[column].map(lambda value: f"{value * 100:+.1f} pts")
+
+    odds_view["expected_wins"] = odds_view["expected_wins"].map(lambda value: f"{value:.2f}")
+    odds_view["play_in_group"] = odds_view["play_in_group"].fillna("")
+    return odds_view.reset_index(drop=True)
+
+
 def format_seeded_team(team: str, seed_lookup: dict[str, int]) -> str:
     seed = seed_lookup.get(str(team))
     if seed is None or (isinstance(seed, float) and math.isnan(seed)):
@@ -990,7 +1035,7 @@ def main() -> None:
             use_container_width=True,
         )
 
-    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Lens"])
+    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Odds", "Team Lens"])
 
     with tabs[0]:
         rendered_rows = build_game_rows(
@@ -1076,6 +1121,7 @@ def main() -> None:
         n_sims,
     )
     delta_table = build_delta_table(current_odds, baseline_odds)
+    team_odds_view = build_team_odds_view(current_odds, baseline_odds)
 
     with tabs[1]:
         st.subheader("Conditional Odds")
@@ -1147,6 +1193,27 @@ def main() -> None:
             st.success("Every currently reachable game has been picked.")
 
     with tabs[2]:
+        st.subheader("Team Odds")
+        if current_picks:
+            st.caption("This table matches the `team_odds.csv` style output, updated for your current locked picks.")
+        else:
+            st.caption("This table matches the baseline `team_odds.csv` output with no picks locked in.")
+
+        st.dataframe(team_odds_view, use_container_width=True, hide_index=True)
+
+        export_team_odds_csv = current_odds.sort_values(
+            ["win_championship", "make_final_four", "expected_wins"],
+            ascending=False,
+        ).to_csv(index=False).encode("utf-8")
+        st.download_button(
+            "Download current team odds CSV",
+            data=export_team_odds_csv,
+            file_name="current_team_odds.csv",
+            mime="text/csv",
+            use_container_width=False,
+        )
+
+    with tabs[3]:
         st.subheader("Team Lens")
         st.caption("Use this view to compare the bracket state with the underlying team profile and contender screen.")
 

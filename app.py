@@ -49,6 +49,17 @@ ROUND_COLUMN_MAP = {
     "final_four": "win_final_four",
     "championship": "win_championship",
 }
+TEAM_ODDS_PROBABILITY_COLUMNS = [
+    "win_first_four",
+    "make_round_of_64",
+    "make_round_of_32",
+    "make_sweet_sixteen",
+    "make_elite_eight",
+    "make_final_four",
+    "make_championship",
+    "win_championship",
+]
+TEAM_ODDS_DELTA_COLUMNS = ["final_four_delta", "title_game_delta", "championship_delta"]
 
 
 st.set_page_config(page_title="March Madness Live Bracket", layout="wide")
@@ -816,25 +827,16 @@ def build_team_odds_view(current_odds: pd.DataFrame, baseline_odds: pd.DataFrame
         ["win_championship", "make_final_four", "expected_wins"],
         ascending=False,
     )
-
-    for column in [
-        "win_first_four",
-        "make_round_of_64",
-        "make_round_of_32",
-        "make_sweet_sixteen",
-        "make_elite_eight",
-        "make_final_four",
-        "make_championship",
-        "win_championship",
-    ]:
-        odds_view[column] = odds_view[column].map(format_probability)
-
-    for column in ["final_four_delta", "title_game_delta", "championship_delta"]:
-        odds_view[column] = odds_view[column].map(lambda value: f"{value * 100:+.1f} pts")
-
-    odds_view["expected_wins"] = odds_view["expected_wins"].map(lambda value: f"{value:.2f}")
     odds_view["play_in_group"] = odds_view["play_in_group"].fillna("")
     return odds_view.reset_index(drop=True)
+
+
+def percent_column_config(label: str) -> st.column_config.NumberColumn:
+    return st.column_config.NumberColumn(label, format="%.1f%%")
+
+
+def points_delta_column_config(label: str) -> st.column_config.NumberColumn:
+    return st.column_config.NumberColumn(label, format="%+.1f pts")
 
 
 def format_seeded_team(team: str, seed_lookup: dict[str, int]) -> str:
@@ -1138,26 +1140,39 @@ def main() -> None:
 
         st.markdown("#### Biggest risers from your picks")
         risers = delta_table.sort_values("championship_delta", ascending=False).head(10).copy()
-        risers["title_odds"] = risers["win_championship"].map(format_probability)
-        risers["title_delta"] = risers["championship_delta"].map(lambda value: f"{value * 100:+.1f} pts")
+        risers["title_odds"] = risers["win_championship"] * 100.0
+        risers["title_delta"] = risers["championship_delta"] * 100.0
+        risers["final_four_prob"] = risers["make_final_four"] * 100.0
+        risers["title_game_prob"] = risers["make_championship"] * 100.0
         st.dataframe(
-            risers[["team", "seed", "region", "title_odds", "title_delta", "make_final_four", "make_championship"]]
-            .rename(columns={"make_final_four": "final_four_prob", "make_championship": "title_game_prob"}),
+            risers[["team", "seed", "region", "title_odds", "title_delta", "final_four_prob", "title_game_prob"]],
             use_container_width=True,
             hide_index=True,
+            column_config={
+                "title_odds": percent_column_config("title_odds"),
+                "title_delta": points_delta_column_config("title_delta"),
+                "final_four_prob": percent_column_config("final_four_prob"),
+                "title_game_prob": percent_column_config("title_game_prob"),
+            },
         )
 
         st.markdown("#### Championship odds")
         title_view = delta_table.copy()
-        title_view["title_odds"] = title_view["win_championship"].map(format_probability)
-        title_view["final_four_odds"] = title_view["make_final_four"].map(format_probability)
-        title_view["title_game_odds"] = title_view["make_championship"].map(format_probability)
-        title_view["title_delta"] = title_view["championship_delta"].map(lambda value: f"{value * 100:+.1f} pts")
+        title_view["title_odds"] = title_view["win_championship"] * 100.0
+        title_view["final_four_odds"] = title_view["make_final_four"] * 100.0
+        title_view["title_game_odds"] = title_view["make_championship"] * 100.0
+        title_view["title_delta"] = title_view["championship_delta"] * 100.0
         st.dataframe(
             title_view[["team", "seed", "region", "title_odds", "title_delta", "final_four_odds", "title_game_odds"]]
             .head(24),
             use_container_width=True,
             hide_index=True,
+            column_config={
+                "title_odds": percent_column_config("title_odds"),
+                "title_delta": points_delta_column_config("title_delta"),
+                "final_four_odds": percent_column_config("final_four_odds"),
+                "title_game_odds": percent_column_config("title_game_odds"),
+            },
         )
 
         st.markdown("#### Available game probabilities")
@@ -1183,11 +1198,14 @@ def main() -> None:
                 matchup_df["left_team"],
                 matchup_df["right_team"],
             )
-            matchup_df["favorite_probability"] = matchup_df["favorite_probability"].map(format_probability)
+            matchup_df["favorite_probability"] = matchup_df["favorite_probability"] * 100.0
             st.dataframe(
                 matchup_df[["round_title", "label", "left_team", "right_team", "favorite", "favorite_probability"]],
                 use_container_width=True,
                 hide_index=True,
+                column_config={
+                    "favorite_probability": percent_column_config("favorite_probability"),
+                },
             )
         else:
             st.success("Every currently reachable game has been picked.")
@@ -1199,7 +1217,25 @@ def main() -> None:
         else:
             st.caption("This table matches the baseline `team_odds.csv` output with no picks locked in.")
 
-        st.dataframe(team_odds_view, use_container_width=True, hide_index=True)
+        team_odds_column_config: dict[str, st.column_config.Column] = {
+            "expected_wins": st.column_config.NumberColumn("expected_wins", format="%.2f"),
+            "play_in_group": st.column_config.TextColumn("play_in_group"),
+        }
+        for column in TEAM_ODDS_PROBABILITY_COLUMNS:
+            team_odds_column_config[column] = percent_column_config(column)
+        for column in TEAM_ODDS_DELTA_COLUMNS:
+            team_odds_column_config[column] = points_delta_column_config(column)
+
+        display_team_odds = team_odds_view.copy()
+        for column in TEAM_ODDS_PROBABILITY_COLUMNS + TEAM_ODDS_DELTA_COLUMNS:
+            display_team_odds[column] = display_team_odds[column] * 100.0
+
+        st.dataframe(
+            display_team_odds,
+            use_container_width=True,
+            hide_index=True,
+            column_config=team_odds_column_config,
+        )
 
         export_team_odds_csv = current_odds.sort_values(
             ["win_championship", "make_final_four", "expected_wins"],

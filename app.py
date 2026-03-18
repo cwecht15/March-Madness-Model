@@ -1054,6 +1054,120 @@ def build_simulation_pdf_zip(
     return buffer.getvalue()
 
 
+def summarize_simulated_brackets(
+    bracket_results: list[dict[str, object]],
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    field_df: pd.DataFrame,
+) -> pd.DataFrame:
+    teams = field_df["team"].astype(str).tolist()
+    play_in_lookup = (
+        field_df[["team", "play_in_group"]]
+        .assign(play_in_group=lambda df: df["play_in_group"].fillna("").astype(str))
+        .set_index("team")["play_in_group"]
+        .to_dict()
+    )
+    counters: dict[str, dict[str, float]] = {
+        team: {
+            "lose_first_game": 0.0,
+            "make_round_of_64": 0.0,
+            "make_round_of_32": 0.0,
+            "make_sweet_sixteen": 0.0,
+            "make_elite_eight": 0.0,
+            "make_final_four": 0.0,
+            "make_championship": 0.0,
+            "win_championship": 0.0,
+        }
+        for team in teams
+    }
+
+    if not bracket_results:
+        return pd.DataFrame()
+
+    for result in bracket_results:
+        picks = dict(result["picks"])
+        winners: dict[str, str] = {}
+        first_game_seen: set[str] = set()
+        reached: dict[str, dict[str, bool]] = {
+            team: {
+                "lose_first_game": False,
+                "make_round_of_64": play_in_lookup.get(team, "").strip() == "",
+                "make_round_of_32": False,
+                "make_sweet_sixteen": False,
+                "make_elite_eight": False,
+                "make_final_four": False,
+                "make_championship": False,
+                "win_championship": False,
+            }
+            for team in teams
+        }
+
+        for game_id in order:
+            game = games[game_id]
+            left_team = resolve_source(game["left_source"], winners)
+            right_team = resolve_source(game["right_source"], winners)
+            if not left_team or not right_team:
+                continue
+
+            winner = str(picks.get(game_id, ""))
+            if not winner:
+                continue
+
+            for team in (left_team, right_team):
+                if team not in first_game_seen:
+                    first_game_seen.add(team)
+                    if team != winner:
+                        reached[team]["lose_first_game"] = True
+
+            round_index = int(game["round_index"])
+            if round_index == 0:
+                reached[winner]["make_round_of_64"] = True
+            elif round_index == 1:
+                reached[winner]["make_round_of_32"] = True
+            elif round_index == 2:
+                reached[winner]["make_sweet_sixteen"] = True
+            elif round_index == 3:
+                reached[winner]["make_elite_eight"] = True
+            elif round_index == 4:
+                reached[winner]["make_final_four"] = True
+            elif round_index == 5:
+                reached[winner]["make_championship"] = True
+            elif round_index == 6:
+                reached[winner]["win_championship"] = True
+
+            winners[game_id] = winner
+
+        for team in teams:
+            for column, value in reached[team].items():
+                counters[team][column] += float(value)
+
+    n_brackets = float(len(bracket_results))
+    summary_rows: list[dict[str, object]] = []
+    for row in field_df.itertuples(index=False):
+        team = str(row.team)
+        summary_rows.append(
+            {
+                "team": team,
+                "seed": int(row.seed),
+                "region": str(row.region),
+                "play_in_group": str(getattr(row, "play_in_group", "") or ""),
+                "lose_first_game": counters[team]["lose_first_game"] / n_brackets,
+                "make_round_of_64": counters[team]["make_round_of_64"] / n_brackets,
+                "make_round_of_32": counters[team]["make_round_of_32"] / n_brackets,
+                "make_sweet_sixteen": counters[team]["make_sweet_sixteen"] / n_brackets,
+                "make_elite_eight": counters[team]["make_elite_eight"] / n_brackets,
+                "make_final_four": counters[team]["make_final_four"] / n_brackets,
+                "make_championship": counters[team]["make_championship"] / n_brackets,
+                "win_championship": counters[team]["win_championship"] / n_brackets,
+            }
+        )
+
+    return pd.DataFrame(summary_rows).sort_values(
+        ["win_championship", "make_final_four", "make_sweet_sixteen"],
+        ascending=False,
+    ).reset_index(drop=True)
+
+
 def export_picks_dataframe(
     games: dict[str, dict[str, object]],
     order: list[str],
@@ -1453,6 +1567,49 @@ def main() -> None:
             )
             st.markdown("#### Simulated bracket summary")
             st.dataframe(summary_rows, use_container_width=True, hide_index=True)
+
+            aggregate_sim_summary = summarize_simulated_brackets(
+                bracket_results=simulated_brackets,
+                games=games,
+                order=order,
+                field_df=resources["resolved_field"],
+            )
+            if not aggregate_sim_summary.empty:
+                st.markdown("#### Aggregate team results across simulated brackets")
+                display_aggregate_sim_summary = aggregate_sim_summary.copy()
+                aggregate_probability_columns = [
+                    "lose_first_game",
+                    "make_round_of_64",
+                    "make_round_of_32",
+                    "make_sweet_sixteen",
+                    "make_elite_eight",
+                    "make_final_four",
+                    "make_championship",
+                    "win_championship",
+                ]
+                for column in aggregate_probability_columns:
+                    display_aggregate_sim_summary[column] = display_aggregate_sim_summary[column] * 100.0
+
+                aggregate_column_config: dict[str, st.column_config.Column] = {
+                    "play_in_group": st.column_config.TextColumn("play_in_group"),
+                }
+                for column in aggregate_probability_columns:
+                    aggregate_column_config[column] = percent_column_config(column)
+
+                st.dataframe(
+                    display_aggregate_sim_summary,
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config=aggregate_column_config,
+                )
+
+                st.download_button(
+                    "Download aggregate simulation summary CSV",
+                    data=aggregate_sim_summary.to_csv(index=False).encode("utf-8"),
+                    file_name="simulated_bracket_team_summary.csv",
+                    mime="text/csv",
+                    use_container_width=False,
+                )
 
             pdf_zip = build_simulation_pdf_zip(simulated_brackets, games, order, seed_lookup)
             st.download_button(

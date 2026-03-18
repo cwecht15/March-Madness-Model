@@ -927,11 +927,11 @@ def simulate_single_bracket(
     locked_champion: str | None,
     randomness: float,
     rng: np.random.Generator,
+    probability_cache: dict[tuple[str, str, int], float],
 ) -> tuple[dict[str, str], int]:
     winners: dict[str, str] = {}
     picks: dict[str, str] = {}
     underdog_wins = 0
-    probability_cache: dict[tuple[str, str, int], float] = {}
 
     for game_id in order:
         game = games[game_id]
@@ -978,10 +978,11 @@ def generate_simulated_brackets(
     randomness: float,
     locked_champion: str | None = None,
     target_underdog_wins: int | None = None,
-    attempts_per_bracket: int = 150,
+    attempts_per_bracket: int = 60,
 ) -> list[dict[str, object]]:
     rng = np.random.default_rng(42)
     results: list[dict[str, object]] = []
+    probability_cache: dict[tuple[str, str, int], float] = {}
 
     for bracket_index in range(1, n_brackets + 1):
         best_candidate: dict[str, object] | None = None
@@ -999,6 +1000,7 @@ def generate_simulated_brackets(
                 locked_champion=locked_champion,
                 randomness=randomness,
                 rng=rng,
+                probability_cache=probability_cache,
             )
             champion = picks.get(order[-1], "")
             if locked_champion and champion != locked_champion:
@@ -1166,6 +1168,18 @@ def summarize_simulated_brackets(
         ["win_championship", "make_final_four", "make_sweet_sixteen"],
         ascending=False,
     ).reset_index(drop=True)
+
+
+def fingerprint_simulated_brackets(bracket_results: list[dict[str, object]]) -> tuple:
+    return tuple(
+        (
+            int(result["bracket_id"]),
+            str(result["champion"]),
+            int(result["underdog_wins"]),
+            tuple(sorted(dict(result["picks"]).items())),
+        )
+        for result in bracket_results
+    )
 
 
 def export_picks_dataframe(
@@ -1534,21 +1548,26 @@ def main() -> None:
             target_underdog_wins = st.slider("Underdog wins target", min_value=0, max_value=40, value=12, step=1)
 
         if st.button("Simulate brackets", use_container_width=True):
-            simulated_results = generate_simulated_brackets(
-                games=games,
-                order=order,
-                round_groups=round_groups,
-                team_lookup=resources["team_lookup"],
-                matchup_payload=resources["matchup_payload"],
-                probability_temperature=resources["probability_temperature"],
-                seed_lookup=seed_lookup,
-                base_picks=current_picks,
-                n_brackets=n_generated_brackets,
-                randomness=randomness,
-                locked_champion=None if locked_champion == "No lock" else locked_champion,
-                target_underdog_wins=target_underdog_wins,
-            )
+            with st.spinner("Generating simulated brackets..."):
+                simulated_results = generate_simulated_brackets(
+                    games=games,
+                    order=order,
+                    round_groups=round_groups,
+                    team_lookup=resources["team_lookup"],
+                    matchup_payload=resources["matchup_payload"],
+                    probability_temperature=resources["probability_temperature"],
+                    seed_lookup=seed_lookup,
+                    base_picks=current_picks,
+                    n_brackets=n_generated_brackets,
+                    randomness=randomness,
+                    locked_champion=None if locked_champion == "No lock" else locked_champion,
+                    target_underdog_wins=target_underdog_wins,
+                )
             st.session_state["simulated_brackets"] = simulated_results
+            st.session_state["simulated_brackets_fingerprint"] = fingerprint_simulated_brackets(simulated_results)
+            st.session_state.pop("simulated_brackets_zip", None)
+            st.session_state.pop("simulated_selected_pdf", None)
+            st.session_state.pop("simulated_selected_pdf_id", None)
             st.rerun()
 
         simulated_brackets = st.session_state.get("simulated_brackets", [])
@@ -1611,14 +1630,26 @@ def main() -> None:
                     use_container_width=False,
                 )
 
-            pdf_zip = build_simulation_pdf_zip(simulated_brackets, games, order, seed_lookup)
-            st.download_button(
-                "Download all simulated brackets as PDFs",
-                data=pdf_zip,
-                file_name="simulated_brackets_pdfs.zip",
-                mime="application/zip",
-                use_container_width=False,
-            )
+            current_fingerprint = fingerprint_simulated_brackets(simulated_brackets)
+            if st.button("Prepare PDF bundle", use_container_width=False):
+                with st.spinner("Preparing PDF bundle..."):
+                    st.session_state["simulated_brackets_zip"] = build_simulation_pdf_zip(
+                        simulated_brackets,
+                        games,
+                        order,
+                        seed_lookup,
+                    )
+                    st.session_state["simulated_brackets_fingerprint"] = current_fingerprint
+            zip_bytes = st.session_state.get("simulated_brackets_zip")
+            zip_fingerprint = st.session_state.get("simulated_brackets_fingerprint")
+            if zip_bytes is not None and zip_fingerprint == current_fingerprint:
+                st.download_button(
+                    "Download all simulated brackets as PDFs",
+                    data=zip_bytes,
+                    file_name="simulated_brackets_pdfs.zip",
+                    mime="application/zip",
+                    use_container_width=False,
+                )
 
             selected_bracket_id = st.selectbox(
                 "Preview simulated bracket",
@@ -1629,14 +1660,25 @@ def main() -> None:
             selected_export_df = export_picks_dataframe(games, order, dict(selected_result["picks"]), seed_lookup)
             st.dataframe(selected_export_df, use_container_width=True, hide_index=True)
 
-            selected_pdf = generate_bracket_pdf(games, order, dict(selected_result["picks"]), seed_lookup)
-            st.download_button(
-                "Download selected bracket PDF",
-                data=selected_pdf,
-                file_name=f"simulated_bracket_{int(selected_result['bracket_id']):02d}.pdf",
-                mime="application/pdf",
-                use_container_width=False,
-            )
+            if st.button("Prepare selected bracket PDF", use_container_width=False):
+                with st.spinner("Preparing selected bracket PDF..."):
+                    st.session_state["simulated_selected_pdf"] = generate_bracket_pdf(
+                        games,
+                        order,
+                        dict(selected_result["picks"]),
+                        seed_lookup,
+                    )
+                    st.session_state["simulated_selected_pdf_id"] = int(selected_result["bracket_id"])
+            selected_pdf = st.session_state.get("simulated_selected_pdf")
+            selected_pdf_id = st.session_state.get("simulated_selected_pdf_id")
+            if selected_pdf is not None and selected_pdf_id == int(selected_result["bracket_id"]):
+                st.download_button(
+                    "Download selected bracket PDF",
+                    data=selected_pdf,
+                    file_name=f"simulated_bracket_{int(selected_result['bracket_id']):02d}.pdf",
+                    mime="application/pdf",
+                    use_container_width=False,
+                )
         else:
             st.info("No simulated brackets yet. Use the controls above to generate some.")
 

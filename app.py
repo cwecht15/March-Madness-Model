@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import base64
 import io
+import json
 import math
 import zipfile
 from pathlib import Path
@@ -901,6 +903,38 @@ def autofill_picks(
     return picks
 
 
+def encode_picks_for_query(picks: dict[str, str]) -> str:
+    payload = json.dumps(picks, separators=(",", ":"), sort_keys=True).encode("utf-8")
+    return base64.urlsafe_b64encode(payload).decode("ascii")
+
+
+def decode_picks_from_query(encoded: str) -> dict[str, str]:
+    if not encoded:
+        return {}
+    try:
+        payload = base64.urlsafe_b64decode(encoded.encode("ascii"))
+        parsed = json.loads(payload.decode("utf-8"))
+        if not isinstance(parsed, dict):
+            return {}
+        return {str(key): str(value) for key, value in parsed.items()}
+    except Exception:
+        return {}
+
+
+def sync_picks_query_params(picks: dict[str, str]) -> None:
+    if picks:
+        st.query_params["picks"] = encode_picks_for_query(picks)
+    elif "picks" in st.query_params:
+        del st.query_params["picks"]
+
+
+def load_picks_from_query_params() -> dict[str, str]:
+    encoded = st.query_params.get("picks", "")
+    if isinstance(encoded, list):
+        encoded = encoded[0] if encoded else ""
+    return decode_picks_from_query(str(encoded))
+
+
 def soften_probability(probability: float, randomness: float) -> float:
     randomness = max(0.0, min(1.0, float(randomness)))
     softened = 0.5 + ((float(probability) - 0.5) * (1.0 - randomness))
@@ -977,7 +1011,6 @@ def generate_simulated_brackets(
     n_brackets: int,
     randomness: float,
     locked_champion: str | None = None,
-    target_underdog_wins: int | None = None,
     attempts_per_bracket: int = 60,
 ) -> list[dict[str, object]]:
     rng = np.random.default_rng(42)
@@ -986,7 +1019,6 @@ def generate_simulated_brackets(
 
     for bracket_index in range(1, n_brackets + 1):
         best_candidate: dict[str, object] | None = None
-        best_diff = float("inf")
 
         for _ in range(max(1, attempts_per_bracket)):
             picks, underdog_wins = simulate_single_bracket(
@@ -1006,18 +1038,13 @@ def generate_simulated_brackets(
             if locked_champion and champion != locked_champion:
                 continue
 
-            diff = abs(underdog_wins - target_underdog_wins) if target_underdog_wins is not None else 0
-            candidate = {
+            best_candidate = {
                 "bracket_id": bracket_index,
                 "picks": picks,
                 "champion": champion,
                 "underdog_wins": underdog_wins,
             }
-            if diff < best_diff:
-                best_diff = diff
-                best_candidate = candidate
-            if target_underdog_wins is None or diff == 0:
-                break
+            break
 
         if best_candidate is None:
             continue
@@ -1227,6 +1254,7 @@ def main() -> None:
         n_sims = st.slider("Conditional sims", min_value=1000, max_value=10000, value=3000, step=1000)
         if st.button("Reset picks", use_container_width=True):
             st.session_state["bracket_picks"] = {}
+            sync_picks_query_params({})
             st.rerun()
         st.caption("Higher simulation counts are smoother but slower.")
 
@@ -1255,28 +1283,35 @@ def main() -> None:
         .to_dict()
     )
 
+    if "bracket_picks" not in st.session_state:
+        st.session_state["bracket_picks"] = load_picks_from_query_params()
     saved_picks = st.session_state.get("bracket_picks", {})
     saved_picks = sanitize_picks(games, order, saved_picks)
+    st.session_state["bracket_picks"] = saved_picks
 
     with st.sidebar:
         st.header("Picks")
         if st.button("Autofill by seed", use_container_width=True):
-            st.session_state["bracket_picks"] = autofill_picks(
+            auto_picks = autofill_picks(
                 games=games,
                 order=order,
                 seed_lookup=seed_lookup,
                 strength_lookup=strength_lookup,
                 strategy="seed",
             )
+            st.session_state["bracket_picks"] = auto_picks
+            sync_picks_query_params(auto_picks)
             st.rerun()
         if st.button("Autofill by team strength", use_container_width=True):
-            st.session_state["bracket_picks"] = autofill_picks(
+            auto_picks = autofill_picks(
                 games=games,
                 order=order,
                 seed_lookup=seed_lookup,
                 strength_lookup=strength_lookup,
                 strategy="team_strength",
             )
+            st.session_state["bracket_picks"] = auto_picks
+            sync_picks_query_params(auto_picks)
             st.rerun()
 
     baseline_odds = cached_simulation(
@@ -1389,6 +1424,7 @@ def main() -> None:
         sanitized_desired = sanitize_picks(games, order, desired_picks)
         if sanitized_desired != saved_picks:
             st.session_state["bracket_picks"] = sanitized_desired
+            sync_picks_query_params(sanitized_desired)
             st.rerun()
 
         if not game_row_map:
@@ -1541,11 +1577,7 @@ def main() -> None:
         randomness = sim_col2.slider("Randomness", min_value=0.0, max_value=1.0, value=0.2, step=0.05)
         champion_options = ["No lock"] + sorted(resources["resolved_field"]["team"].astype(str).tolist())
         locked_champion = sim_col3.selectbox("Lock champion", options=champion_options, index=0)
-        use_underdog_target = sim_col4.checkbox("Target underdog wins", value=False)
-
-        target_underdog_wins = None
-        if use_underdog_target:
-            target_underdog_wins = st.slider("Underdog wins target", min_value=0, max_value=40, value=12, step=1)
+        sim_col4.caption("Current locked picks stay fixed in every simulated bracket.")
 
         if st.button("Simulate brackets", use_container_width=True):
             with st.spinner("Generating simulated brackets..."):
@@ -1561,7 +1593,6 @@ def main() -> None:
                     n_brackets=n_generated_brackets,
                     randomness=randomness,
                     locked_champion=None if locked_champion == "No lock" else locked_champion,
-                    target_underdog_wins=target_underdog_wins,
                 )
             st.session_state["simulated_brackets"] = simulated_results
             st.session_state["simulated_brackets_fingerprint"] = fingerprint_simulated_brackets(simulated_results)

@@ -934,6 +934,11 @@ def score_bracket_pool_fit(
             "weighted_leverage_pct": np.nan,
             "champion_public_pct": np.nan,
             "expected_same_champion_entries": np.nan,
+            "final_four_avg_public_pct": np.nan,
+            "title_game_avg_public_pct": np.nan,
+            "final_four_unique_count": 0,
+            "title_game_unique_count": 0,
+            "late_path_popularity_pct": np.nan,
         }
 
     weight_sum = float(bracket_pick_table["round_weight"].sum())
@@ -947,19 +952,45 @@ def score_bracket_pool_fit(
         float((late_rows["picked_pct"] * late_rows["round_weight"]).sum() / late_weight_sum) if late_weight_sum else 0.0
     )
 
+    final_four_rows = bracket_pick_table.loc[bracket_pick_table["round_key"] == "elite_eight"].copy()
+    title_game_rows = bracket_pick_table.loc[bracket_pick_table["round_key"] == "final_four"].copy()
     champion_rows = bracket_pick_table.loc[bracket_pick_table["round_key"] == "championship"]
     champion_public_pct = float(champion_rows["picked_pct"].iloc[0]) if not champion_rows.empty else np.nan
     expected_same_champion_entries = champion_public_pct * pool_size if not math.isnan(champion_public_pct) else np.nan
+    final_four_avg_public_pct = (
+        float(final_four_rows["picked_pct"].mean()) if not final_four_rows.empty else np.nan
+    )
+    title_game_avg_public_pct = (
+        float(title_game_rows["picked_pct"].mean()) if not title_game_rows.empty else np.nan
+    )
+    final_four_unique_count = int((final_four_rows["picked_pct"] <= 0.12).sum()) if not final_four_rows.empty else 0
+    title_game_unique_count = int((title_game_rows["picked_pct"] <= 0.12).sum()) if not title_game_rows.empty else 0
 
-    if champion_public_pct >= 0.20 or weighted_late_public_pct >= 0.22:
+    champion_component = 0.0 if math.isnan(champion_public_pct) else champion_public_pct
+    title_component = 0.0 if math.isnan(title_game_avg_public_pct) else title_game_avg_public_pct
+    final_four_component = 0.0 if math.isnan(final_four_avg_public_pct) else final_four_avg_public_pct
+    diversity_bonus = (0.025 * final_four_unique_count) + (0.015 * title_game_unique_count)
+    late_path_popularity_pct = max(
+        0.0,
+        (0.50 * champion_component) + (0.30 * title_component) + (0.20 * final_four_component) - diversity_bonus,
+    )
+
+    if (
+        late_path_popularity_pct >= 0.30 and final_four_unique_count == 0
+    ) or (
+        champion_component >= 0.25
+        and final_four_component >= 0.18
+        and final_four_unique_count == 0
+        and title_game_unique_count == 0
+    ):
         profile = "Chalky"
-        recommended_pool_min, recommended_pool_max = 10, 30
-    elif champion_public_pct >= 0.10 or weighted_late_public_pct >= 0.12:
+        recommended_pool_min, recommended_pool_max = 10, 40
+    elif late_path_popularity_pct >= 0.12:
         profile = "Balanced"
-        recommended_pool_min, recommended_pool_max = 25, 100
-    elif champion_public_pct >= 0.04 or weighted_late_public_pct >= 0.05:
+        recommended_pool_min, recommended_pool_max = 25, 150
+    elif late_path_popularity_pct >= 0.06:
         profile = "Contrarian"
-        recommended_pool_min, recommended_pool_max = 75, 300
+        recommended_pool_min, recommended_pool_max = 75, 500
     else:
         profile = "Very Contrarian"
         recommended_pool_min, recommended_pool_max = 250, None
@@ -981,6 +1012,11 @@ def score_bracket_pool_fit(
         "weighted_leverage_pct": weighted_leverage_pct,
         "champion_public_pct": champion_public_pct,
         "expected_same_champion_entries": expected_same_champion_entries,
+        "final_four_avg_public_pct": final_four_avg_public_pct,
+        "title_game_avg_public_pct": title_game_avg_public_pct,
+        "final_four_unique_count": final_four_unique_count,
+        "title_game_unique_count": title_game_unique_count,
+        "late_path_popularity_pct": late_path_popularity_pct,
     }
 
 
@@ -1011,6 +1047,11 @@ def build_simulated_bracket_public_summary(
                 "weighted_leverage_pct": score["weighted_leverage_pct"],
                 "champion_public_pct": score["champion_public_pct"],
                 "expected_same_champion_entries": score["expected_same_champion_entries"],
+                "final_four_avg_public_pct": score["final_four_avg_public_pct"],
+                "title_game_avg_public_pct": score["title_game_avg_public_pct"],
+                "final_four_unique_count": score["final_four_unique_count"],
+                "title_game_unique_count": score["title_game_unique_count"],
+                "late_path_popularity_pct": score["late_path_popularity_pct"],
             }
         )
     return pd.DataFrame(rows)
@@ -1985,6 +2026,26 @@ def main() -> None:
                 if not math.isnan(float(current_pool_score["weighted_leverage_pct"]))
                 else "N/A",
             )
+            late_cols = st.columns(4)
+            late_cols[0].metric(
+                "Final Four avg public rate",
+                format_probability(current_pool_score["final_four_avg_public_pct"])
+                if not math.isnan(float(current_pool_score["final_four_avg_public_pct"]))
+                else "N/A",
+            )
+            late_cols[1].metric(
+                "Title game avg public rate",
+                format_probability(current_pool_score["title_game_avg_public_pct"])
+                if not math.isnan(float(current_pool_score["title_game_avg_public_pct"]))
+                else "N/A",
+            )
+            late_cols[2].metric("Unique Final Four teams", int(current_pool_score["final_four_unique_count"]))
+            late_cols[3].metric(
+                "Adjusted late-path popularity",
+                format_probability(current_pool_score["late_path_popularity_pct"])
+                if not math.isnan(float(current_pool_score["late_path_popularity_pct"]))
+                else "N/A",
+            )
 
             min_pool = current_pool_score["recommended_pool_min"]
             max_pool = current_pool_score["recommended_pool_max"]
@@ -2042,13 +2103,16 @@ def main() -> None:
                         "weighted_late_public_pct",
                         "weighted_leverage_pct",
                         "champion_public_pct",
+                        "final_four_avg_public_pct",
+                        "title_game_avg_public_pct",
+                        "late_path_popularity_pct",
                     ]:
                         display_simulated_public_summary[column] = display_simulated_public_summary[column] * 100.0
 
                     st.dataframe(
                         display_simulated_public_summary.sort_values(
-                            ["weighted_leverage_pct", "champion_public_pct"],
-                            ascending=[False, True],
+                            ["profile", "late_path_popularity_pct", "weighted_leverage_pct"],
+                            ascending=[True, True, False],
                         ),
                         use_container_width=True,
                         hide_index=True,
@@ -2057,6 +2121,9 @@ def main() -> None:
                             "weighted_late_public_pct": percent_column_config("weighted_late_public_pct"),
                             "weighted_leverage_pct": points_delta_column_config("weighted_leverage_pct"),
                             "champion_public_pct": percent_column_config("champion_public_pct"),
+                            "final_four_avg_public_pct": percent_column_config("final_four_avg_public_pct"),
+                            "title_game_avg_public_pct": percent_column_config("title_game_avg_public_pct"),
+                            "late_path_popularity_pct": percent_column_config("late_path_popularity_pct"),
                             "expected_same_champion_entries": st.column_config.NumberColumn(
                                 "expected_same_champion_entries",
                                 format="%.1f",

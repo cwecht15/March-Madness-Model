@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import io
 import math
+import zipfile
 from pathlib import Path
 
 import numpy as np
@@ -899,6 +901,159 @@ def autofill_picks(
     return picks
 
 
+def soften_probability(probability: float, randomness: float) -> float:
+    randomness = max(0.0, min(1.0, float(randomness)))
+    softened = 0.5 + ((float(probability) - 0.5) * (1.0 - randomness))
+    return max(1e-6, min(1.0 - 1e-6, softened))
+
+
+def is_underdog_win(winner: str, left_team: str, right_team: str, seed_lookup: dict[str, int]) -> bool:
+    left_seed = seed_lookup.get(left_team)
+    right_seed = seed_lookup.get(right_team)
+    if left_seed is None or right_seed is None or int(left_seed) == int(right_seed):
+        return False
+    favorite = left_team if int(left_seed) < int(right_seed) else right_team
+    return winner != favorite
+
+
+def simulate_single_bracket(
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    team_lookup: dict[str, object],
+    matchup_payload: dict,
+    probability_temperature: float,
+    seed_lookup: dict[str, int],
+    base_picks: dict[str, str],
+    locked_champion: str | None,
+    randomness: float,
+    rng: np.random.Generator,
+) -> tuple[dict[str, str], int]:
+    winners: dict[str, str] = {}
+    picks: dict[str, str] = {}
+    underdog_wins = 0
+    probability_cache: dict[tuple[str, str, int], float] = {}
+
+    for game_id in order:
+        game = games[game_id]
+        left_team = resolve_source(game["left_source"], winners)
+        right_team = resolve_source(game["right_source"], winners)
+        if not left_team or not right_team:
+            continue
+
+        if game_id in base_picks:
+            winner = str(base_picks[game_id])
+        elif locked_champion and locked_champion in {left_team, right_team}:
+            winner = locked_champion
+        else:
+            left_probability = game_probability(
+                game,
+                left_team,
+                right_team,
+                team_lookup,
+                matchup_payload,
+                probability_cache,
+                probability_temperature,
+            )
+            left_probability = soften_probability(left_probability, randomness)
+            winner = left_team if rng.random() < left_probability else right_team
+
+        picks[game_id] = winner
+        winners[game_id] = winner
+        if is_underdog_win(winner, left_team, right_team, seed_lookup):
+            underdog_wins += 1
+
+    return picks, underdog_wins
+
+
+def generate_simulated_brackets(
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    round_groups: dict[int, list[str]],
+    team_lookup: dict[str, object],
+    matchup_payload: dict,
+    probability_temperature: float,
+    seed_lookup: dict[str, int],
+    base_picks: dict[str, str],
+    n_brackets: int,
+    randomness: float,
+    locked_champion: str | None = None,
+    target_underdog_wins: int | None = None,
+    attempts_per_bracket: int = 150,
+) -> list[dict[str, object]]:
+    rng = np.random.default_rng(42)
+    results: list[dict[str, object]] = []
+
+    for bracket_index in range(1, n_brackets + 1):
+        best_candidate: dict[str, object] | None = None
+        best_diff = float("inf")
+
+        for _ in range(max(1, attempts_per_bracket)):
+            picks, underdog_wins = simulate_single_bracket(
+                games=games,
+                order=order,
+                team_lookup=team_lookup,
+                matchup_payload=matchup_payload,
+                probability_temperature=probability_temperature,
+                seed_lookup=seed_lookup,
+                base_picks=base_picks,
+                locked_champion=locked_champion,
+                randomness=randomness,
+                rng=rng,
+            )
+            champion = picks.get(order[-1], "")
+            if locked_champion and champion != locked_champion:
+                continue
+
+            diff = abs(underdog_wins - target_underdog_wins) if target_underdog_wins is not None else 0
+            candidate = {
+                "bracket_id": bracket_index,
+                "picks": picks,
+                "champion": champion,
+                "underdog_wins": underdog_wins,
+            }
+            if diff < best_diff:
+                best_diff = diff
+                best_candidate = candidate
+            if target_underdog_wins is None or diff == 0:
+                break
+
+        if best_candidate is None:
+            continue
+
+        final_game = games[order[-1]]
+        runner_up = ""
+        left_final_source = resolve_source(final_game["left_source"], best_candidate["picks"])
+        right_final_source = resolve_source(final_game["right_source"], best_candidate["picks"])
+        for team in [left_final_source, right_final_source]:
+            if team and team != best_candidate["champion"]:
+                runner_up = str(team)
+                break
+
+        final_four_teams = [best_candidate["picks"].get(game_id, "") for game_id in round_groups[4] if game_id in best_candidate["picks"]]
+        best_candidate["runner_up"] = runner_up
+        best_candidate["final_four"] = ", ".join([team for team in final_four_teams if team])
+        results.append(best_candidate)
+
+    return results
+
+
+def build_simulation_pdf_zip(
+    bracket_results: list[dict[str, object]],
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    seed_lookup: dict[str, int],
+) -> bytes:
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for result in bracket_results:
+            champion_slug = str(result["champion"]).replace(" ", "_").replace("/", "-")
+            pdf_bytes = generate_bracket_pdf(games, order, dict(result["picks"]), seed_lookup)
+            file_name = f"sim_bracket_{int(result['bracket_id']):02d}_{champion_slug}.pdf"
+            zf.writestr(file_name, pdf_bytes)
+    buffer.seek(0)
+    return buffer.getvalue()
+
+
 def export_picks_dataframe(
     games: dict[str, dict[str, object]],
     order: list[str],
@@ -1037,7 +1192,7 @@ def main() -> None:
             use_container_width=True,
         )
 
-    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Odds", "Team Lens"])
+    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Odds", "Bracket Sims", "Team Lens"])
 
     with tabs[0]:
         rendered_rows = build_game_rows(
@@ -1250,6 +1405,85 @@ def main() -> None:
         )
 
     with tabs[3]:
+        st.subheader("Bracket Simulations")
+        st.caption("Generate complete brackets from the model. Current locked picks are treated as fixed constraints.")
+
+        sim_col1, sim_col2, sim_col3, sim_col4 = st.columns(4)
+        n_generated_brackets = sim_col1.slider("Number of brackets", min_value=1, max_value=25, value=5, step=1)
+        randomness = sim_col2.slider("Randomness", min_value=0.0, max_value=1.0, value=0.2, step=0.05)
+        champion_options = ["No lock"] + sorted(resources["resolved_field"]["team"].astype(str).tolist())
+        locked_champion = sim_col3.selectbox("Lock champion", options=champion_options, index=0)
+        use_underdog_target = sim_col4.checkbox("Target underdog wins", value=False)
+
+        target_underdog_wins = None
+        if use_underdog_target:
+            target_underdog_wins = st.slider("Underdog wins target", min_value=0, max_value=40, value=12, step=1)
+
+        if st.button("Simulate brackets", use_container_width=True):
+            simulated_results = generate_simulated_brackets(
+                games=games,
+                order=order,
+                round_groups=round_groups,
+                team_lookup=resources["team_lookup"],
+                matchup_payload=resources["matchup_payload"],
+                probability_temperature=resources["probability_temperature"],
+                seed_lookup=seed_lookup,
+                base_picks=current_picks,
+                n_brackets=n_generated_brackets,
+                randomness=randomness,
+                locked_champion=None if locked_champion == "No lock" else locked_champion,
+                target_underdog_wins=target_underdog_wins,
+            )
+            st.session_state["simulated_brackets"] = simulated_results
+            st.rerun()
+
+        simulated_brackets = st.session_state.get("simulated_brackets", [])
+        if simulated_brackets:
+            summary_rows = pd.DataFrame(
+                [
+                    {
+                        "bracket_id": row["bracket_id"],
+                        "champion": row["champion"],
+                        "runner_up": row["runner_up"],
+                        "underdog_wins": row["underdog_wins"],
+                        "final_four": row["final_four"],
+                    }
+                    for row in simulated_brackets
+                ]
+            )
+            st.markdown("#### Simulated bracket summary")
+            st.dataframe(summary_rows, use_container_width=True, hide_index=True)
+
+            pdf_zip = build_simulation_pdf_zip(simulated_brackets, games, order, seed_lookup)
+            st.download_button(
+                "Download all simulated brackets as PDFs",
+                data=pdf_zip,
+                file_name="simulated_brackets_pdfs.zip",
+                mime="application/zip",
+                use_container_width=False,
+            )
+
+            selected_bracket_id = st.selectbox(
+                "Preview simulated bracket",
+                options=[row["bracket_id"] for row in simulated_brackets],
+                format_func=lambda value: f"Bracket {int(value):02d}",
+            )
+            selected_result = next(row for row in simulated_brackets if int(row["bracket_id"]) == int(selected_bracket_id))
+            selected_export_df = export_picks_dataframe(games, order, dict(selected_result["picks"]), seed_lookup)
+            st.dataframe(selected_export_df, use_container_width=True, hide_index=True)
+
+            selected_pdf = generate_bracket_pdf(games, order, dict(selected_result["picks"]), seed_lookup)
+            st.download_button(
+                "Download selected bracket PDF",
+                data=selected_pdf,
+                file_name=f"simulated_bracket_{int(selected_result['bracket_id']):02d}.pdf",
+                mime="application/pdf",
+                use_container_width=False,
+            )
+        else:
+            st.info("No simulated brackets yet. Use the controls above to generate some.")
+
+    with tabs[4]:
         st.subheader("Team Lens")
         st.caption("Use this view to compare the bracket state with the underlying team profile and contender screen.")
 

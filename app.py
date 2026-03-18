@@ -115,6 +115,13 @@ BRACKET_SCORING_POINTS = {
     5: 16,
     6: 32,
 }
+OPPONENT_ARCHETYPE_PARAMS = {
+    "copycat": {"public_weight": 0.97, "public_alpha": 2.4, "upset_bias": -0.08, "deviation_rate": 0.03, "noise_sd": 0.02},
+    "chalk": {"public_weight": 0.85, "public_alpha": 1.6, "upset_bias": -0.04, "deviation_rate": 1.0, "noise_sd": 0.05},
+    "balanced": {"public_weight": 0.70, "public_alpha": 1.0, "upset_bias": 0.00, "deviation_rate": 1.0, "noise_sd": 0.08},
+    "contrarian": {"public_weight": 0.58, "public_alpha": 0.72, "upset_bias": 0.05, "deviation_rate": 1.0, "noise_sd": 0.10},
+    "wild": {"public_weight": 0.48, "public_alpha": 0.55, "upset_bias": 0.10, "deviation_rate": 1.0, "noise_sd": 0.14},
+}
 
 
 st.set_page_config(page_title="March Madness Live Bracket", layout="wide")
@@ -1081,6 +1088,80 @@ def build_public_pick_lookup(public_pick_distribution: pd.DataFrame) -> dict[tup
     return lookup
 
 
+def sharpen_probability(probability: float, alpha: float) -> float:
+    probability = max(1e-6, min(1.0 - 1e-6, float(probability)))
+    alpha = max(1e-3, float(alpha))
+    numerator = probability ** alpha
+    denominator = numerator + ((1.0 - probability) ** alpha)
+    return float(numerator / denominator)
+
+
+def compute_public_conditional_probability(
+    left_team: str,
+    right_team: str,
+    round_key: str | None,
+    public_pick_lookup: dict[tuple[str, str], float],
+) -> float | None:
+    if not round_key:
+        return None
+    left_public = float(public_pick_lookup.get((left_team, round_key), np.nan))
+    right_public = float(public_pick_lookup.get((right_team, round_key), np.nan))
+    if math.isnan(left_public) or math.isnan(right_public) or (left_public + right_public) <= 0:
+        return None
+    return float(left_public / (left_public + right_public))
+
+
+def sample_opponent_archetype(pool_size: int, rng: np.random.Generator) -> str:
+    if pool_size <= 25:
+        names = ["copycat", "chalk", "balanced", "contrarian", "wild"]
+        probabilities = [0.18, 0.34, 0.28, 0.15, 0.05]
+    elif pool_size <= 100:
+        names = ["copycat", "chalk", "balanced", "contrarian", "wild"]
+        probabilities = [0.10, 0.28, 0.32, 0.22, 0.08]
+    elif pool_size <= 300:
+        names = ["copycat", "chalk", "balanced", "contrarian", "wild"]
+        probabilities = [0.05, 0.20, 0.30, 0.28, 0.17]
+    else:
+        names = ["copycat", "chalk", "balanced", "contrarian", "wild"]
+        probabilities = [0.03, 0.15, 0.25, 0.32, 0.25]
+    return str(rng.choice(names, p=probabilities))
+
+
+def build_public_chalk_template(
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    public_pick_lookup: dict[tuple[str, str], float],
+    team_lookup: dict[str, object],
+    matchup_payload: dict,
+    probability_temperature: float,
+    probability_cache: dict[tuple[str, str, int], float],
+) -> dict[str, str]:
+    winners: dict[str, str] = {}
+    picks: dict[str, str] = {}
+    for game_id in order:
+        game = games[game_id]
+        left_team = resolve_source(game["left_source"], winners)
+        right_team = resolve_source(game["right_source"], winners)
+        if not left_team or not right_team:
+            continue
+        round_key = PUBLIC_PICK_ROUND_TITLE_MAP.get(str(game["round_title"]))
+        public_probability = compute_public_conditional_probability(left_team, right_team, round_key, public_pick_lookup)
+        if public_probability is None:
+            public_probability = game_probability(
+                game,
+                left_team,
+                right_team,
+                team_lookup,
+                matchup_payload,
+                probability_cache,
+                probability_temperature,
+            )
+        winner = left_team if float(public_probability) >= 0.5 else right_team
+        picks[game_id] = winner
+        winners[game_id] = winner
+    return picks
+
+
 def pick_public_game_winner(
     game: dict[str, object],
     left_team: str,
@@ -1090,17 +1171,33 @@ def pick_public_game_winner(
     matchup_payload: dict,
     probability_cache: dict[tuple[str, str, int], float],
     probability_temperature: float,
+    archetype_name: str,
+    seed_lookup: dict[str, int],
+    template_pick: str | None,
     rng: np.random.Generator,
 ) -> str:
     round_key = PUBLIC_PICK_ROUND_TITLE_MAP.get(str(game["round_title"]))
-    if round_key:
-        left_public = float(public_pick_lookup.get((left_team, round_key), np.nan))
-        right_public = float(public_pick_lookup.get((right_team, round_key), np.nan))
-        if not math.isnan(left_public) and not math.isnan(right_public) and (left_public + right_public) > 0:
-            left_probability = left_public / (left_public + right_public)
-            return left_team if rng.random() < left_probability else right_team
+    if archetype_name == "independent":
+        public_probability = compute_public_conditional_probability(left_team, right_team, round_key, public_pick_lookup)
+        if public_probability is not None:
+            return left_team if rng.random() < float(public_probability) else right_team
+        fallback_probability = game_probability(
+            game,
+            left_team,
+            right_team,
+            team_lookup,
+            matchup_payload,
+            probability_cache,
+            probability_temperature,
+        )
+        return left_team if rng.random() < float(fallback_probability) else right_team
 
-    left_probability = game_probability(
+    params = OPPONENT_ARCHETYPE_PARAMS[str(archetype_name)]
+    if template_pick and rng.random() > float(params["deviation_rate"]):
+        return str(template_pick)
+
+    public_probability = compute_public_conditional_probability(left_team, right_team, round_key, public_pick_lookup)
+    model_probability = game_probability(
         game,
         left_team,
         right_team,
@@ -1109,7 +1206,29 @@ def pick_public_game_winner(
         probability_cache,
         probability_temperature,
     )
-    return left_team if rng.random() < left_probability else right_team
+    if public_probability is None:
+        base_probability = float(model_probability)
+    else:
+        public_probability = sharpen_probability(public_probability, float(params["public_alpha"]))
+        base_probability = (float(params["public_weight"]) * float(public_probability)) + (
+            (1.0 - float(params["public_weight"])) * float(model_probability)
+        )
+
+    left_seed = seed_lookup.get(left_team)
+    right_seed = seed_lookup.get(right_team)
+    if left_seed is not None and right_seed is not None and int(left_seed) != int(right_seed):
+        left_is_underdog = int(left_seed) > int(right_seed)
+        upset_bias = float(params["upset_bias"])
+        if left_is_underdog:
+            base_probability += upset_bias
+        else:
+            base_probability -= upset_bias
+
+    if float(params["noise_sd"]) > 0:
+        base_probability += float(rng.normal(0.0, float(params["noise_sd"])))
+
+    base_probability = max(1e-6, min(1.0 - 1e-6, float(base_probability)))
+    return left_team if rng.random() < base_probability else right_team
 
 
 def simulate_public_bracket(
@@ -1119,9 +1238,15 @@ def simulate_public_bracket(
     matchup_payload: dict,
     probability_temperature: float,
     public_pick_lookup: dict[tuple[str, str], float],
+    seed_lookup: dict[str, int],
+    pool_size: int,
+    opponent_model: str,
+    chalk_template_picks: dict[str, str] | None,
     rng: np.random.Generator,
     probability_cache: dict[tuple[str, str, int], float],
 ) -> dict[str, str]:
+    archetype_name = "independent" if opponent_model == "Yahoo Independent" else sample_opponent_archetype(pool_size, rng)
+    template_picks = chalk_template_picks if archetype_name == "copycat" and chalk_template_picks is not None else {}
     winners: dict[str, str] = {}
     picks: dict[str, str] = {}
     for game_id in order:
@@ -1139,6 +1264,9 @@ def simulate_public_bracket(
             matchup_payload=matchup_payload,
             probability_cache=probability_cache,
             probability_temperature=probability_temperature,
+            archetype_name=archetype_name,
+            seed_lookup=seed_lookup,
+            template_pick=str(template_picks.get(game_id, "")) or None,
             rng=rng,
         )
         picks[game_id] = winner
@@ -1185,8 +1313,10 @@ def simulate_pool_for_brackets(
     matchup_payload: dict,
     probability_temperature: float,
     public_pick_distribution: pd.DataFrame,
+    seed_lookup: dict[str, int],
     pool_size: int,
     n_tournament_sims: int,
+    opponent_model: str,
 ) -> pd.DataFrame:
     if not candidate_brackets:
         return pd.DataFrame()
@@ -1196,6 +1326,19 @@ def simulate_pool_for_brackets(
     probability_cache: dict[tuple[str, str, int], float] = {}
     num_opponents = max(0, int(pool_size) - 1)
     top_cutoff = max(1, int(math.ceil(float(pool_size) * 0.10)))
+    chalk_template_picks = (
+        build_public_chalk_template(
+            games=games,
+            order=order,
+            public_pick_lookup=public_pick_lookup,
+            team_lookup=team_lookup,
+            matchup_payload=matchup_payload,
+            probability_temperature=probability_temperature,
+            probability_cache=probability_cache,
+        )
+        if opponent_model == "Yahoo + Archetypes"
+        else None
+    )
 
     summary: dict[str, dict[str, float | str]] = {}
     for index, candidate in enumerate(candidate_brackets, start=1):
@@ -1233,6 +1376,10 @@ def simulate_pool_for_brackets(
                 matchup_payload=matchup_payload,
                 probability_temperature=probability_temperature,
                 public_pick_lookup=public_pick_lookup,
+                seed_lookup=seed_lookup,
+                pool_size=pool_size,
+                opponent_model=opponent_model,
+                chalk_template_picks=chalk_template_picks,
                 rng=rng,
                 probability_cache=probability_cache,
             )
@@ -1265,6 +1412,7 @@ def simulate_pool_for_brackets(
         results[column] = results[column].astype(float) / divisor
     results["pool_size"] = int(pool_size)
     results["tournament_sims"] = int(n_tournament_sims)
+    results["opponent_model"] = str(opponent_model)
     return results.sort_values(["win_equity", "top_10_pct", "average_finish"], ascending=[False, False, True]).reset_index(drop=True)
 
 
@@ -2359,9 +2507,14 @@ def main() -> None:
             "Estimate how often your bracket can win a pool by simulating tournament outcomes from the model and generating opponent entries from Yahoo public pick behavior."
         )
 
-        pool_col1, pool_col2 = st.columns(2)
+        pool_col1, pool_col2, pool_col3 = st.columns(3)
         pool_size_sim = pool_col1.slider("Pool size for win simulation", min_value=10, max_value=500, value=50, step=10)
         tournament_sims = pool_col2.slider("Tournament simulations", min_value=100, max_value=2000, value=300, step=100)
+        opponent_model = pool_col3.selectbox(
+            "Opponent field model",
+            options=["Yahoo + Archetypes", "Yahoo Independent"],
+            index=0,
+        )
 
         pool_candidates: list[dict[str, object]] = []
         if is_complete_bracket_export(export_df):
@@ -2406,13 +2559,16 @@ def main() -> None:
                         matchup_payload=resources["matchup_payload"],
                         probability_temperature=resources["probability_temperature"],
                         public_pick_distribution=resources["public_pick_distribution"],
+                        seed_lookup=seed_lookup,
                         pool_size=pool_size_sim,
                         n_tournament_sims=tournament_sims,
+                        opponent_model=opponent_model,
                     )
                 st.session_state["pool_simulation_results"] = pool_results
                 st.session_state["pool_simulation_meta"] = {
                     "pool_size": int(pool_size_sim),
                     "tournament_sims": int(tournament_sims),
+                    "opponent_model": str(opponent_model),
                 }
 
             pool_results = st.session_state.get("pool_simulation_results")
@@ -2439,7 +2595,7 @@ def main() -> None:
                 )
                 if pool_meta:
                     st.caption(
-                        f"Win equity is the estimated share of pool wins across {int(pool_meta.get('tournament_sims', 0))} simulated tournaments with {int(pool_meta.get('pool_size', 0))} total entries."
+                        f"Win equity is the estimated share of pool wins across {int(pool_meta.get('tournament_sims', 0))} simulated tournaments with {int(pool_meta.get('pool_size', 0))} total entries using the {str(pool_meta.get('opponent_model', ''))} opponent field model."
                     )
                 st.download_button(
                     "Download pool simulation CSV",

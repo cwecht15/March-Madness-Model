@@ -404,8 +404,9 @@ def validate_field(field_df: pd.DataFrame) -> None:
             if len(teams) not in {1, 2}:
                 raise ValueError(f"{region} seed {seed} must have one team or one play-in pair, found {len(teams)} teams.")
 
-    if len(field_df) not in {64, 68}:
-        raise ValueError(f"Expected a 64-team or 68-team field, found {len(field_df)} teams.")
+    field_size = int(len(field_df))
+    if field_size < 64 or field_size > 68:
+        raise ValueError(f"Expected a partially or fully resolved field with 64 to 68 teams, found {field_size} teams.")
 
 
 def simulate_region(

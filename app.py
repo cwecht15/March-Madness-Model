@@ -953,7 +953,16 @@ def load_picks_from_query_params() -> dict[str, str]:
 
 def soften_probability(probability: float, randomness: float) -> float:
     randomness = max(0.0, min(1.0, float(randomness)))
-    softened = 0.5 + ((float(probability) - 0.5) * (1.0 - randomness))
+    probability = float(probability)
+    favorite_probability = max(probability, 1.0 - probability)
+    if favorite_probability >= 0.95:
+        effective_randomness = 0.0
+    elif favorite_probability <= 0.65:
+        effective_randomness = randomness
+    else:
+        taper = (0.95 - favorite_probability) / 0.30
+        effective_randomness = randomness * max(0.0, min(1.0, taper))
+    softened = 0.5 + ((probability - 0.5) * (1.0 - effective_randomness))
     return max(1e-6, min(1.0 - 1e-6, softened))
 
 

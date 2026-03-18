@@ -106,6 +106,15 @@ PUBLIC_PICK_TEAM_ODDS_MAP = {
     "final_four": "win_final_four",
     "championship": "win_championship",
 }
+BRACKET_SCORING_POINTS = {
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 4,
+    4: 8,
+    5: 16,
+    6: 32,
+}
 
 
 st.set_page_config(page_title="March Madness Live Bracket", layout="wide")
@@ -1057,6 +1066,208 @@ def build_simulated_bracket_public_summary(
     return pd.DataFrame(rows)
 
 
+def is_complete_bracket_export(export_df: pd.DataFrame) -> bool:
+    if export_df.empty:
+        return False
+    return bool(export_df["picked_winner"].astype(str).str.strip().ne("").all())
+
+
+def build_public_pick_lookup(public_pick_distribution: pd.DataFrame) -> dict[tuple[str, str], float]:
+    if public_pick_distribution.empty:
+        return {}
+    lookup: dict[tuple[str, str], float] = {}
+    for row in public_pick_distribution.itertuples(index=False):
+        lookup[(str(row.team), str(row.round_key))] = float(row.picked_pct)
+    return lookup
+
+
+def pick_public_game_winner(
+    game: dict[str, object],
+    left_team: str,
+    right_team: str,
+    public_pick_lookup: dict[tuple[str, str], float],
+    team_lookup: dict[str, object],
+    matchup_payload: dict,
+    probability_cache: dict[tuple[str, str, int], float],
+    probability_temperature: float,
+    rng: np.random.Generator,
+) -> str:
+    round_key = PUBLIC_PICK_ROUND_TITLE_MAP.get(str(game["round_title"]))
+    if round_key:
+        left_public = float(public_pick_lookup.get((left_team, round_key), np.nan))
+        right_public = float(public_pick_lookup.get((right_team, round_key), np.nan))
+        if not math.isnan(left_public) and not math.isnan(right_public) and (left_public + right_public) > 0:
+            left_probability = left_public / (left_public + right_public)
+            return left_team if rng.random() < left_probability else right_team
+
+    left_probability = game_probability(
+        game,
+        left_team,
+        right_team,
+        team_lookup,
+        matchup_payload,
+        probability_cache,
+        probability_temperature,
+    )
+    return left_team if rng.random() < left_probability else right_team
+
+
+def simulate_public_bracket(
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    team_lookup: dict[str, object],
+    matchup_payload: dict,
+    probability_temperature: float,
+    public_pick_lookup: dict[tuple[str, str], float],
+    rng: np.random.Generator,
+    probability_cache: dict[tuple[str, str, int], float],
+) -> dict[str, str]:
+    winners: dict[str, str] = {}
+    picks: dict[str, str] = {}
+    for game_id in order:
+        game = games[game_id]
+        left_team = resolve_source(game["left_source"], winners)
+        right_team = resolve_source(game["right_source"], winners)
+        if not left_team or not right_team:
+            continue
+        winner = pick_public_game_winner(
+            game=game,
+            left_team=left_team,
+            right_team=right_team,
+            public_pick_lookup=public_pick_lookup,
+            team_lookup=team_lookup,
+            matchup_payload=matchup_payload,
+            probability_cache=probability_cache,
+            probability_temperature=probability_temperature,
+            rng=rng,
+        )
+        picks[game_id] = winner
+        winners[game_id] = winner
+    return picks
+
+
+def score_bracket_against_outcome(
+    picks: dict[str, str],
+    outcome_picks: dict[str, str],
+    games: dict[str, dict[str, object]],
+    order: list[str],
+) -> dict[str, object]:
+    total_points = 0
+    correct_picks = 0
+    round_points: dict[str, int] = {}
+    round_correct: dict[str, int] = {}
+
+    for game_id in order:
+        game = games[game_id]
+        round_title = str(game["round_title"])
+        picked = str(picks.get(game_id, ""))
+        outcome = str(outcome_picks.get(game_id, ""))
+        is_correct = bool(picked and outcome and picked == outcome)
+        round_correct[round_title] = round_correct.get(round_title, 0) + int(is_correct)
+        points = BRACKET_SCORING_POINTS.get(int(game["round_index"]), 0) if is_correct else 0
+        round_points[round_title] = round_points.get(round_title, 0) + points
+        total_points += points
+        correct_picks += int(is_correct)
+
+    return {
+        "score": int(total_points),
+        "correct_picks": int(correct_picks),
+        "round_points": round_points,
+        "round_correct": round_correct,
+    }
+
+
+def simulate_pool_for_brackets(
+    candidate_brackets: list[dict[str, object]],
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    team_lookup: dict[str, object],
+    matchup_payload: dict,
+    probability_temperature: float,
+    public_pick_distribution: pd.DataFrame,
+    pool_size: int,
+    n_tournament_sims: int,
+) -> pd.DataFrame:
+    if not candidate_brackets:
+        return pd.DataFrame()
+
+    public_pick_lookup = build_public_pick_lookup(public_pick_distribution)
+    rng = np.random.default_rng(20260318)
+    probability_cache: dict[tuple[str, str, int], float] = {}
+    num_opponents = max(0, int(pool_size) - 1)
+    top_cutoff = max(1, int(math.ceil(float(pool_size) * 0.10)))
+
+    summary: dict[str, dict[str, float | str]] = {}
+    for index, candidate in enumerate(candidate_brackets, start=1):
+        bracket_id = str(candidate.get("candidate_id", index))
+        summary[bracket_id] = {
+            "candidate_id": bracket_id,
+            "label": str(candidate.get("label", f"Bracket {index}")),
+            "champion": str(candidate.get("champion", "")),
+            "win_equity": 0.0,
+            "top_10_pct": 0.0,
+            "average_finish": 0.0,
+            "average_score": 0.0,
+            "average_same_champion_opponents": 0.0,
+        }
+
+    for _ in range(int(n_tournament_sims)):
+        outcome_picks, _ = simulate_single_bracket(
+            games=games,
+            order=order,
+            team_lookup=team_lookup,
+            matchup_payload=matchup_payload,
+            probability_temperature=probability_temperature,
+            seed_lookup={},
+            base_picks={},
+            locked_champion=None,
+            randomness=0.0,
+            rng=rng,
+            probability_cache=probability_cache,
+        )
+        opponent_brackets = [
+            simulate_public_bracket(
+                games=games,
+                order=order,
+                team_lookup=team_lookup,
+                matchup_payload=matchup_payload,
+                probability_temperature=probability_temperature,
+                public_pick_lookup=public_pick_lookup,
+                rng=rng,
+                probability_cache=probability_cache,
+            )
+            for _ in range(num_opponents)
+        ]
+        opponent_scores = [score_bracket_against_outcome(bracket, outcome_picks, games, order)["score"] for bracket in opponent_brackets]
+        opponent_champions = [str(bracket.get(order[-1], "")) for bracket in opponent_brackets]
+
+        for index, candidate in enumerate(candidate_brackets, start=1):
+            bracket_id = str(candidate.get("candidate_id", index))
+            candidate_score = score_bracket_against_outcome(dict(candidate["picks"]), outcome_picks, games, order)["score"]
+            higher_scores = sum(score > candidate_score for score in opponent_scores)
+            tied_scores = sum(score == candidate_score for score in opponent_scores)
+            average_finish = 1.0 + float(higher_scores) + (0.5 * float(tied_scores))
+            win_equity = (1.0 / (1.0 + float(tied_scores))) if higher_scores == 0 else 0.0
+            top_10 = 1.0 if average_finish <= float(top_cutoff) else 0.0
+            same_champion = sum(champion == str(candidate.get("champion", "")) for champion in opponent_champions)
+
+            summary[bracket_id]["win_equity"] = float(summary[bracket_id]["win_equity"]) + win_equity
+            summary[bracket_id]["top_10_pct"] = float(summary[bracket_id]["top_10_pct"]) + top_10
+            summary[bracket_id]["average_finish"] = float(summary[bracket_id]["average_finish"]) + average_finish
+            summary[bracket_id]["average_score"] = float(summary[bracket_id]["average_score"]) + float(candidate_score)
+            summary[bracket_id]["average_same_champion_opponents"] = float(
+                summary[bracket_id]["average_same_champion_opponents"]
+            ) + float(same_champion)
+
+    results = pd.DataFrame(summary.values())
+    divisor = float(n_tournament_sims)
+    for column in ["win_equity", "top_10_pct", "average_finish", "average_score", "average_same_champion_opponents"]:
+        results[column] = results[column].astype(float) / divisor
+    results["pool_size"] = int(pool_size)
+    results["tournament_sims"] = int(n_tournament_sims)
+    return results.sort_values(["win_equity", "top_10_pct", "average_finish"], ascending=[False, False, True]).reset_index(drop=True)
+
+
 def build_team_odds_view(current_odds: pd.DataFrame, baseline_odds: pd.DataFrame) -> pd.DataFrame:
     odds_view = build_delta_table(current_odds, baseline_odds).copy()
     ordered_columns = [
@@ -1610,7 +1821,7 @@ def main() -> None:
             use_container_width=True,
         )
 
-    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Odds", "Bracket Sims", "Pool Fit", "Team Lens"])
+    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Odds", "Bracket Sims", "Pool Fit", "Pool Sim", "Team Lens"])
 
     with tabs[0]:
         rendered_rows = build_game_rows(
@@ -2143,6 +2354,102 @@ def main() -> None:
                 st.dataframe(resources["public_pick_match_report"], use_container_width=True, hide_index=True)
 
     with tabs[5]:
+        st.subheader("Pool Simulation")
+        st.caption(
+            "Estimate how often your bracket can win a pool by simulating tournament outcomes from the model and generating opponent entries from Yahoo public pick behavior."
+        )
+
+        pool_col1, pool_col2 = st.columns(2)
+        pool_size_sim = pool_col1.slider("Pool size for win simulation", min_value=10, max_value=500, value=50, step=10)
+        tournament_sims = pool_col2.slider("Tournament simulations", min_value=100, max_value=2000, value=300, step=100)
+
+        pool_candidates: list[dict[str, object]] = []
+        if is_complete_bracket_export(export_df):
+            pool_candidates.append(
+                {
+                    "candidate_id": "current",
+                    "label": "Current bracket",
+                    "champion": str(saved_picks.get(order[-1], "")),
+                    "picks": dict(saved_picks),
+                }
+            )
+        simulated_brackets = st.session_state.get("simulated_brackets", [])
+        for row in simulated_brackets:
+            pool_candidates.append(
+                {
+                    "candidate_id": f"sim_{int(row['bracket_id'])}",
+                    "label": f"Simulated bracket {int(row['bracket_id']):02d}",
+                    "champion": str(row.get("champion", "")),
+                    "picks": dict(row["picks"]),
+                }
+            )
+
+        if not pool_candidates:
+            st.info("Create a full bracket or generate simulated brackets first, then run the pool simulation.")
+        else:
+            available_candidates = pd.DataFrame(
+                [
+                    {"label": candidate["label"], "champion": candidate["champion"]}
+                    for candidate in pool_candidates
+                ]
+            )
+            st.markdown("#### Candidate brackets")
+            st.dataframe(available_candidates, use_container_width=True, hide_index=True)
+
+            if st.button("Run pool simulation", use_container_width=True):
+                with st.spinner("Simulating tournament outcomes and opponent pools..."):
+                    pool_results = simulate_pool_for_brackets(
+                        candidate_brackets=pool_candidates,
+                        games=games,
+                        order=order,
+                        team_lookup=resources["team_lookup"],
+                        matchup_payload=resources["matchup_payload"],
+                        probability_temperature=resources["probability_temperature"],
+                        public_pick_distribution=resources["public_pick_distribution"],
+                        pool_size=pool_size_sim,
+                        n_tournament_sims=tournament_sims,
+                    )
+                st.session_state["pool_simulation_results"] = pool_results
+                st.session_state["pool_simulation_meta"] = {
+                    "pool_size": int(pool_size_sim),
+                    "tournament_sims": int(tournament_sims),
+                }
+
+            pool_results = st.session_state.get("pool_simulation_results")
+            pool_meta = st.session_state.get("pool_simulation_meta", {})
+            if isinstance(pool_results, pd.DataFrame) and not pool_results.empty:
+                st.markdown("#### Estimated pool performance")
+                display_pool_results = pool_results.copy()
+                for column in ["win_equity", "top_10_pct"]:
+                    display_pool_results[column] = display_pool_results[column] * 100.0
+                st.dataframe(
+                    display_pool_results,
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config={
+                        "win_equity": percent_column_config("win_equity"),
+                        "top_10_pct": percent_column_config("top_10_pct"),
+                        "average_finish": st.column_config.NumberColumn("average_finish", format="%.1f"),
+                        "average_score": st.column_config.NumberColumn("average_score", format="%.1f"),
+                        "average_same_champion_opponents": st.column_config.NumberColumn(
+                            "average_same_champion_opponents",
+                            format="%.1f",
+                        ),
+                    },
+                )
+                if pool_meta:
+                    st.caption(
+                        f"Win equity is the estimated share of pool wins across {int(pool_meta.get('tournament_sims', 0))} simulated tournaments with {int(pool_meta.get('pool_size', 0))} total entries."
+                    )
+                st.download_button(
+                    "Download pool simulation CSV",
+                    data=pool_results.to_csv(index=False).encode("utf-8"),
+                    file_name="pool_simulation_results.csv",
+                    mime="text/csv",
+                    use_container_width=False,
+                )
+
+    with tabs[6]:
         st.subheader("Team Lens")
         st.caption("Use this view to compare the bracket state with the underlying team profile and contender screen.")
 

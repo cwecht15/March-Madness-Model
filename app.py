@@ -13,6 +13,7 @@ import pandas as pd
 import streamlit as st
 
 from scripts.bracket_pdf import generate_bracket_pdf
+from scripts.build_matchup_training_data import SeasonTeamMatcher, load_aliases
 from scripts.run_tournament_forecast import (
     build_contender_scorecard,
     build_team_rankings,
@@ -51,6 +52,7 @@ DEFAULT_TEAM_MANIFEST = "artifacts/model_benchmarks/saved_model_manifest.csv"
 DEFAULT_MATCHUP_MANIFEST = "artifacts/matchup_model/saved_model_manifest.csv"
 DEFAULT_ALIASES = "data/team_aliases.csv"
 DEFAULT_SEMIFINALS = "East-South,West-Midwest"
+DEFAULT_PUBLIC_PICKS = "data/public_pick_distribution/yahoo_pick_distribution_2026-03-18.csv"
 ROUND_TITLES = {
     0: "First Four",
     1: "Round of 64",
@@ -80,6 +82,30 @@ TEAM_ODDS_PROBABILITY_COLUMNS = [
     "win_championship",
 ]
 TEAM_ODDS_DELTA_COLUMNS = ["final_four_delta", "title_game_delta", "championship_delta"]
+PUBLIC_PICK_ROUND_TITLE_MAP = {
+    "Round of 64": "round_of_64",
+    "Round of 32": "round_of_32",
+    "Sweet 16": "sweet_sixteen",
+    "Elite 8": "elite_eight",
+    "Final Four": "final_four",
+    "Championship": "championship",
+}
+PUBLIC_PICK_ROUND_WEIGHTS = {
+    "round_of_64": 1,
+    "round_of_32": 2,
+    "sweet_sixteen": 4,
+    "elite_eight": 8,
+    "final_four": 16,
+    "championship": 32,
+}
+PUBLIC_PICK_TEAM_ODDS_MAP = {
+    "round_of_64": "win_round_of_64",
+    "round_of_32": "win_round_of_32",
+    "sweet_sixteen": "win_sweet_sixteen",
+    "elite_eight": "win_elite_eight",
+    "final_four": "win_final_four",
+    "championship": "win_championship",
+}
 
 
 st.set_page_config(page_title="March Madness Live Bracket", layout="wide")
@@ -163,6 +189,7 @@ def load_resources(
     team_model_manifest: str,
     matchup_model_manifest: str,
     aliases_path: str,
+    public_pick_distribution_path: str,
 ):
     season_df = pd.read_csv(season_data_path).copy()
     season_df = load_team_model_predictions(season_df, Path(team_model_manifest))
@@ -175,6 +202,11 @@ def load_resources(
     _, matchup_payload = load_matchup_payload(Path(matchup_model_manifest))
     probability_temperature = float(matchup_payload.get("simulation_temperature", 1.0))
     team_lookup = {row.team: row for row in season_df.itertuples(index=False)}
+    public_pick_distribution, public_pick_match_report = load_public_pick_distribution(
+        season_df=season_df,
+        public_pick_distribution_path=public_pick_distribution_path,
+        aliases_path=aliases_path,
+    )
 
     return {
         "season_df": season_df,
@@ -186,7 +218,35 @@ def load_resources(
         "team_lookup": team_lookup,
         "team_rankings": build_team_rankings(season_df),
         "contender_scorecard": build_contender_scorecard(season_df),
+        "public_pick_distribution": public_pick_distribution,
+        "public_pick_match_report": public_pick_match_report,
     }
+
+
+@st.cache_data(show_spinner=False)
+def load_public_pick_distribution(
+    season_df: pd.DataFrame,
+    public_pick_distribution_path: str,
+    aliases_path: str,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    path = Path(public_pick_distribution_path)
+    empty_distribution = pd.DataFrame(columns=["round_key", "rank", "team", "public_team", "seed", "picked_pct"])
+    empty_report = pd.DataFrame(columns=["source", "raw_team", "normalized_team", "canonical_team", "match_method"])
+    if not path.exists():
+        return empty_distribution, empty_report
+
+    distribution = pd.read_csv(path).copy()
+    if distribution.empty or "team" not in distribution.columns:
+        return empty_distribution, empty_report
+
+    alias_map = load_aliases(Path(aliases_path))
+    matcher = SeasonTeamMatcher(season_df["team"].astype(str).tolist(), alias_map)
+    distribution["public_team"] = distribution["team"].astype(str)
+    distribution["team"] = distribution["team"].astype(str).apply(lambda value: matcher.resolve("public", value))
+    distribution["picked_pct"] = distribution["picked_pct"].astype(float)
+    distribution["round_key"] = distribution["round_key"].astype(str)
+    distribution["seed"] = distribution["seed"].astype(int)
+    return distribution, matcher.report()
 
 
 def build_games(field_df: pd.DataFrame, semifinal_pairs: list[tuple[str, str]]):
@@ -780,6 +840,7 @@ def cached_simulation(
     team_model_manifest: str,
     matchup_model_manifest: str,
     aliases_path: str,
+    public_pick_distribution_path: str,
     picks_key: tuple[tuple[str, str], ...],
     n_sims: int,
 ):
@@ -790,6 +851,7 @@ def cached_simulation(
         team_model_manifest,
         matchup_model_manifest,
         aliases_path,
+        public_pick_distribution_path,
     )
     games, order, _ = build_games(resources["resolved_field"], resources["semifinal_pairs"])
     picks = dict(picks_key)
@@ -821,6 +883,137 @@ def build_delta_table(current_odds: pd.DataFrame, baseline_odds: pd.DataFrame) -
     merged["final_four_delta"] = merged["make_final_four"] - merged["make_final_four_baseline"]
     merged["title_game_delta"] = merged["make_championship"] - merged["make_championship_baseline"]
     return merged
+
+
+def build_bracket_public_pick_table(
+    export_df: pd.DataFrame,
+    public_pick_distribution: pd.DataFrame,
+    current_odds_lookup: dict[str, dict[str, object]],
+) -> pd.DataFrame:
+    picked = export_df.loc[export_df["picked_winner"].astype(str).str.strip().ne("")].copy()
+    if picked.empty or public_pick_distribution.empty:
+        return pd.DataFrame()
+
+    picked["round_key"] = picked["round_title"].map(PUBLIC_PICK_ROUND_TITLE_MAP)
+    picked = picked.loc[picked["round_key"].notna()].copy()
+    if picked.empty:
+        return pd.DataFrame()
+
+    picked["team"] = picked["picked_winner"].astype(str)
+    merged = picked.merge(
+        public_pick_distribution[["team", "round_key", "picked_pct", "rank", "public_team"]],
+        on=["team", "round_key"],
+        how="left",
+    )
+    merged["round_weight"] = merged["round_key"].map(PUBLIC_PICK_ROUND_WEIGHTS).astype(float)
+    merged["picked_pct"] = merged["picked_pct"].fillna(0.0).astype(float)
+    merged["public_rank"] = merged["rank"].fillna(999).astype(int)
+    merged["model_round_prob"] = merged.apply(
+        lambda row: float(
+            current_odds_lookup.get(str(row["team"]), {}).get(PUBLIC_PICK_TEAM_ODDS_MAP[str(row["round_key"])], 0.0)
+        ),
+        axis=1,
+    )
+    merged["leverage"] = merged["model_round_prob"] - merged["picked_pct"]
+    merged["expected_same_picks_in_pool"] = 0.0
+    return merged
+
+
+def score_bracket_pool_fit(
+    bracket_pick_table: pd.DataFrame,
+    pool_size: int,
+) -> dict[str, object]:
+    if bracket_pick_table.empty:
+        return {
+            "profile": "Unavailable",
+            "pool_fit": "No picked rounds to score",
+            "recommended_pool_min": None,
+            "recommended_pool_max": None,
+            "weighted_public_pct": np.nan,
+            "weighted_late_public_pct": np.nan,
+            "weighted_leverage_pct": np.nan,
+            "champion_public_pct": np.nan,
+            "expected_same_champion_entries": np.nan,
+        }
+
+    weight_sum = float(bracket_pick_table["round_weight"].sum())
+    weighted_public_pct = float((bracket_pick_table["picked_pct"] * bracket_pick_table["round_weight"]).sum() / weight_sum)
+    weighted_leverage_pct = float((bracket_pick_table["leverage"] * bracket_pick_table["round_weight"]).sum() / weight_sum)
+    late_rows = bracket_pick_table.loc[
+        bracket_pick_table["round_key"].isin(["elite_eight", "final_four", "championship"])
+    ].copy()
+    late_weight_sum = float(late_rows["round_weight"].sum()) if not late_rows.empty else 0.0
+    weighted_late_public_pct = (
+        float((late_rows["picked_pct"] * late_rows["round_weight"]).sum() / late_weight_sum) if late_weight_sum else 0.0
+    )
+
+    champion_rows = bracket_pick_table.loc[bracket_pick_table["round_key"] == "championship"]
+    champion_public_pct = float(champion_rows["picked_pct"].iloc[0]) if not champion_rows.empty else np.nan
+    expected_same_champion_entries = champion_public_pct * pool_size if not math.isnan(champion_public_pct) else np.nan
+
+    if champion_public_pct >= 0.20 or weighted_late_public_pct >= 0.22:
+        profile = "Chalky"
+        recommended_pool_min, recommended_pool_max = 10, 30
+    elif champion_public_pct >= 0.10 or weighted_late_public_pct >= 0.12:
+        profile = "Balanced"
+        recommended_pool_min, recommended_pool_max = 25, 100
+    elif champion_public_pct >= 0.04 or weighted_late_public_pct >= 0.05:
+        profile = "Contrarian"
+        recommended_pool_min, recommended_pool_max = 75, 300
+    else:
+        profile = "Very Contrarian"
+        recommended_pool_min, recommended_pool_max = 250, None
+
+    if pool_size < recommended_pool_min:
+        pool_fit = "Too crazy for this pool size"
+    elif recommended_pool_max is not None and pool_size > recommended_pool_max:
+        pool_fit = "Not crazy enough for this pool size"
+    else:
+        pool_fit = "Reasonable fit for this pool size"
+
+    return {
+        "profile": profile,
+        "pool_fit": pool_fit,
+        "recommended_pool_min": recommended_pool_min,
+        "recommended_pool_max": recommended_pool_max,
+        "weighted_public_pct": weighted_public_pct,
+        "weighted_late_public_pct": weighted_late_public_pct,
+        "weighted_leverage_pct": weighted_leverage_pct,
+        "champion_public_pct": champion_public_pct,
+        "expected_same_champion_entries": expected_same_champion_entries,
+    }
+
+
+def build_simulated_bracket_public_summary(
+    bracket_results: list[dict[str, object]],
+    games: dict[str, dict[str, object]],
+    order: list[str],
+    seed_lookup: dict[str, int],
+    public_pick_distribution: pd.DataFrame,
+    current_odds_lookup: dict[str, dict[str, object]],
+    pool_size: int,
+) -> pd.DataFrame:
+    rows: list[dict[str, object]] = []
+    for result in bracket_results:
+        export_df = export_picks_dataframe(games, order, dict(result["picks"]), seed_lookup)
+        public_table = build_bracket_public_pick_table(export_df, public_pick_distribution, current_odds_lookup)
+        score = score_bracket_pool_fit(public_table, pool_size)
+        rows.append(
+            {
+                "bracket_id": int(result["bracket_id"]),
+                "champion": str(result["champion"]),
+                "runner_up": str(result.get("runner_up", "")),
+                "underdog_wins": int(result.get("underdog_wins", 0)),
+                "profile": score["profile"],
+                "pool_fit": score["pool_fit"],
+                "weighted_public_pct": score["weighted_public_pct"],
+                "weighted_late_public_pct": score["weighted_late_public_pct"],
+                "weighted_leverage_pct": score["weighted_leverage_pct"],
+                "champion_public_pct": score["champion_public_pct"],
+                "expected_same_champion_entries": score["expected_same_champion_entries"],
+            }
+        )
+    return pd.DataFrame(rows)
 
 
 def build_team_odds_view(current_odds: pd.DataFrame, baseline_odds: pd.DataFrame) -> pd.DataFrame:
@@ -1276,6 +1469,7 @@ def main() -> None:
         season_data_path = st.text_input("Season data", DEFAULT_SEASON_DATA)
         field_path = st.text_input("Field file", DEFAULT_FIELD)
         semifinal_pairs_text = st.text_input("Semifinal pairings", DEFAULT_SEMIFINALS)
+        public_pick_distribution_path = st.text_input("Public pick distribution", DEFAULT_PUBLIC_PICKS)
         n_sims = st.slider("Conditional sims", min_value=1000, max_value=10000, value=3000, step=1000)
         if st.button("Reset picks", use_container_width=True):
             st.session_state["bracket_picks"] = {}
@@ -1290,6 +1484,7 @@ def main() -> None:
         DEFAULT_TEAM_MANIFEST,
         DEFAULT_MATCHUP_MANIFEST,
         DEFAULT_ALIASES,
+        public_pick_distribution_path,
     )
     games, order, round_groups = build_games(resources["resolved_field"], resources["semifinal_pairs"])
     parent_lookup = build_parent_lookup(games)
@@ -1346,6 +1541,7 @@ def main() -> None:
         DEFAULT_TEAM_MANIFEST,
         DEFAULT_MATCHUP_MANIFEST,
         DEFAULT_ALIASES,
+        public_pick_distribution_path,
         tuple(),
         n_sims,
     )
@@ -1356,6 +1552,7 @@ def main() -> None:
         DEFAULT_TEAM_MANIFEST,
         DEFAULT_MATCHUP_MANIFEST,
         DEFAULT_ALIASES,
+        public_pick_distribution_path,
         tuple(sorted(saved_picks.items())),
         n_sims,
     )
@@ -1380,7 +1577,7 @@ def main() -> None:
             use_container_width=True,
         )
 
-    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Odds", "Bracket Sims", "Team Lens"])
+    tabs = st.tabs(["Bracket Builder", "Live Odds", "Team Odds", "Bracket Sims", "Pool Fit", "Team Lens"])
 
     with tabs[0]:
         rendered_rows = build_game_rows(
@@ -1463,6 +1660,7 @@ def main() -> None:
         DEFAULT_TEAM_MANIFEST,
         DEFAULT_MATCHUP_MANIFEST,
         DEFAULT_ALIASES,
+        public_pick_distribution_path,
         tuple(sorted(current_picks.items())),
         n_sims,
     )
@@ -1739,6 +1937,153 @@ def main() -> None:
             st.info("No simulated brackets yet. Use the controls above to generate some.")
 
     with tabs[4]:
+        st.subheader("Pool Fit")
+        st.caption(
+            "Compare your bracket to public Yahoo pick rates to see whether it is chalky, balanced, or too contrarian for the size of your pool."
+        )
+
+        if resources["public_pick_distribution"].empty:
+            st.info(
+                "No public pick distribution file is loaded yet. Add a Yahoo pick distribution CSV or HTML parse output to score bracket chalk and leverage."
+            )
+        else:
+            pool_size = st.slider("Pool size", min_value=10, max_value=2000, value=50, step=10)
+            current_public_table = build_bracket_public_pick_table(
+                export_df,
+                resources["public_pick_distribution"],
+                current_odds_lookup,
+            )
+            current_pool_score = score_bracket_pool_fit(current_public_table, pool_size)
+
+            st.markdown("#### Current bracket profile")
+            score_cols = st.columns(4)
+            score_cols[0].metric("Profile", str(current_pool_score["profile"]))
+            score_cols[1].metric("Pool fit", str(current_pool_score["pool_fit"]))
+            score_cols[2].metric(
+                "Champion public pick rate",
+                format_probability(current_pool_score["champion_public_pct"])
+                if not math.isnan(float(current_pool_score["champion_public_pct"]))
+                else "N/A",
+            )
+            score_cols[3].metric(
+                "Expected same champion entries",
+                (
+                    f"{float(current_pool_score['expected_same_champion_entries']):.1f}"
+                    if not math.isnan(float(current_pool_score["expected_same_champion_entries"]))
+                    else "N/A"
+                ),
+            )
+
+            detail_cols = st.columns(3)
+            detail_cols[0].metric(
+                "Weighted public pick rate",
+                format_probability(current_pool_score["weighted_public_pct"])
+                if not math.isnan(float(current_pool_score["weighted_public_pct"]))
+                else "N/A",
+            )
+            detail_cols[1].metric(
+                "Late-round public pick rate",
+                format_probability(current_pool_score["weighted_late_public_pct"])
+                if not math.isnan(float(current_pool_score["weighted_late_public_pct"]))
+                else "N/A",
+            )
+            detail_cols[2].metric(
+                "Model leverage",
+                f"{100.0 * float(current_pool_score['weighted_leverage_pct']):+.1f} pts"
+                if not math.isnan(float(current_pool_score["weighted_leverage_pct"]))
+                else "N/A",
+            )
+
+            min_pool = current_pool_score["recommended_pool_min"]
+            max_pool = current_pool_score["recommended_pool_max"]
+            if min_pool is not None:
+                if max_pool is None:
+                    st.caption(f"Recommended pool size range for this profile: {int(min_pool)}+ entries.")
+                else:
+                    st.caption(f"Recommended pool size range for this profile: {int(min_pool)}-{int(max_pool)} entries.")
+
+            if current_public_table.empty:
+                st.info("Lock in at least one bracket pick to score your current bracket against the public field.")
+            else:
+                display_current_public = current_public_table[
+                    [
+                        "round_title",
+                        "label",
+                        "team",
+                        "picked_pct",
+                        "model_round_prob",
+                        "leverage",
+                        "public_rank",
+                    ]
+                ].copy()
+                display_current_public["picked_pct"] = display_current_public["picked_pct"] * 100.0
+                display_current_public["model_round_prob"] = display_current_public["model_round_prob"] * 100.0
+                display_current_public["leverage"] = display_current_public["leverage"] * 100.0
+                st.markdown("#### Current bracket pick-by-pick leverage")
+                st.dataframe(
+                    display_current_public,
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config={
+                        "picked_pct": percent_column_config("picked_pct"),
+                        "model_round_prob": percent_column_config("model_round_prob"),
+                        "leverage": points_delta_column_config("leverage"),
+                    },
+                )
+
+            simulated_brackets = st.session_state.get("simulated_brackets", [])
+            if simulated_brackets:
+                simulated_public_summary = build_simulated_bracket_public_summary(
+                    bracket_results=simulated_brackets,
+                    games=games,
+                    order=order,
+                    seed_lookup=seed_lookup,
+                    public_pick_distribution=resources["public_pick_distribution"],
+                    current_odds_lookup=current_odds_lookup,
+                    pool_size=pool_size,
+                )
+                if not simulated_public_summary.empty:
+                    st.markdown("#### Simulated bracket pool-fit summary")
+                    display_simulated_public_summary = simulated_public_summary.copy()
+                    for column in [
+                        "weighted_public_pct",
+                        "weighted_late_public_pct",
+                        "weighted_leverage_pct",
+                        "champion_public_pct",
+                    ]:
+                        display_simulated_public_summary[column] = display_simulated_public_summary[column] * 100.0
+
+                    st.dataframe(
+                        display_simulated_public_summary.sort_values(
+                            ["weighted_leverage_pct", "champion_public_pct"],
+                            ascending=[False, True],
+                        ),
+                        use_container_width=True,
+                        hide_index=True,
+                        column_config={
+                            "weighted_public_pct": percent_column_config("weighted_public_pct"),
+                            "weighted_late_public_pct": percent_column_config("weighted_late_public_pct"),
+                            "weighted_leverage_pct": points_delta_column_config("weighted_leverage_pct"),
+                            "champion_public_pct": percent_column_config("champion_public_pct"),
+                            "expected_same_champion_entries": st.column_config.NumberColumn(
+                                "expected_same_champion_entries",
+                                format="%.1f",
+                            ),
+                        },
+                    )
+
+                    st.download_button(
+                        "Download simulated bracket pool-fit CSV",
+                        data=simulated_public_summary.to_csv(index=False).encode("utf-8"),
+                        file_name="simulated_bracket_pool_fit.csv",
+                        mime="text/csv",
+                        use_container_width=False,
+                    )
+
+            with st.expander("Public pick match report", expanded=False):
+                st.dataframe(resources["public_pick_match_report"], use_container_width=True, hide_index=True)
+
+    with tabs[5]:
         st.subheader("Team Lens")
         st.caption("Use this view to compare the bracket state with the underlying team profile and contender screen.")
 

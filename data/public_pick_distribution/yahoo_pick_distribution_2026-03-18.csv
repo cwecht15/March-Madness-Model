@@ -1,0 +1,397 @@
+round_source,round_key,rank,team,seed,picked_pct
+RD64,round_of_64,1,Duke,1,0.9845
+RD64,round_of_64,2,Florida,1,0.9704999999999999
+RD64,round_of_64,3,Connecticut,2,0.9688
+RD64,round_of_64,4,Arizona,1,0.9665
+RD64,round_of_64,5,Michigan,1,0.9655
+RD64,round_of_64,6,Purdue,2,0.9570000000000001
+RD64,round_of_64,7,Michigan St.,3,0.9568000000000001
+RD64,round_of_64,8,Houston,2,0.9527
+RD64,round_of_64,9,Kansas,4,0.9499
+RD64,round_of_64,10,Iowa St.,2,0.9396
+RD64,round_of_64,11,Gonzaga,3,0.9395
+RD64,round_of_64,12,Virginia,3,0.9322
+RD64,round_of_64,13,Illinois,3,0.9259000000000001
+RD64,round_of_64,14,Arkansas,4,0.9095
+RD64,round_of_64,15,St. John's,5,0.883
+RD64,round_of_64,16,Alabama,4,0.8784000000000001
+RD64,round_of_64,17,Nebraska,4,0.8656999999999999
+RD64,round_of_64,18,Tennessee,6,0.8565
+RD64,round_of_64,19,Vanderbilt,5,0.8320000000000001
+RD64,round_of_64,20,Wisconsin,5,0.8284999999999999
+RD64,round_of_64,21,BYU,6,0.7990999999999999
+RD64,round_of_64,22,Texas Tech,5,0.7486
+RD64,round_of_64,23,UCLA,7,0.6829999999999999
+RD64,round_of_64,24,N. Carolina,6,0.6768000000000001
+RD64,round_of_64,25,Kentucky,7,0.6678000000000001
+RD64,round_of_64,26,Louisville,6,0.6204
+RD64,round_of_64,27,Miami (FL),7,0.6175
+RD64,round_of_64,28,Ohio St.,8,0.6007
+RD64,round_of_64,29,Iowa,9,0.5585
+RD64,round_of_64,30,Georgia,8,0.5508
+RD64,round_of_64,31,Villanova,8,0.5379
+RD64,round_of_64,32,St. Mary's,7,0.5347999999999999
+RD64,round_of_64,33,Texas A&M,10,0.4435
+RD64,round_of_64,34,Utah St.,9,0.43920000000000003
+RD64,round_of_64,35,Saint Louis,9,0.4243
+RD64,round_of_64,36,Clemson,8,0.4202
+RD64,round_of_64,37,TCU,9,0.3912
+RD64,round_of_64,38,South Florida,11,0.36950000000000005
+RD64,round_of_64,39,Missouri,10,0.359
+RD64,round_of_64,40,UCF,10,0.3081
+RD64,round_of_64,41,Santa Clara,10,0.3078
+RD64,round_of_64,42,VCU,11,0.3023
+RD64,round_of_64,43,Akron,12,0.2275
+RD64,round_of_64,44,Texas,11,0.17489999999999997
+RD64,round_of_64,45,High Point,12,0.15
+RD64,round_of_64,46,McNeese,12,0.1478
+RD64,round_of_64,47,MOH/SMU,11,0.11810000000000001
+RD64,round_of_64,48,Troy,13,0.114
+RD64,round_of_64,49,Northern Iowa,12,0.1105
+RD64,round_of_64,50,Hofstra,13,0.0986
+RD64,round_of_64,51,TX/NCST,11,0.0973
+RD64,round_of_64,52,Hawaii,13,0.0695
+RD64,round_of_64,53,Pennsylvania,14,0.054900000000000004
+RD64,round_of_64,54,Wright St.,14,0.0449
+RD64,round_of_64,55,California Baptist,13,0.044000000000000004
+RD64,round_of_64,56,Kennesaw St.,14,0.039900000000000005
+RD64,round_of_64,57,Tennessee St.,15,0.0391
+RD64,round_of_64,58,N. Dak. St.,14,0.037000000000000005
+RD64,round_of_64,59,Idaho,15,0.029500000000000002
+RD64,round_of_64,60,Furman,15,0.0259
+RD64,round_of_64,61,Queens University,15,0.023399999999999997
+RD64,round_of_64,62,LIU Brooklyn,16,0.015600000000000001
+RD64,round_of_64,63,Howard,16,0.0148
+RD64,round_of_64,64,Siena,16,0.0132
+RD64,round_of_64,65,PV/LEH,16,0.013000000000000001
+RD64,round_of_64,66,UMBC/HOW,16,0.0084
+RD32,round_of_32,1,Duke,1,0.9403
+RD32,round_of_32,2,Michigan,1,0.9195
+RD32,round_of_32,3,Arizona,1,0.9138
+RD32,round_of_32,4,Florida,1,0.8998999999999999
+RD32,round_of_32,5,Houston,2,0.8573000000000001
+RD32,round_of_32,6,Purdue,2,0.8116
+RD32,round_of_32,7,Connecticut,2,0.804
+RD32,round_of_32,8,Michigan St.,3,0.7744
+RD32,round_of_32,9,Iowa St.,2,0.7593000000000001
+RD32,round_of_32,10,Gonzaga,3,0.6816
+RD32,round_of_32,11,Illinois,3,0.6744
+RD32,round_of_32,12,Virginia,3,0.6382
+RD32,round_of_32,13,Arkansas,4,0.5828
+RD32,round_of_32,14,Vanderbilt,5,0.5595
+RD32,round_of_32,15,Alabama,4,0.5421
+RD32,round_of_32,16,St. John's,5,0.5396
+RD32,round_of_32,17,Kansas,4,0.4215
+RD32,round_of_32,18,Nebraska,4,0.35700000000000004
+RD32,round_of_32,19,Wisconsin,5,0.3494
+RD32,round_of_32,20,Texas Tech,5,0.3488
+RD32,round_of_32,21,Tennessee,6,0.3019
+RD32,round_of_32,22,BYU,6,0.2481
+RD32,round_of_32,23,N. Carolina,6,0.23989999999999997
+RD32,round_of_32,24,Kentucky,7,0.16870000000000002
+RD32,round_of_32,25,UCLA,7,0.1532
+RD32,round_of_32,26,Louisville,6,0.1457
+RD32,round_of_32,27,Miami (FL),7,0.1195
+RD32,round_of_32,28,Akron,12,0.0652
+RD32,round_of_32,29,South Florida,11,0.0613
+RD32,round_of_32,30,St. Mary's,7,0.0596
+RD32,round_of_32,31,Texas A&M,10,0.056799999999999996
+RD32,round_of_32,32,VCU,11,0.050499999999999996
+RD32,round_of_32,33,Iowa,9,0.0467
+RD32,round_of_32,34,McNeese,12,0.045899999999999996
+RD32,round_of_32,35,Villanova,8,0.045
+RD32,round_of_32,36,Missouri,10,0.0412
+RD32,round_of_32,37,Santa Clara,10,0.0373
+RD32,round_of_32,38,Texas,11,0.0354
+RD32,round_of_32,39,Georgia,8,0.034300000000000004
+RD32,round_of_32,40,Ohio St.,8,0.032799999999999996
+RD32,round_of_32,41,Clemson,8,0.031200000000000002
+RD32,round_of_32,42,High Point,12,0.0281
+RD32,round_of_32,43,UCF,10,0.0277
+RD32,round_of_32,44,MOH/SMU,11,0.0268
+RD32,round_of_32,45,Hofstra,13,0.023700000000000002
+RD32,round_of_32,46,Northern Iowa,12,0.0217
+RD32,round_of_32,47,Hawaii,13,0.0209
+RD32,round_of_32,48,Saint Louis,9,0.0209
+RD32,round_of_32,49,Troy,13,0.0202
+RD32,round_of_32,50,TX/NCST,11,0.019
+RD32,round_of_32,51,Pennsylvania,14,0.0181
+RD32,round_of_32,52,Utah St.,9,0.0167
+RD32,round_of_32,53,TCU,9,0.0158
+RD32,round_of_32,54,Tennessee St.,15,0.0154
+RD32,round_of_32,55,Kennesaw St.,14,0.0148
+RD32,round_of_32,56,Wright St.,14,0.0124
+RD32,round_of_32,57,N. Dak. St.,14,0.012
+RD32,round_of_32,58,California Baptist,13,0.0109
+RD32,round_of_32,59,Idaho,15,0.009899999999999999
+RD32,round_of_32,60,Queens University,15,0.0092
+RD32,round_of_32,61,Furman,15,0.0087
+RD32,round_of_32,62,LIU Brooklyn,16,0.0070999999999999995
+RD32,round_of_32,63,Howard,16,0.006500000000000001
+RD32,round_of_32,64,Siena,16,0.0060999999999999995
+RD32,round_of_32,65,PV/LEH,16,0.0058
+RD32,round_of_32,66,UMBC/HOW,16,0.0037
+RD16,sweet_sixteen,1,Michigan,1,0.8081999999999999
+RD16,sweet_sixteen,2,Duke,1,0.7846
+RD16,sweet_sixteen,3,Arizona,1,0.7681999999999999
+RD16,sweet_sixteen,4,Florida,1,0.763
+RD16,sweet_sixteen,5,Houston,2,0.6261
+RD16,sweet_sixteen,6,Iowa St.,2,0.5431
+RD16,sweet_sixteen,7,Purdue,2,0.5279
+RD16,sweet_sixteen,8,Connecticut,2,0.4991
+RD16,sweet_sixteen,9,Michigan St.,3,0.3641
+RD16,sweet_sixteen,10,Gonzaga,3,0.2988
+RD16,sweet_sixteen,11,Virginia,3,0.24600000000000002
+RD16,sweet_sixteen,12,Illinois,3,0.21850000000000003
+RD16,sweet_sixteen,13,Vanderbilt,5,0.10779999999999999
+RD16,sweet_sixteen,14,Arkansas,4,0.1073
+RD16,sweet_sixteen,15,St. John's,5,0.0999
+RD16,sweet_sixteen,16,Tennessee,6,0.0932
+RD16,sweet_sixteen,17,Alabama,4,0.09210000000000002
+RD16,sweet_sixteen,18,N. Carolina,6,0.0901
+RD16,sweet_sixteen,19,BYU,6,0.08529999999999999
+RD16,sweet_sixteen,20,Kansas,4,0.0776
+RD16,sweet_sixteen,21,Kentucky,7,0.0739
+RD16,sweet_sixteen,22,Wisconsin,5,0.0641
+RD16,sweet_sixteen,23,UCLA,7,0.0603
+RD16,sweet_sixteen,24,Nebraska,4,0.0601
+RD16,sweet_sixteen,25,Texas Tech,5,0.04769999999999999
+RD16,sweet_sixteen,26,Miami (FL),7,0.0454
+RD16,sweet_sixteen,27,Louisville,6,0.0451
+RD16,sweet_sixteen,28,Iowa,9,0.0264
+RD16,sweet_sixteen,29,Villanova,8,0.024
+RD16,sweet_sixteen,30,St. Mary's,7,0.0178
+RD16,sweet_sixteen,31,Ohio St.,8,0.0171
+RD16,sweet_sixteen,32,Clemson,8,0.0146
+RD16,sweet_sixteen,33,Texas A&M,10,0.013300000000000001
+RD16,sweet_sixteen,34,Georgia,8,0.0123
+RD16,sweet_sixteen,35,South Florida,11,0.0113
+RD16,sweet_sixteen,36,Missouri,10,0.0109
+RD16,sweet_sixteen,37,Santa Clara,10,0.0102
+RD16,sweet_sixteen,38,Saint Louis,9,0.0096
+RD16,sweet_sixteen,39,VCU,11,0.0076
+RD16,sweet_sixteen,40,UCF,10,0.0073
+RD16,sweet_sixteen,41,Pennsylvania,14,0.006999999999999999
+RD16,sweet_sixteen,42,MOH/SMU,11,0.0066
+RD16,sweet_sixteen,43,Texas,11,0.006500000000000001
+RD16,sweet_sixteen,44,Utah St.,9,0.0063
+RD16,sweet_sixteen,45,TCU,9,0.0058
+RD16,sweet_sixteen,46,McNeese,12,0.005699999999999999
+RD16,sweet_sixteen,47,Hawaii,13,0.0053
+RD16,sweet_sixteen,48,Akron,12,0.0051
+RD16,sweet_sixteen,49,Tennessee St.,15,0.0048
+RD16,sweet_sixteen,50,High Point,12,0.004699999999999999
+RD16,sweet_sixteen,51,Idaho,15,0.0045000000000000005
+RD16,sweet_sixteen,52,Queens University,15,0.0044
+RD16,sweet_sixteen,53,Hofstra,13,0.0042
+RD16,sweet_sixteen,54,Northern Iowa,12,0.004
+RD16,sweet_sixteen,55,Troy,13,0.004
+RD16,sweet_sixteen,56,Furman,15,0.004
+RD16,sweet_sixteen,57,LIU Brooklyn,16,0.0038
+RD16,sweet_sixteen,58,TX/NCST,11,0.0037
+RD16,sweet_sixteen,59,Wright St.,14,0.0036
+RD16,sweet_sixteen,60,Howard,16,0.0034000000000000002
+RD16,sweet_sixteen,61,N. Dak. St.,14,0.0034000000000000002
+RD16,sweet_sixteen,62,Siena,16,0.0032
+RD16,sweet_sixteen,63,California Baptist,13,0.0032
+RD16,sweet_sixteen,64,Kennesaw St.,14,0.0032
+RD16,sweet_sixteen,65,PV/LEH,16,0.0031
+RD16,sweet_sixteen,66,UMBC/HOW,16,0.0019
+RD8,elite_eight,1,Duke,1,0.6313
+RD8,elite_eight,2,Michigan,1,0.6018
+RD8,elite_eight,3,Arizona,1,0.591
+RD8,elite_eight,4,Florida,1,0.41
+RD8,elite_eight,5,Houston,2,0.3577
+RD8,elite_eight,6,Iowa St.,2,0.1865
+RD8,elite_eight,7,Purdue,2,0.1566
+RD8,elite_eight,8,Connecticut,2,0.1375
+RD8,elite_eight,9,Illinois,3,0.10210000000000001
+RD8,elite_eight,10,Gonzaga,3,0.0941
+RD8,elite_eight,11,Michigan St.,3,0.0925
+RD8,elite_eight,12,Virginia,3,0.0708
+RD8,elite_eight,13,Arkansas,4,0.0638
+RD8,elite_eight,14,St. John's,5,0.0537
+RD8,elite_eight,15,Kansas,4,0.0406
+RD8,elite_eight,16,Alabama,4,0.039900000000000005
+RD8,elite_eight,17,N. Carolina,6,0.036699999999999997
+RD8,elite_eight,18,Vanderbilt,5,0.0278
+RD8,elite_eight,19,Wisconsin,5,0.0277
+RD8,elite_eight,20,Kentucky,7,0.026600000000000002
+RD8,elite_eight,21,Tennessee,6,0.0183
+RD8,elite_eight,22,Nebraska,4,0.018000000000000002
+RD8,elite_eight,23,Texas Tech,5,0.0174
+RD8,elite_eight,24,BYU,6,0.0149
+RD8,elite_eight,25,Miami (FL),7,0.0125
+RD8,elite_eight,26,Ohio St.,8,0.009899999999999999
+RD8,elite_eight,27,UCLA,7,0.0095
+RD8,elite_eight,28,Villanova,8,0.0076
+RD8,elite_eight,29,Louisville,6,0.0064
+RD8,elite_eight,30,St. Mary's,7,0.005600000000000001
+RD8,elite_eight,31,Clemson,8,0.0054
+RD8,elite_eight,32,Georgia,8,0.0053
+RD8,elite_eight,33,Texas A&M,10,0.004699999999999999
+RD8,elite_eight,34,Iowa,9,0.0046
+RD8,elite_eight,35,Pennsylvania,14,0.0043
+RD8,elite_eight,36,Saint Louis,9,0.0037
+RD8,elite_eight,37,Missouri,10,0.003
+RD8,elite_eight,38,South Florida,11,0.0027
+RD8,elite_eight,39,Santa Clara,10,0.0027
+RD8,elite_eight,40,TCU,9,0.0025
+RD8,elite_eight,41,Hawaii,13,0.0024
+RD8,elite_eight,42,Utah St.,9,0.0024
+RD8,elite_eight,43,VCU,11,0.0023
+RD8,elite_eight,44,McNeese,12,0.0023
+RD8,elite_eight,45,MOH/SMU,11,0.0023
+RD8,elite_eight,46,LIU Brooklyn,16,0.0022
+RD8,elite_eight,47,Texas,11,0.0021
+RD8,elite_eight,48,Akron,12,0.0021
+RD8,elite_eight,49,UCF,10,0.0019
+RD8,elite_eight,50,Howard,16,0.0019
+RD8,elite_eight,51,High Point,12,0.0019
+RD8,elite_eight,52,Siena,16,0.0019
+RD8,elite_eight,53,Hofstra,13,0.0018
+RD8,elite_eight,54,PV/LEH,16,0.0018
+RD8,elite_eight,55,Northern Iowa,12,0.0017000000000000001
+RD8,elite_eight,56,Tennessee St.,15,0.0017000000000000001
+RD8,elite_eight,57,Idaho,15,0.0016
+RD8,elite_eight,58,Queens University,15,0.0016
+RD8,elite_eight,59,Troy,13,0.0016
+RD8,elite_eight,60,Wright St.,14,0.0014000000000000002
+RD8,elite_eight,61,Furman,15,0.0014000000000000002
+RD8,elite_eight,62,California Baptist,13,0.0014000000000000002
+RD8,elite_eight,63,N. Dak. St.,14,0.0013
+RD8,elite_eight,64,Kennesaw St.,14,0.0013
+RD8,elite_eight,65,TX/NCST,11,0.0013
+RD8,elite_eight,66,UMBC/HOW,16,0.0011
+RD4,final_four,1,Duke,1,0.4753
+RD4,final_four,2,Arizona,1,0.41369999999999996
+RD4,final_four,3,Michigan,1,0.2799
+RD4,final_four,4,Houston,2,0.14150000000000001
+RD4,final_four,5,Florida,1,0.1365
+RD4,final_four,6,Purdue,2,0.0726
+RD4,final_four,7,Connecticut,2,0.0719
+RD4,final_four,8,Iowa St.,2,0.0537
+RD4,final_four,9,Gonzaga,3,0.0455
+RD4,final_four,10,Michigan St.,3,0.041100000000000005
+RD4,final_four,11,Illinois,3,0.034
+RD4,final_four,12,Arkansas,4,0.0286
+RD4,final_four,13,Kansas,4,0.0231
+RD4,final_four,14,St. John's,5,0.0229
+RD4,final_four,15,Virginia,3,0.0218
+RD4,final_four,16,Kentucky,7,0.0143
+RD4,final_four,17,Wisconsin,5,0.0139
+RD4,final_four,18,Alabama,4,0.012
+RD4,final_four,19,N. Carolina,6,0.0088
+RD4,final_four,20,Vanderbilt,5,0.0073
+RD4,final_four,21,BYU,6,0.0066
+RD4,final_four,22,Tennessee,6,0.0059
+RD4,final_four,23,Nebraska,4,0.0059
+RD4,final_four,24,Texas Tech,5,0.005600000000000001
+RD4,final_four,25,UCLA,7,0.0045000000000000005
+RD4,final_four,26,Miami (FL),7,0.0042
+RD4,final_four,27,Villanova,8,0.0037
+RD4,final_four,28,Ohio St.,8,0.0032
+RD4,final_four,29,Pennsylvania,14,0.0027
+RD4,final_four,30,Louisville,6,0.0025
+RD4,final_four,31,Georgia,8,0.0022
+RD4,final_four,32,Clemson,8,0.0018
+RD4,final_four,33,Texas A&M,10,0.0018
+RD4,final_four,34,Iowa,9,0.0017000000000000001
+RD4,final_four,35,St. Mary's,7,0.0016
+RD4,final_four,36,Saint Louis,9,0.0014000000000000002
+RD4,final_four,37,Missouri,10,0.0012
+RD4,final_four,38,Hawaii,13,0.0012
+RD4,final_four,39,LIU Brooklyn,16,0.0012
+RD4,final_four,40,TCU,9,0.0011
+RD4,final_four,41,Utah St.,9,0.001
+RD4,final_four,42,Santa Clara,10,0.001
+RD4,final_four,43,South Florida,11,0.001
+RD4,final_four,44,MOH/SMU,11,0.001
+RD4,final_four,45,Siena,16,0.001
+RD4,final_four,46,McNeese,12,0.0009
+RD4,final_four,47,Akron,12,0.0009
+RD4,final_four,48,Texas,11,0.0009
+RD4,final_four,49,VCU,11,0.0009
+RD4,final_four,50,Howard,16,0.0008
+RD4,final_four,51,UCF,10,0.0008
+RD4,final_four,52,High Point,12,0.0008
+RD4,final_four,53,Hofstra,13,0.0008
+RD4,final_four,54,Tennessee St.,15,0.0007000000000000001
+RD4,final_four,55,PV/LEH,16,0.0007000000000000001
+RD4,final_four,56,Idaho,15,0.0007000000000000001
+RD4,final_four,57,Northern Iowa,12,0.0007000000000000001
+RD4,final_four,58,Queens University,15,0.0007000000000000001
+RD4,final_four,59,California Baptist,13,0.0006
+RD4,final_four,60,Troy,13,0.0006
+RD4,final_four,61,N. Dak. St.,14,0.0006
+RD4,final_four,62,Wright St.,14,0.0006
+RD4,final_four,63,Furman,15,0.0006
+RD4,final_four,64,Kennesaw St.,14,0.0006
+RD4,final_four,65,TX/NCST,11,0.0005
+RD4,final_four,66,UMBC/HOW,16,0.0005
+Final,championship,1,Duke,1,0.2837
+Final,championship,2,Arizona,1,0.2192
+Final,championship,3,Michigan,1,0.1429
+Final,championship,4,Florida,1,0.06280000000000001
+Final,championship,5,Houston,2,0.0574
+Final,championship,6,Connecticut,2,0.0353
+Final,championship,7,Purdue,2,0.0308
+Final,championship,8,Iowa St.,2,0.020099999999999996
+Final,championship,9,Gonzaga,3,0.0182
+Final,championship,10,Michigan St.,3,0.014199999999999999
+Final,championship,11,Kansas,4,0.0141
+Final,championship,12,Illinois,3,0.0123
+Final,championship,13,Arkansas,4,0.012199999999999999
+Final,championship,14,St. John's,5,0.0105
+Final,championship,15,Wisconsin,5,0.0083
+Final,championship,16,Virginia,3,0.0074
+Final,championship,17,N. Carolina,6,0.0044
+Final,championship,18,Alabama,4,0.0044
+Final,championship,19,Kentucky,7,0.0034000000000000002
+Final,championship,20,Nebraska,4,0.0027
+Final,championship,21,BYU,6,0.0026
+Final,championship,22,Vanderbilt,5,0.0026
+Final,championship,23,UCLA,7,0.0025
+Final,championship,24,Tennessee,6,0.0023
+Final,championship,25,Texas Tech,5,0.0021
+Final,championship,26,Ohio St.,8,0.0019
+Final,championship,27,Pennsylvania,14,0.0017000000000000001
+Final,championship,28,Miami (FL),7,0.0017000000000000001
+Final,championship,29,Villanova,8,0.0015
+Final,championship,30,Louisville,6,0.0011
+Final,championship,31,Georgia,8,0.001
+Final,championship,32,Clemson,8,0.0008
+Final,championship,33,Texas A&M,10,0.0008
+Final,championship,34,Iowa,9,0.0008
+Final,championship,35,Saint Louis,9,0.0007000000000000001
+Final,championship,36,LIU Brooklyn,16,0.0006
+Final,championship,37,St. Mary's,7,0.0006
+Final,championship,38,Missouri,10,0.0006
+Final,championship,39,Hawaii,13,0.0006
+Final,championship,40,TCU,9,0.0005
+Final,championship,41,MOH/SMU,11,0.0005
+Final,championship,42,Santa Clara,10,0.0005
+Final,championship,43,South Florida,11,0.0005
+Final,championship,44,Utah St.,9,0.0005
+Final,championship,45,Siena,16,0.0004
+Final,championship,46,McNeese,12,0.0004
+Final,championship,47,Akron,12,0.0004
+Final,championship,48,Texas,11,0.0004
+Final,championship,49,UCF,10,0.0004
+Final,championship,50,VCU,11,0.0004
+Final,championship,51,Howard,16,0.0004
+Final,championship,52,Hofstra,13,0.0003
+Final,championship,53,Northern Iowa,12,0.0003
+Final,championship,54,High Point,12,0.0003
+Final,championship,55,Idaho,15,0.0003
+Final,championship,56,Tennessee St.,15,0.0003
+Final,championship,57,Queens University,15,0.0003
+Final,championship,58,N. Dak. St.,14,0.0003
+Final,championship,59,California Baptist,13,0.0003
+Final,championship,60,PV/LEH,16,0.0003
+Final,championship,61,TX/NCST,11,0.0003
+Final,championship,62,Troy,13,0.0003
+Final,championship,63,Wright St.,14,0.0003
+Final,championship,64,Kennesaw St.,14,0.0003
+Final,championship,65,Furman,15,0.0003
+Final,championship,66,UMBC/HOW,16,0.0002

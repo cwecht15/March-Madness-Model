@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import __main__
 import base64
 import io
 import json
@@ -27,6 +28,21 @@ from scripts.simulate_bracket import (
     resolve_field,
     validate_field,
 )
+from scripts.train_clean_models import EncodedXGBClassifier as TeamEncodedXGBClassifier
+from scripts.train_matchup_model import IdentityCalibrator, IsotonicCalibrator, PlattCalibrator
+
+
+# Compatibility shim for joblib payloads that were trained when scripts were run
+# as entry points and pickled custom classes under `__main__`.
+EncodedXGBClassifier = TeamEncodedXGBClassifier
+if not hasattr(__main__, "EncodedXGBClassifier"):
+    __main__.EncodedXGBClassifier = TeamEncodedXGBClassifier
+if not hasattr(__main__, "IdentityCalibrator"):
+    __main__.IdentityCalibrator = IdentityCalibrator
+if not hasattr(__main__, "PlattCalibrator"):
+    __main__.PlattCalibrator = PlattCalibrator
+if not hasattr(__main__, "IsotonicCalibrator"):
+    __main__.IsotonicCalibrator = IsotonicCalibrator
 
 
 DEFAULT_SEASON_DATA = "data/processed/march_madness_2026.csv"

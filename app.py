@@ -1305,6 +1305,32 @@ def score_bracket_against_outcome(
     }
 
 
+def extract_bracket_signature(
+    picks: dict[str, str],
+    games: dict[str, dict[str, object]],
+    order: list[str],
+) -> dict[str, object]:
+    final_four_teams: list[str] = []
+    title_game_teams: list[str] = []
+    champion = ""
+    for game_id in order:
+        picked = str(picks.get(game_id, ""))
+        if not picked:
+            continue
+        round_index = int(games[game_id]["round_index"])
+        if round_index == 4:
+            final_four_teams.append(picked)
+        elif round_index == 5:
+            title_game_teams.append(picked)
+        elif round_index == 6:
+            champion = picked
+    return {
+        "champion": champion,
+        "final_four": tuple(sorted(team for team in final_four_teams if team)),
+        "title_game": tuple(sorted(team for team in title_game_teams if team)),
+    }
+
+
 def simulate_pool_for_brackets(
     candidate_brackets: list[dict[str, object]],
     games: dict[str, dict[str, object]],
@@ -1341,8 +1367,10 @@ def simulate_pool_for_brackets(
     )
 
     summary: dict[str, dict[str, float | str]] = {}
+    candidate_signatures: dict[str, dict[str, object]] = {}
     for index, candidate in enumerate(candidate_brackets, start=1):
         bracket_id = str(candidate.get("candidate_id", index))
+        candidate_signatures[bracket_id] = extract_bracket_signature(dict(candidate["picks"]), games, order)
         summary[bracket_id] = {
             "candidate_id": bracket_id,
             "label": str(candidate.get("label", f"Bracket {index}")),
@@ -1352,6 +1380,8 @@ def simulate_pool_for_brackets(
             "average_finish": 0.0,
             "average_score": 0.0,
             "average_same_champion_opponents": 0.0,
+            "average_exact_final_four_opponents": 0.0,
+            "average_final_four_overlap": 0.0,
         }
 
     for _ in range(int(n_tournament_sims)):
@@ -1386,6 +1416,7 @@ def simulate_pool_for_brackets(
             for _ in range(num_opponents)
         ]
         opponent_scores = [score_bracket_against_outcome(bracket, outcome_picks, games, order)["score"] for bracket in opponent_brackets]
+        opponent_signatures = [extract_bracket_signature(bracket, games, order) for bracket in opponent_brackets]
         opponent_champions = [str(bracket.get(order[-1], "")) for bracket in opponent_brackets]
 
         for index, candidate in enumerate(candidate_brackets, start=1):
@@ -1397,6 +1428,9 @@ def simulate_pool_for_brackets(
             win_equity = (1.0 / (1.0 + float(tied_scores))) if higher_scores == 0 else 0.0
             top_10 = 1.0 if average_finish <= float(top_cutoff) else 0.0
             same_champion = sum(champion == str(candidate.get("champion", "")) for champion in opponent_champions)
+            candidate_final_four = set(candidate_signatures[bracket_id]["final_four"])
+            exact_final_four = sum(signature["final_four"] == candidate_signatures[bracket_id]["final_four"] for signature in opponent_signatures)
+            final_four_overlap = sum(len(candidate_final_four.intersection(set(signature["final_four"]))) for signature in opponent_signatures)
 
             summary[bracket_id]["win_equity"] = float(summary[bracket_id]["win_equity"]) + win_equity
             summary[bracket_id]["top_10_pct"] = float(summary[bracket_id]["top_10_pct"]) + top_10
@@ -1405,15 +1439,62 @@ def simulate_pool_for_brackets(
             summary[bracket_id]["average_same_champion_opponents"] = float(
                 summary[bracket_id]["average_same_champion_opponents"]
             ) + float(same_champion)
+            summary[bracket_id]["average_exact_final_four_opponents"] = float(
+                summary[bracket_id]["average_exact_final_four_opponents"]
+            ) + float(exact_final_four)
+            summary[bracket_id]["average_final_four_overlap"] = float(
+                summary[bracket_id]["average_final_four_overlap"]
+            ) + (float(final_four_overlap) / max(1.0, float(num_opponents)))
 
     results = pd.DataFrame(summary.values())
     divisor = float(n_tournament_sims)
-    for column in ["win_equity", "top_10_pct", "average_finish", "average_score", "average_same_champion_opponents"]:
+    for column in [
+        "win_equity",
+        "top_10_pct",
+        "average_finish",
+        "average_score",
+        "average_same_champion_opponents",
+        "average_exact_final_four_opponents",
+        "average_final_four_overlap",
+    ]:
         results[column] = results[column].astype(float) / divisor
     results["pool_size"] = int(pool_size)
     results["tournament_sims"] = int(n_tournament_sims)
     results["opponent_model"] = str(opponent_model)
-    return results.sort_values(["win_equity", "top_10_pct", "average_finish"], ascending=[False, False, True]).reset_index(drop=True)
+
+    if len(results) > 1:
+        results["win_equity_component"] = results["win_equity"].rank(method="average", pct=True, ascending=True)
+        results["top_10_component"] = results["top_10_pct"].rank(method="average", pct=True, ascending=True)
+        results["finish_component"] = results["average_finish"].rank(method="average", pct=True, ascending=False)
+        results["final_four_overlap_component"] = results["average_final_four_overlap"].rank(
+            method="average", pct=True, ascending=False
+        )
+        results["exact_final_four_component"] = results["average_exact_final_four_opponents"].rank(
+            method="average", pct=True, ascending=False
+        )
+        results["duplication_component"] = (
+            0.65 * results["final_four_overlap_component"]
+            + 0.35 * results["exact_final_four_component"]
+        )
+    else:
+        results["win_equity_component"] = 1.0
+        results["top_10_component"] = 1.0
+        results["finish_component"] = 1.0
+        results["final_four_overlap_component"] = 1.0
+        results["exact_final_four_component"] = 1.0
+        results["duplication_component"] = 1.0
+
+    results["large_pool_score"] = 100.0 * (
+        (0.45 * results["win_equity_component"])
+        + (0.25 * results["top_10_component"])
+        + (0.15 * results["finish_component"])
+        + (0.15 * results["duplication_component"])
+    )
+
+    return results.sort_values(
+        ["large_pool_score", "win_equity", "top_10_pct", "average_finish"],
+        ascending=[False, False, False, True],
+    ).reset_index(drop=True)
 
 
 def build_team_odds_view(current_odds: pd.DataFrame, baseline_odds: pd.DataFrame) -> pd.DataFrame:
@@ -2583,6 +2664,7 @@ def main() -> None:
                     use_container_width=True,
                     hide_index=True,
                     column_config={
+                        "large_pool_score": st.column_config.NumberColumn("large_pool_score", format="%.1f"),
                         "win_equity": percent_column_config("win_equity"),
                         "top_10_pct": percent_column_config("top_10_pct"),
                         "average_finish": st.column_config.NumberColumn("average_finish", format="%.1f"),
@@ -2591,12 +2673,35 @@ def main() -> None:
                             "average_same_champion_opponents",
                             format="%.1f",
                         ),
+                        "average_exact_final_four_opponents": st.column_config.NumberColumn(
+                            "average_exact_final_four_opponents",
+                            format="%.1f",
+                        ),
+                        "average_final_four_overlap": st.column_config.NumberColumn(
+                            "average_final_four_overlap",
+                            format="%.2f",
+                        ),
+                        "win_equity_component": st.column_config.NumberColumn("win_equity_component", format="%.2f"),
+                        "top_10_component": st.column_config.NumberColumn("top_10_component", format="%.2f"),
+                        "finish_component": st.column_config.NumberColumn("finish_component", format="%.2f"),
+                        "final_four_overlap_component": st.column_config.NumberColumn(
+                            "final_four_overlap_component",
+                            format="%.2f",
+                        ),
+                        "exact_final_four_component": st.column_config.NumberColumn(
+                            "exact_final_four_component",
+                            format="%.2f",
+                        ),
+                        "duplication_component": st.column_config.NumberColumn("duplication_component", format="%.2f"),
                     },
                 )
                 if pool_meta:
                     st.caption(
                         f"Win equity is the estimated share of pool wins across {int(pool_meta.get('tournament_sims', 0))} simulated tournaments with {int(pool_meta.get('pool_size', 0))} total entries using the {str(pool_meta.get('opponent_model', ''))} opponent field model."
                     )
+                st.caption(
+                    "Large Pool Score blends win equity, top-10 rate, average finish, and lower Final Four duplication into one ranking for comparing candidate brackets in bigger pools."
+                )
                 st.download_button(
                     "Download pool simulation CSV",
                     data=pool_results.to_csv(index=False).encode("utf-8"),

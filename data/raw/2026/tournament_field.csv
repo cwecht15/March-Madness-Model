@@ -31,8 +31,7 @@ Akron,12,Midwest,,
 Hofstra,13,Midwest,,
 Wright St,14,Midwest,,
 Tennessee St,15,Midwest,,
-Howard,16,Midwest,Midwest-16,first_four
-UMBC,16,Midwest,Midwest-16,first_four
+Howard,16,Midwest,,first_four_winner
 Florida,1,South,,
 Houston,2,South,,
 Illinois,3,South,,
@@ -60,8 +59,7 @@ Miami,7,West,,
 Villanova,8,West,,
 Utah State,9,West,,
 Missouri,10,West,,
-NC State,11,West,West-11,first_four
-Texas,11,West,West-11,first_four
+Texas,11,West,,first_four_winner
 High Point,12,West,,
 Hawai'i,13,West,,
 Kennesaw St,14,West,,
